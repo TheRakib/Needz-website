@@ -14,6 +14,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import AppLogo from "../Shared/AppLogo";
+import { twMerge } from "tailwind-merge";
 
 const pages = [
   "Home",
@@ -58,7 +59,7 @@ function Navbar() {
     return (
       <Box
         sx={{ flexGrow: 0 }}
-        className={`${className && className} gap-2 flex`}
+        className={twMerge(`${className && className} gap-2 flex`)}
       >
         <Button className="bg-primary text-white capitalize">
           Become a partner
