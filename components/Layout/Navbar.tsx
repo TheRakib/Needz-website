@@ -46,7 +46,7 @@ function Navbar() {
             key={page}
             onClick={handleCloseNavMenu}
             sx={{ my: 2, display: "block" }}
-            className="text-black/70 capitalize text-lg font-normal"
+            className="text-black/70 capitalize text-lg font-normal font-inter"
           >
             {page}
           </Button>
@@ -61,10 +61,10 @@ function Navbar() {
         sx={{ flexGrow: 0 }}
         className={twMerge(`${className && className} gap-2 flex`)}
       >
-        <Button className="bg-primary text-white capitalize">
+        <Button className="bg-primary text-white capitalize  font-inter">
           Become a partner
         </Button>
-        <Button className="bg-secondary text-white capitalize">
+        <Button className="bg-secondary text-white capitalize  font-inter">
           Call Us: 08-235520
         </Button>
       </Box>
@@ -74,63 +74,61 @@ function Navbar() {
   return (
     <AppBar
       position="static"
-      className="max-w-layout mx-auto bg-white text-black shadow-none mt-6"
+      className="max-w-layout mx-auto bg-white text-black shadow-none mt-6 font-inter"
     >
-      <Container>
-        <Toolbar disableGutters>
-          <AppLogo className="hidden md:block" />
+      <Toolbar disableGutters>
+        <AppLogo className="hidden md:block" />
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-              {actionButtons("flex-col mx-2")}
-            </Menu>
-          </Box>
-          <AppLogo
-            className="flex md:hidden w-[120px] h-[40px]"
-            // onClick={handleOpenNavMenu}
-          />
-          <Box
-            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
-            className="justify-center"
+        <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <IconButton
+            size="large"
+            aria-label="account of current user"
+            aria-controls="menu-appbar"
+            aria-haspopup="true"
+            onClick={handleOpenNavMenu}
+            color="inherit"
           >
-            {pagesMenu()}
-          </Box>
+            <MenuIcon />
+          </IconButton>
+          <Menu
+            id="menu-appbar"
+            anchorEl={anchorElNav}
+            anchorOrigin={{
+              vertical: "bottom",
+              horizontal: "left",
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "left",
+            }}
+            open={Boolean(anchorElNav)}
+            onClose={handleCloseNavMenu}
+            sx={{
+              display: { xs: "block", md: "none" },
+            }}
+          >
+            {pages.map((page) => (
+              <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">{page}</Typography>
+              </MenuItem>
+            ))}
+            {actionButtons("flex-col mx-2")}
+          </Menu>
+        </Box>
+        <AppLogo
+          className="flex md:hidden w-[120px] h-[40px]"
+          // onClick={handleOpenNavMenu}
+        />
+        <Box
+          sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
+          className="justify-center"
+        >
+          {pagesMenu()}
+        </Box>
 
-          <div className="hidden md:block">{actionButtons("")}</div>
-        </Toolbar>
-      </Container>
+        <div className="hidden md:block">{actionButtons("")}</div>
+      </Toolbar>
     </AppBar>
   );
 }

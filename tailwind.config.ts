@@ -22,6 +22,9 @@ const config: Config = {
       maxWidth: {
         layout: "1240px",
       },
+      fontSize: {
+        title: "55px",
+      },
     },
     colors: {
       primary: "#006ae7",

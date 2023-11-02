@@ -19,7 +19,7 @@ function AppLogo({ className, onClick }: Props) {
         `${className && className} w-[144px] h-[80px] relative`
       )}
     >
-      <Image src={"/Logo.png"} fill alt="site logo" />
+      <Image src={"/Logo.png"} fill alt="site logo" priority />
     </div>
   );
 }
