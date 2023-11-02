@@ -13,6 +13,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import AppLogo from "../Shared/AppLogo";
 
 const pages = [
   "Home",
@@ -45,31 +46,47 @@ function Navbar() {
     setAnchorElUser(null);
   };
 
+  const pagesMenu = () => {
+    return (
+      <div className="flex items-center gap-2">
+        {pages.map((page) => (
+          <Button
+            key={page}
+            onClick={handleCloseNavMenu}
+            sx={{ my: 2, display: "block" }}
+            className="text-black/70 capitalize text-lg font-normal"
+          >
+            {page}
+          </Button>
+        ))}
+      </div>
+    );
+  };
+
+  const actionButtons = (className: string) => {
+    return (
+      <Box
+        sx={{ flexGrow: 0 }}
+        className={`${className && className} gap-2 flex`}
+      >
+        <Button className="bg-primary text-white capitalize">
+          Become a partner
+        </Button>
+        <Button className="bg-secondary text-white capitalize">
+          Call Us: 08-235520
+        </Button>
+      </Box>
+    );
+  };
+
   return (
     <AppBar
       position="static"
-      className="max-w-layout mx-auto bg-white text-black shadow-none"
+      className="max-w-layout mx-auto bg-white text-black shadow-none mt-6"
     >
       <Container>
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography>
+          <AppLogo className="hidden md:block" />
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -105,72 +122,18 @@ function Navbar() {
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
+              {actionButtons("flex-col mx-2")}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography>
+          <AppLogo className="flex md:hidden w-[120px] h-[40px]" />
           <Box
             sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
             className="justify-center"
           >
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, display: "block" }}
-                className="text-black"
-              >
-                {page}
-              </Button>
-            ))}
+            {pagesMenu()}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
+          <div className="hidden md:block">{actionButtons("")}</div>
         </Toolbar>
       </Container>
     </AppBar>
