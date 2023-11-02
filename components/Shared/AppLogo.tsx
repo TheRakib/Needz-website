@@ -3,11 +3,19 @@ import React from "react";
 
 type Props = {
   className: string;
+  onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 };
 
-function AppLogo({ className }: Props) {
+function AppLogo({ className, onClick }: Props) {
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    onClick && onClick(event); // Pass the event to the parent component
+  };
+
   return (
-    <div className={`${className && className} w-[144px] h-[80px] relative`}>
+    <div
+      onClick={handleClick}
+      className={`${className && className} w-[144px] h-[80px] relative`}
+    >
       <Image src={"/Logo.png"} fill alt="site logo" />
     </div>
   );

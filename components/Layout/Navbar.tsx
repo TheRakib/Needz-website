@@ -27,23 +27,14 @@ function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
-    null
-  );
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
+    console.log("reusable clicked");
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
   };
 
   const pagesMenu = () => {
@@ -125,7 +116,10 @@ function Navbar() {
               {actionButtons("flex-col mx-2")}
             </Menu>
           </Box>
-          <AppLogo className="flex md:hidden w-[120px] h-[40px]" />
+          <AppLogo
+            className="flex md:hidden w-[120px] h-[40px]"
+            // onClick={handleOpenNavMenu}
+          />
           <Box
             sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
             className="justify-center"
