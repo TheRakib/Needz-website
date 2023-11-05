@@ -53,7 +53,7 @@ export default function Feedback() {
   SwiperCore.use([Navigation]);
 
   return (
-    <div className="max-w-layout relative mx-auto mt-[120px] mb-[60px]">
+    <div className="max-w-layout relative mx-auto mt-[120px] mb-48">
       <div className="w-full flex justify-center">
         <SectionTitle
           title="What our customers say about us"
