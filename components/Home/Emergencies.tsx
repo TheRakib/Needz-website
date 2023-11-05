@@ -1,14 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import SectionTitle from "../Shared/SectionTitle";
-import {
-  Button,
-  FormControl,
-  InputBase,
-  InputLabel,
-  MenuItem,
-  Select,
-} from "@mui/material";
+import { Button, InputBase, MenuItem, Select } from "@mui/material";
 import { BsArrowRightCircle } from "react-icons/bs";
 
 export default function Emergencies() {
