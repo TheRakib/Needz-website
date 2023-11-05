@@ -29,14 +29,14 @@ const config: Config = {
       },
     },
     colors: {
-      primary: "#006ae7",
+      primary: "#0047a8",
       secondary: "#fc0016",
       black: "#141313",
       accent: "#7d7373",
       white: "#ffffff",
     },
     backgroundColor: {
-      primary: "#006ae7",
+      primary: "#0047a8",
       secondary: "#fc0016",
       black: "#141313",
       accent: "#7d7373",

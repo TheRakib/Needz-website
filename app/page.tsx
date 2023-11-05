@@ -1,5 +1,6 @@
 import Banner from "@/components/Home/Banner";
 import CallIn from "@/components/Home/CallIn";
+import Emergencies from "@/components/Home/Emergencies";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <main className="font-inter min-h-screen">
       <Banner />
       <CallIn />
+      <Emergencies />
     </main>
   );
 }
