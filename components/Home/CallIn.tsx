@@ -6,53 +6,31 @@ export default function CallIn() {
   return (
     <div className="max-w-layout mx-auto mt-20">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-        <div className="col-span-1 flex flex-col justify-between">
+        <div className="col-span-1 relative xl:w-[583px] md:h-[625px] w-[383px] h-[425px] mr-auto">
+          <Image src={"/call-in.png"} alt="banner" fill />
+        </div>
+        <div className="col-span-1 flex flex-col justify-center gap-6">
           <h2 className="text-title font-bold">
-            On call throughout Stockholm, <br /> around the clock!
+            On call in all of Stockholm, 24/7!
           </h2>
-          <p className="text-sm text-black/70 md:mr-36 my-6 leading-6 max-w-full">
+          <p className="text-[18px] text-black/70 md:mr-36 leading-8 max-w-full">
             Jour Eliten AB offers plumbing and electrical on-call in Stockholm
             24 hours a day, but we also carry out planned work for private
             individuals and companies. We use experienced and certified plumbers
             and electricians.
           </p>
-          <div className="flex gap-4 mt-8 mb-9">
-            <Image
-              src={"/home/icon1.png"}
-              alt="achievement"
-              height={104}
-              width={104}
-            />
-            <Image
-              src={"/home/icon2.png"}
-              alt="achievement"
-              height={104}
-              width={104}
-            />
-            <Image
-              src={"/home/icon3.png"}
-              alt="achievement"
-              height={104}
-              width={104}
-            />
+
+          <div className="flex flex-col gap-4 mr-10">
+            <div className="">
+              <Button
+                className="capitalize py-7 px-[50px] text-[26px] bg-primary text-white rounded-lg"
+                size="large"
+              >
+                More about us
+              </Button>
+            </div>
+            <p className="text-[26px] font-semibold">Call Us: 08-23 55 20</p>
           </div>
-          <div className="flex gap-4 w-full mr-10">
-            <Button
-              className="capitalize py-5 px-7 text-xl bg-primary text-white md:w-[40%] "
-              size="large"
-            >
-              Book a service
-            </Button>
-            <Button
-              className="capitalize py-5 px-7 text-xl bg-secondary text-white md:w-[40%] "
-              size="large"
-            >
-              contact us
-            </Button>
-          </div>
-        </div>
-        <div className="col-span-1 relative xl:w-[583px] md:h-[625px] w-[383px] h-[425px] ml-auto">
-          <Image src={"/home/banner.png"} alt="banner" fill />
         </div>
       </div>
     </div>
