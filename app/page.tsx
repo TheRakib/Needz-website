@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="font-inter min-h-screen px-2">
+    <main className="font-inter min-h-screen">
       <Banner />
       <CallIn />
     </main>

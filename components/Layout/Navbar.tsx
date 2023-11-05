@@ -7,14 +7,11 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import AppLogo from "../Shared/AppLogo";
 import { twMerge } from "tailwind-merge";
+import { BiPhoneCall } from "react-icons/bi";
 
 const pages = [
   "Home",
@@ -40,13 +37,13 @@ function Navbar() {
 
   const pagesMenu = () => {
     return (
-      <div className="flex items-center gap-2">
+      <div className="flex items-center xl:gap-2">
         {pages.map((page) => (
           <Button
             key={page}
             onClick={handleCloseNavMenu}
             sx={{ my: 2, display: "block" }}
-            className="text-black/70 capitalize text-lg font-normal font-inter"
+            className="text-black/70 capitalize text-base xl:text-lg font-normal font-inter whitespace-nowrap "
           >
             {page}
           </Button>
@@ -59,13 +56,14 @@ function Navbar() {
     return (
       <Box
         sx={{ flexGrow: 0 }}
-        className={twMerge(`${className && className} gap-2 flex`)}
+        className={twMerge(`${className && className} xl:gap-2 flex`)}
       >
-        <Button className="bg-primary text-white capitalize  font-inter">
+        <Button className=" text-black capitalize text-base xl:text-[17px] font-inter whitespace-nowrap ">
           Become a partner
         </Button>
-        <Button className="bg-secondary text-white capitalize  font-inter">
-          Call Us: 08-235520
+        <Button className=" text-black capitalize text-base xl:text-[17px] font-inter whitespace-nowrap ">
+          <BiPhoneCall className="mr-2 text-2xl" />
+          08-235520
         </Button>
       </Box>
     );
@@ -74,7 +72,7 @@ function Navbar() {
   return (
     <AppBar
       position="static"
-      className="max-w-layout mx-auto bg-white text-black shadow-none mt-6 font-inter"
+      className="max-w-layout px-6 xl:px-0 mx-auto bg-white text-black shadow-none mt-6 font-inter"
     >
       <Toolbar disableGutters>
         <AppLogo className="hidden md:block" />
@@ -113,7 +111,9 @@ function Navbar() {
                 <Typography textAlign="center">{page}</Typography>
               </MenuItem>
             ))}
-            {actionButtons("flex-col mx-2")}
+            <div className="border-t border-black/80 mt-4">
+              {actionButtons("flex-col mx-2")}
+            </div>
           </Menu>
         </Box>
         <AppLogo
