@@ -12,6 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AppLogo from "../Shared/AppLogo";
 import { twMerge } from "tailwind-merge";
 import { BiPhoneCall } from "react-icons/bi";
+import { Select } from "@mui/material";
 
 const pages = [
   "Home",
@@ -43,9 +44,32 @@ function Navbar() {
             key={page}
             onClick={handleCloseNavMenu}
             sx={{ my: 2, display: "block" }}
-            className="text-black/70 capitalize text-base xl:text-lg font-normal font-inter whitespace-nowrap "
+            className="text-black/70 capitalize text-base xl:text-lg font-normal font-inter whitespace-nowrap"
           >
-            {page}
+            {page !== "Our Services" ? (
+              page
+            ) : (
+              <Select
+                variant="standard"
+                labelId="our-services-select"
+                id="our-services-select"
+                value=""
+                disableUnderline
+                displayEmpty
+                onChange={handleCloseNavMenu}
+                className="text-black/70 text-base"
+                sx={{
+                  minWidth: "120px",
+                }}
+              >
+                <MenuItem value="" disabled>
+                  Our Services
+                </MenuItem>
+                <MenuItem value="service1">Service 1</MenuItem>
+                <MenuItem value="service2">Service 2</MenuItem>
+                {/* Add more services as MenuItem */}
+              </Select>
+            )}
           </Button>
         ))}
       </div>
