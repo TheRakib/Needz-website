@@ -13,11 +13,11 @@ export default function Feedback() {
   const swiperRef = useRef(null);
   const [prevArrowStyle, setPrevArrowStyle] = useState({
     backgroundColor: "transparent",
-    color: "red",
+    color: "#0047a8",
   });
   const [nextArrowStyle, setNextArrowStyle] = useState({
-    backgroundColor: "transparent",
-    color: "red",
+    backgroundColor: "#0047a8",
+    color: "#fff",
   });
 
   // Function to navigate to the previous slide
@@ -111,7 +111,7 @@ export default function Feedback() {
         ))}
       </Swiper>
 
-      <div className="absolute -bottom-32 left-0 right-0 flex justify-center gap-2 py-2">
+      <div className="absolute -bottom-32 left-0 right-0 flex justify-center gap-4 py-2">
         <div
           className="border border-primary p-4 rounded-xl cursor-pointer"
           onClick={goToPrevSlide}
