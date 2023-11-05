@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import Navbar from "@/components/Layout/Navbar";
+import Footer from "@/components/Layout/Footer";
 
 const inter = Inter({
   weight: ["200", "300", "400", "500", "500", "600", "700"],
@@ -26,7 +27,7 @@ export default function RootLayout({
       <body className={inter.variable}>
         <Navbar />
         <main>{children}</main>
-        <footer></footer>
+        <Footer />
       </body>
       <Script
         strategy="afterInteractive"

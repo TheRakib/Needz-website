@@ -5,12 +5,12 @@ import React from "react";
 export default function Banner() {
   return (
     <div className="max-w-layout mx-auto mt-20">
-      <div className="grid md:grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
         <div className="col-span-1 flex flex-col justify-between">
           <h2 className="text-title font-bold">
             On call throughout Stockholm, <br /> around the clock!
           </h2>
-          <p className="text-sm text-black/70 md:mr-36 my-6 leading-6">
+          <p className="text-sm text-black/70 md:mr-36 my-6 leading-6 max-w-full">
             Jour Eliten AB offers plumbing and electrical on-call in Stockholm
             24 hours a day, but we also carry out planned work for private
             individuals and companies. We use experienced and certified plumbers
@@ -38,20 +38,20 @@ export default function Banner() {
           </div>
           <div className="flex gap-4 w-full mr-10">
             <Button
-              className="capitalize py-5 px-7 text-xl bg-primary text-white w-[40%] "
+              className="capitalize py-5 px-7 text-xl bg-primary text-white md:w-[40%] "
               size="large"
             >
               Book a service
             </Button>
             <Button
-              className="capitalize py-5 px-7 text-xl bg-secondary text-white w-[40%] "
+              className="capitalize py-5 px-7 text-xl bg-secondary text-white md:w-[40%] "
               size="large"
             >
               contact us
             </Button>
           </div>
         </div>
-        <div className="col-span-1 relative w-[583px] h-[625px] ml-auto">
+        <div className="col-span-1 relative xl:w-[583px] md:h-[625px] w-[383px] h-[425px] ml-auto">
           <Image src={"/home/banner.png"} alt="banner" fill />
         </div>
       </div>
