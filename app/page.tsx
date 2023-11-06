@@ -9,6 +9,7 @@ import { Box, Fab, Fade, useScrollTrigger } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import ScrollTop from "@/components/Shared/ScrollTop";
 import ContactUs from "@/components/Home/ContactUs";
+import OurServices from "@/components/Home/OurServices";
 
 export default function Home(props: Props) {
   return (
@@ -21,6 +22,7 @@ export default function Home(props: Props) {
       <Join />
       <Features />
       <FAQ />
+      <OurServices />
       <ContactUs />
 
       {/* ----------back to top button---- */}
