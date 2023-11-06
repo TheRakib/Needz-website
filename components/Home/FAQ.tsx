@@ -16,9 +16,7 @@ const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
   border: `1px solid ${theme.palette.divider}`,
-  "&:not(:last-child)": {
-    borderBottom: 0,
-  },
+
   "&:before": {
     display: "none",
   },
@@ -59,12 +57,13 @@ export default function FAQ() {
           title="Frequently Asked Questions"
           className="text-center"
         />
-        <div className=" mt-20">
+        <div className=" mt-20 flex flex-col gap-6">
           {faqItems.map((item) => (
             <Accordion
               key={item.id}
               expanded={expanded === (`${item.id}` || "1")}
               onChange={handleChange(`${item.id}`)}
+              className="rounded-xl border-black/30 "
             >
               <AccordionSummary
                 aria-controls="panel1d-content"
@@ -86,7 +85,7 @@ export default function FAQ() {
                   {item.title}
                 </Typography>
               </AccordionSummary>
-              <AccordionDetails className="px-[30px] text-black/70 border-0">
+              <AccordionDetails className="px-[30px] text-black/70 border-0 ">
                 <Typography className="text-base leading-8 tracking-wider">
                   {item.description}
                 </Typography>
