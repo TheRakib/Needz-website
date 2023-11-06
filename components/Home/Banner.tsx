@@ -21,13 +21,13 @@ export default function Banner() {
 
             <div className="flex gap-4">
               <Button
-                className="capitalize text-2xl py-7 px-12 rounded-xl bg-primary text-white flex-nowrap whitespace-nowrap "
+                className="capitalize text-2xl py-7 px-12 rounded-xl bg-primary hover:bg-primary/70 text-white flex-nowrap whitespace-nowrap "
                 size="large"
               >
                 Book your Service
               </Button>
               <Button
-                className="capitalize text-2xl py-7 px-16 rounded-xl bg-secondary text-white flex-nowrap whitespace-nowrap "
+                className="capitalize text-2xl py-7 px-16 rounded-xl bg-secondary hover:bg-secondary/70 text-white flex-nowrap whitespace-nowrap "
                 size="large"
               >
                 <BiPhoneCall className="mr-2" />

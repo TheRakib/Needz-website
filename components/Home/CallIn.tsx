@@ -23,7 +23,7 @@ export default function CallIn() {
           <div className="flex flex-col gap-4 mr-10">
             <div className="">
               <Button
-                className="capitalize py-7 px-[50px] text-[26px] bg-primary text-white rounded-lg"
+                className="capitalize py-7 px-[50px] text-[26px] bg-primary hover:bg-primary/80 text-white rounded-lg"
                 size="large"
               >
                 More about us
