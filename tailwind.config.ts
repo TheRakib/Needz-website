@@ -34,6 +34,7 @@ const config: Config = {
       black: "#141313",
       accent: "#7d7373",
       white: "#ffffff",
+      yellow: "#ffc000",
     },
     backgroundColor: {
       primary: "#0047a8",
@@ -41,6 +42,7 @@ const config: Config = {
       black: "#141313",
       accent: "#7d7373",
       white: "#ffffff",
+      yellow: "#ffc000",
     },
   },
   plugins: [],
