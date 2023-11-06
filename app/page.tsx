@@ -1,6 +1,7 @@
 import Banner from "@/components/Home/Banner";
 import CallIn from "@/components/Home/CallIn";
 import Emergencies from "@/components/Home/Emergencies";
+import FAQ from "@/components/Home/FAQ";
 import Features from "@/components/Home/Features";
 import Feedback from "@/components/Home/Feedback";
 import Join from "@/components/Home/Join";
@@ -15,6 +16,7 @@ export default function Home() {
       <Feedback />
       <Join />
       <Features />
+      <FAQ />
     </main>
   );
 }
