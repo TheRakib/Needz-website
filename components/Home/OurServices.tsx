@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import SectionTitle from "../Shared/SectionTitle";
 import Image from "next/image";
 import { BsArrowDownLeftCircleFill } from "react-icons/bs";
@@ -6,27 +7,55 @@ import { Button } from "@mui/material";
 import { LuPhoneCall } from "react-icons/lu";
 
 export default function OurServices() {
+  const [isHovered, setIsHovered] = useState<boolean | number>(false);
+
+  const handleMouseOver = (id: number) => {
+    // setIsHovered(true);
+    setIsHovered(id);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovered(false);
+  };
+
   return (
     <div className="max-w-layout mx-auto mb-[120px] ">
       <SectionTitle title="Our Services" className="w-full text-center" />
+
       <div className="flex flex-wrap gap-16 mt-11">
         {serviceItems.map((item) => (
-          <div key={item.id} className="w-[370px] h-[414px] relative ">
+          <div
+            key={item.id}
+            onMouseOver={() => handleMouseOver(item.id)}
+            onMouseOut={handleMouseOut}
+            className="w-[370px] h-[414px] relative overflow-hidden "
+          >
             <Image src={item.img} alt="Our services" fill />
             <div
-              className="absolute bottom-0 left-0 w-full h-[40%] bg-gradient-to-t from-primary/80 
-            to-transparent"
+              className={`absolute bottom-0 left-0 w-full h-[60%] duration-300 bg-gradient-to-t ${
+                isHovered === item.id ? "from-primary" : "from-primary/70"
+              } 
+              to-transparent`}
             />
-            <div className="absolute bottom-10 left-0 w-full h-full">
-              <div className="flex justify-between items-end text-white h-full mx-6">
+            <div
+              className={`${
+                isHovered === item.id ? "bottom-32" : "bottom-10"
+              } absolute left-0 w-full h-full  transition-all duration-300  px-6 text-white`}
+            >
+              <div className="flex justify-between items-end h-full">
                 <span className="text-2xl font-semibold">{item.title}</span>
-                <BsArrowDownLeftCircleFill className="text-white text-4xl " />
+                <BsArrowDownLeftCircleFill className="text-4xl " />
               </div>
+              {isHovered === item.id && (
+                <p className="text-[17px] mt-5 leading-6 ">
+                  {item.description}{" "}
+                </p>
+              )}
             </div>
           </div>
         ))}
         <div className="w-[370px] h-[414px] relative flex flex-col gap-10 items-center justify-center ">
-          <Button className="w-[291px] h-[92px] bg-primary text-white text-[26px] capitalize rounded-lg">
+          <Button className="w-[291px] h-[92px] bg-primary hover:bg-primary/70 text-white text-[26px] capitalize rounded-lg">
             Book Your Service
           </Button>
           <p className="text-[26px] font-semibold flex items-center justify-center gap-3">
