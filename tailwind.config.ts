@@ -18,22 +18,31 @@ const config: Config = {
       },
       width: {
         layout: "1240px",
+        maxLayout: "1728px",
       },
       maxWidth: {
         layout: "1240px",
+        maxLayout: "1728px",
+      },
+      fontSize: {
+        title: "55px",
       },
     },
     colors: {
-      primary: "#006ae7",
+      primary: "#0047a8",
       secondary: "#fc0016",
       black: "#141313",
       accent: "#7d7373",
+      white: "#ffffff",
+      yellow: "#ffc000",
     },
     backgroundColor: {
-      primary: "#006ae7",
+      primary: "#0047a8",
       secondary: "#fc0016",
       black: "#141313",
       accent: "#7d7373",
+      white: "#ffffff",
+      yellow: "#ffc000",
     },
   },
   plugins: [],

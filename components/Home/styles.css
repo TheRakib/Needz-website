@@ -1,0 +1,26 @@
+.hex:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  top: -20px;
+}
+
+.hex {
+  margin-top: 30px;
+  width: 60px;
+  height: 35px;
+  /* background-color: var(--primary-color) !important; */
+  position: relative;
+}
+
+.hex:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -20px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}

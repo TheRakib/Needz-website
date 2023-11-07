@@ -1,14 +1,45 @@
-import Image from "next/image";
+import Banner from "@/components/Home/Banner";
+import CallIn from "@/components/Home/CallIn";
+import Emergencies from "@/components/Home/Emergencies";
+import FAQ from "@/components/Home/FAQ";
+import Features from "@/components/Home/Features";
+import Feedback from "@/components/Home/Feedback";
+import Join from "@/components/Home/Join";
+import { Box, Fab, Fade, useScrollTrigger } from "@mui/material";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import ScrollTop from "@/components/Shared/ScrollTop";
+import ContactUs from "@/components/Home/ContactUs";
+import OurServices from "@/components/Home/OurServices";
 
-export default function Home() {
+export default function Home(props: Props) {
   return (
-    <main className="font-inter flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className=" font-inter fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-      </div>
+    <main className="font-inter min-h-screen">
+      <div id="back-to-top-anchor" />
+      <Banner />
+      <CallIn />
+      <Emergencies />
+      <Feedback />
+      <Join />
+      <Features />
+      <FAQ />
+      <OurServices />
+      <ContactUs />
+
+      {/* ----------back to top button---- */}
+      <ScrollTop {...props}>
+        <Fab
+          size="small"
+          aria-label="scroll back to top"
+          className="bg-black text-white"
+        >
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
     </main>
   );
+}
+
+interface Props {
+  window?: () => Window;
+  children: React.ReactElement;
 }
