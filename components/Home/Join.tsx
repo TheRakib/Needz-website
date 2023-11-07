@@ -3,24 +3,28 @@ import React from "react";
 import "./styles.css";
 import Hexagon from "./Hexagon";
 import { twMerge } from "tailwind-merge";
+import SectionTitle from "../Shared/SectionTitle";
 
 export default function Join() {
   return (
     <div className="max-w-layout mx-auto mt-20 mb-16">
       <div className="flex flex-col items-center justify-center">
-        <h2 className="uppercase font-semibold text-[25px]">Jour Eliten</h2>
-        <h3 className="text-title font-semibold text-center uppercase">
-          how it works
-        </h3>
+        <h2 className="uppercase font-semibold text-[20px] md:text-[25px]">
+          Jour Eliten
+        </h2>
+        <SectionTitle title="how it works" className="text-center uppercase" />
+        {/* <h3 className="text-title font-semibold ">
+          
+        </h3> */}
       </div>
 
       <div className="mt-10 relative">
-        <div className=" flex justify-between px-16 ">
+        <div className=" flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center md:px-16 ">
           {/* 1st */}
           {joinContents.map((content) => (
             <div
               key={content.id}
-              className="flex flex-col gap-7 items-center justify-center w-[300px] p-2 relative "
+              className="flex flex-col gap-2 md:gap-7 items-center justify-center w-[300px] p-2 relative "
             >
               <div className="w-[288px] h-[288px] relative rounded-full overflow-hidden">
                 <Image alt="join logo" src={content.img} fill />
@@ -80,10 +84,10 @@ export default function Join() {
             </p>
           </div>*/}
         </div>
-        <div className="absolute top-[25%] left-0 h-[40%] w-full -z-10 ">
+        <div className="absolute top-[25%] left-0 h-[40%] w-full -z-10 hidden md:block ">
           <Image src={"/home/join/line.png"} alt="line" fill />
         </div>
-        <div className="absolute top-[10.5%] -right-10 h-[80px] w-[85px] -z-10 ">
+        <div className="absolute top-[10.5%] -right-10 h-[80px] w-[85px] -z-10 hidden md:block">
           <Image src={"/home/join/plain.png"} alt="plane" fill />
         </div>
       </div>

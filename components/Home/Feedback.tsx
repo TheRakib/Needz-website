@@ -20,7 +20,7 @@ export default function Feedback() {
     color: "#fff",
   });
 
-  // Function to navigate to the previous slide
+  //---- Function to navigate to the previous slide
   const goToPrevSlide = () => {
     if (swiperRef.current) {
       // @ts-ignore
@@ -31,7 +31,6 @@ export default function Feedback() {
       color: "#0047a8",
     });
 
-    // Reset the style after a delay (e.g., 500 milliseconds)
     setTimeout(() => {
       setPrevArrowStyle({ backgroundColor: "transparent", color: "#0047a8" });
     }, 500);
@@ -44,7 +43,6 @@ export default function Feedback() {
     }
     setNextArrowStyle({ backgroundColor: "transparent", color: "#0047a8" });
 
-    // Reset the style after a delay (e.g., 500 milliseconds)
     setTimeout(() => {
       setNextArrowStyle({ backgroundColor: "#0047a8", color: "#fff" });
     }, 500);
@@ -53,7 +51,7 @@ export default function Feedback() {
   SwiperCore.use([Navigation]);
 
   return (
-    <div className="max-w-layout relative mx-auto mt-[120px] mb-48">
+    <div className="max-w-layout relative mx-auto mt-[120px] mb-48 px-1">
       <div className="w-full flex justify-center">
         <SectionTitle
           title="What our customers say about us"

@@ -18,9 +18,9 @@ export default function Home(props: Props) {
       <Banner />
       <CallIn />
       <Emergencies />
-      {/* 
       <Feedback />
       <Join />
+      {/* 
       <Features />
       <FAQ />
       <OurServices />
