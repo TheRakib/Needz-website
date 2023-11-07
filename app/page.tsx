@@ -20,8 +20,8 @@ export default function Home(props: Props) {
       <Emergencies />
       <Feedback />
       <Join />
-      {/* 
       <Features />
+      {/* 
       <FAQ />
       <OurServices />
       <ContactUs /> */}
