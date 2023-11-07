@@ -84,10 +84,10 @@ export default function Join() {
             </p>
           </div>*/}
         </div>
-        <div className="absolute top-[25%] left-0 h-[40%] w-full -z-10 hidden md:block ">
+        <div className="absolute top-[25%] left-0 h-[40%] xl:w-[100%] w-[97%] mr-auto -z-10 hidden md:block ">
           <Image src={"/home/join/line.png"} alt="line" fill />
         </div>
-        <div className="absolute top-[10.5%] -right-10 h-[80px] w-[85px] -z-10 hidden md:block">
+        <div className="absolute xl:top-[10.5%] top-[15%] right-0 xl:-right-10 h-[50px] w-[55px] xl:h-[80px] xl:w-[85px] -z-10 hidden md:block">
           <Image src={"/home/join/plain.png"} alt="plane" fill />
         </div>
       </div>

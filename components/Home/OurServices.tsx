@@ -22,7 +22,7 @@ export default function OurServices() {
     <div className="max-w-layout mx-auto mb-[120px] ">
       <SectionTitle title="Our Services" className="w-full !text-center" />
 
-      <div className="flex flex-wrap gap-5 md:gap-16 mt-11">
+      <div className="flex flex-wrap gap-5 md:gap-16 mt-11 md:mx-24 xl:mx-0">
         {serviceItems.map((item) => (
           <div
             key={item.id}
