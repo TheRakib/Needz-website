@@ -6,16 +6,18 @@ import { IoMdAttach } from "react-icons/io";
 
 export default function ContactUs() {
   return (
-    <div className="bg-primary text-white py-[80px] max-w-maxLayout mx-auto ">
+    <div className="bg-primary text-white py-[80px] max-w-maxLayout mx-auto px-2">
       <div className="max-w-layout mx-auto">
         <div className="flex flex-col gap-2">
-          <h3 className="text-[18px] font-semibold ">Need Any Services</h3>
+          <h3 className="text-[18px] font-semibold text-center md:text-left ">
+            Need Any Services
+          </h3>
           <SectionTitle title="Contact Us" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="col-span-1 w-full">
             <div className="w-full flex flex-col gap-5 items-center  justify-center mt-7">
-              <div className="w-full grid grid-cols-2 gap-[30px] ">
+              <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-[30px] ">
                 <div className="col-span-1 flex flex-col gap-[30px]">
                   <InputBase
                     id="outlined-basic"
@@ -62,21 +64,21 @@ export default function ContactUs() {
                 />
               </div>
               <Button
-                className="bg-transparent  border-white w-full text-white text-[18px] h-[81px] capitalize hover:bg-white/20 hover:text-white "
+                className="bg-transparent  border-white w-full text-white text-[16px] md:text-[18px] h-[81px] capitalize hover:bg-white/20 hover:text-white "
                 variant="outlined"
               >
                 <IoMdAttach className="mr-1 text-3xl font-semibold" />
                 Attach your picture and other relevant files
               </Button>
 
-              <div className="mt-6 w-[286px] mr-auto ">
+              <div className="mt-6 w-[286px] mx-auto md:mr-auto ">
                 <Button className="bg-white w-full text-black text-2xl h-[92px] capitalize hover:bg-white/20 hover:text-white ">
                   Send Message
                 </Button>
               </div>
             </div>
           </div>
-          <div className="col-span-1 relative w-[580px] h-[666px] ml-auto ">
+          <div className="col-span-1 mx-auto relative w-[340px] h-[466px] md:w-[580px] md:h-[666px] ml-auto ">
             <Image src={"/home/contactUs.png"} alt="Contact" fill />
           </div>
         </div>

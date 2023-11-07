@@ -23,7 +23,6 @@ export default function Home(props: Props) {
       <Features />
       <FAQ />
       <OurServices />
-
       <ContactUs />
 
       {/* ----------back to top button---- */}
