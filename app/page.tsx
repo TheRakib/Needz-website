@@ -16,7 +16,8 @@ export default function Home(props: Props) {
     <main className="font-inter min-h-screen">
       <div id="back-to-top-anchor" />
       <Banner />
-      {/* <CallIn />
+      <CallIn />
+      {/* 
       <Emergencies />
       <Feedback />
       <Join />
