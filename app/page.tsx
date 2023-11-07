@@ -17,8 +17,8 @@ export default function Home(props: Props) {
       <div id="back-to-top-anchor" />
       <Banner />
       <CallIn />
-      {/* 
       <Emergencies />
+      {/* 
       <Feedback />
       <Join />
       <Features />

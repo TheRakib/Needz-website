@@ -9,7 +9,11 @@ export default function SectionTitle({
   className?: string;
 }) {
   return (
-    <h2 className={`${className && className} text-title font-bold`}>
+    <h2
+      className={`${
+        className && className
+      } text-[36px] md:text-title font-bold text-center md:text-left `}
+    >
       {title}
     </h2>
   );

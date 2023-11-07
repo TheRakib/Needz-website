@@ -6,7 +6,7 @@ import { BsArrowRightCircle } from "react-icons/bs";
 
 export default function Emergencies() {
   return (
-    <div className="bg-primary max-w-maxLayout mx-auto">
+    <div className="bg-primary max-w-maxLayout mx-auto px-2">
       <div className="max-w-layout mx-auto py-14">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="col-span-1 flex flex-col">
@@ -35,20 +35,20 @@ export default function Emergencies() {
                 width={104}
               />
             </div>
-            <p className="text-[35px] text-white ">
+            <p className="md:text-[35px] text-[25px] text-white text-center md:text-left ">
               Call Us: <span className="font-bold">08-23 55 20</span>
             </p>
           </div>
           <div className="col-span-1">
             <div className="flex flex-col text-white">
-              <h3 className="font-semibold text-[25px] text-center">
+              <h3 className="font-semibold text-[20px] md:text-[25px] text-center">
                 Online Book A Service
               </h3>
-              <p className="text-[18px] text-white/60 text-center ">
+              <p className=" text-[16px] md:text-[18px] text-white/60 text-center ">
                 You’re response within a minute
               </p>
             </div>
-            <div className="flex flex-col gap-5 items-center  justify-center mt-7 w-[420px] mx-auto">
+            <div className="flex flex-col gap-5 items-center  justify-center mt-7 w-[320px] md:w-[420px] mx-auto">
               <InputBase
                 id="outlined-basic"
                 placeholder="Full Name"
