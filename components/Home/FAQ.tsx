@@ -51,7 +51,7 @@ export default function FAQ() {
     };
 
   return (
-    <div className="max-w-layout mx-auto my-[120px]">
+    <div className="max-w-layout mx-auto my-[120px] px-2">
       <div className="max-w-[880px] mx-auto ">
         <SectionTitle
           title="Frequently Asked Questions"

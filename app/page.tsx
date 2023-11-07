@@ -21,10 +21,10 @@ export default function Home(props: Props) {
       <Feedback />
       <Join />
       <Features />
-      {/* 
       <FAQ />
       <OurServices />
-      <ContactUs /> */}
+
+      <ContactUs />
 
       {/* ----------back to top button---- */}
       <ScrollTop {...props}>

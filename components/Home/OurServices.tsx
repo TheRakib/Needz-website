@@ -22,13 +22,13 @@ export default function OurServices() {
     <div className="max-w-layout mx-auto mb-[120px] ">
       <SectionTitle title="Our Services" className="w-full text-center" />
 
-      <div className="flex flex-wrap gap-16 mt-11">
+      <div className="flex flex-wrap gap-5 md:gap-16 mt-11">
         {serviceItems.map((item) => (
           <div
             key={item.id}
             onMouseOver={() => handleMouseOver(item.id)}
             onMouseOut={handleMouseOut}
-            className="w-[370px] h-[414px] relative overflow-hidden "
+            className="mx-auto w-[365px] md:w-[370px] h-[414px] relative overflow-hidden "
           >
             <Image src={item.img} alt="Our services" fill />
             <div
