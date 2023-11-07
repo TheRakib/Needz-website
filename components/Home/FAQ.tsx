@@ -55,7 +55,7 @@ export default function FAQ() {
       <div className="max-w-[880px] mx-auto ">
         <SectionTitle
           title="Frequently Asked Questions"
-          className="text-center"
+          className="!text-center"
         />
         <div className=" mt-20 flex flex-col gap-6">
           {faqItems.map((item) => (

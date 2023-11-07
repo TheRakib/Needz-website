@@ -55,7 +55,7 @@ export default function Feedback() {
       <div className="w-full flex justify-center">
         <SectionTitle
           title="What our customers say about us"
-          className="text-center max-w-[688px]"
+          className="!text-center max-w-[688px]"
         />
       </div>
       <Swiper
