@@ -78,7 +78,7 @@ export default function ContactUs() {
               </div>
             </div>
           </div>
-          <div className="col-span-1 mx-auto relative w-[340px] h-[466px]  xl:w-[580px] md:h-[666px] ml-auto ">
+          <div className="col-span-1 mx-auto relative w-[300px] h-[466px] md:w-[340px]  xl:w-[580px] md:h-[666px] ml-auto ">
             <Image src={"/home/contactUs.png"} alt="Contact" fill />
           </div>
         </div>

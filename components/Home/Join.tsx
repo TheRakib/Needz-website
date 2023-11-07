@@ -19,7 +19,7 @@ export default function Join() {
       </div>
 
       <div className="mt-10 relative">
-        <div className=" flex flex-col md:flex-wrap md:flex-row gap-4 md:gap-0 justify-between items-center md:px-16 ">
+        <div className=" flex flex-col md:flex-wrap lg:flex-nowrap md:flex-row gap-4 md:gap-0 justify-between items-center md:px-16 ">
           {/* 1st */}
           {joinContents.map((content) => (
             <div

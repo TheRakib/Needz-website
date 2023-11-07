@@ -109,6 +109,7 @@ function Navbar() {
             aria-haspopup="true"
             onClick={handleOpenNavMenu}
             color="inherit"
+            className="md:ml-auto"
           >
             <MenuIcon />
           </IconButton>
@@ -151,7 +152,7 @@ function Navbar() {
           {pagesMenu()}
         </Box>
 
-        <div className="hidden md:block">{actionButtons("")}</div>
+        <div className="hidden lg:block">{actionButtons("")}</div>
       </Toolbar>
     </AppBar>
   );
