@@ -21,7 +21,7 @@ export default function Features() {
               </li>
             ))}
           </ul>
-          <div className="w-full flex flex-col md:flex-row items-center gap-2 md:gap-9">
+          <div className="w-full flex flex-col lg:flex-row items-center gap-2 lg:gap-9">
             <Button className="bg-primary hover:bg-primary/80 text-white capitalize rounded-xl font-semibold text-[26px] py-[25px] px-[50px] ">
               Contact Us
             </Button>

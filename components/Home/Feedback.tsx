@@ -76,7 +76,7 @@ export default function Feedback() {
           },
           // For screens larger than 640px but smaller than 1024px (tablet)
           1024: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 10,
           },
           1440: {

@@ -12,7 +12,7 @@ export default function SectionTitle({
     <h2
       className={`${
         className && className
-      } text-[36px] md:text-title font-bold text-center md:text-left `}
+      } text-[36px] md:text-[42px] lg:text-title font-bold text-center md:text-left `}
     >
       {title}
     </h2>

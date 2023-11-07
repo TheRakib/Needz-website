@@ -12,7 +12,7 @@ export default function Banner() {
             <h2 className=" text-[36px] md:text-title font-bold text-center">
               On call throughout Stockholm, <br /> around the clock!
             </h2>
-            <p className=" md:mr-36 my-6 leading-6 max-w-[686px] text-center">
+            <p className=" lg:mr-36 my-6 leading-6 max-w-[686px] text-center">
               Jour Eliten AB offers plumbing and electrical on-call in Stockholm
               24 hours a day, but we also carry out planned work for private
               individuals and companies. We use experienced and certified

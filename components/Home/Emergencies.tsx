@@ -48,7 +48,7 @@ export default function Emergencies() {
                 You’re response within a minute
               </p>
             </div>
-            <div className="flex flex-col gap-5 items-center  justify-center mt-7 w-[320px] md:w-[420px] mx-auto">
+            <div className="flex flex-col gap-5 items-center  justify-center mt-7 w-[320px] lg:w-[420px] mx-auto">
               <InputBase
                 id="outlined-basic"
                 placeholder="Full Name"

@@ -22,7 +22,7 @@ export default function OurServices() {
     <div className="max-w-layout mx-auto mb-[120px] ">
       <SectionTitle title="Our Services" className="w-full !text-center" />
 
-      <div className="flex flex-wrap gap-5 md:gap-16 mt-11 md:mx-24 xl:mx-0">
+      <div className="flex flex-wrap gap-5 lg:gap-16 mt-11 md:mx-24 xl:mx-0">
         {serviceItems.map((item) => (
           <div
             key={item.id}
@@ -54,7 +54,7 @@ export default function OurServices() {
             </div>
           </div>
         ))}
-        <div className="w-[370px] h-[414px] relative flex flex-col gap-10 items-center justify-center ">
+        <div className="w-[370px] h-[414px] mx-auto relative flex flex-col gap-10 items-center justify-center ">
           <Button className="w-[291px] h-[92px] bg-primary hover:bg-primary/70 text-white text-[26px] capitalize rounded-lg">
             Book Your Service
           </Button>
