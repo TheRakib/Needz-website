@@ -11,8 +11,13 @@ import OurServices from "@/components/Home/OurServices";
 import FAQ from "@/components/Shared/FAQ";
 import ContactUs from "@/components/Shared/ContactUs";
 
-export default function Home(props: Props) {
-  return (
+/* interface Props {
+  window?: () => Window;
+  children: React.ReactElement;
+} */
+//const Home: React.FC<Props> = (props) => {
+const Home = () => {
+return (
     <main className="font-inter min-h-screen">
       <div id="back-to-top-anchor" />
       <Banner />
@@ -26,7 +31,8 @@ export default function Home(props: Props) {
       <ContactUs />
 
       {/* ----------back to top button---- */}
-      <ScrollTop {...props}>
+    {/*  <ScrollTop {...props}>*/}
+      <ScrollTop>
         <Fab
           size="small"
           aria-label="scroll back to top"
@@ -37,11 +43,6 @@ export default function Home(props: Props) {
       </ScrollTop>
     </main>
   );
-}
-
-interface Props {
-  window?: () => Window;
-  children: React.ReactElement;
 }
 
 const faqItems = [
@@ -76,3 +77,4 @@ const faqItems = [
       "We guarantee help on the same day and aim to be on site within 1 hour of ordering at addresses in the Stockholm area.",
   },
 ];
+export default Home;
