@@ -13,8 +13,8 @@ export default function page() {
       <ServicesBanner />
       <Details />
       <CertificateDetails />
-      {/* 
       <ServicesDetails />
+      {/* 
       <BannerFAQ />
       <LocalElectrician />
       <ServicesContactUs /> */}

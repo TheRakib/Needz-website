@@ -4,7 +4,7 @@ import { PiCheckBold } from "react-icons/pi";
 
 export default function ServicesDetails() {
   return (
-    <div className="max-w-layout mx-auto mt-5">
+    <div className="max-w-layout mx-auto mt-5 px-2">
       <div className="flex flex-col gap-5 ">
         <div className="max-w-[680px] mr-auto flex flex-col gap-5">
           <TextTitle title="Electrical Services for Every Need" />
@@ -21,14 +21,16 @@ export default function ServicesDetails() {
           <h3 className="text-[18px] font-semibold">
             Our electrical services include, for example:
           </h3>
-          <ul className="grid grid-cols-2 justify-between gap-y-[10px] gap-x-14 ">
+          <ul className="grid grid-cols-1 md:grid-cols-2 justify-between gap-y-[10px] gap-x-14 ">
             {serviceItems.map((item) => (
               <li
                 key={item.id}
-                className=" col-span-1 w-full text-[18px] flex whitespace-nowrap gap-2"
+                className=" col-span-1 w-full text-[18px] flex md:whitespace-nowrap gap-2"
               >
-                <PiCheckBold className="text-primary " />
-                <span>{item.text}</span>{" "}
+                <span>
+                  <PiCheckBold className="text-primary text-lg " />
+                </span>
+                <span>{item.text}</span>
               </li>
             ))}
           </ul>
