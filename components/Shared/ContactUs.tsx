@@ -1,18 +1,32 @@
 import React from "react";
-import SectionTitle from "../Shared/SectionTitle";
+import SectionTitle from "./SectionTitle";
 import { Button, InputBase } from "@mui/material";
 import Image from "next/image";
 import { IoMdAttach } from "react-icons/io";
 
-export default function ContactUs() {
+type Props = {
+  semiTitle?: string;
+  helperText?: string;
+};
+export default function ContactUs({
+  semiTitle = "Need Any Services",
+  helperText,
+}: Props) {
   return (
     <div className="bg-primary text-white py-[80px] max-w-maxLayout mx-auto px-2">
       <div className="max-w-layout mx-auto">
-        <div className="flex flex-col gap-2">
-          <h3 className="text-[18px] font-semibold text-center md:text-left ">
-            Need Any Services
-          </h3>
-          <SectionTitle title="Contact Us" />
+        <div className="flex justify-between items-center flex-col md:flex-row">
+          <div className="flex flex-col gap-2">
+            <h3 className="text-[18px] font-semibold text-center md:text-left ">
+              {semiTitle}
+            </h3>
+            <SectionTitle title="Contact Us" />
+          </div>
+          {helperText ? (
+            <p className="text-white/70 text-[18px] max-w-[580px] text-center md:text-left mt-6 md:mt-0">
+              {helperText}
+            </p>
+          ) : null}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="col-span-1 w-full">
@@ -72,13 +86,13 @@ export default function ContactUs() {
               </Button>
 
               <div className="mt-6 w-[286px] mx-auto md:mr-auto ">
-                <Button className="bg-white w-full text-black text-2xl h-[92px] capitalize hover:bg-white/20 hover:text-white ">
+                <Button className="bg-white w-full text-black text-2xl h-[92px] capitalize hover:bg-white/20 hover:text-white rounded-xl">
                   Send Message
                 </Button>
               </div>
             </div>
           </div>
-          <div className="col-span-1 mx-auto relative w-[300px] h-[466px] md:w-[340px]  xl:w-[580px] md:h-[666px] ml-auto ">
+          <div className="col-span-1 mx-auto md:ml-auto relative w-[300px] h-[466px] md:w-[340px]  xl:w-[580px] md:h-[666px] ">
             <Image src={"/home/contactUs.png"} alt="Contact" fill />
           </div>
         </div>
