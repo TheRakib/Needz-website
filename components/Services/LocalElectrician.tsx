@@ -1,6 +1,7 @@
 import React from "react";
 import TextTitle from "../Shared/TextTitle";
 import { Button } from "@mui/material";
+import Image from "next/image";
 
 export default function LocalElectrician() {
   return (
@@ -34,8 +35,8 @@ export default function LocalElectrician() {
             </Button>
           </div>
         </div>
-        <div className="col-span-1 ml-auto w-full md:w-[593px] h-full bg-white ">
-          hello
+        <div className="col-span-1 ml-auto w-full h-full bg-white relative">
+          <Image src={"/services/map.jpg"} alt="map" fill />
         </div>
       </div>
     </div>
