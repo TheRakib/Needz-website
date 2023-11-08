@@ -11,12 +11,13 @@ import OurServices from "@/components/Home/OurServices";
 import FAQ from "@/components/Shared/FAQ";
 import ContactUs from "@/components/Shared/ContactUs";
 
-interface Props {
+/* interface Props {
   window?: () => Window;
   children: React.ReactElement;
-}
-const Home: React.FC<Props> = (props) => {
-  return (
+} */
+//const Home: React.FC<Props> = (props) => {
+const Home = () => {
+return (
     <main className="font-inter min-h-screen">
       <div id="back-to-top-anchor" />
       <Banner />
@@ -30,7 +31,8 @@ const Home: React.FC<Props> = (props) => {
       <ContactUs />
 
       {/* ----------back to top button---- */}
-      <ScrollTop {...props}>
+    {/*  <ScrollTop {...props}>*/}
+      <ScrollTop>
         <Fab
           size="small"
           aria-label="scroll back to top"
