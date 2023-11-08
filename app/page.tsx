@@ -7,9 +7,9 @@ import Join from "@/components/Home/Join";
 import { Box, Fab, Fade, useScrollTrigger } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import ScrollTop from "@/components/Shared/ScrollTop";
-import ContactUs from "@/components/Home/ContactUs";
 import OurServices from "@/components/Home/OurServices";
 import FAQ from "@/components/Shared/FAQ";
+import ContactUs from "@/components/Shared/ContactUs";
 
 export default function Home(props: Props) {
   return (
