@@ -15,7 +15,7 @@ interface Props {
   window?: () => Window;
   children: React.ReactElement;
 }
-export default function Home(props: Props) {
+const Home: React.FC<Props> = (props) => {
   return (
     <main className="font-inter min-h-screen">
       <div id="back-to-top-anchor" />
@@ -75,3 +75,4 @@ const faqItems = [
       "We guarantee help on the same day and aim to be on site within 1 hour of ordering at addresses in the Stockholm area.",
   },
 ];
+export default Home;
