@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import SectionTitle from "../Shared/SectionTitle";
+import SectionTitle from "./SectionTitle";
 import { styled } from "@mui/material/styles";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import MuiAccordion, { AccordionProps } from "@mui/material/Accordion";
@@ -11,6 +11,7 @@ import MuiAccordionSummary, {
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
+import TextTitle from "./TextTitle";
 
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -42,7 +43,19 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 
-export default function FAQ() {
+type Props = {
+  title?: string;
+  variant?: "home" | "services";
+  titleClass?: string;
+  faqItems: FaqItems;
+};
+
+export default function FAQ({
+  title = "Frequently Asked Questions",
+  variant = "home",
+  titleClass = "!text-center mb-20",
+  faqItems,
+}: Props) {
   const [expanded, setExpanded] = React.useState<string | false>("1");
 
   const handleChange =
@@ -53,12 +66,13 @@ export default function FAQ() {
   return (
     <div className="max-w-layout mx-auto my-[120px] px-2">
       <div className="max-w-[880px] mx-auto ">
-        <SectionTitle
-          title="Frequently Asked Questions"
-          className="!text-center"
-        />
-        <div className=" mt-20 flex flex-col gap-6">
-          {faqItems.map((item) => (
+        {variant === "home" ? (
+          <SectionTitle title={title} className={titleClass} />
+        ) : (
+          <TextTitle title={title} className={titleClass} />
+        )}
+        <div className=" flex flex-col gap-6">
+          {faqItems?.map((item) => (
             <Accordion
               key={item.id}
               expanded={expanded === (`${item.id}` || "1")}
@@ -98,35 +112,8 @@ export default function FAQ() {
   );
 }
 
-const faqItems = [
-  {
-    id: 1,
-    title: "How quickly are you there?",
-    description:
-      "We guarantee help on the same day and aim to be on site within 1 hour of ordering at addresses in the Stockholm area.",
-  },
-  {
-    id: 2,
-    title: "How can your startup hire a lawyer?",
-    description:
-      "We guarantee help on the same day and aim to be on site within 1 hour of ordering at addresses in the Stockholm area.",
-  },
-  {
-    id: 3,
-    title: "How you people helps the victim?",
-    description:
-      "We guarantee help on the same day and aim to be on site within 1 hour of ordering at addresses in the Stockholm area.",
-  },
-  {
-    id: 4,
-    title: "Is there any way to contact with you?",
-    description:
-      "We guarantee help on the same day and aim to be on site within 1 hour of ordering at addresses in the Stockholm area.",
-  },
-  {
-    id: 5,
-    title: "How we can get justice? ",
-    description:
-      "We guarantee help on the same day and aim to be on site within 1 hour of ordering at addresses in the Stockholm area.",
-  },
-];
+type FaqItems = {
+  id: number;
+  title: string;
+  description: string;
+}[];
