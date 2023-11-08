@@ -11,7 +11,7 @@ import OurServices from "@/components/Home/OurServices";
 import FAQ from "@/components/Shared/FAQ";
 import ContactUs from "@/components/Shared/ContactUs";
 
-export default function Home(props: Props) {
+export default function Home() {
   return (
     <main className="font-inter min-h-screen">
       <div id="back-to-top-anchor" />
