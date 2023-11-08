@@ -11,6 +11,10 @@ import OurServices from "@/components/Home/OurServices";
 import FAQ from "@/components/Shared/FAQ";
 import ContactUs from "@/components/Shared/ContactUs";
 
+interface Props {
+  window?: () => Window;
+  children: React.ReactElement;
+}
 export default function Home(props: Props) {
   return (
     <main className="font-inter min-h-screen">
@@ -37,11 +41,6 @@ export default function Home(props: Props) {
       </ScrollTop>
     </main>
   );
-}
-
-interface Props {
-  window?: () => Window;
-  children: React.ReactElement;
 }
 
 const faqItems = [
