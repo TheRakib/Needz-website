@@ -35,7 +35,7 @@ export default function Details() {
           </div>
         </div>
         {/* -------card */}
-        <div className="w-[350px] md:w-[370px] mx-auto h-[399px] bg-primary rounded-md flex flex-col justify-between items-center p-[30px] ">
+        <div className="w-[350px] md:w-[370px] mx-auto h-[399px] bg-primary rounded-md flex flex-col justify-between items-center p-[30px] md:p-[10px] lg:p-[30px] ">
           <div className="flex flex-col items-center w-full">
             <Image
               src={"/services/avatar.jpg"}
@@ -52,9 +52,11 @@ export default function Details() {
             </p>
             <div className="w-full h-[1px] bg-white/70 " />
           </div>
-          <Button className="bg-white capitalize rounded-2xl text-primary hover:bg-white/50 text-[20px] py-5 px-11 flex gap-2">
+          <Button className="bg-white capitalize rounded-2xl text-primary hover:bg-white/50 text-[20px] md:text-[20px] lg:text-[20px] py-5 px-11 md:px-3 lg:px-11 flex gap-2">
             <FiPhoneCall />
-            <span>Call 08 – 23 55 20</span>
+            <span className="md:tracking-tighter lg:tracking-normal">
+              Call 08 – 23 55 20
+            </span>
           </Button>
         </div>
       </div>
