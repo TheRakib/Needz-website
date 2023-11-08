@@ -15,7 +15,7 @@ export default function ContactUs({
   return (
     <div className="bg-primary text-white py-[80px] max-w-maxLayout mx-auto px-2">
       <div className="max-w-layout mx-auto">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center flex-col md:flex-row">
           <div className="flex flex-col gap-2">
             <h3 className="text-[18px] font-semibold text-center md:text-left ">
               {semiTitle}
@@ -23,7 +23,7 @@ export default function ContactUs({
             <SectionTitle title="Contact Us" />
           </div>
           {helperText ? (
-            <p className="text-white/70 text-[18px] max-w-[580px]">
+            <p className="text-white/70 text-[18px] max-w-[580px] text-center md:text-left mt-6 md:mt-0">
               {helperText}
             </p>
           ) : null}

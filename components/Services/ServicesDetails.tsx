@@ -25,7 +25,7 @@ export default function ServicesDetails() {
             {serviceItems.map((item) => (
               <li
                 key={item.id}
-                className=" col-span-1 w-full text-[18px] flex md:whitespace-nowrap gap-2"
+                className=" col-span-1 w-full text-[18px] flex items-center md:whitespace-nowrap gap-2"
               >
                 <span>
                   <PiCheckBold className="text-primary text-lg " />

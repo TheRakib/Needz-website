@@ -11,7 +11,7 @@ export default function BannerFAQ() {
         titleClass="mb-6 !text-center"
         faqItems={faqItems}
       />
-      <div className="flex items-center justify-center gap-7">
+      <div className="flex items-center justify-center gap-7 flex-col md:flex-row ">
         <Button
           className="capitalize text-xl md:text-2xl md:py-7 md:px-12 px-10 py-4 rounded-xl bg-primary hover:bg-primary/70 text-white flex-nowrap whitespace-nowrap "
           size="large"

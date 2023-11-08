@@ -14,10 +14,9 @@ export default function page() {
       <Details />
       <CertificateDetails />
       <ServicesDetails />
-      {/* 
       <BannerFAQ />
       <LocalElectrician />
-      <ServicesContactUs /> */}
+      <ServicesContactUs />
     </div>
   );
 }
