@@ -12,11 +12,12 @@ export default function page() {
     <div>
       <ServicesBanner />
       <Details />
+      {/* 
       <CertificateDetails />
       <ServicesDetails />
       <BannerFAQ />
       <LocalElectrician />
-      <ServicesContactUs />
+      <ServicesContactUs /> */}
     </div>
   );
 }

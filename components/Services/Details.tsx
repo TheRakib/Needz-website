@@ -6,8 +6,8 @@ import { FiPhoneCall } from "react-icons/fi";
 
 export default function Details() {
   return (
-    <div className="max-w-layout mx-auto my-10">
-      <div className="flex gap-4 justify-between ">
+    <div className="max-w-layout mx-auto my-10 px-2">
+      <div className="flex flex-col md:flex-row gap-4 justify-between ">
         <div className="flex flex-col gap-11">
           <div className="max-w-[820px] flex flex-col gap-5 ">
             <TextTitle title="Description" />
@@ -35,7 +35,7 @@ export default function Details() {
           </div>
         </div>
         {/* -------card */}
-        <div className="w-[370px] h-[399px] bg-primary rounded-md flex flex-col justify-between items-center p-[30px] ">
+        <div className="w-[350px] md:w-[370px] mx-auto h-[399px] bg-primary rounded-md flex flex-col justify-between items-center p-[30px] ">
           <div className="flex flex-col items-center w-full">
             <Image
               src={"/services/avatar.jpg"}
