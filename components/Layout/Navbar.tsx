@@ -13,19 +13,43 @@ import AppLogo from "../Shared/AppLogo";
 import { twMerge } from "tailwind-merge";
 import { BiPhoneCall } from "react-icons/bi";
 import { Select } from "@mui/material";
+import { services } from "@/Constants";
+import { useRouter } from "next/navigation";
 
 const pages = [
-  "Home",
-  "About Us",
-  "Our Services",
-  "Services Agreement",
-  "Blog",
+  {
+    id: 1,
+    title: "Home",
+    link: "/",
+  },
+  {
+    id: 2,
+    title: "About Us",
+    link: "/",
+  },
+  {
+    id: 3,
+    title: "Our Services",
+    link: "/",
+  },
+  {
+    id: 4,
+    title: "Services Agreement",
+    link: "/",
+  },
+  {
+    id: 5,
+    title: "Blog",
+    link: "/",
+  },
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
+
+  const router = useRouter();
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -36,23 +60,35 @@ function Navbar() {
     setAnchorElNav(null);
   };
 
+  const handleMouseEnter = (event: React.MouseEvent<HTMLElement>) => {
+    if (event.currentTarget.textContent === "Our Services") {
+      handleOpenNavMenu(event);
+    }
+  };
+  const handleMouseLeave = () => {
+    handleCloseNavMenu();
+  };
+
   const pagesMenu = () => {
     return (
       <div className="flex items-center xl:gap-2">
         {pages.map((page) => (
           <Button
-            key={page}
+            key={page.id}
             onClick={handleCloseNavMenu}
+            aria-describedby="popover-our-services"
+            // onMouseEnter={handleMouseEnter}
+            // onMouseLeave={handleMouseLeave}
             sx={{ my: 2, display: "block" }}
             className="text-black/70 capitalize text-base xl:text-lg font-normal font-inter whitespace-nowrap"
           >
-            {page !== "Our Services" ? (
-              page
+            {page.title !== "Our Services" ? (
+              <span onClick={() => router.push(`/`)}>{page.title}</span>
             ) : (
               <Select
                 variant="standard"
+                id="popover-our-services"
                 labelId="our-services-select"
-                id="our-services-select"
                 value=""
                 disableUnderline
                 displayEmpty
@@ -65,9 +101,16 @@ function Navbar() {
                 <MenuItem value="" disabled>
                   Our Services
                 </MenuItem>
-                <MenuItem value="service1">Service 1</MenuItem>
-                <MenuItem value="service2">Service 2</MenuItem>
-                {/* Add more services as MenuItem */}
+                {services.map((service) => (
+                  <MenuItem
+                    key={service.id}
+                    value={service.id}
+                    onClick={() => router.push(`/services/${service.title}`)}
+                    className="text-black/70 py-3 uppercase"
+                  >
+                    {service.title}
+                  </MenuItem>
+                ))}
               </Select>
             )}
           </Button>
@@ -132,8 +175,10 @@ function Navbar() {
             }}
           >
             {pages.map((page) => (
-              <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{page}</Typography>
+              <MenuItem key={page.id} onClick={handleCloseNavMenu}>
+                <Typography textAlign="center" onClick={() => router.push(`/`)}>
+                  {page.title}
+                </Typography>
               </MenuItem>
             ))}
             <div className="border-t border-black/80 mt-4">
