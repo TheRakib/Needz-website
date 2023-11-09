@@ -22,7 +22,7 @@ export default function OurServices() {
   };
 
   const handleCartClick = (item: Services) => {
-    router.push(`/services/${item.title}`);
+    router.push(`/services/electrician`);
   };
 
   return (
