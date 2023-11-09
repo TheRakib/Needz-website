@@ -3,12 +3,25 @@ import SectionTitle from "../Shared/SectionTitle";
 import { Breadcrumbs, Typography } from "@mui/material";
 import Link from "next/link";
 
-export default function ServicesBanner() {
+type Props = {
+  title: string;
+  breadcrumb: string;
+  img: string;
+};
+
+export default function ServicesBanner({ title, breadcrumb, img }: Props) {
+  const backgroundImageStyle = {
+    backgroundImage: `url(${img})`, // Set the image dynamically
+  };
+
   return (
-    <div className="max-w-maxLayout mx-auto bg-[url('/services/banner.png')] h-[360px] ">
+    <div
+      className="max-w-maxLayout mx-auto  h-[360px] "
+      style={backgroundImageStyle}
+    >
       <div className="bg-black/5 w-full h-full">
         <div className="max-w-layout mx-auto text-white flex flex-col items-center justify-center h-full">
-          <SectionTitle title="Electrician in Stockholm" />
+          <SectionTitle title={title} />
           <Breadcrumbs aria-label="breadcrumb" className="text-white">
             <Link
               color="inherit"
@@ -17,7 +30,7 @@ export default function ServicesBanner() {
             >
               Our Services
             </Link>
-            <Typography>Electrician page</Typography>
+            <Typography>{breadcrumb}</Typography>
           </Breadcrumbs>
         </div>
       </div>

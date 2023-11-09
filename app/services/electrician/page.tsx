@@ -10,7 +10,11 @@ import React from "react";
 export default function page() {
   return (
     <div>
-      <ServicesBanner />
+      <ServicesBanner
+        title="Electrician in Stockholm"
+        breadcrumb="Electrician page"
+        img="/services/banner.png"
+      />
       <Details />
       <CertificateDetails />
       <ServicesDetails />
