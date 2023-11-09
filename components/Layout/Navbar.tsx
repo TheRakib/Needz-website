@@ -104,7 +104,7 @@ function Navbar() {
                   <MenuItem
                     key={service.id}
                     value={service.id}
-                    onClick={() => router.push(`/services/electrician`)}
+                    onClick={() => router.push(service.link)}
                     className="text-black/70 py-3 uppercase"
                   >
                     {service.title}
