@@ -12,31 +12,31 @@ export const services = [
   {
     id: 3,
     title: "Plumber",
-    link: "/services/electrician",
+    link: "/services/plumber",
   },
   {
     id: 4,
     title: "Washing Machine",
-    link: "/services/electrician",
+    link: "/services/washing",
   },
   {
     id: 5,
     title: "Camera Inspection",
-    link: "/services/electrician",
+    link: "/services/camera",
   },
   {
     id: 6,
     title: "Charging Box",
-    link: "/services/electrician",
+    link: "/services/charging-box",
   },
   {
     id: 7,
     title: "Electric Car Charger",
-    link: "/services/electrician",
+    link: "/services/electric-car",
   },
   {
     id: 8,
     title: "Electrical Installations",
-    link: "/services/electrician",
+    link: "/services/electrical-installations",
   },
 ];

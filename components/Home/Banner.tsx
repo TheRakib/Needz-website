@@ -7,7 +7,7 @@ export default function Banner() {
   return (
     <div className="bg-[url('/home/banner0.png')] bg-cover bg-no-repeat h-[678px] max-w-maxLayout mx-auto">
       <div className="bg-[url('/home/banner-mask.png')] bg-cover bg-no-repeat h-[678px] px-2 ">
-        <div className="max-w-layout mx-auto mt-20 text-white h-full ">
+        <div className="max-w-layout mx-auto text-white h-full ">
           <div className="col-span-1 flex flex-col justify-center h-full items-center">
             <h2 className=" text-[36px] md:text-title font-bold text-center">
               On call throughout Stockholm, <br /> around the clock!
