@@ -1,4 +1,5 @@
 "use client";
+import CallContactButtons from "@/components/Shared/CallContactButtons";
 import TextTitle from "@/components/Shared/TextTitle";
 import Image from "next/image";
 import React, { useState } from "react";
@@ -18,11 +19,11 @@ export default function Pressure() {
       <div className="flex flex-col gap-11 w-[350px] h-[444px] md:w-[680px] md:h-[594px] relative mx-auto">
         <Image src={"/services/drains-description.png"} alt="worker" fill />
       </div>
-      <div className="max-w-[510px] flex flex-col gap-11">
+      <div className="max-w-[510px] flex flex-col justify-between">
         <div className=" flex flex-col gap-5 ">
           <TextTitle title="High Pressure" />
           <div className="flex flex-col gap-5 text-[18px] text-black/70 ">
-            <p className="text-center md:text-left">
+            <p className="text-center md:text-left leading-7 tracking-tight">
               FLUSHING Sewer flushing through high pressure is a gentle and
               environmentally friendly method that quickly solves all kinds of
               blockages in drains. The flushing is carried out in a gentle
@@ -40,7 +41,6 @@ export default function Pressure() {
                 key={item}
                 className="col-span-1 w-full text-[18px] flex gap-2 items-center"
               >
-                {" "}
                 <span>
                   <PiCheckBold className="text-primary text-lg " />
                 </span>
@@ -48,6 +48,9 @@ export default function Pressure() {
               </li>
             ))}
           </ul>
+        </div>
+        <div className="flex flex-col gap-7 max-w-[344px] ">
+          <CallContactButtons />
         </div>
       </div>
     </div>
