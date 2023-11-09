@@ -1,10 +1,22 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import TextTitle from "../Shared/TextTitle";
 import Image from "next/image";
 import { Button } from "@mui/material";
 import { FiPhoneCall } from "react-icons/fi";
 
+const text =
+  "Have you considered installing solar cells? Or has the earth fault breaker suddenly tripped and now the food is in the freezer and going bad? No matter what your problem is, you can trust that our electricians are well qualified for the job and we are available around the clock for consultation. Or has the earth fault breaker suddenly tripped and now the food is in the freezer and going bad? No matter what your problem is,";
 export default function Details() {
+  const [showMore, setShowMore] = useState(false);
+
+  const toggleShowMore = () => {
+    setShowMore(!showMore);
+  };
+
+  const words = text.split(" ");
+  const displayText = showMore ? text : words.slice(0, 52).join(" ");
+
   return (
     <div className="max-w-layout mx-auto my-10 px-2">
       <div className="flex flex-col md:flex-row gap-4 justify-between ">
@@ -24,12 +36,15 @@ export default function Details() {
             <TextTitle title="Trustworthy Electrical Installers in Stockholm" />
             <div className="flex flex-col gap-5 text-[18px] text-black/70 ">
               <p>
-                Have you considered installing solar cells? Or has the earth
-                fault breaker suddenly tripped and now the food is in the
-                freezer and going bad? No matter what your problem is, you can
-                trust that our electricians are well qualified for the job and
-                we are available around the clock for consultation.{" "}
-                <span className="text-primary underline">Read more</span>
+                {displayText}
+                {!showMore && (
+                  <span
+                    className="text-primary underline cursor-pointer"
+                    onClick={toggleShowMore}
+                  >
+                    {" Read more"}
+                  </span>
+                )}
               </p>
             </div>
           </div>

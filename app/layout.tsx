@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Script from "next/script";
+// import Script from "next/script";
 import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
 
@@ -29,7 +29,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
       </body>
-      <Script
+      {/* <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=YOUR_GOOGLE_ANALYTICS_ID`}
       />
@@ -49,7 +49,7 @@ export default function RootLayout({
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/ns.html?id=YOUR_TAG_MANAGER_ID`}
-      />
+      /> */}
     </html>
   );
 }
