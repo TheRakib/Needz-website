@@ -1,3 +1,4 @@
+import Description from "@/components/Services/Drains/Description";
 import ServicesBanner from "@/components/Services/ServicesBanner";
 import React from "react";
 
@@ -9,6 +10,7 @@ export default function drains() {
         breadcrumb="Stop in drains page"
         img="/services/drains.png"
       />
+      <Description />
     </div>
   );
 }
