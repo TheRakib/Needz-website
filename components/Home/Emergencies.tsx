@@ -65,7 +65,6 @@ export default function Emergencies() {
                   labelId="our-services-select"
                   id="our-services-select"
                   value=""
-                  disableUnderline
                   displayEmpty
                   // onChange={handleCloseNavMenu}
                   className="text-black/40 bg-white w-full py-[20px] px-5 "
@@ -76,9 +75,15 @@ export default function Emergencies() {
                   <MenuItem value="" disabled>
                     Choose Service
                   </MenuItem>
-                  <MenuItem value="service1">Service 1</MenuItem>
-                  <MenuItem value="service2">Service 2</MenuItem>
-                  {/* Add more services as MenuItem */}
+                  {menuItems.map((item) => (
+                    <MenuItem
+                      key={item.id}
+                      value={item.id}
+                      className="py-[15px] pl-[20px]"
+                    >
+                      {item.title}
+                    </MenuItem>
+                  ))}
                 </Select>
               </div>
               <div className="mt-6 w-full">
@@ -94,3 +99,34 @@ export default function Emergencies() {
     </div>
   );
 }
+
+const menuItems = [
+  {
+    id: 1,
+    title: "Stop in Drains",
+  },
+  {
+    id: 2,
+    title: "Plumber",
+  },
+  {
+    id: 3,
+    title: "Electrician",
+  },
+  {
+    id: 4,
+    title: "Camera Inspection",
+  },
+  {
+    id: 5,
+    title: "Charging Box",
+  },
+  {
+    id: 6,
+    title: "Electric Car Charger",
+  },
+  {
+    id: 7,
+    title: "Electrical Installations",
+  },
+];

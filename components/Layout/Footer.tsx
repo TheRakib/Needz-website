@@ -42,7 +42,7 @@ export default function Footer() {
               plumbers and electricians.
             </p>
           </div>
-          <div className="col-span-3 grid grid-cols-3 gap-1 overflow-x-scroll">
+          <div className="col-span-3 grid grid-cols-3 gap-1 overflow-x-scroll no-scrollbar">
             {contactInfo.map((info) => (
               <div key={info.id} className="col-span-1 ">
                 <h3 className="text-[18px] font-semibold mb-4 ">

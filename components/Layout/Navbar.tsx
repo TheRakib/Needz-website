@@ -43,7 +43,6 @@ const pages = [
     link: "/",
   },
 ];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
@@ -188,7 +187,7 @@ function Navbar() {
         </Box>
         <AppLogo
           className="flex md:hidden w-[120px] h-[40px]"
-          // onClick={handleOpenNavMenu}
+          onClick={() => router.push(`/`)}
         />
         <Box
           sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
