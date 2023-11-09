@@ -23,7 +23,7 @@ export default function Pressure() {
         <div className=" flex flex-col gap-5 ">
           <TextTitle title="High Pressure" />
           <div className="flex flex-col gap-5 text-[18px] text-black/70 ">
-            <p className="text-center md:text-left leading-7 tracking-tight">
+            <p className="text-left leading-7 tracking-tight">
               FLUSHING Sewer flushing through high pressure is a gentle and
               environmentally friendly method that quickly solves all kinds of
               blockages in drains. The flushing is carried out in a gentle
@@ -34,7 +34,7 @@ export default function Pressure() {
             </p>
           </div>
         </div>
-        <div className="max-w-[680px] flex flex-col gap-5 ">
+        <div className="max-w-[680px] flex flex-col gap-5 my-4 md:my-0 ">
           <ul className="grid grid-cols-2 gap-1 ">
             {pressureItems.map((item) => (
               <li
