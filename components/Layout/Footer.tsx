@@ -35,7 +35,7 @@ export default function Footer() {
             <h3 className="text-[20px] uppercase mb-4 text-center md:text-left ">
               About us
             </h3>
-            <p className="max-w-[284px] mx-auto text-black/80 text-[14px] leading-6 text-center md:text-left ">
+            <p className="max-w-[284px] ml-auto md:ml-0 mr-auto text-black/80 text-[14px] leading-6  ">
               Jour Eliten AB offers plumbing and electrical on-call in Stockholm
               24 hours a day, but we also carry out planned work for private
               individuals and companies. We use experienced and certified
