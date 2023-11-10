@@ -7,10 +7,12 @@ import { IoMdAttach } from "react-icons/io";
 type Props = {
   semiTitle?: string;
   helperText?: string;
+  disabledHelperText?: boolean;
 };
 export default function ContactUs({
   semiTitle = "Need Any Services",
-  helperText,
+  helperText = "Fill out the form for a free quote. You can also call 08-23 55 20 between 08:00 and 16:00 on weekdays. On-call and urgent matters 24 hours a day, 365 days a year.",
+  disabledHelperText = false,
 }: Props) {
   return (
     <div className="bg-primary text-white py-[80px] max-w-maxLayout mx-auto px-2">
@@ -22,7 +24,7 @@ export default function ContactUs({
             </h3>
             <SectionTitle title="Contact Us" />
           </div>
-          {helperText ? (
+          {!disabledHelperText ? (
             <p className="text-white/70 text-[18px] max-w-[580px] text-center md:text-left mt-6 md:mt-0">
               {helperText}
             </p>
@@ -78,7 +80,7 @@ export default function ContactUs({
                 />
               </div>
               <Button
-                className="bg-transparent  border-white w-full text-white text-[16px] md:text-[18px] h-[81px] capitalize hover:bg-white/20 hover:text-white "
+                className="bg-transparent  border-white w-full text-white text-[16px] md:text-[18px] h-[81px] capitalize hover:border-white "
                 variant="outlined"
               >
                 <IoMdAttach className="mr-1 text-3xl font-semibold" />
@@ -86,7 +88,10 @@ export default function ContactUs({
               </Button>
 
               <div className="mt-6 w-[286px] mx-auto md:mr-auto ">
-                <Button className="bg-white w-full text-black text-2xl h-[92px] capitalize hover:bg-white/20 hover:text-white rounded-xl">
+                <Button
+                  className="bg-white w-full text-primary text-2xl h-[92px] capitalize hover:bg-primary hover:text-white rounded-xl hover:border-white"
+                  variant="outlined"
+                >
                   Send Message
                 </Button>
               </div>

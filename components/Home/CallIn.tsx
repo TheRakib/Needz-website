@@ -4,8 +4,8 @@ import React from "react";
 
 export default function CallIn() {
   return (
-    <div className="max-w-layout mx-auto my-20 px-2">
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-8 lg:gap-4">
+    <div className="max-w-layout mx-auto my-[100px] px-2">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-12 lg:gap-12">
         <div className="col-span-1 relative xl:w-[583px] md:h-[625px] w-[303px]  md:w-[383px] h-[425px] mx-auto md:mr-auto">
           <Image src={"/call-in.png"} alt="banner" fill />
         </div>

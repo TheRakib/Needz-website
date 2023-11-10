@@ -17,7 +17,7 @@ import ContactUs from "@/components/Shared/ContactUs";
 } */
 //const Home: React.FC<Props> = (props) => {
 const Home = () => {
-return (
+  return (
     <main className="font-inter min-h-screen">
       <div id="back-to-top-anchor" />
       <Banner />
@@ -28,10 +28,10 @@ return (
       <Features />
       <FAQ faqItems={faqItems} />
       <OurServices />
-      <ContactUs />
+      <ContactUs disabledHelperText />
 
       {/* ----------back to top button---- */}
-    {/*  <ScrollTop {...props}>*/}
+      {/*  <ScrollTop {...props}>*/}
       <ScrollTop>
         <Fab
           size="small"
@@ -43,7 +43,7 @@ return (
       </ScrollTop>
     </main>
   );
-}
+};
 
 const faqItems = [
   {

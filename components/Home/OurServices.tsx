@@ -22,11 +22,11 @@ export default function OurServices() {
   };
 
   const handleCartClick = (item: Services) => {
-    router.push(`/services/${item.title}`);
+    router.push(item.link);
   };
 
   return (
-    <div className="max-w-layout mx-auto mb-[120px] ">
+    <div className="max-w-layout mx-auto my-[120px] ">
       <SectionTitle title="Our Services" className="w-full !text-center" />
 
       <div className="flex flex-wrap gap-5 lg:gap-16 mt-11 md:mx-24 xl:mx-0">
@@ -63,13 +63,19 @@ export default function OurServices() {
           </div>
         ))}
         <div className="w-[370px] h-[414px] mx-auto relative flex flex-col gap-10 items-center justify-center ">
-          <Button className="w-[291px] h-[92px] bg-primary hover:bg-primary/70 text-white text-[26px] capitalize rounded-lg">
+          <Button
+            className="w-[291px] h-[92px] bg-primary hover:bg-transparent hover:text-primary text-white text-[26px] capitalize rounded-lg"
+            variant="outlined"
+          >
             Book Your Service
           </Button>
-          <p className="text-[26px] font-semibold flex items-center justify-center gap-3">
+          <Button
+            className="w-[291px] h-[92px] bg-transparent  hover:bg-primary hover:text-white text-primary text-[26px] capitalize rounded-lg flex gap-3 items-center"
+            variant="outlined"
+          >
             <LuPhoneCall />
             <span>08-235520</span>
-          </p>
+          </Button>
         </div>
       </div>
     </div>
@@ -80,6 +86,7 @@ const serviceItems = [
   {
     id: 1,
     title: "Electrician",
+    link: "/services/electrician",
     img: "/home/services/Image1.png",
     description:
       "Sewer lifting through high pressure is a gentle and environmentally friendly method that quickly solves all kinds of blockages in drains.",
@@ -87,6 +94,7 @@ const serviceItems = [
   {
     id: 2,
     title: "Stop In Drains",
+    link: "/services/drains",
     img: "/home/services/Image2.png",
     description:
       "Sewer lifting through high pressure is a gentle and environmentally friendly method that quickly solves all kinds of blockages in drains.",
@@ -94,6 +102,7 @@ const serviceItems = [
   {
     id: 3,
     title: "Plumber",
+    link: "/services/plumber",
     img: "/home/services/Image3.png",
     description:
       "Sewer lifting through high pressure is a gentle and environmentally friendly method that quickly solves all kinds of blockages in drains.",
@@ -101,6 +110,7 @@ const serviceItems = [
   {
     id: 4,
     title: "Washing Machine",
+    link: "/services/washing",
     img: "/home/services/Image4.png",
     description:
       "Sewer lifting through high pressure is a gentle and environmentally friendly method that quickly solves all kinds of blockages in drains.",
@@ -108,6 +118,7 @@ const serviceItems = [
   {
     id: 5,
     title: "Camera Inspection",
+    link: "/services/camera",
     img: "/home/services/Image5.png",
     description:
       "Sewer lifting through high pressure is a gentle and environmentally friendly method that quickly solves all kinds of blockages in drains.",
@@ -115,6 +126,7 @@ const serviceItems = [
   {
     id: 6,
     title: "Charging Box",
+    link: "/services/charging-box",
     img: "/home/services/Image6.png",
     description:
       "Sewer lifting through high pressure is a gentle and environmentally friendly method that quickly solves all kinds of blockages in drains.",
@@ -122,6 +134,7 @@ const serviceItems = [
   {
     id: 7,
     title: "Electric Car Charger",
+    link: "/services/electric-car",
     img: "/home/services/Image7.png",
     description:
       "Sewer lifting through high pressure is a gentle and environmentally friendly method that quickly solves all kinds of blockages in drains.",
@@ -129,6 +142,7 @@ const serviceItems = [
   {
     id: 8,
     title: "Electrical Installations",
+    link: "/services/electrical-installations",
     img: "/home/services/Image8.png",
     description:
       "Sewer lifting through high pressure is a gentle and environmentally friendly method that quickly solves all kinds of blockages in drains.",

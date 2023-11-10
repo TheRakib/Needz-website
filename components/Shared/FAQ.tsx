@@ -64,7 +64,7 @@ export default function FAQ({
     };
 
   return (
-    <div className="max-w-layout mx-auto my-[120px] px-2">
+    <div className="max-w-layout mx-auto px-2">
       <div className="max-w-[880px] mx-auto ">
         {variant === "home" ? (
           <SectionTitle title={title} className={titleClass} />
