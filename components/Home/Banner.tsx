@@ -5,8 +5,17 @@ import { BiPhoneCall } from "react-icons/bi";
 
 export default function Banner() {
   return (
-    <div className="bg-[url('/home/banner0.png')] bg-cover bg-no-repeat h-[678px] max-w-maxLayout mx-auto">
-      <div className="bg-[url('/home/banner-mask.png')] bg-cover bg-no-repeat h-[678px] px-2 ">
+    <div className=" blur-[0.5px] h-[678px] max-w-maxLayout mx-auto relative">
+      <div className="w-full h-full absolute top-0 left-0">
+        <Image
+          alt="bg"
+          loading="lazy"
+          fill
+          src={"/home/banner0.png"}
+          className="absolute z-[-1] h-full w-full object-cover object-center inset-0"
+        />
+      </div>
+      <div className="bg-[url('/home/banner-mask.png')] bg-cover bg-no-repeat h-[678px] px-2">
         <div className="max-w-layout mx-auto text-white h-full ">
           <div className="col-span-1 flex flex-col justify-center h-full items-center">
             <h2 className=" text-[36px] md:text-title font-bold text-center">
