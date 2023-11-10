@@ -10,6 +10,7 @@ import MuiAccordionSummary, {
 } from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
+import { twMerge } from "tailwind-merge";
 
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -39,7 +40,17 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 
-export default function AccordionPic({ items }: { items: Items }) {
+type Props = {
+  items: Items;
+  withBullets?: boolean;
+  className?: string;
+};
+
+export default function AccordionPic({
+  items,
+  withBullets = false,
+  className,
+}: Props) {
   const [expanded, setExpanded] = React.useState<string | false>("1");
 
   const handleChange =
@@ -48,13 +59,20 @@ export default function AccordionPic({ items }: { items: Items }) {
     };
 
   return (
-    <div className="flex flex-col lg:flex-row lg:gap-[50px]">
+    <div
+      className={twMerge(
+        `${className && className} flex flex-col lg:flex-row lg:gap-[50px]`
+      )}
+    >
       <div className="w-[310px] h-[392px] md:w-[560px] lg:w-[680px] md:h-[692px] mx-auto relative ">
-        <Image
-          src={"/services/plumber/Ventilation.png"}
-          alt="ventilation service"
-          fill
-        />
+        {items.map((item) => (
+          <div
+            key={item.id}
+            className={expanded === `${item.id}` ? "" : "hidden"}
+          >
+            <Image src={item.img} alt={item.title} fill loading="lazy" />
+          </div>
+        ))}
       </div>
       <div className="max-w-[510px] md:ml-auto md:mr-auto lg:mr-0">
         {items.map((item) => (
@@ -77,7 +95,7 @@ export default function AccordionPic({ items }: { items: Items }) {
             <AccordionDetails className=" pb-20">
               <ul
                 className="flex flex-col gap-2 text-black/70"
-                style={{ listStyle: "disc" }}
+                style={withBullets ? { listStyle: "disc" } : {}}
               >
                 {item.description.map((des, i) => (
                   <li key={i}>
@@ -95,6 +113,7 @@ export default function AccordionPic({ items }: { items: Items }) {
 
 type Items = {
   id: number;
+  img: string;
   title: string;
   description: string[];
 }[];

@@ -20,7 +20,7 @@ export default function LocalPlumber() {
             ventilation, heating, and sanitation systems.
           </p>
         </div>
-        <AccordionPic items={serviceAccordions} />
+        <AccordionPic items={serviceAccordions} withBullets />
       </div>
       <div className="mt-[120px] flex flex-col gap-[70px]">
         <div className="text-[20px] max-w-[1005px] mx-auto">
@@ -46,6 +46,7 @@ const serviceAccordions = [
   {
     id: 1,
     title: "Ventilation",
+    img: "/services/plumber/Ventilation.png",
     description: [
       "Mechanical exhaust ventilation – With the help of a fan, the air is led out of the house. Air enters through small vents in the wall. This is called the F system.",
       "Mechanical supply and exhaust ventilation – In this system, you have two fans, one that draws air in and one that brings air out. This is called the FT system",
@@ -55,6 +56,7 @@ const serviceAccordions = [
   {
     id: 2,
     title: "Heat",
+    img: "/services/plumber/Heat.png",
     description: [
       "Mechanical exhaust ventilation – With the help of a fan, the air is led out of the house. Air enters through small vents in the wall. This is called the F system.",
       "Mechanical supply and exhaust ventilation – In this system, you have two fans, one that draws air in and one that brings air out. This is called the FT system",
@@ -64,6 +66,7 @@ const serviceAccordions = [
   {
     id: 3,
     title: "Sanitation",
+    img: "/services/plumber/Sanitation.png",
     description: [
       "Mechanical exhaust ventilation – With the help of a fan, the air is led out of the house. Air enters through small vents in the wall. This is called the F system.",
       "Mechanical supply and exhaust ventilation – In this system, you have two fans, one that draws air in and one that brings air out. This is called the FT system",
