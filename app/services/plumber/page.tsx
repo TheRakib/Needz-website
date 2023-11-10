@@ -1,4 +1,5 @@
 import DescriptionPlumber from "@/components/Services/Plumber/DescriptionPlumber";
+import LocalPlumber from "@/components/Services/Plumber/LocalPlumber";
 import PlumberServices from "@/components/Services/Plumber/PlumberServices";
 import ServicesBanner from "@/components/Services/ServicesBanner";
 import React from "react";
@@ -13,6 +14,7 @@ export default function page() {
       />
       <DescriptionPlumber />
       <PlumberServices />
+      <LocalPlumber />
     </div>
   );
 }
