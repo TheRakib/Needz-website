@@ -26,7 +26,7 @@ export default function PlumberServices() {
           {serviceCardItems.map((item) => (
             <div
               key={item.id}
-              className="col-span-1 min-h-[368px] flex flex-col justify-between p-[30px] bg-white text-black rounded-xl"
+              className="col-span-1 min-h-[368px] max-w-[300px] min-w-[300px] md:min-w-full mx-auto flex flex-col justify-between p-[30px] bg-white text-black rounded-xl"
             >
               <div className="flex flex-col gap-4">
                 <div className="flex">

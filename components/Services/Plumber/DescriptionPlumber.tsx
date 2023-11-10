@@ -4,8 +4,8 @@ import UserCard from "../UserCard";
 
 export default function DescriptionPlumber() {
   return (
-    <div className="max-w-layout mx-auto mt-10">
-      <div className=" flex justify-between">
+    <div className="max-w-layout mx-auto mt-10 px-3 md:px-2">
+      <div className=" flex flex-col md:flex-row justify-between gap-4 md:gap-0">
         <div className="max-w-[820px]">
           <TextTitle title="Description" />
           <div className="flex flex-col gap-6 mt-5 text-black/70">

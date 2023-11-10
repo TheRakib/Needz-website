@@ -51,7 +51,7 @@ export default function LocalPlumber() {
     };
 
   return (
-    <div className="max-w-layout mx-auto">
+    <div className="max-w-layout mx-auto px-2">
       <div className="">
         <div className="flex flex-col gap-5 items-center justify-center mb-[90px]  max-w-[712px] mx-auto">
           <SecondTitle
@@ -67,7 +67,7 @@ export default function LocalPlumber() {
           </p>
         </div>
         <div className="flex flex-col md:flex-row gap-[50px]">
-          <div className="w-[680px] h-[692px] relative ">
+          <div className="w-[310px] h-[392px] md:w-[680px] md:h-[692px] mx-auto relative ">
             <Image
               src={"/services/plumber/Ventilation.png"}
               alt="ventilation service"
@@ -121,7 +121,7 @@ export default function LocalPlumber() {
             Contact us today for a free quote!
           </p>
         </div>
-        <div className="flex gap-10 items-center justify-center">
+        <div className="flex flex-col md:flex-row gap-10 items-center justify-center">
           <CallContactButtons />
         </div>
       </div>
