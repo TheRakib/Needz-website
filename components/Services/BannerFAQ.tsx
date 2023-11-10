@@ -5,13 +5,13 @@ import { BiPhoneCall } from "react-icons/bi";
 
 export default function BannerFAQ() {
   return (
-    <div className="max-w-layout mx-auto">
+    <div className="max-w-layout mx-auto mt-[50px]">
       <FAQ
         variant="services"
         titleClass="mb-6 !text-center"
         faqItems={faqItems}
       />
-      <div className="flex items-center justify-center gap-7 flex-col md:flex-row ">
+      <div className="flex items-center justify-center gap-7 flex-col md:flex-row mt-20">
         <Button
           className="capitalize text-xl md:text-2xl md:py-7 md:px-12 px-10 py-4 rounded-xl bg-primary hover:bg-primary/70 text-white flex-nowrap whitespace-nowrap "
           size="large"

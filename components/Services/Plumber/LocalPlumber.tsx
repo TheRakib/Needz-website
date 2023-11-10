@@ -10,6 +10,7 @@ import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import React from "react";
+import CallContactButtons from "@/components/Shared/CallContactButtons";
 
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -51,59 +52,77 @@ export default function LocalPlumber() {
 
   return (
     <div className="max-w-layout mx-auto">
-      <div className="flex flex-col gap-5 items-center justify-center mb-[90px]  max-w-[712px] mx-auto">
-        <SecondTitle
-          title="Your local plumbers in Stockholm - for homes and businesses"
-          className="!text-center"
-        />
-        <p className="text-[18px] text-black/70 text-center">
-          At Joureliten, we offer comprehensive plumbing services to homeowners
-          and businesses throughout Stockholm. Our experienced and certified
-          plumbers are ready to help you with everything from minor
-          installations to complete renovations. We are also experts in
-          ventilation, heating, and sanitation systems.
-        </p>
-      </div>
-      <div className="flex flex-col md:flex-row gap-[50px]">
-        <div className="w-[680px] h-[692px] relative ">
-          <Image
-            src={"/services/plumber/Ventilation.png"}
-            alt="ventilation service"
-            fill
+      <div className="">
+        <div className="flex flex-col gap-5 items-center justify-center mb-[90px]  max-w-[712px] mx-auto">
+          <SecondTitle
+            title="Your local plumbers in Stockholm - for homes and businesses"
+            className="!text-center"
           />
+          <p className="text-[18px] text-black/70 text-center">
+            At Joureliten, we offer comprehensive plumbing services to
+            homeowners and businesses throughout Stockholm. Our experienced and
+            certified plumbers are ready to help you with everything from minor
+            installations to complete renovations. We are also experts in
+            ventilation, heating, and sanitation systems.
+          </p>
         </div>
-        <div className="max-w-[510px]">
-          {serviceAccordians.map((item) => (
-            <Accordion
-              key={item.id}
-              expanded={expanded === `${item.id}`}
-              onChange={handleChange(`${item.id}`)}
-              className={`${
-                expanded === `${item.id}` ? "border-0" : "border-b"
-              } border-black/20`}
-            >
-              <AccordionSummary
-                aria-controls="panel1d-content"
-                id="panel1d-header"
+        <div className="flex flex-col md:flex-row gap-[50px]">
+          <div className="w-[680px] h-[692px] relative ">
+            <Image
+              src={"/services/plumber/Ventilation.png"}
+              alt="ventilation service"
+              fill
+            />
+          </div>
+          <div className="max-w-[510px]">
+            {serviceAccordians.map((item) => (
+              <Accordion
+                key={item.id}
+                expanded={expanded === `${item.id}`}
+                onChange={handleChange(`${item.id}`)}
+                className={`${
+                  expanded === `${item.id}` ? "border-0" : "border-b"
+                } border-black/20`}
               >
-                <Typography className="text-[22px] capitalize">
-                  {item.title}
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails className=" pb-20">
-                <ul
-                  className="flex flex-col gap-2 text-black/70"
-                  style={{ listStyle: "disc" }}
+                <AccordionSummary
+                  aria-controls="panel1d-content"
+                  id="panel1d-header"
                 >
-                  {item.description.map((des, i) => (
-                    <li key={i}>
-                      <Typography className="text-[18px]">{des}</Typography>
-                    </li>
-                  ))}
-                </ul>
-              </AccordionDetails>
-            </Accordion>
-          ))}
+                  <Typography className="text-[22px] capitalize">
+                    {item.title}
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails className=" pb-20">
+                  <ul
+                    className="flex flex-col gap-2 text-black/70"
+                    style={{ listStyle: "disc" }}
+                  >
+                    {item.description.map((des, i) => (
+                      <li key={i}>
+                        <Typography className="text-[18px]">{des}</Typography>
+                      </li>
+                    ))}
+                  </ul>
+                </AccordionDetails>
+              </Accordion>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="mt-[120px] flex flex-col gap-[70px]">
+        <div className="text-[20px] max-w-[1005px] mx-auto">
+          <p className="text-center">
+            Our experienced and certified plumbers can handle any plumbing
+            problem you have, no matter how big or small. We are experts in all
+            types of plumbing systems, including ventilation, heating, and
+            sanitation.
+          </p>
+          <p className="text-secondary text-center">
+            Contact us today for a free quote!
+          </p>
+        </div>
+        <div className="flex gap-10 items-center justify-center">
+          <CallContactButtons />
         </div>
       </div>
     </div>
