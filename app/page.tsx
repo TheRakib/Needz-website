@@ -28,7 +28,7 @@ const Home = () => {
       <Features />
       <FAQ faqItems={faqItems} />
       <OurServices />
-      <ContactUs />
+      <ContactUs disabledHelperText />
 
       {/* ----------back to top button---- */}
       {/*  <ScrollTop {...props}>*/}
