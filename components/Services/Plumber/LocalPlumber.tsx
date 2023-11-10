@@ -66,15 +66,15 @@ export default function LocalPlumber() {
             ventilation, heating, and sanitation systems.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row gap-[50px]">
-          <div className="w-[310px] h-[392px] md:w-[680px] md:h-[692px] mx-auto relative ">
+        <div className="flex flex-col lg:flex-row lg:gap-[50px]">
+          <div className="w-[310px] h-[392px] md:w-[560px] lg:w-[680px] md:h-[692px] mx-auto relative ">
             <Image
               src={"/services/plumber/Ventilation.png"}
               alt="ventilation service"
               fill
             />
           </div>
-          <div className="max-w-[510px]">
+          <div className="max-w-[510px] md:ml-auto md:mr-auto lg:mr-0">
             {serviceAccordians.map((item) => (
               <Accordion
                 key={item.id}

@@ -14,11 +14,11 @@ export default function page() {
         breadcrumb="Plumber page"
         img="/services/plumber.png"
       />
+
       <DescriptionPlumber />
       <PlumberServices />
       <LocalPlumber />
       <FAQPlumber />
-
       <ContactUs />
     </div>
   );

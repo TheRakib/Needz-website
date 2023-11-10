@@ -11,7 +11,7 @@ export default function PlumberServices() {
       : description;
   };
   return (
-    <div className="max-w-maxLayout bg-primary text-white py-[90px] my-[120px] mx-auto">
+    <div className="max-w-maxLayout bg-primary text-white py-[90px] my-[120px] mx-auto px-2">
       <div className="max-w-layout mx-auto">
         <div className="">
           <p className="text-[18px] capitalize text-center text-white/70">
@@ -22,11 +22,11 @@ export default function PlumberServices() {
             className="max-w-[1000px] mx-auto tracking-tighter !leading-[54px] "
           />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[30px] lg:grid-cols-4 mt-[50px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px] mt-[50px]">
           {serviceCardItems.map((item) => (
             <div
               key={item.id}
-              className="col-span-1 min-h-[368px] max-w-[300px] min-w-[300px] md:min-w-full mx-auto flex flex-col justify-between p-[30px] bg-white text-black rounded-xl"
+              className="col-span-1 min-h-[368px] max-w-[300px] min-w-[300px] lg:min-w-full mx-auto flex flex-col justify-between p-[30px] bg-white text-black rounded-xl"
             >
               <div className="flex flex-col gap-4">
                 <div className="flex">
