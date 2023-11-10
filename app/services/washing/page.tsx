@@ -1,4 +1,5 @@
 import ServicesBanner from "@/components/Services/ServicesBanner";
+import CarWash from "@/components/Services/Washing/CarWash";
 import DescriptionWashing from "@/components/Services/Washing/DescriptionWashing";
 import React from "react";
 
@@ -12,6 +13,7 @@ export default function page() {
         titleClass="!text-center max-w-[763px]"
       />
       <DescriptionWashing />
+      <CarWash />
     </div>
   );
 }

@@ -11,6 +11,7 @@ import MuiAccordionSummary, {
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import { twMerge } from "tailwind-merge";
+import SecondTitle from "@/components/Shared/SecondTitle";
 
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -27,16 +28,16 @@ const AccordionSummary = styled((props: AccordionSummaryProps) => (
   />
 ))(({ theme }) => ({
   flexDirection: "row",
+  paddingLeft: 0,
   "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
     transform: "rotate(90deg)",
   },
-  "& .MuiAccordionSummary-content": {
-    marginLeft: theme.spacing(1),
-  },
+  "& .MuiAccordionSummary-content": {},
 }));
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(2),
+  paddingLeft: 0,
   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 
@@ -44,12 +45,18 @@ type Props = {
   items: Items;
   withBullets?: boolean;
   className?: string;
+  carWashChildren?: React.ReactNode;
+  listStyles?: string;
+  title?: string;
 };
 
 export default function AccordionPic({
   items,
   withBullets = false,
   className,
+  carWashChildren,
+  listStyles,
+  title,
 }: Props) {
   const [expanded, setExpanded] = React.useState<string | false>("1");
 
@@ -73,8 +80,19 @@ export default function AccordionPic({
             <Image src={item.img} alt={item.title} fill loading="lazy" />
           </div>
         ))}
+        {!expanded ? (
+          <div>
+            <Image
+              src={items[0].img}
+              alt={items[0].title}
+              fill
+              loading="lazy"
+            />
+          </div>
+        ) : null}
       </div>
       <div className="max-w-[510px] md:ml-auto md:mr-auto lg:mr-0">
+        {title ? <SecondTitle title={title} className="mb-[33px]" /> : null}
         {items.map((item) => (
           <Accordion
             key={item.id}
@@ -87,6 +105,7 @@ export default function AccordionPic({
             <AccordionSummary
               aria-controls="panel1d-content"
               id="panel1d-header"
+              className="pr-0"
             >
               <Typography className="text-[22px] capitalize">
                 {item.title}
@@ -94,7 +113,9 @@ export default function AccordionPic({
             </AccordionSummary>
             <AccordionDetails className=" pb-20">
               <ul
-                className="flex flex-col gap-2 text-black/70"
+                className={`${listStyles && listStyles} ${
+                  withBullets ? "ml-4" : ""
+                } flex flex-col gap-2 text-black/70`}
                 style={withBullets ? { listStyle: "disc" } : {}}
               >
                 {item.description.map((des, i) => (
@@ -103,6 +124,7 @@ export default function AccordionPic({
                   </li>
                 ))}
               </ul>
+              {item.id === 1 && carWashChildren ? carWashChildren : null}
             </AccordionDetails>
           </Accordion>
         ))}
