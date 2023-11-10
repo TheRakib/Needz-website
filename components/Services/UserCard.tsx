@@ -5,7 +5,7 @@ import { FiPhoneCall } from "react-icons/fi";
 
 export default function UserCard() {
   return (
-    <div className="w-[350px] md:w-[370px] mx-auto h-[399px] bg-primary rounded-md flex flex-col justify-between items-center p-[30px] md:p-[10px] lg:p-[30px] ">
+    <div className="w-[350px] md:w-[370px] ml-auto mr-auto md:mr-0 h-[399px] bg-primary rounded-md flex flex-col justify-between items-center p-[30px] md:p-[10px] lg:p-[30px] ">
       <div className="flex flex-col items-center w-full">
         <Image
           src={"/services/avatar.jpg"}
