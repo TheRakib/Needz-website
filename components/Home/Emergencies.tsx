@@ -87,7 +87,10 @@ export default function Emergencies() {
                 </Select>
               </div>
               <div className="mt-6 w-full">
-                <Button className="bg-white w-full text-black text-2xl h-[80px] capitalize hover:bg-white/20 hover:text-white ">
+                <Button
+                  className="bg-white w-full text-primary text-2xl h-[80px] capitalize hover:bg-transparent hover:text-white hover:!border-2 hover:!border-white "
+                  variant="outlined"
+                >
                   <BsArrowRightCircle className="mr-3 font-semibold" /> Submit
                   Now
                 </Button>

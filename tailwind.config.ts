@@ -18,11 +18,11 @@ const config: Config = {
       },
       width: {
         layout: "1240px",
-        maxLayout: "1728px",
+        maxLayout: "100%",
       },
       maxWidth: {
         layout: "1240px",
-        maxLayout: "1728px",
+        maxLayout: "100%",
       },
       fontSize: {
         title: "55px",

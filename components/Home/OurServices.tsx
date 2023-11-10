@@ -63,13 +63,19 @@ export default function OurServices() {
           </div>
         ))}
         <div className="w-[370px] h-[414px] mx-auto relative flex flex-col gap-10 items-center justify-center ">
-          <Button className="w-[291px] h-[92px] bg-primary hover:bg-primary/70 text-white text-[26px] capitalize rounded-lg">
+          <Button
+            className="w-[291px] h-[92px] bg-primary hover:bg-transparent hover:text-primary text-white text-[26px] capitalize rounded-lg"
+            variant="outlined"
+          >
             Book Your Service
           </Button>
-          <p className="text-[26px] font-semibold flex items-center justify-center gap-3">
+          <Button
+            className="w-[291px] h-[92px] bg-transparent  hover:bg-primary hover:text-white text-primary text-[26px] capitalize rounded-lg flex gap-3 items-center"
+            variant="outlined"
+          >
             <LuPhoneCall />
             <span>08-235520</span>
-          </p>
+          </Button>
         </div>
       </div>
     </div>

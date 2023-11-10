@@ -78,7 +78,7 @@ export default function ContactUs({
                 />
               </div>
               <Button
-                className="bg-transparent  border-white w-full text-white text-[16px] md:text-[18px] h-[81px] capitalize hover:bg-white/20 hover:text-white "
+                className="bg-transparent  border-white w-full text-white text-[16px] md:text-[18px] h-[81px] capitalize hover:border-white "
                 variant="outlined"
               >
                 <IoMdAttach className="mr-1 text-3xl font-semibold" />
@@ -86,7 +86,10 @@ export default function ContactUs({
               </Button>
 
               <div className="mt-6 w-[286px] mx-auto md:mr-auto ">
-                <Button className="bg-white w-full text-black text-2xl h-[92px] capitalize hover:bg-white/20 hover:text-white rounded-xl">
+                <Button
+                  className="bg-white w-full text-primary text-2xl h-[92px] capitalize hover:bg-primary hover:text-white rounded-xl hover:border-white"
+                  variant="outlined"
+                >
                   Send Message
                 </Button>
               </div>

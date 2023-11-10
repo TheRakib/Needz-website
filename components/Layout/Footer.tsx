@@ -23,7 +23,10 @@ export default function Footer() {
               className={` rounded-none border border-black/40 h-[40px] pl-3`}
             />
             <div className="">
-              <Button className="bg-primary hover:bg-primary/80 text-white rounded-lg py-2 px-4 capitalize font-bold text-base ">
+              <Button
+                className="bg-primary hover:bg-transparent hover:text-primary text-white rounded-lg py-2 px-4 capitalize font-bold text-base "
+                variant="outlined"
+              >
                 Subscribe
               </Button>
             </div>
