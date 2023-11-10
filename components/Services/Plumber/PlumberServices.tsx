@@ -30,11 +30,12 @@ export default function PlumberServices() {
             >
               <div className="flex flex-col gap-4">
                 <div className="flex">
-                  <div className="p-2 shadow-lg shadow-primary/70 rounded-full">
+                  <div className="flex h-16 w-16 p-3 shadow-lg shadow-primary/70 rounded-full">
                     <Image
                       src={item.img}
-                      height={44}
                       width={44}
+                      height={44}
+                      // className="object-cover w-full h-full rounded-full"
                       alt="service-icon"
                     />
                   </div>
