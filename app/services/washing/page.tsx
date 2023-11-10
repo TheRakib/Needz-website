@@ -1,4 +1,5 @@
 import ServicesBanner from "@/components/Services/ServicesBanner";
+import DescriptionWashing from "@/components/Services/Washing/DescriptionWashing";
 import React from "react";
 
 export default function page() {
@@ -10,6 +11,7 @@ export default function page() {
         img="/services/washing-machine.png"
         titleClass="!text-center max-w-[763px]"
       />
+      <DescriptionWashing />
     </div>
   );
 }

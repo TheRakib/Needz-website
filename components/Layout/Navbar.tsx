@@ -138,7 +138,7 @@ function Navbar() {
   return (
     <AppBar
       position="static"
-      className="max-w-layout px-6 xl:px-0 mx-auto bg-white text-black shadow-none mt-6 font-inter"
+      className="max-w-layout px-6 xl:px-0 mx-auto bg-white text-black shadow-none my-5 font-inter"
     >
       <Toolbar disableGutters>
         <AppLogo className="hidden md:block" />
