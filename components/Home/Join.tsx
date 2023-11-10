@@ -7,7 +7,7 @@ import SectionTitle from "../Shared/SectionTitle";
 
 export default function Join() {
   return (
-    <div className="max-w-layout mx-auto mt-20 mb-16">
+    <div className="max-w-layout mx-auto">
       <div className="flex flex-col items-center justify-center">
         <h2 className="uppercase font-semibold text-[20px] md:text-[25px]">
           Jour Eliten

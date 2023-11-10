@@ -5,7 +5,7 @@ import { Button } from "@mui/material";
 
 export default function Features() {
   return (
-    <div className="max-w-layout mx-auto pt-20 px-2">
+    <div className="max-w-layout mx-auto my-[120px] px-2">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
         <div className="col-span-1 flex flex-col justify-center gap-12">
           <SectionTitle title="At Jour Eliten, we work quickly and efficiently" />
