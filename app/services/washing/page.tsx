@@ -1,6 +1,7 @@
 import ServicesBanner from "@/components/Services/ServicesBanner";
 import CarWash from "@/components/Services/Washing/CarWash";
 import DescriptionWashing from "@/components/Services/Washing/DescriptionWashing";
+import Others from "@/components/Services/Washing/Others";
 import React from "react";
 
 export default function page() {
@@ -14,6 +15,7 @@ export default function page() {
       />
       <DescriptionWashing />
       <CarWash />
+      <Others />
     </div>
   );
 }

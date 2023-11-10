@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { styled } from "@mui/material/styles";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
@@ -50,6 +50,8 @@ type Props = {
   title?: string;
 };
 
+const CHARACTER_LENGTH = 400;
+
 export default function AccordionPic({
   items,
   withBullets = false,
@@ -59,12 +61,13 @@ export default function AccordionPic({
   title,
 }: Props) {
   const [expanded, setExpanded] = React.useState<string | false>("1");
+  const [readMore, setReadMore] = React.useState<boolean>(false);
 
   const handleChange =
     (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
       setExpanded(newExpanded ? panel : false);
+      setReadMore(false);
     };
-
   return (
     <div
       className={twMerge(
