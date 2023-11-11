@@ -114,11 +114,11 @@ export default function AccordionPic({
                 {item.title}
               </Typography>
             </AccordionSummary>
-            <AccordionDetails className=" pb-20">
+            <AccordionDetails className="">
               <ul
                 className={`${listStyles && listStyles} ${
                   withBullets ? "ml-4" : ""
-                } flex flex-col gap-2 text-black/70`}
+                } flex flex-col gap-2 text-black/70 max-h-[310px] overflow-y-scroll no-scrollbar`}
                 style={withBullets ? { listStyle: "disc" } : {}}
               >
                 {item.description.map((des, i) => (
