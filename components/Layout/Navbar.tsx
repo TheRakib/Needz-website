@@ -143,7 +143,14 @@ function Navbar() {
       <Toolbar disableGutters>
         <AppLogo className="hidden md:block" />
 
-        <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+        <AppLogo className="flex md:hidden w-[120px] h-[40px]" />
+
+        <Box
+          sx={{
+            flexGrow: 1,
+            display: { xs: "flex", md: "none", justifyContent: "end" },
+          }}
+        >
           <IconButton
             size="large"
             aria-label="account of current user"
@@ -185,10 +192,6 @@ function Navbar() {
             </div>
           </Menu>
         </Box>
-        <AppLogo
-          className="flex md:hidden w-[120px] h-[40px]"
-          onClick={() => router.push(`/`)}
-        />
         <Box
           sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
           className="justify-center"
