@@ -4,7 +4,7 @@ import { Typography } from "@mui/material";
 
 export default function CarWash() {
   return (
-    <div className="max-w-layout mx-auto my-[120px]">
+    <div className="max-w-layout mx-auto my-[120px] px-2">
       <AccordionPic
         items={serviceAccordions}
         carWashChildren={
