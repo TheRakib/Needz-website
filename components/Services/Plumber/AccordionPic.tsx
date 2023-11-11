@@ -74,11 +74,11 @@ export default function AccordionPic({
         `${className && className} flex flex-col lg:flex-row lg:gap-[50px]`
       )}
     >
-      <div className="w-[310px] h-[392px] md:w-[560px] lg:w-[680px] md:h-[692px] mx-auto relative ">
+      <div className="w-[310px] h-[392px] md:w-[560px] lg:w-[680px] md:h-[692px] relative flex ml-auto mr-auto lg:mr-0 ">
         {items.map((item) => (
           <div
             key={item.id}
-            className={expanded === `${item.id}` ? "" : "hidden"}
+            className={`${expanded === `${item.id}` ? "" : "hidden"}`}
           >
             <Image src={item.img} alt={item.title} fill loading="lazy" />
           </div>

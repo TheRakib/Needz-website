@@ -7,7 +7,7 @@ export default function Others() {
     <div className="max-w-layout mx-auto my-[120px] px-2">
       <AccordionPic
         items={serviceAccordions}
-        className="md:!flex-row-reverse"
+        className="lg:!flex-row-reverse"
         listStyles="!gap-7"
         title="Others"
       />

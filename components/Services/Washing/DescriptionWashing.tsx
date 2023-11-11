@@ -38,7 +38,7 @@ export default function DescriptionWashing() {
             accumulate in the drain, especially further down the pipes where it
             is colder and the grease solidifies.
           </p>
-          <div className="w-[310px] h-[392px] md:w-[560px] lg:w-[580px] md:h-[692px] mx-auto relative ">
+          <div className="w-[310px] h-[392px] md:w-[560px] lg:w-[580px] xl:w-[664px] md:h-[692px] mx-auto relative ">
             <Image
               src={"/services/washing-machine/description.png"}
               alt={"description"}
