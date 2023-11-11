@@ -20,7 +20,10 @@ export default function UserCard() {
         <p className="text-center text-white/70 mt-1 mb-3">Sales Excutive</p>
         <div className="w-full h-[1px] bg-white/70 " />
       </div>
-      <Button className="bg-white capitalize rounded-2xl text-primary hover:bg-white/50 text-[20px] md:text-[20px] lg:text-[20px] py-5 px-11 md:px-3 lg:px-11 flex gap-2">
+      <Button
+        className="bg-white capitalize rounded-2xl text-primary hover:bg-transparent hover:text-white hover:border-white text-[20px] md:text-[20px] lg:text-[20px] py-5 px-11 md:px-3 lg:px-11 flex gap-2"
+        variant="outlined"
+      >
         <FiPhoneCall />
         <span className="md:tracking-tighter lg:tracking-normal">
           Call 08 – 23 55 20

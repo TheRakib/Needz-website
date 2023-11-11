@@ -30,7 +30,7 @@ export default function DescriptionWashing() {
         </div>
         <UserCard />
       </div>
-      <div className=" flex flex-col md:flex-row justify-between gap-[50px]  mt-5">
+      <div className=" flex flex-col lg:flex-row justify-between gap-[50px]  mt-5">
         <div className="flex flex-col gap-11">
           <p className="text-black/70 text-[18px]">
             There are many reasons why stoppages occur. In the sink and slop, it
@@ -38,7 +38,7 @@ export default function DescriptionWashing() {
             accumulate in the drain, especially further down the pipes where it
             is colder and the grease solidifies.
           </p>
-          <div className="w-[310px] h-[392px] md:w-[560px] lg:w-[680px] md:h-[692px] mx-auto relative ">
+          <div className="w-[310px] h-[392px] md:w-[560px] lg:w-[580px] md:h-[692px] mx-auto relative ">
             <Image
               src={"/services/washing-machine/description.png"}
               alt={"description"}
@@ -70,7 +70,7 @@ export default function DescriptionWashing() {
               consultation.
             </p>
           </div>
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col items-center lg:items-start gap-10">
             <CallContactButtons />
           </div>
         </div>
