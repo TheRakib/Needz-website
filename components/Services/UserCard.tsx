@@ -25,7 +25,7 @@ export default function UserCard() {
         variant="outlined"
       >
         <FiPhoneCall />
-        <span className="md:tracking-tighter lg:tracking-normal">
+        <span className="md:tracking-tighter lg:tracking-normal tracking-tight">
           Call 08 – 23 55 20
         </span>
       </Button>
