@@ -35,12 +35,12 @@ const pages = [
   {
     id: 4,
     title: "Services Agreement",
-    link: "/aggrement",
+    link: "/agreement",
   },
   {
     id: 5,
     title: "About Us",
-    link: "/about",
+    link: "/about-us",
   },
 ];
 function Navbar() {
@@ -87,7 +87,7 @@ function Navbar() {
                 onClick={() => router.push(page.link)}
                 className={`${
                   pathName === page.link ? "text-black" : "text-black/70"
-                } font-medium`}
+                } font-medium tracking-tight`}
               >
                 {page.title}
               </span>
@@ -102,7 +102,7 @@ function Navbar() {
                 onChange={handleCloseNavMenu}
                 className={`${
                   pathName.includes(page.link) ? "text-black" : "text-black/70"
-                } text-base font-medium`}
+                } text-base font-medium tracking-normal`}
                 sx={{
                   minWidth: "120px",
                 }}
