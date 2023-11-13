@@ -38,7 +38,7 @@ export default function Details({
     __html: htmlString,
   });
   return (
-    <div className="max-w-layout mx-auto my-10 px-2">
+    <div className="max-w-layout mx-auto mt-10 px-2">
       <div
         className={`${
           containerClass && containerClass
