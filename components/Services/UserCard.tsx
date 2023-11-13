@@ -21,11 +21,11 @@ export default function UserCard() {
         <div className="w-full h-[1px] bg-white/70 " />
       </div>
       <Button
-        className="bg-white capitalize rounded-2xl text-primary hover:bg-transparent hover:text-white hover:border-white text-[20px] md:text-[20px] lg:text-[20px] py-5 px-11 md:px-3 lg:px-11 flex gap-2"
+        className="bg-white capitalize rounded-2xl text-primary hover:bg-transparent hover:text-white hover:border-white text-[20px] md:text-[20px] lg:text-[20px] py-5 px-11 md:px-3 xl:px-11 flex gap-2"
         variant="outlined"
       >
         <FiPhoneCall />
-        <span className="md:tracking-tighter lg:tracking-normal tracking-tight">
+        <span className="md:tracking-tighter xl:tracking-normal tracking-tight">
           Call 08 – 23 55 20
         </span>
       </Button>

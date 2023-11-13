@@ -11,7 +11,7 @@ export default function Description() {
         {...detailsProps}
         containerClass="!flex-col-reverse md:!flex-row"
       />
-      <div className=" flex flex-col lg:flex-row justify-between gap-[50px] mt-5">
+      <div className=" flex flex-col lg:flex-row justify-between gap-[50px] mt-5 px-2">
         <div className="flex flex-col gap-11">
           <p className="text-black/70 text-[18px]">
             We carry out both large and small projects. We undertake everything
@@ -36,7 +36,7 @@ export default function Description() {
             our well-equipped service vans and carry out a fault finding and
             review on site.
           </p>
-          <div className="w-[310px] h-[392px] md:w-[560px] lg:w-[580px] xl:w-[664px] md:h-[692px] ml-auto mr-auto md:ml-0 relative ">
+          <div className="w-[310px] h-[392px] md:w-[560px] lg:w-[580px] xl:w-[664px] md:h-[692px] ml-auto mr-auto lg:ml-0 relative ">
             <Image
               src={"/services/washing-machine/description.png"}
               alt={"description"}
@@ -79,7 +79,7 @@ export default function Description() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-10 mt-[100px]">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10 mt-[100px]">
         <CallContactButtons />
       </div>
     </div>
