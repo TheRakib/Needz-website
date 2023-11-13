@@ -1,6 +1,7 @@
 import Search from "@/components/Blog/Search";
 import Topics from "@/components/Blog/Topics";
 import ServicesBanner from "@/components/Services/ServicesBanner";
+import UserCard from "@/components/Services/UserCard";
 import React from "react";
 
 export default function page() {
@@ -16,6 +17,7 @@ export default function page() {
           <div className="w-[370px] flex flex-col gap-5">
             <Search />
             <Topics />
+            <UserCard />
           </div>
           <div className="max-w-[830px]"></div>
         </div>

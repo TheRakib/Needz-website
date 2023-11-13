@@ -4,6 +4,7 @@ import "./globals.css";
 // import Script from "next/script";
 import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
+import Script from "next/script";
 
 const inter = Inter({
   weight: ["200", "300", "400", "500", "500", "600", "700"],
@@ -29,27 +30,19 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
       </body>
-      {/* <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=YOUR_GOOGLE_ANALYTICS_ID`}
-      />
+      {/* <!-- Google tag (gtag.js) --> */}
       <Script
-        strategy="afterInteractive"
-        id="google-analytics-script"
-        // Replace with your Google Analytics ID
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'YOUR_GOOGLE_ANALYTICS_ID');
-          `,
-        }}
-      />
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/ns.html?id=YOUR_TAG_MANAGER_ID`}
-      /> */}
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-997KQ0H8V0"
+      ></Script>
+      <Script id="google-analytics">
+        {` 
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-997KQ0H8V0');`}
+      </Script>
     </html>
   );
 }
