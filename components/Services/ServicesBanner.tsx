@@ -8,9 +8,15 @@ type Props = {
   title: string;
   breadcrumb: string;
   img: string;
+  titleClass?: string;
 };
 
-export default function ServicesBanner({ title, breadcrumb, img }: Props) {
+export default function ServicesBanner({
+  title,
+  breadcrumb,
+  img,
+  titleClass,
+}: Props) {
   return (
     <div className="flex-col blur-[0.5px] overflow-hidden relative flex min-h-[362px] items-center justify-center px-5 max-w-maxLayout mx-auto">
       <div className="w-full h-full">
@@ -23,7 +29,7 @@ export default function ServicesBanner({ title, breadcrumb, img }: Props) {
         />
       </div>
       <div className="max-w-layout mx-auto text-white flex flex-col items-center justify-center h-full">
-        <SectionTitle title={title} />
+        <SectionTitle title={title} className={titleClass ? titleClass : ""} />
         <Breadcrumbs aria-label="breadcrumb" className=" text-white">
           <Link
             color="inherit"

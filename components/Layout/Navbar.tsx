@@ -14,7 +14,7 @@ import { twMerge } from "tailwind-merge";
 import { BiPhoneCall } from "react-icons/bi";
 import { Select } from "@mui/material";
 import { services } from "@/Constants";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const pages = [
   {
@@ -24,23 +24,23 @@ const pages = [
   },
   {
     id: 2,
-    title: "About Us",
-    link: "/",
+    title: "Our Services",
+    link: "/services",
   },
   {
     id: 3,
-    title: "Our Services",
-    link: "/",
+    title: "Blog/newsletter",
+    link: "/blog",
   },
   {
     id: 4,
     title: "Services Agreement",
-    link: "/",
+    link: "/agreement",
   },
   {
     id: 5,
-    title: "Blog",
-    link: "/",
+    title: "About Us",
+    link: "/about-us",
   },
 ];
 function Navbar() {
@@ -49,6 +49,7 @@ function Navbar() {
   );
 
   const router = useRouter();
+  const pathName = usePathname();
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -79,10 +80,17 @@ function Navbar() {
             // onMouseEnter={handleMouseEnter}
             // onMouseLeave={handleMouseLeave}
             sx={{ my: 2, display: "block" }}
-            className="text-black/70 capitalize text-base xl:text-lg font-normal font-inter whitespace-nowrap"
+            className=" capitalize text-base xl:text-lg font-normal font-inter whitespace-nowrap"
           >
             {page.title !== "Our Services" ? (
-              <span onClick={() => router.push(`/`)}>{page.title}</span>
+              <span
+                onClick={() => router.push(page.link)}
+                className={`${
+                  pathName === page.link ? "text-black" : "text-black/70"
+                } font-medium tracking-tight`}
+              >
+                {page.title}
+              </span>
             ) : (
               <Select
                 variant="standard"
@@ -92,7 +100,9 @@ function Navbar() {
                 disableUnderline
                 displayEmpty
                 onChange={handleCloseNavMenu}
-                className="text-black/70 text-base"
+                className={`${
+                  pathName.includes(page.link) ? "text-black" : "text-black/70"
+                } text-base font-medium tracking-normal`}
                 sx={{
                   minWidth: "120px",
                 }}
@@ -138,12 +148,19 @@ function Navbar() {
   return (
     <AppBar
       position="static"
-      className="max-w-layout px-6 xl:px-0 mx-auto bg-white text-black shadow-none mt-6 font-inter"
+      className="max-w-layout px-6 xl:px-0 mx-auto bg-white text-black shadow-none my-5 font-inter"
     >
       <Toolbar disableGutters>
         <AppLogo className="hidden md:block" />
 
-        <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+        <AppLogo className="flex md:hidden w-[120px] h-[40px]" />
+
+        <Box
+          sx={{
+            flexGrow: 1,
+            display: { xs: "flex", md: "none", justifyContent: "end" },
+          }}
+        >
           <IconButton
             size="large"
             aria-label="account of current user"
@@ -185,10 +202,6 @@ function Navbar() {
             </div>
           </Menu>
         </Box>
-        <AppLogo
-          className="flex md:hidden w-[120px] h-[40px]"
-          onClick={() => router.push(`/`)}
-        />
         <Box
           sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
           className="justify-center"
