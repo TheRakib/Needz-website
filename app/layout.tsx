@@ -32,8 +32,7 @@ export default function RootLayout({
             src="https://www.googletagmanager.com/ns.html?id=GTM-KHV7BCTV"
             height="0"
             width="0"
-            // @ts-ignore
-            style="display:none;visibility:hidden"
+            style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
         {/* <!-- End Google Tag Manager (noscript) --> */}
@@ -49,6 +48,10 @@ export default function RootLayout({
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-KHV7BCTV');`}</Script>
       {/* <!-- End Google Tag Manager --> */}
+      {/* <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=GTM-KHV7BCTV"
+      ></Script> */}
 
       {/* <!-- Google tag (gtag.js) --> */}
       <Script
