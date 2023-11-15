@@ -9,6 +9,7 @@ type Props = {
   breadcrumb: string;
   img: string;
   titleClass?: string;
+  extraInfo?: React.ReactNode;
 };
 
 export default function ServicesBanner({
@@ -16,6 +17,7 @@ export default function ServicesBanner({
   breadcrumb,
   img,
   titleClass,
+  extraInfo,
 }: Props) {
   return (
     <div className="flex-col blur-[0.5px] overflow-hidden relative flex min-h-[362px] items-center justify-center px-5 max-w-maxLayout mx-auto">
@@ -40,6 +42,7 @@ export default function ServicesBanner({
           </Link>
           <Typography>{breadcrumb}</Typography>
         </Breadcrumbs>
+        {extraInfo ? extraInfo : null}
       </div>
     </div>
   );

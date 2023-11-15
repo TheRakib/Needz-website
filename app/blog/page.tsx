@@ -18,17 +18,20 @@ export default function page() {
       />
       <div className="max-w-layout mx-auto mt-10">
         <div className="flex gap-10">
+          {/* -------left side----- */}
           <div className="w-[370px] flex flex-col gap-5">
             <Search />
             <Topics />
             <UserCard />
           </div>
+          {/* ---------right side------- */}
           <div className="flex flex-col gap-[50px]">
             <div className="w-full flex flex-col gap-[10px]">
               {blogItems.map((item) => (
                 <BlogCard key={item.id} item={item} />
               ))}
             </div>
+            {/* ------pagination------- */}
             <div className="flex items-center justify-center w-full">
               <Pagination
                 count={10}
