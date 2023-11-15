@@ -1,5 +1,6 @@
 "use client";
 import BlogCard from "@/components/Blog/BlogCard";
+import Featured from "@/components/Blog/Featured";
 import Search from "@/components/Blog/Search";
 import Topics from "@/components/Blog/Topics";
 import ServicesBanner from "@/components/Services/ServicesBanner";
@@ -22,6 +23,7 @@ export default function page() {
           <div className="w-[370px] flex flex-col gap-5">
             <Search />
             <Topics />
+            <Featured />
             <UserCard />
           </div>
           {/* ---------right side------- */}
