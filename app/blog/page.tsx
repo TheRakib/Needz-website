@@ -18,9 +18,9 @@ export default function page() {
         img="/blog/banner.png"
       />
       <div className="max-w-layout mx-auto mt-10">
-        <div className="flex gap-10">
+        <div className="flex gap-4 xl:gap-10 flex-col md:flex-row">
           {/* -------left side----- */}
-          <div className="w-[370px] flex flex-col gap-5">
+          <div className="w-[370px] flex flex-col gap-5 px-2">
             <Search />
             <Topics />
             <Featured />
@@ -28,13 +28,13 @@ export default function page() {
           </div>
           {/* ---------right side------- */}
           <div className="flex flex-col gap-[50px]">
-            <div className="w-full flex flex-col gap-[10px]">
+            <div className="w-full flex flex-col gap-[10px] px-2">
               {blogItems.map((item) => (
                 <BlogCard key={item.id} item={item} />
               ))}
             </div>
             {/* ------pagination------- */}
-            <div className="flex items-center justify-center w-full">
+            <div className="flex items-center justify-center w-full px-2">
               <Pagination
                 count={10}
                 variant="outlined"

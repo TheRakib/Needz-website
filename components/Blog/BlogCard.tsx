@@ -9,8 +9,12 @@ export default function BlogCard({ item }: Props) {
       </div>
       <div className="flex flex-col justify-between">
         <div className="flex flex-col gap-3">
-          <h3 className="font-semibold text-[24px] ">{item.title}</h3>
-          <p className="text-black/70 ">{item.text}</p>
+          <h3 className="font-semibold text-[20px] md:text-[24px] ">
+            {item.title}
+          </h3>
+          <p className="text-black/70 text-[14px] md:text-[16px] ">
+            {item.text}
+          </p>
         </div>
         <div className="flex gap-4">
           <Image
