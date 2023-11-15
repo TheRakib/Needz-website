@@ -6,8 +6,7 @@ import ServicesBanner from "@/components/Services/ServicesBanner";
 import UserCard from "@/components/Services/UserCard";
 import { Pagination, PaginationItem } from "@mui/material";
 import React from "react";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { FaAngleLeft, FaChevronRight } from "react-icons/fa6";
 
 export default function page() {
   return (
@@ -39,15 +38,15 @@ export default function page() {
                   <PaginationItem
                     slots={{
                       previous: () => (
-                        <div>
-                          <ArrowBackIcon />
+                        <div className="flex items-center gap-1">
+                          <FaAngleLeft size={10} />
                           Previous
                         </div>
                       ),
                       next: () => (
-                        <div className="">
-                          Next
-                          <ArrowForwardIcon />
+                        <div className="flex items-center gap-1">
+                          <span>Next</span>
+                          <FaChevronRight size={10} />
                         </div>
                       ),
                     }}
