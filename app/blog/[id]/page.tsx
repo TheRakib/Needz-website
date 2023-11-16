@@ -1,5 +1,6 @@
 import MainTexts from "@/components/Blog/SingleBlog/MainTexts";
 import SecondText from "@/components/Blog/SingleBlog/SecondText";
+import Social from "@/components/Blog/SingleBlog/Social";
 import ServicesBanner from "@/components/Services/ServicesBanner";
 import Image from "next/image";
 import React from "react";
@@ -33,6 +34,7 @@ export default function page() {
       />
       <MainTexts />
       <SecondText />
+      <Social />
     </div>
   );
 }
