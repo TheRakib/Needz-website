@@ -16,15 +16,15 @@ export default function MainTexts() {
               up when you want to install a new dishwasher. Is it ok to install
               the new dishwasher myself? What is the cost of installing a new
               dishwasher? Where can I go for help installing my dishwasher? Read
-              on and we'll answer your questions as best we can!
+              on and we&apos;ll answer your questions as best we can!
             </p>
             <p>
               The first step when looking at the installation of a new
-              dishwasher is often the choice of dishwasher. In today's market,
-              there are hundreds if not thousands of different models to choose
-              from - and it's not always the easiest. Of course, you want a
-              dishwasher that meets the needs of the home, and ideally it should
-              fit in as well. We at JourElite understand that it can be
+              dishwasher is often the choice of dishwasher. In today&apos;s
+              market, there are hundreds if not thousands of different models to
+              choose from - and it&apos;s not always the easiest. Of course, you
+              want a dishwasher that meets the needs of the home, and ideally it
+              should fit in as well. We at JourElite understand that it can be
               difficult to find the right one in the huge selection and are here
               for consultation and advice when you need help. If desired, we
               will of course help with purchases as well.

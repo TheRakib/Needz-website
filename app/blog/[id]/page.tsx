@@ -1,4 +1,5 @@
 import MainTexts from "@/components/Blog/SingleBlog/MainTexts";
+import SecondText from "@/components/Blog/SingleBlog/SecondText";
 import ServicesBanner from "@/components/Services/ServicesBanner";
 import Image from "next/image";
 import React from "react";
@@ -31,6 +32,7 @@ export default function page() {
         }
       />
       <MainTexts />
+      <SecondText />
     </div>
   );
 }
