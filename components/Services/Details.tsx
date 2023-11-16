@@ -9,6 +9,7 @@ type Props = {
     para2: string;
   };
   title2?: string;
+  title?: string;
   description2?: string;
   description2Limit?: number;
   title2Class?: string;
@@ -18,6 +19,7 @@ type Props = {
 export default function Details({
   description,
   title2,
+  title = "Description",
   description2,
   description2Limit,
   title2Class,
@@ -46,7 +48,7 @@ export default function Details({
       >
         <div className={`${title2Class && title2Class} flex flex-col gap-11`}>
           <div className="max-w-[820px] flex flex-col gap-5 ">
-            <TextTitle title="Description" />
+            <TextTitle title={title} />
             <div className="flex flex-col gap-5 text-[18px] text-black/70 ">
               <p>{description.para1}</p>
               {/* <p>{description.para2}</p> */}

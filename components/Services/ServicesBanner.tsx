@@ -10,6 +10,7 @@ type Props = {
   img: string;
   titleClass?: string;
   extraInfo?: React.ReactNode;
+  firstItem?: string;
 };
 
 export default function ServicesBanner({
@@ -18,6 +19,7 @@ export default function ServicesBanner({
   img,
   titleClass,
   extraInfo,
+  firstItem = "Our Services",
 }: Props) {
   return (
     <div className="flex-col blur-[0.5px] overflow-hidden relative flex min-h-[362px] items-center justify-center px-5 max-w-maxLayout mx-auto">
@@ -38,7 +40,7 @@ export default function ServicesBanner({
             href="/services"
             className="hover:underline transition-all text-white/70"
           >
-            Our Services
+            {firstItem}
           </Link>
           <Typography>{breadcrumb}</Typography>
         </Breadcrumbs>

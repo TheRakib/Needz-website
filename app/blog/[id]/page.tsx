@@ -9,6 +9,7 @@ export default function page() {
         title="Installing a new dishwasher?"
         breadcrumb="Installing a dishwasher page"
         img="/blog/single-blog.png"
+        firstItem="Blog/newsletter"
         extraInfo={
           <div className="mt-8 flex items-center gap-3">
             <Image
