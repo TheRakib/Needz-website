@@ -45,6 +45,6 @@ const config: Config = {
       yellow: "#ffc000",
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;
