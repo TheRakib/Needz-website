@@ -13,10 +13,6 @@ import Typography from "@mui/material/Typography";
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
-  //   border: `1px solid ${theme.palette.divider}`,
-  //   "&:not(:last-child)": {
-  //     borderBottom: 0,
-  //   },
   "&:before": {
     display: "none",
   },
@@ -71,15 +67,6 @@ export default function Topics() {
                 {item.title} ({item.count})
               </Typography>
             </AccordionSummary>
-            {/* <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
-            </AccordionDetails> */}
           </Accordion>
         ))}
       </div>
@@ -92,50 +79,25 @@ const topicItems = [
     id: 1,
     title: "Plumber",
     count: 3,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-        eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-        eget.`,
   },
   {
     id: 2,
     title: "Stop in drains",
     count: 4,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-        eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-        eget.`,
   },
   {
     id: 3,
     title: "Washing machine",
     count: 6,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-        eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-        eget.`,
   },
   {
     id: 4,
     title: "Electrician",
     count: 9,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-        eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-        eget.`,
   },
   {
     id: 5,
     title: "Electrical installations",
     count: 3,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-        eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-        eget.`,
   },
 ];

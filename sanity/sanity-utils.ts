@@ -37,4 +37,3 @@ export async function getPost(slug: string): Promise<Blog> {
     { slug }
   );
 }
-// *[_type == "blogPost"&& slug.current =="installing-a-new-dishwasher"]
