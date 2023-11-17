@@ -2,10 +2,28 @@ import MainTexts from "@/components/Blog/SingleBlog/MainTexts";
 import SecondText from "@/components/Blog/SingleBlog/SecondText";
 import Social from "@/components/Blog/SingleBlog/Social";
 import ServicesBanner from "@/components/Services/ServicesBanner";
+import { Metadata, ResolvingMetadata } from "next";
 import Image from "next/image";
 import React from "react";
 
-export default function page() {
+type Props = {
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const id = params.id;
+
+  const parentMetadata = await parent;
+
+  return {
+    title: ` ${parentMetadata.title?.absolute} - ${id}`,
+  };
+}
+
+export default async function page() {
   return (
     <div>
       <ServicesBanner
