@@ -1,29 +1,30 @@
+"use client";
+
+import { Blog } from "@/Types";
 import MainTexts from "@/components/Blog/SingleBlog/MainTexts";
 import SecondText from "@/components/Blog/SingleBlog/SecondText";
 import Social from "@/components/Blog/SingleBlog/Social";
 import ServicesBanner from "@/components/Services/ServicesBanner";
-import { Metadata, ResolvingMetadata } from "next";
+import { getPost } from "@/sanity/sanity-utils";
 import Image from "next/image";
-import React from "react";
+import { useParams } from "next/navigation";
+import React, { useEffect, useState } from "react";
 
-type Props = {
-  params: { id: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-};
-export async function generateMetadata(
-  { params, searchParams }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
-  const id = params.id;
+export default function Page() {
+  const [blog, setBlog] = useState<Blog>();
+  const param = useParams();
+  // console.log("param", param.id);
+  // console.log("blog", blog);
 
-  const parentMetadata = await parent;
+  useEffect(() => {
+    const fetchAndSetPost = async () => {
+      const post = await getPost("installing-a-new-dishwasher");
+      setBlog(post);
+    };
 
-  return {
-    title: ` ${parentMetadata.title?.absolute} - ${id}`,
-  };
-}
+    fetchAndSetPost();
+  }, [param]);
 
-export default async function page() {
   return (
     <div>
       <ServicesBanner

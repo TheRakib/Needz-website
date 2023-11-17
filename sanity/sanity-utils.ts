@@ -1,32 +1,40 @@
 import { createClient, groq } from "next-sanity";
-import { Project } from "@/types/Project";
+import { Project } from "@/Types/Project";
 import clientConfig from "./config/client-config";
+import { Blog } from "@/Types";
 
-export async function getProjects(): Promise<Project[]> {
+export async function getPosts(): Promise<Blog[]> {
   return createClient(clientConfig).fetch(
-    groq`*[_type == "project"]{
+    groq`*[_type == "blogPost"]{
       _id,
       _createdAt,
-      name,
+      title,
+      author,
       "slug": slug.current,
-      "image": image.asset->url,
-      url,
-      content
+      "mainTextImg": mainTextImg.asset->url
     }`
   );
 }
 
-export async function getProject(slug: string): Promise<Project> {
+export async function getPost(slug: string): Promise<Blog> {
   return createClient(clientConfig).fetch(
-    groq`*[_type == "project" && slug.current == $slug][0]{
+    groq`*[_type == "blogPost" && slug.current == "${slug}"][0]{
       _id,
       _createdAt,
-      name,
+      title,
       "slug": slug.current,
-      "image": image.asset->url,
-      url,
-      content
+      "bannerImg": bannerImg.asset->url,
+      mainText,
+      "mainTextImg": mainTextImg.asset->url,
+      middleText,
+      secondText,
+      "secondTextImg": secondTextImg.asset->url,
+      lastTitle,
+      lastText,
+      summeryTitle,
+      summery
     }`,
     { slug }
   );
 }
+// *[_type == "blogPost"&& slug.current =="installing-a-new-dishwasher"]

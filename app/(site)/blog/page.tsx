@@ -1,15 +1,29 @@
 "use client";
+import { Blog } from "@/Types";
 import BlogCard from "@/components/Blog/BlogCard";
 import Featured from "@/components/Blog/Featured";
 import Search from "@/components/Blog/Search";
 import Topics from "@/components/Blog/Topics";
 import ServicesBanner from "@/components/Services/ServicesBanner";
 import UserCard from "@/components/Services/UserCard";
+import { getPosts } from "@/sanity/sanity-utils";
 import { Pagination, PaginationItem } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaAngleLeft, FaChevronRight } from "react-icons/fa6";
 
-export default function page() {
+export default function Page() {
+  const [blogs, setBlogs] = useState<Blog[]>();
+  console.log("blogs", blogs);
+
+  useEffect(() => {
+    const fetchAndSetPost = async () => {
+      const post = await getPosts();
+      setBlogs(post);
+    };
+
+    fetchAndSetPost();
+  }, []);
+
   return (
     <div>
       <ServicesBanner
