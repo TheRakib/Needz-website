@@ -1,5 +1,22 @@
+import OnCall from "@/components/About/OnCall";
+import Features from "@/components/Home/Features";
+import Join from "@/components/Home/Join";
+import ServicesBanner from "@/components/Services/ServicesBanner";
+import ContactUs from "@/components/Shared/ContactUs";
 import React from "react";
 
 export default function page() {
-  return <div>page</div>;
+  return (
+    <div>
+      <ServicesBanner
+        title="About Us"
+        breadcrumb="About us page"
+        img="/about/banner.png"
+      />
+      <OnCall />
+      <Join />
+      <Features />
+      <ContactUs />
+    </div>
+  );
 }
