@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  // title: "JoureLiten",
+  metadataBase: new URL("https://360jour.vercel.app/"),
   title: {
     template: "JoureLiten | %s",
     default: "JoureLiten",

@@ -17,7 +17,6 @@ export async function generateMetadata(
   const id = params.id;
 
   const parentMetadata = await parent;
-  console.log("parentMetadata:", parentMetadata);
 
   return {
     title: ` ${parentMetadata.title?.absolute} - ${id}`,
