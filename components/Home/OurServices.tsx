@@ -116,30 +116,6 @@ const serviceItems = [
       "Sewer lifting through high pressure is a gentle and environmentally friendly method that quickly solves all kinds of blockages in drains.",
   },
   {
-    id: 5,
-    title: "Camera Inspection",
-    link: "/services/camera",
-    img: "/home/services/Image5.png",
-    description:
-      "Sewer lifting through high pressure is a gentle and environmentally friendly method that quickly solves all kinds of blockages in drains.",
-  },
-  {
-    id: 6,
-    title: "Charging Box",
-    link: "/services/charging-box",
-    img: "/home/services/Image6.png",
-    description:
-      "Sewer lifting through high pressure is a gentle and environmentally friendly method that quickly solves all kinds of blockages in drains.",
-  },
-  {
-    id: 7,
-    title: "Electric Car Charger",
-    link: "/services/electric-car",
-    img: "/home/services/Image7.png",
-    description:
-      "Sewer lifting through high pressure is a gentle and environmentally friendly method that quickly solves all kinds of blockages in drains.",
-  },
-  {
     id: 8,
     title: "Electrical Installations",
     link: "/services/electrical-installations",
