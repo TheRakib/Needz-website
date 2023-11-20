@@ -1,4 +1,6 @@
+"use client";
 import { Button } from "@mui/material";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { BiPhoneCall } from "react-icons/bi";
 import { twMerge } from "tailwind-merge";
@@ -10,6 +12,7 @@ export default function CallContactButtons({
   callClass?: string;
   contactClass?: string;
 }) {
+  const router = useRouter();
   return (
     <>
       <Button
@@ -25,6 +28,7 @@ export default function CallContactButtons({
         Call 08-235520
       </Button>
       <Button
+        onClick={() => router.push("/contact-us")}
         className={twMerge(
           `${contactClass} capitalize text-xl md:text-2xl md:py-7 md:px-12 px-10 py-4 rounded-xl bg-white hover:bg-primary hover:text-white text-primary flex-nowrap whitespace-nowrap w-[344px]`
         )}

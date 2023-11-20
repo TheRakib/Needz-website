@@ -26,7 +26,7 @@ export default function OurServices() {
   };
 
   return (
-    <div className="max-w-layout mx-auto my-[120px] ">
+    <div className="max-w-layout mx-auto my-[120px] " id="our_services">
       <SectionTitle title="Our Services" className="w-full !text-center" />
 
       <div className="flex flex-wrap gap-5 lg:gap-16 mt-11 md:mx-24 xl:mx-0">
@@ -112,30 +112,6 @@ const serviceItems = [
     title: "Washing Machine",
     link: "/services/washing",
     img: "/home/services/Image4.png",
-    description:
-      "Sewer lifting through high pressure is a gentle and environmentally friendly method that quickly solves all kinds of blockages in drains.",
-  },
-  {
-    id: 5,
-    title: "Camera Inspection",
-    link: "/services/camera",
-    img: "/home/services/Image5.png",
-    description:
-      "Sewer lifting through high pressure is a gentle and environmentally friendly method that quickly solves all kinds of blockages in drains.",
-  },
-  {
-    id: 6,
-    title: "Charging Box",
-    link: "/services/charging-box",
-    img: "/home/services/Image6.png",
-    description:
-      "Sewer lifting through high pressure is a gentle and environmentally friendly method that quickly solves all kinds of blockages in drains.",
-  },
-  {
-    id: 7,
-    title: "Electric Car Charger",
-    link: "/services/electric-car",
-    img: "/home/services/Image7.png",
     description:
       "Sewer lifting through high pressure is a gentle and environmentally friendly method that quickly solves all kinds of blockages in drains.",
   },

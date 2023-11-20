@@ -1,9 +1,12 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import SectionTitle from "../Shared/SectionTitle";
 import { Button } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 export default function Features() {
+  const router = useRouter();
   return (
     <div className="max-w-layout mx-auto my-[120px] px-2">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
@@ -22,7 +25,10 @@ export default function Features() {
             ))}
           </ul>
           <div className="w-full flex flex-col lg:flex-row items-center gap-2 lg:gap-9">
-            <Button className="bg-primary hover:bg-primary/80 text-white capitalize rounded-xl font-semibold text-[26px] py-[25px] px-[50px] ">
+            <Button
+              onClick={() => router.push("contact-us")}
+              className="bg-primary hover:bg-primary/80 text-white capitalize rounded-xl font-semibold text-[26px] py-[25px] px-[50px] "
+            >
               Contact Us
             </Button>
             <Button className="bg-white hover:bg-primary/5 text-black capitalize rounded-xl font-semibold text-[26px] py-[25px] ">
