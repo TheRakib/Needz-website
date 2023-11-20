@@ -55,8 +55,17 @@ export default function Page() {
               </div>
             }
           />
-          <MainTexts />
-          <MiddleText />
+          {blog.mainText && blog.mainTextImg && (
+            <MainTexts
+              mainText={blog.mainText}
+              mainTextImg={blog.mainTextImg}
+            />
+          )}
+          <MiddleText
+            title={blog.middleTitle}
+            left={blog.middleTextLeft}
+            right={blog.middleTextRight}
+          />
           <SecondText />
           <Social />
         </div>
