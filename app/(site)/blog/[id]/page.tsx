@@ -55,18 +55,33 @@ export default function Page() {
               </div>
             }
           />
-          {blog.mainText && blog.mainTextImg && (
-            <MainTexts
-              mainText={blog.mainText}
-              mainTextImg={blog.mainTextImg}
-            />
+          {blog.mainText ? (
+            <>
+              {blog.mainText && blog.mainTextImg && (
+                <MainTexts
+                  mainText={blog.mainText}
+                  mainTextImg={blog.mainTextImg}
+                />
+              )}
+              <MiddleText
+                title={blog.middleTitle}
+                left={blog.middleTextLeft}
+                right={blog.middleTextRight}
+              />
+              {/* -------second and last section---- */}
+              <SecondText
+                appendix={blog.appendix}
+                img={blog.secondTextImg}
+                text={blog.secondText}
+                lastTitle={blog.lastTitle}
+                lastText={blog.lastText}
+                summeryTitle={blog.summeryTitle}
+                summery={blog.summery}
+              />
+            </>
+          ) : (
+            <p className="text-lg max-w-layout mx-auto">Coming soon...</p>
           )}
-          <MiddleText
-            title={blog.middleTitle}
-            left={blog.middleTextLeft}
-            right={blog.middleTextRight}
-          />
-          <SecondText />
           <Social />
         </div>
       ) : null}

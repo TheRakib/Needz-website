@@ -14,7 +14,7 @@ export default function MiddleText({
 }) {
   return (
     <div className="max-w-layout mx-auto my-10">
-      <TextTitle className="h-10" title={title} />
+      {title && <TextTitle className="h-10" title={title} />}
       <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10">
         {left && (
           <div className="w-full prose-lg">
