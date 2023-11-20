@@ -7,8 +7,8 @@ import React from "react";
 export default function BlogCard({ item }: { item: Blog }) {
   return (
     <Link href={`/blog/${item.slug}`}>
-      <div className="w-full border border-black/20 bg-white hover:bg-primary/10 hover:border-primary/10 rounded-lg cursor-pointer flex gap-6 p-5 ">
-        <div className="w-[258px] h-[170px] relative ">
+      <div className="w-full border border-black/20 bg-white hover:bg-primary/10 hover:border-primary/10 rounded-lg cursor-pointer flex gap-6 p-3 md:p-5 ">
+        <div className="w-[258px] h-[170px] min-w-[150px] max-w-[150px] md:min-w-0 md:max-w-none lg:min-w-[250px] lg:max-w-[150px] xl:min-w-0 xl:max-w-none relative rounded-lg overflow-hidden ">
           <Image alt="blog" src={item.bannerImg} fill />
         </div>
         <div className="flex flex-col justify-between">
