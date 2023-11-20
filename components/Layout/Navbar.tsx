@@ -146,72 +146,77 @@ function Navbar() {
   };
 
   return (
-    <AppBar
-      position="static"
-      className="max-w-layout px-6 xl:px-0 mx-auto bg-white text-black shadow-none my-5 font-inter"
-    >
-      <Toolbar disableGutters>
-        <AppLogo className="hidden md:block" />
+    <div className="w-full border-b-2 border-black/10">
+      <AppBar
+        position="static"
+        className="max-w-layout px-6 xl:px-0 mx-auto bg-white text-black shadow-none my-5 font-inter"
+      >
+        <Toolbar disableGutters>
+          <AppLogo className="hidden md:block" />
 
-        <AppLogo className="flex md:hidden w-[120px] h-[40px]" />
+          <AppLogo className="flex md:hidden w-[120px] h-[40px]" />
 
-        <Box
-          sx={{
-            flexGrow: 1,
-            display: { xs: "flex", md: "none", justifyContent: "end" },
-          }}
-        >
-          <IconButton
-            size="large"
-            aria-label="account of current user"
-            aria-controls="menu-appbar"
-            aria-haspopup="true"
-            onClick={handleOpenNavMenu}
-            color="inherit"
-            className="md:ml-auto"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Menu
-            id="menu-appbar"
-            anchorEl={anchorElNav}
-            anchorOrigin={{
-              vertical: "bottom",
-              horizontal: "left",
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: "top",
-              horizontal: "left",
-            }}
-            open={Boolean(anchorElNav)}
-            onClose={handleCloseNavMenu}
+          <Box
             sx={{
-              display: { xs: "block", md: "none" },
+              flexGrow: 1,
+              display: { xs: "flex", md: "none", justifyContent: "end" },
             }}
           >
-            {pages.map((page) => (
-              <MenuItem key={page.id} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center" onClick={() => router.push(`/`)}>
-                  {page.title}
-                </Typography>
-              </MenuItem>
-            ))}
-            <div className="border-t border-black/80 mt-4">
-              {actionButtons("flex-col mx-2")}
-            </div>
-          </Menu>
-        </Box>
-        <Box
-          sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
-          className="justify-center"
-        >
-          {pagesMenu()}
-        </Box>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+              className="md:ml-auto"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              {pages.map((page) => (
+                <MenuItem key={page.id} onClick={handleCloseNavMenu}>
+                  <Typography
+                    textAlign="center"
+                    onClick={() => router.push(`/`)}
+                  >
+                    {page.title}
+                  </Typography>
+                </MenuItem>
+              ))}
+              <div className="border-t border-black/80 mt-4">
+                {actionButtons("flex-col mx-2")}
+              </div>
+            </Menu>
+          </Box>
+          <Box
+            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
+            className="justify-center"
+          >
+            {pagesMenu()}
+          </Box>
 
-        <div className="hidden lg:block">{actionButtons("")}</div>
-      </Toolbar>
-    </AppBar>
+          <div className="hidden lg:block">{actionButtons("")}</div>
+        </Toolbar>
+      </AppBar>
+    </div>
   );
 }
 
