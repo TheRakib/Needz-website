@@ -1,6 +1,6 @@
 import blogPost from "./blog-post";
-import project from "./project-schema";
+import authors from "./authors";
 
-const schemas = [project, blogPost];
+const schemas = [blogPost, authors];
 
 export default schemas;

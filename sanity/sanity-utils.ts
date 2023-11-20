@@ -1,5 +1,4 @@
 import { createClient, groq } from "next-sanity";
-import { Project } from "@/Types/Project";
 import clientConfig from "./config/client-config";
 import { Blog } from "@/Types";
 

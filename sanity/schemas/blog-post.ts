@@ -15,6 +15,12 @@ const blogPost = {
       options: { source: "title" },
     },
     {
+      name: "author",
+      title: "Author",
+      type: "reference",
+      to: [{ type: "authors" }],
+    },
+    {
       name: "bannerImg",
       title: "Banner Image",
       type: "image",
