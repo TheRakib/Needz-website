@@ -56,7 +56,7 @@ export default function PlumberServices() {
           ))}
           <div className="col-span-1 min-h-[368px] flex flex-col items-center justify-center p-[30px] text-white rounded-xl text-[30px] ">
             <p className="text-center">Call now</p>
-            <p className="font-semibold text-center">08-235520</p>
+            <p className="font-semibold text-center">08-302241</p>
           </div>
         </div>
       </div>

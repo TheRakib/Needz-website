@@ -40,7 +40,7 @@ export default function Banner() {
                 size="large"
               >
                 <BiPhoneCall className="mr-2" />
-                08-235520
+                08-302241
               </Button>
             </div>
           </div>

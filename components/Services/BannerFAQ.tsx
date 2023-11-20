@@ -20,7 +20,7 @@ export default function BannerFAQ() {
           size="large"
         >
           <BiPhoneCall className="mr-2" />
-          Call 08-235520
+          Call 08-302241
         </Button>
         <Button
           onClick={() => router.push("/contact-us")}

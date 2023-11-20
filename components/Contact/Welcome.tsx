@@ -69,7 +69,7 @@ export default function Welcome() {
             </span>
             <div className="flex flex-col gap-1">
               <p className="text-[14px] text-black/70 ">Call Us</p>
-              <p className=" ">08-23 55 20</p>
+              <p className=" ">08-30 22 41</p>
             </div>
           </div>
           <div className="flex items-center gap-4">

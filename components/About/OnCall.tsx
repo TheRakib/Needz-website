@@ -49,7 +49,7 @@ export default function OnCall() {
             </div>
           </div>
           <p className="text-[26px] font-semibold text-center">
-            Call Us: 08-23 55 20
+            Call Us: 08-30 22 41
           </p>
         </div>
       </div>
