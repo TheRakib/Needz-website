@@ -12,13 +12,22 @@ export type Blog = {
   title: string;
   slug: string;
   bannerImg: string;
+
   mainText: PortableTextBlock[];
   mainTextImg: string;
-  middleText: PortableTextBlock[];
+
+  middleTitle: string;
+  middleTextLeft: PortableTextBlock[];
+  middleTextRight: PortableTextBlock[];
+
+  appendix: PortableTextBlock[];
+
   secondText: PortableTextBlock[];
   secondTextImg: string;
+
   lastTitle: string;
   lastText: PortableTextBlock[];
+
   summeryTitle: string;
   summery: PortableTextBlock[];
 };

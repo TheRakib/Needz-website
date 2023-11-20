@@ -34,25 +34,8 @@ const blogPost = {
       ],
     },
     {
-      name: "middleTitle",
-      title: "Middle Text Title",
-      type: "string",
-    },
-    {
-      name: "mainTextLeft",
-      title: "Middle Text Left",
-      type: "array",
-      of: [{ type: "block" }],
-    },
-    {
-      name: "mainTextRight",
-      title: "Middle Text Right",
-      type: "array",
-      of: [{ type: "block" }],
-    },
-    {
-      name: "appendix",
-      title: "Appendix",
+      name: "mainText",
+      title: "Main Text",
       type: "array",
       of: [{ type: "block" }],
     },
@@ -70,8 +53,25 @@ const blogPost = {
       ],
     },
     {
-      name: "middleText",
-      title: "Middle Text",
+      name: "middleTitle",
+      title: "Middle Text Title",
+      type: "string",
+    },
+    {
+      name: "middleTextLeft",
+      title: "Middle Text Left",
+      type: "array",
+      of: [{ type: "block" }],
+    },
+    {
+      name: "middleTextRight",
+      title: "Middle Text Right",
+      type: "array",
+      of: [{ type: "block" }],
+    },
+    {
+      name: "appendix",
+      title: "Appendix",
       type: "array",
       of: [{ type: "block" }],
     },
@@ -94,7 +94,6 @@ const blogPost = {
         },
       ],
     },
-
     {
       name: "lastTitle",
       title: "Last Text Title",

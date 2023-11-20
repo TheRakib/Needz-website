@@ -28,13 +28,22 @@ export async function getPost(slug: string): Promise<Blog> {
       title,
       "slug": slug.current,
       "bannerImg": bannerImg.asset->url,
+
       mainText,
       "mainTextImg": mainTextImg.asset->url,
-      middleText,
+
+      middleTitle,
+      middleTextLeft,
+      middleTextRight,
+
+      appendix,
+
       secondText,
       "secondTextImg": secondTextImg.asset->url,
+
       lastTitle,
       lastText,
+      
       summeryTitle,
       summery
     }`,

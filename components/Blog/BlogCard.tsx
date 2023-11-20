@@ -1,32 +1,10 @@
 import { Blog } from "@/Types";
+import { formatDate } from "@/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 export default function BlogCard({ item }: { item: Blog }) {
-  function formatDate(dateString: string) {
-    const months = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ];
-    const date = new Date(dateString);
-    const day = date.getDate();
-    const monthIndex = date.getMonth();
-    const year = date.getFullYear();
-
-    return `${months[monthIndex]} ${day}, ${year}`;
-  }
-
   return (
     <Link href={`/blog/${item.slug}`}>
       <div className="w-full border border-black/20 bg-white hover:bg-primary/10 hover:border-primary/10 rounded-lg cursor-pointer flex gap-6 p-5 ">
