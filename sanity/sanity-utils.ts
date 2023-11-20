@@ -8,7 +8,7 @@ export async function getPosts(): Promise<Blog[]> {
       _id,
       _createdAt,
       title,
-      author,
+      authors,
       "slug": slug.current,
       "mainTextImg": mainTextImg.asset->url
     }`
