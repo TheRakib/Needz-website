@@ -13,8 +13,8 @@ export default function MiddleText({
   right: PortableTextBlock[];
 }) {
   return (
-    <div className="max-w-layout mx-auto my-10">
-      {title && <TextTitle className="h-10" title={title} />}
+    <div className="max-w-layout mx-auto my-10 px-2">
+      {title && <TextTitle className="h-15 lg:h-10" title={title} />}
       <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10">
         {left && (
           <div className="w-full prose-lg">
