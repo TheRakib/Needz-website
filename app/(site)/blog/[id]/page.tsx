@@ -2,6 +2,7 @@
 
 import { Blog } from "@/Types";
 import MainTexts from "@/components/Blog/SingleBlog/MainTexts";
+import MiddleText from "@/components/Blog/SingleBlog/MiddleText";
 import SecondText from "@/components/Blog/SingleBlog/SecondText";
 import Social from "@/components/Blog/SingleBlog/Social";
 import ServicesBanner from "@/components/Services/ServicesBanner";
@@ -52,6 +53,7 @@ export default function Page() {
         }
       />
       <MainTexts />
+      <MiddleText />
       <SecondText />
       <Social />
     </div>
