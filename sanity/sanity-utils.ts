@@ -8,9 +8,14 @@ export async function getPosts(): Promise<Blog[]> {
       _id,
       _createdAt,
       title,
-      authors,
+      "author":{
+        "name": author->name,
+        "facebook":author->facebook,
+        "twitter": author->tweeter,
+        "instagram": author->instagram,
+      },
       "slug": slug.current,
-      "mainTextImg": mainTextImg.asset->url
+      "bannerImg": bannerImg.asset->url
     }`
   );
 }
