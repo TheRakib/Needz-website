@@ -32,9 +32,9 @@ export default function CallIn() {
                 className="capitalize py-7 text-[26px] bg-white hover:bg-primary/5 text-black rounded-lg"
                 size="large"
               >
-                Call Us: 08-23 55 20
+                Call Us: 08-30 22 41
               </Button>
-              {/* <p className="text-[26px] font-semibold">Call Us: 08-23 55 20</p> */}
+              {/* <p className="text-[26px] font-semibold">Call Us: 08-30 22 41</p> */}
             </div>
           </div>
         </div>

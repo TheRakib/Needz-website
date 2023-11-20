@@ -74,7 +74,7 @@ export default function OurServices() {
             variant="outlined"
           >
             <LuPhoneCall />
-            <span>08-235520</span>
+            <span>08-302241</span>
           </Button>
         </div>
       </div>

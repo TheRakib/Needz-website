@@ -32,7 +32,7 @@ export default function Page() {
         img="/blog/banner.png"
       />
       <div className="max-w-layout mx-auto mt-10">
-        <div className="flex gap-4 xl:gap-10 flex-col md:flex-row">
+        <div className="flex gap-4 xl:gap-10 flex-col lg:flex-row items-center lg:items-start">
           {/* -------left side----- */}
           <div className="w-[370px] flex flex-col gap-5 px-2">
             <Search />
@@ -41,10 +41,10 @@ export default function Page() {
             <UserCard />
           </div>
           {/* ---------right side------- */}
-          <div className="flex flex-col gap-[50px]">
+          <div className="flex flex-col gap-[50px] max-w-[370px] md:max-w-none">
             <div className="w-full flex flex-col gap-[10px] px-2">
-              {blogItems.map((item) => (
-                <BlogCard key={item.id} item={item} />
+              {blogs?.map((item) => (
+                <BlogCard key={item._id} item={item} />
               ))}
             </div>
             {/* ------pagination------- */}

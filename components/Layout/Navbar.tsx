@@ -139,7 +139,7 @@ function Navbar() {
         </Button>
         <Button className=" text-black capitalize text-base xl:text-[17px] font-inter whitespace-nowrap ">
           <BiPhoneCall className="mr-2 text-2xl" />
-          08-235520
+          08-302241
         </Button>
       </Box>
     );

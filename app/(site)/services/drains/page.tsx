@@ -14,7 +14,7 @@ export default function drains() {
       />
       <Description />
       <Pressure />
-      <ContactUs helperText="Fill out the form for a free quote. You can also call 08-23 55 20 between 08:00 and 16:00 on weekdays. On-call and urgent matters 24 hours a day, 365 days a year." />
+      <ContactUs helperText="Fill out the form for a free quote. You can also call 08-30 22 41 between 08:00 and 16:00 on weekdays. On-call and urgent matters 24 hours a day, 365 days a year." />
     </div>
   );
 }

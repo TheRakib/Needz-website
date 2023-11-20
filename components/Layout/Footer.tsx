@@ -175,7 +175,7 @@ const contactInfo: ContactInfo[] = [
       "Jour Elite Sweden AB",
       "Nybodagatan 6B",
       "171 42 Sonia",
-      "Call Us: 08-23 55 20",
+      "Call Us: 08-30 22 41",
       "Email: Order@joureliten.se",
     ],
   },
