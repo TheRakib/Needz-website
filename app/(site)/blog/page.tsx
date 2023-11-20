@@ -43,8 +43,8 @@ export default function Page() {
           {/* ---------right side------- */}
           <div className="flex flex-col gap-[50px]">
             <div className="w-full flex flex-col gap-[10px] px-2">
-              {blogItems.map((item) => (
-                <BlogCard key={item.id} item={item} />
+              {blogs?.map((item) => (
+                <BlogCard key={item._id} item={item} />
               ))}
             </div>
             {/* ------pagination------- */}
