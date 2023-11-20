@@ -26,7 +26,7 @@ export default function OurServices() {
   };
 
   return (
-    <div className="max-w-layout mx-auto my-[120px] ">
+    <div className="max-w-layout mx-auto my-[120px] " id="our_services">
       <SectionTitle title="Our Services" className="w-full !text-center" />
 
       <div className="flex flex-wrap gap-5 lg:gap-16 mt-11 md:mx-24 xl:mx-0">

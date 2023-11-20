@@ -1,4 +1,5 @@
 import { Button, InputBase } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 import { BiLogoFacebook } from "react-icons/bi";
 import { BsTwitter, BsInstagram } from "react-icons/bs";
@@ -53,8 +54,15 @@ export default function Footer() {
                 </h3>
                 <ul className="text-black/80 ">
                   {info.items.map((item, i) => (
-                    <li key={i} className="mb-2 text-[14px] md:text-[14px]  ">
-                      {item}
+                    <li
+                      key={i}
+                      className="mb-2 text-[14px] md:text-[14px] cursor-pointer"
+                    >
+                      {typeof item === "string" ? (
+                        <span>{item}</span>
+                      ) : (
+                        <Link href={item.link}>{item.title}</Link>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -83,28 +91,81 @@ export default function Footer() {
     </footer>
   );
 }
+type Link = {
+  id: number;
+  link: string;
+  title: string;
+};
 
-const contactInfo = [
+type ContactInfoItem = string | Link;
+
+type ContactInfo = {
+  id: number;
+  title: string;
+  items: ContactInfoItem[];
+};
+
+const contactInfo: ContactInfo[] = [
   {
     id: 1,
     title: "Company",
     items: [
-      "About Us",
-      "Services Agreement",
-      "Blogs",
-      "Become a Partner",
-      "Contact Us",
+      {
+        id: 1,
+        link: "/about-us",
+        title: "About Us",
+      },
+      {
+        id: 2,
+        link: "/agreement",
+        title: "Services Agreement",
+      },
+      {
+        id: 3,
+        link: "/blog",
+        title: "Blogs",
+      },
+      {
+        id: 4,
+        link: "/",
+        title: "Become a Partner",
+      },
+      {
+        id: 5,
+        link: "/contact-us",
+        title: "Contact Us",
+      },
     ],
   },
   {
     id: 2,
     title: "Out Services",
     items: [
-      "Stop in Drains",
-      "Plumber",
-      "Electrician",
-      "Camera Inspection",
-      "See All Services",
+      {
+        id: 1,
+        link: "/services/drains",
+        title: "Stop in Drains",
+      },
+      {
+        id: 2,
+        link: "/services/plumber",
+        title: "Plumber",
+      },
+      {
+        id: 3,
+        link: "/services/electrician",
+        title: "Electrician",
+      },
+      {
+        id: 4,
+        link: "/services/washing",
+        title: "Washing Machine",
+      },
+      {
+        id: 5,
+        link: "/#our_services",
+        title: "See All Services",
+      },
     ],
   },
   {
