@@ -28,8 +28,25 @@ const blogPost = {
       ],
     },
     {
-      name: "mainText",
-      title: "Main Text",
+      name: "middleTitle",
+      title: "Middle Text Title",
+      type: "string",
+    },
+    {
+      name: "mainTextLeft",
+      title: "Middle Text Left",
+      type: "array",
+      of: [{ type: "block" }],
+    },
+    {
+      name: "mainTextRight",
+      title: "Middle Text Right",
+      type: "array",
+      of: [{ type: "block" }],
+    },
+    {
+      name: "appendix",
+      title: "Appendix",
       type: "array",
       of: [{ type: "block" }],
     },
