@@ -14,26 +14,72 @@ import {
 export default function Social({
   previousPost,
   nextPost,
+  title: postTitle,
 }: {
   previousPost: string;
   nextPost: string;
+  title: string;
 }) {
+  const getCurrentUrl = () => {
+    if (typeof window !== "undefined") {
+      return window.location.href;
+    }
+    return "https://your-website.com/";
+  };
+
+  const shareUrl = encodeURI(getCurrentUrl());
+
+  const handleShare = (platform: string) => {
+    let shareLink = "";
+
+    switch (platform) {
+      case "twitter":
+        shareLink = `https://twitter.com/intent/tweet?text=${postTitle}&url=${shareUrl}`;
+        break;
+      case "facebook":
+        shareLink = `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`;
+        break;
+      case "linkedin":
+        shareLink = `https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${postTitle}`;
+        break;
+      default:
+        // For generic link sharing
+        shareLink = shareUrl;
+        break;
+    }
+
+    // Open a new window or tab to share the link
+    window.open(shareLink, "_blank");
+  };
+
   return (
     <div className="max-w-layout mx-auto px-2">
       <div className="flex flex-col lg:flex-row gap-8 items-center justify-between mt-[90px] mb-[70px] ">
         <div className="flex gap-6 items-center">
           <p className="font-semibold text-[18px] ">Share this blog:</p>
           <div className="flex gap-3">
-            <span className="border rounded-full border-primary cursor-pointer">
+            <span
+              onClick={() => handleShare("link")}
+              className="border rounded-full border-primary cursor-pointer"
+            >
               <FaLink className="text-primary m-3  text-[20px]" />
             </span>
-            <span className="border rounded-full border-primary cursor-pointer">
+            <span
+              onClick={() => handleShare("twitter")}
+              className="border rounded-full border-primary cursor-pointer"
+            >
               <FaTwitter className="text-primary m-3 text-[20px]" />
             </span>
-            <span className="border rounded-full border-primary cursor-pointer">
+            <span
+              onClick={() => handleShare("linkedin")}
+              className="border rounded-full border-primary cursor-pointer"
+            >
               <FaLinkedinIn className="text-primary m-3 text-[20px]" />
             </span>
-            <span className="border rounded-full border-primary cursor-pointer">
+            <span
+              onClick={() => handleShare("facebook")}
+              className="border rounded-full border-primary cursor-pointer"
+            >
               <FaFacebookF className="text-primary m-3 text-[20px]" />
             </span>
           </div>

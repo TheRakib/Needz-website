@@ -16,7 +16,7 @@ export default function Page() {
   const [blog, setBlog] = useState<Post | null>();
   const param = useParams();
   // console.log("param", param.id);
-  console.log(blog);
+  // console.log(blog);
 
   useEffect(() => {
     const fetchAndSetPost = async () => {
@@ -83,7 +83,11 @@ export default function Page() {
           ) : (
             <p className="text-lg max-w-layout mx-auto">Coming soon...</p>
           )}
-          <Social previousPost={blog.previousSlug} nextPost={blog.nextSlug} />
+          <Social
+            previousPost={blog.previousSlug}
+            nextPost={blog.nextSlug}
+            title={blog.title}
+          />
         </div>
       ) : null}
     </>
