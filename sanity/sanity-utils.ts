@@ -62,6 +62,7 @@ export async function getTopics(): Promise<Topic[]> {
       _id,
       _createdAt,
       topic,
+      "count": count(*[_type == "blogPost" && references(^._id)].topics)
     }`
   );
 }

@@ -68,7 +68,7 @@ export default function Topics({
 
     fetchAndSetPost();
   }, []);
-  // console.log("topics", topics);
+  console.log("topics", topics);
 
   return (
     <div className="w-full border rounded-lg border-black/40 text-black/70 flex flex-col gap-[18px] p-[30px] ">
@@ -91,8 +91,7 @@ export default function Topics({
                   expanded === `${item._id}` ? "text-primary" : ""
                 }`}
               >
-                {item.topic}
-                {/* ({item.count}) */}
+                {item.topic} ({item.count})
               </Typography>
             </AccordionSummary>
           </Accordion>
