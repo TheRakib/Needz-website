@@ -1,6 +1,11 @@
 import { PortableTextBlock } from "sanity";
 
-export type Blog = {
+export type Blogs = {
+  posts: Post[];
+  totalCount: number;
+};
+
+export type Post = {
   _id: string;
   _createdAt: string;
   author: {

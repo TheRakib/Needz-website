@@ -1,5 +1,5 @@
 "use client";
-import { Blog } from "@/Types";
+import { Blogs } from "@/Types";
 import BlogCard from "@/components/Blog/BlogCard";
 import Featured from "@/components/Blog/Featured";
 import Search from "@/components/Blog/Search";
@@ -12,7 +12,7 @@ import React, { useEffect, useState } from "react";
 import { FaAngleLeft, FaChevronRight } from "react-icons/fa6";
 
 export default function Page() {
-  const [blogs, setBlogs] = useState<Blog[]>();
+  const [blogs, setBlogs] = useState<Blogs>();
   const [search, setSearch] = useState<string>();
   const [topic, setTopic] = useState<string>();
 
@@ -20,12 +20,12 @@ export default function Page() {
     const fetchAndSetPost = async () => {
       const post = await getPosts(search, topic);
       setBlogs(post);
-      // console.log("blogs", blogs);
     };
 
     fetchAndSetPost();
   }, [search, topic]);
 
+  console.log("blogs", blogs);
   return (
     <div>
       <ServicesBanner
@@ -45,7 +45,7 @@ export default function Page() {
           {/* ---------right side------- */}
           <div className="flex flex-col gap-[50px] max-w-[370px] md:max-w-none">
             <div className="w-full flex flex-col gap-[10px] px-2">
-              {blogs?.map((item) => (
+              {blogs?.posts.map((item) => (
                 <BlogCard key={item._id} item={item} />
               ))}
             </div>
