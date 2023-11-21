@@ -21,6 +21,12 @@ const blogPost = {
       to: [{ type: "authors" }],
     },
     {
+      name: "topic",
+      title: "Topic",
+      type: "reference",
+      to: [{ type: "topics" }],
+    },
+    {
       name: "bannerImg",
       title: "Banner Image",
       type: "image",

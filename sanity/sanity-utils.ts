@@ -2,12 +2,16 @@ import { createClient, groq } from "next-sanity";
 import clientConfig from "./config/client-config";
 import { Blog } from "@/Types";
 
-export async function getPosts(): Promise<Blog[]> {
+export async function getPosts(
+  search: string = "",
+  topic: string = "*"
+): Promise<Blog[]> {
   return createClient(clientConfig).fetch(
-    groq`*[_type == "blogPost"]{
+    groq`*[_type == "blogPost" && title match "${search}*"  && references(*[_type=="topics" &&topic match "${topic}"  ]._id) ]{
       _id,
       _createdAt,
       title,
+      "topic": topic->topic,
       "author":{
         "name": author->name,
         "facebook":author->facebook,
@@ -19,7 +23,7 @@ export async function getPosts(): Promise<Blog[]> {
     }`
   );
 }
-
+// && title match "*"  && references(*[_type=="topics" &&topic match "Plumber*"  ]._id)
 export async function getPost(slug: string): Promise<Blog> {
   return createClient(clientConfig).fetch(
     groq`*[_type == "blogPost" && slug.current == "${slug}"][0]{
