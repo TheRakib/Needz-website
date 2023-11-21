@@ -8,7 +8,7 @@ import ServicesBanner from "@/components/Services/ServicesBanner";
 import UserCard from "@/components/Services/UserCard";
 import { getPosts } from "@/sanity/sanity-utils";
 import { Pagination, PaginationItem } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
 import { FaAngleLeft, FaChevronRight } from "react-icons/fa6";
 
 export default function Page() {
@@ -16,16 +16,31 @@ export default function Page() {
   const [search, setSearch] = useState<string>();
   const [topic, setTopic] = useState<string>();
 
+  const itemsPerPage = 10;
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+
+  const handlePageChange = (event: ChangeEvent<unknown>, newPage: number) => {
+    setCurrentPage(newPage);
+    console.log(newPage);
+  };
+
+  useEffect(() => {
+    if (blogs) {
+      setTotalPages(Math.ceil(blogs.totalCount / itemsPerPage));
+      // console.log(blogs.totalCount);
+    }
+  }, [blogs]);
   useEffect(() => {
     const fetchAndSetPost = async () => {
-      const post = await getPosts(search, topic);
+      const post = await getPosts(search, topic, currentPage, itemsPerPage);
       setBlogs(post);
     };
 
     fetchAndSetPost();
-  }, [search, topic]);
+  }, [search, topic, currentPage]);
 
-  console.log("blogs", blogs);
+  // console.log("blogs", blogs);
   return (
     <div>
       <ServicesBanner
@@ -52,7 +67,9 @@ export default function Page() {
             {/* ------pagination------- */}
             <div className="flex items-center justify-center w-full px-2">
               <Pagination
-                count={10}
+                count={totalPages}
+                page={currentPage}
+                onChange={handlePageChange}
                 variant="outlined"
                 shape="rounded"
                 renderItem={(item) => (
