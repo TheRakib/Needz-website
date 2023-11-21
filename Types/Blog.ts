@@ -35,4 +35,7 @@ export type Post = {
 
   summeryTitle: string;
   summery: PortableTextBlock[];
+
+  previousSlug: string;
+  nextSlug: string;
 };

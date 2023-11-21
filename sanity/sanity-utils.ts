@@ -40,8 +40,9 @@ async function getPostsCount(search: string, topic: string): Promise<number> {
 }
 
 // && title match "*"  && references(*[_type=="topics" &&topic match "Plumber*"  ]._id)
-export async function getPost(slug: string): Promise<Post> {
-  return createClient(clientConfig).fetch(
+export async function getPost(slug: string): Promise<Post | null> {
+  // Fetch the current post
+  const currentPost = await createClient(clientConfig).fetch(
     groq`*[_type == "blogPost" && slug.current == "${slug}"][0]{
       _id,
       _createdAt,
@@ -66,9 +67,69 @@ export async function getPost(slug: string): Promise<Post> {
       
       summeryTitle,
       summery
-    }`,
-    { slug }
+    }`
   );
+
+  if (!currentPost) {
+    // Handle the case where the current post is not found
+    return null;
+  }
+
+  // Fetch the slugs of the previous and next posts
+  const [previousSlugResult, nextSlugResult] = await Promise.all([
+    createClient(clientConfig).fetch(
+      groq`*[_type == "blogPost" && _createdAt < $createdAt] | order(_createdAt desc)[0]{
+        "slug": slug.current
+      }`,
+      { createdAt: currentPost._createdAt }
+    ),
+    createClient(clientConfig).fetch(
+      groq`*[_type == "blogPost" && _createdAt > $createdAt] | order(_createdAt asc)[0]{
+        "slug": slug.current
+      }`,
+      { createdAt: currentPost._createdAt }
+    ),
+  ]);
+
+  const previousSlug = previousSlugResult?.slug || null;
+  const nextSlug = nextSlugResult?.slug || null;
+
+  // Add previousSlug and nextSlug to the current post
+  const postWithNavigation = {
+    ...currentPost,
+    previousSlug,
+    nextSlug,
+  };
+
+  return postWithNavigation;
+  // return createClient(clientConfig).fetch(
+  //   groq`*[_type == "blogPost" && slug.current == "${slug}"][0]{
+  //     _id,
+  //     _createdAt,
+  //     title,
+  //     "slug": slug.current,
+  //     "bannerImg": bannerImg.asset->url,
+
+  //     mainText,
+  //     "mainTextImg": mainTextImg.asset->url,
+
+  //     middleTitle,
+  //     middleTextLeft,
+  //     middleTextRight,
+
+  //     appendix,
+
+  //     secondText,
+  //     "secondTextImg": secondTextImg.asset->url,
+
+  //     lastTitle,
+  //     lastText,
+
+  //     summeryTitle,
+  //     summery
+  //   }`,
+  //   { slug }
+  // );
 }
 
 // -----------topics

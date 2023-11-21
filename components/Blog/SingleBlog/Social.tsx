@@ -1,4 +1,6 @@
 import CallContactButtons from "@/components/Shared/CallContactButtons";
+import { Button } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 import {
   FaAngleLeft,
@@ -9,7 +11,13 @@ import {
   FaTwitter,
 } from "react-icons/fa6";
 
-export default function Social() {
+export default function Social({
+  previousPost,
+  nextPost,
+}: {
+  previousPost: string;
+  nextPost: string;
+}) {
   return (
     <div className="max-w-layout mx-auto px-2">
       <div className="flex flex-col lg:flex-row gap-8 items-center justify-between mt-[90px] mb-[70px] ">
@@ -31,18 +39,28 @@ export default function Social() {
           </div>
         </div>
         <div className="flex items-center gap-11">
-          <div className="flex gap-2 md:gap-5 items-center">
-            <span className="border rounded-full border-primary/5 text-primary bg-primary/10 cursor-pointer">
-              <FaAngleLeft className=" m-3  text-[20px]" />
-            </span>
-            <span className=" font-semibold">Previous Blog</span>
-          </div>
-          <div className="flex gap-5 items-center">
-            <span className="text-primary font-semibold">Next Blog</span>
-            <span className="border rounded-full border-primary text-white bg-primary cursor-pointer">
-              <FaAngleRight className=" m-3  text-[20px]" />
-            </span>
-          </div>
+          <Button className="hover:bg-white" disabled={!previousPost}>
+            <Link
+              href={previousPost ? previousPost : "/"}
+              className="flex gap-2 md:gap-5 items-center capitalize text-base"
+            >
+              <span className="border rounded-full border-primary/5 text-primary bg-primary/10 cursor-pointer">
+                <FaAngleLeft className=" m-3  text-[20px]" />
+              </span>
+              <span className=" font-semibold">Previous Blog</span>
+            </Link>
+          </Button>
+          <Button className="hover:bg-white" disabled={!nextPost}>
+            <Link
+              href={nextPost ? nextPost : "/"}
+              className="flex gap-5 items-center capitalize text-base"
+            >
+              <span className="text-primary font-semibold">Next Blog</span>
+              <span className="border rounded-full border-primary text-white bg-primary cursor-pointer">
+                <FaAngleRight className=" m-3  text-[20px]" />
+              </span>
+            </Link>
+          </Button>
         </div>
       </div>
       <div className="flex flex-col md:flex-row gap-10 justify-center">
