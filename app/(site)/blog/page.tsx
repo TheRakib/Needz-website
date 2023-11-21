@@ -13,16 +13,18 @@ import { FaAngleLeft, FaChevronRight } from "react-icons/fa6";
 
 export default function Page() {
   const [blogs, setBlogs] = useState<Blog[]>();
-  console.log("blogs", blogs);
+  const [search, setSearch] = useState<string>();
+  const [topic, setTopic] = useState<string>();
 
   useEffect(() => {
     const fetchAndSetPost = async () => {
-      const post = await getPosts();
+      const post = await getPosts(search, topic);
       setBlogs(post);
+      // console.log("blogs", blogs);
     };
 
     fetchAndSetPost();
-  }, []);
+  }, [search, topic]);
 
   return (
     <div>
@@ -35,8 +37,8 @@ export default function Page() {
         <div className="flex gap-4 xl:gap-10 flex-col lg:flex-row items-center lg:items-start">
           {/* -------left side----- */}
           <div className="w-[370px] flex flex-col gap-5 px-2">
-            <Search />
-            <Topics />
+            <Search setSearch={setSearch} />
+            {/* <Topics setTopic={setTopic} /> */}
             <Featured />
             <UserCard />
           </div>
