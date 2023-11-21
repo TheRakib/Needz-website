@@ -11,7 +11,7 @@ export async function getPosts(
   const skip = (page - 1) * pageSize;
 
   const posts = await createClient(clientConfig).fetch(
-    groq`*[_type == "blogPost" && title match "${search}*" && references(*[_type=="topics" &&topic match "${topic}"]._id) ][${skip}...${
+    groq`*[_type == "blogPost" && title match "${search}*" && references(*[_type=="topics" &&topic match "${topic}"]._id) ]| order(_createdAt asc)[${skip}...${
       skip + pageSize
     }]{
       _id,
@@ -102,34 +102,6 @@ export async function getPost(slug: string): Promise<Post | null> {
   };
 
   return postWithNavigation;
-  // return createClient(clientConfig).fetch(
-  //   groq`*[_type == "blogPost" && slug.current == "${slug}"][0]{
-  //     _id,
-  //     _createdAt,
-  //     title,
-  //     "slug": slug.current,
-  //     "bannerImg": bannerImg.asset->url,
-
-  //     mainText,
-  //     "mainTextImg": mainTextImg.asset->url,
-
-  //     middleTitle,
-  //     middleTextLeft,
-  //     middleTextRight,
-
-  //     appendix,
-
-  //     secondText,
-  //     "secondTextImg": secondTextImg.asset->url,
-
-  //     lastTitle,
-  //     lastText,
-
-  //     summeryTitle,
-  //     summery
-  //   }`,
-  //   { slug }
-  // );
 }
 
 // -----------topics

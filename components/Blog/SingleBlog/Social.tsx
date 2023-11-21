@@ -44,7 +44,13 @@ export default function Social({
               href={previousPost ? previousPost : "/"}
               className="flex gap-2 md:gap-5 items-center capitalize text-base"
             >
-              <span className="border rounded-full border-primary/5 text-primary bg-primary/10 cursor-pointer">
+              <span
+                className={`"border rounded-full border-primary ${
+                  previousPost
+                    ? "bg-primary text-white"
+                    : "bg-primary/10 text-primary"
+                } cursor-pointer"`}
+              >
                 <FaAngleLeft className=" m-3  text-[20px]" />
               </span>
               <span className=" font-semibold">Previous Blog</span>
@@ -55,14 +61,14 @@ export default function Social({
               href={nextPost ? nextPost : "/"}
               className="flex gap-5 items-center capitalize text-base"
             >
+              <span className={` font-semibold `}>Next Blog</span>
               <span
-                className={` font-semibold ${
-                  nextPost ? "text-primary" : "text-primary/60"
-                }`}
+                className={`"border rounded-full border-primary ${
+                  nextPost
+                    ? "bg-primary text-white"
+                    : "bg-primary/10 text-primary"
+                } cursor-pointer"`}
               >
-                Next Blog
-              </span>
-              <span className="border rounded-full border-primary text-white bg-primary cursor-pointer">
                 <FaAngleRight className=" m-3  text-[20px]" />
               </span>
             </Link>
