@@ -55,7 +55,13 @@ export default function Social({
               href={nextPost ? nextPost : "/"}
               className="flex gap-5 items-center capitalize text-base"
             >
-              <span className="text-primary font-semibold">Next Blog</span>
+              <span
+                className={` font-semibold ${
+                  nextPost ? "text-primary" : "text-primary/60"
+                }`}
+              >
+                Next Blog
+              </span>
               <span className="border rounded-full border-primary text-white bg-primary cursor-pointer">
                 <FaAngleRight className=" m-3  text-[20px]" />
               </span>
