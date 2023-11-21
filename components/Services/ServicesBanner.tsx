@@ -37,7 +37,7 @@ export default function ServicesBanner({
         <Breadcrumbs aria-label="breadcrumb" className=" text-white">
           <Link
             color="inherit"
-            href="/services"
+            href="/blog"
             className="hover:underline transition-all text-white/70"
           >
             {firstItem}
