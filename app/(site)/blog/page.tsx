@@ -38,7 +38,7 @@ export default function Page() {
           {/* -------left side----- */}
           <div className="w-[370px] flex flex-col gap-5 px-2">
             <Search setSearch={setSearch} />
-            {/* <Topics setTopic={setTopic} /> */}
+            <Topics setTopic={setTopic} topic={topic} />
             <Featured />
             <UserCard />
           </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { styled } from "@mui/material/styles";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import MuiAccordion, { AccordionProps } from "@mui/material/Accordion";
@@ -9,6 +9,8 @@ import MuiAccordionSummary, {
 } from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
+import { getTopics } from "@/sanity/sanity-utils";
+import { Topic } from "@/Types";
 
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -38,23 +40,46 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   //   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 
-export default function Topics() {
+// -----------------main function ----------------
+export default function Topics({
+  setTopic,
+  topic,
+}: {
+  setTopic: Dispatch<SetStateAction<string | undefined>>;
+  topic: string | undefined;
+}) {
   const [expanded, setExpanded] = React.useState<string | false>("");
+  const [topics, setTopics] = useState<Topic[]>();
 
   const handleChange =
     (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
       setExpanded(newExpanded ? panel : false);
     };
 
+  const handleSetTopic = (newTopic: string) => {
+    topic === newTopic ? setTopic("*") : setTopic(newTopic);
+  };
+
+  useEffect(() => {
+    const fetchAndSetPost = async () => {
+      const topics = await getTopics();
+      setTopics(topics);
+    };
+
+    fetchAndSetPost();
+  }, []);
+  // console.log("topics", topics);
+
   return (
     <div className="w-full border rounded-lg border-black/40 text-black/70 flex flex-col gap-[18px] p-[30px] ">
       <h3 className="font-semibold text-black">Topics</h3>
       <div className="">
-        {topicItems.map((item) => (
+        {topics?.map((item) => (
           <Accordion
-            key={item.id}
-            expanded={expanded === `${item.id}`}
-            onChange={handleChange(`${item.id}`)}
+            key={item._id}
+            expanded={expanded === `${item._id}`}
+            onChange={handleChange(`${item._id}`)}
+            onClick={() => handleSetTopic(item.topic)}
           >
             <AccordionSummary
               aria-controls="panel1d-content"
@@ -62,9 +87,12 @@ export default function Topics() {
               className="pl-0"
             >
               <Typography
-                className={`${expanded === `${item.id}` ? "text-primary" : ""}`}
+                className={`${
+                  expanded === `${item._id}` ? "text-primary" : ""
+                }`}
               >
-                {item.title} ({item.count})
+                {item.topic}
+                {/* ({item.count}) */}
               </Typography>
             </AccordionSummary>
           </Accordion>
