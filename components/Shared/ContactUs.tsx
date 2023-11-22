@@ -5,6 +5,7 @@ import { Button, InputBase } from "@mui/material";
 import Image from "next/image";
 import { IoMdAttach } from "react-icons/io";
 import styled from "styled-components";
+import axios from "axios";
 
 type Props = {
   semiTitle?: string;
@@ -69,21 +70,22 @@ export default function ContactUs({
   };
 
   const handleSubscribe = async () => {
-    // const submitData = {
-    //   email: formData.email,
-    //   fields: {
-    //     name: formData.name,
-    //     phone: formData.phoneNumber,
-    //     z_i_p: formData.zipCode,
-    //     address: formData.address,
-    //     post: formData.postalCode,
-    //     message: formData.message,
-    //     photo: formData.photo,
-    //   },
-    //   groups: ["104820045415188447"],
-    // };
+    const submitData = {
+      email: formData.email,
+      fields: {
+        name: formData.name,
+        phone: formData.phoneNumber,
+        z_i_p: formData.zipCode,
+        address: formData.address,
+        post: formData.postalCode,
+        message: formData.message,
+        photo: formData.photo,
+      },
+      groups: ["104820045415188447"],
+    };
     try {
-      // console.log("Subscription successful:", formData);
+      const res = await axios.post("/api/mail", formData);
+      console.log(res);
     } catch (error) {
       // Handle error, e.g., show an error message to the user
     }
