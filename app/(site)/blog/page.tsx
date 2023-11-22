@@ -6,6 +6,7 @@ import Search from "@/components/Blog/Search";
 import Topics from "@/components/Blog/Topics";
 import ServicesBanner from "@/components/Services/ServicesBanner";
 import UserCard from "@/components/Services/UserCard";
+import LoadingSpinner from "@/components/Shared/LoadingSpinner";
 import { getPosts } from "@/sanity/sanity-utils";
 import { Pagination, PaginationItem } from "@mui/material";
 import React, { ChangeEvent, useEffect, useState } from "react";
@@ -48,6 +49,7 @@ export default function Page() {
         breadcrumb="Blog/Newsletter page"
         img="/blog/banner.png"
       />
+
       <div className="max-w-layout mx-auto mt-10">
         <div className="flex gap-4 xl:gap-10 flex-col lg:flex-row items-center lg:items-start">
           {/* -------left side----- */}
@@ -60,9 +62,13 @@ export default function Page() {
           {/* ---------right side------- */}
           <div className="flex flex-col gap-[50px] max-w-[370px] md:max-w-none">
             <div className="w-full flex flex-col gap-[10px] px-2">
-              {blogs?.posts.map((item) => (
-                <BlogCard key={item._id} item={item} />
-              ))}
+              {blogs ? (
+                blogs?.posts.map((item) => (
+                  <BlogCard key={item._id} item={item} />
+                ))
+              ) : (
+                <LoadingSpinner />
+              )}
             </div>
             {/* ------pagination------- */}
             <div className="flex items-center justify-center w-full px-2">

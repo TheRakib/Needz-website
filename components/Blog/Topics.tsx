@@ -11,6 +11,7 @@ import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import { getTopics } from "@/sanity/sanity-utils";
 import { Topic } from "@/Types";
+import LoadingSpinner from "../Shared/LoadingSpinner";
 
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -74,28 +75,32 @@ export default function Topics({
     <div className="w-full border rounded-lg border-black/40 text-black/70 flex flex-col gap-[18px] p-[30px] ">
       <h3 className="font-semibold text-black">Topics</h3>
       <div className="">
-        {topics?.map((item) => (
-          <Accordion
-            key={item._id}
-            expanded={expanded === `${item._id}`}
-            onChange={handleChange(`${item._id}`)}
-            onClick={() => handleSetTopic(item.topic)}
-          >
-            <AccordionSummary
-              aria-controls="panel1d-content"
-              id="panel1d-header"
-              className="pl-0"
+        {topics ? (
+          topics?.map((item) => (
+            <Accordion
+              key={item._id}
+              expanded={expanded === `${item._id}`}
+              onChange={handleChange(`${item._id}`)}
+              onClick={() => handleSetTopic(item.topic)}
             >
-              <Typography
-                className={`${
-                  expanded === `${item._id}` ? "text-primary" : ""
-                }`}
+              <AccordionSummary
+                aria-controls="panel1d-content"
+                id="panel1d-header"
+                className="pl-0"
               >
-                {item.topic} ({item.count})
-              </Typography>
-            </AccordionSummary>
-          </Accordion>
-        ))}
+                <Typography
+                  className={`${
+                    expanded === `${item._id}` ? "text-primary" : ""
+                  }`}
+                >
+                  {item.topic} ({item.count})
+                </Typography>
+              </AccordionSummary>
+            </Accordion>
+          ))
+        ) : (
+          <LoadingSpinner size="sm" />
+        )}
       </div>
     </div>
   );
