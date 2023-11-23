@@ -22,7 +22,7 @@ export async function POST(
 
   const data = {
     to: "neamulhaque2002@gmail.com",
-    from: "hello@sunrises.se",
+    from: "order@jour365.se",
     subject: "Test web message",
     text: message,
     html: message.replace("\r\ng", "<br/>"),
