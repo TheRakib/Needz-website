@@ -13,10 +13,10 @@ export async function generateMetadata(
   const parentMetadata = await parent;
 
   return {
-    title: ` ${parentMetadata.title?.absolute} - ${id}`,
+    title: `${parentMetadata.title?.absolute} - ${id}`,
   };
 }
 
-export default function layout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return <div>{children}</div>;
 }
