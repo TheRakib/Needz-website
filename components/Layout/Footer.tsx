@@ -1,4 +1,5 @@
 import { Button, InputBase } from "@mui/material";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BiLogoFacebook } from "react-icons/bi";
@@ -34,7 +35,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="w-full h-[1px] bg-black/60 my-10 "></div>
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-y-4 md:gap-0 justify-between">
+        <div className="grid grid-cols-1 md:grid-cols-10 gap-y-4 md:gap-0 justify-between">
           <div className="col-span-2">
             <h3 className="text-[20px] uppercase mb-4 text-center md:text-left ">
               About us
@@ -46,7 +47,19 @@ export default function Footer() {
               plumbers and electricians.
             </p>
           </div>
-          <div className="col-span-3 grid grid-cols-3 gap-1 overflow-x-scroll no-scrollbar">
+          <div className="col-span-4 flex justify-center mr-4">
+            <div className="flex flex-col gap-2">
+              <Image
+                src={"/about/icon.png"}
+                alt="icon"
+                height={52}
+                width={282}
+                className="pt-1"
+              />
+              <p className="text-black/70 text-center mt-1 ">Insured With</p>
+            </div>
+          </div>
+          <div className="col-span-4 grid grid-cols-2 gap-1 overflow-x-scroll no-scrollbar">
             {contactInfo.map((info) => (
               <div key={info.id} className="col-span-1 ">
                 <h3 className="text-[18px] font-semibold mb-4 ">
@@ -106,37 +119,37 @@ type ContactInfo = {
 };
 
 const contactInfo: ContactInfo[] = [
-  {
-    id: 1,
-    title: "Company",
-    items: [
-      {
-        id: 1,
-        link: "/about-us",
-        title: "About Us",
-      },
-      {
-        id: 2,
-        link: "/agreement",
-        title: "Services Agreement",
-      },
-      {
-        id: 3,
-        link: "/blog",
-        title: "Blogs",
-      },
-      {
-        id: 4,
-        link: "/",
-        title: "Become a Partner",
-      },
-      {
-        id: 5,
-        link: "/contact-us",
-        title: "Contact Us",
-      },
-    ],
-  },
+  // {
+  //   id: 1,
+  //   title: "Company",
+  //   items: [
+  //     {
+  //       id: 1,
+  //       link: "/about-us",
+  //       title: "About Us",
+  //     },
+  //     {
+  //       id: 2,
+  //       link: "/agreement",
+  //       title: "Services Agreement",
+  //     },
+  //     {
+  //       id: 3,
+  //       link: "/blog",
+  //       title: "Blogs",
+  //     },
+  //     {
+  //       id: 4,
+  //       link: "/",
+  //       title: "Become a Partner",
+  //     },
+  //     {
+  //       id: 5,
+  //       link: "/contact-us",
+  //       title: "Contact Us",
+  //     },
+  //   ],
+  // },
   {
     id: 2,
     title: "Out Services",

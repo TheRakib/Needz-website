@@ -1,12 +1,12 @@
 "use client";
-import { Blog } from "@/Types";
+import { Post } from "@/Types";
 import { formatDate } from "@/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 
-export default function BlogCard({ item }: { item: Blog }) {
+export default function BlogCard({ item }: { item: Post }) {
   const router = useRouter();
 
   return (

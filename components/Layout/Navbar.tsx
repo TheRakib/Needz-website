@@ -19,30 +19,32 @@ import { usePathname, useRouter } from "next/navigation";
 const pages = [
   {
     id: 1,
-    title: "Home",
+    title: "Hem",
+
     link: "/",
   },
   {
     id: 2,
-    title: "Our Services",
+    title: "Jour  Tjänster",
     link: "/services",
   },
   {
     id: 3,
-    title: "Blog/newsletter",
+    title: "Blogg",
     link: "/blog",
   },
-  {
-    id: 4,
-    title: "Services Agreement",
-    link: "/agreement",
-  },
+  // {
+  //   id: 4,
+  //   title: "Serviceavtal",
+  //   link: "/agreement",
+  // },
   {
     id: 5,
-    title: "About Us",
+    title: "Om oss",
     link: "/about-us",
   },
 ];
+
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
@@ -82,7 +84,7 @@ function Navbar() {
             sx={{ my: 2, display: "block" }}
             className=" capitalize text-base xl:text-lg font-normal font-inter whitespace-nowrap"
           >
-            {page.title !== "Our Services" ? (
+            {page.link !== "/services" ? (
               <span
                 onClick={() => router.push(page.link)}
                 className={`${
@@ -108,7 +110,7 @@ function Navbar() {
                 }}
               >
                 <MenuItem value="" disabled>
-                  Our Services
+                  Jour Tjänster
                 </MenuItem>
                 {services.map((service) => (
                   <MenuItem
@@ -134,9 +136,9 @@ function Navbar() {
         sx={{ flexGrow: 0 }}
         className={twMerge(`${className && className} xl:gap-2 flex`)}
       >
-        <Button className=" text-black capitalize text-base xl:text-[17px] font-inter whitespace-nowrap ">
-          Become a partner
-        </Button>
+        {/* <Button className=" text-black capitalize text-base xl:text-[17px] font-inter whitespace-nowrap ">
+          Partner
+        </Button> */}
         <Button className=" text-black capitalize text-base xl:text-[17px] font-inter whitespace-nowrap ">
           <BiPhoneCall className="mr-2 text-2xl" />
           08-302241

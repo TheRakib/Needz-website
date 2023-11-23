@@ -13,9 +13,9 @@ export default function LocalPlumber() {
             className="!text-center"
           />
           <p className="text-[18px] text-black/70 text-center">
-            At Joureliten, we offer comprehensive plumbing services to
-            homeowners and businesses throughout Stockholm. Our experienced and
-            certified plumbers are ready to help you with everything from minor
+            At Jour 365, we offer comprehensive plumbing services to homeowners
+            and businesses throughout Stockholm. Our experienced and certified
+            plumbers are ready to help you with everything from minor
             installations to complete renovations. We are also experts in
             ventilation, heating, and sanitation systems.
           </p>
