@@ -5,7 +5,7 @@ type Props = {
   params: { id: string };
 };
 export async function generateMetadata(
-  { params }: Props,
+  { params }: any,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const id = params.id;
