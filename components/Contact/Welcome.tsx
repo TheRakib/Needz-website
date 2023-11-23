@@ -65,7 +65,7 @@ export default function Welcome() {
             </span>
             <div className="flex flex-col gap-1">
               <p className="text-[14px] text-black/70 ">Email Us</p>
-              <p className=" ">order@joureliten.se</p>
+              <p className=" ">order@joure365.se</p>
             </div>
           </div>
         </div>

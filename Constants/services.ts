@@ -1,27 +1,27 @@
 export const services = [
   {
     id: 1,
-    title: "Electrician",
+    title: "Jour elektriker",
     link: "/services/electrician",
   },
   {
     id: 2,
-    title: "Stop In Drains",
+    title: "Jour stopp i avlopp",
     link: "/services/drains",
   },
   {
     id: 3,
-    title: "Plumber",
+    title: "Jour rörmokare",
     link: "/services/plumber",
   },
   {
     id: 4,
-    title: "Washing Machine",
+    title: "Jour spolbil",
     link: "/services/washing",
   },
   {
     id: 5,
-    title: "Electrical Installations",
+    title: "Jour elinstallationer",
     link: "/services/electrical-installations",
   },
 ];

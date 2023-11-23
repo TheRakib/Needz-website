@@ -33,19 +33,17 @@ const pages = [
     title: "Blogg",
     link: "/blog",
   },
-  {
-    id: 4,
-    title: "Serviceavtal",
-    link: "/agreement",
-  },
+  // {
+  //   id: 4,
+  //   title: "Serviceavtal",
+  //   link: "/agreement",
+  // },
   {
     id: 5,
     title: "Om oss",
     link: "/about-us",
   },
 ];
-
-// Hem,Våra tjänster
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -138,9 +136,9 @@ function Navbar() {
         sx={{ flexGrow: 0 }}
         className={twMerge(`${className && className} xl:gap-2 flex`)}
       >
-        <Button className=" text-black capitalize text-base xl:text-[17px] font-inter whitespace-nowrap ">
+        {/* <Button className=" text-black capitalize text-base xl:text-[17px] font-inter whitespace-nowrap ">
           Partner
-        </Button>
+        </Button> */}
         <Button className=" text-black capitalize text-base xl:text-[17px] font-inter whitespace-nowrap ">
           <BiPhoneCall className="mr-2 text-2xl" />
           08-302241
