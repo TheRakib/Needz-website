@@ -1,29 +1,47 @@
 "use client";
-import { Blog } from "@/Types";
+import { Blogs } from "@/Types";
 import BlogCard from "@/components/Blog/BlogCard";
 import Featured from "@/components/Blog/Featured";
 import Search from "@/components/Blog/Search";
 import Topics from "@/components/Blog/Topics";
 import ServicesBanner from "@/components/Services/ServicesBanner";
 import UserCard from "@/components/Services/UserCard";
+import LoadingSpinner from "@/components/Shared/LoadingSpinner";
 import { getPosts } from "@/sanity/sanity-utils";
 import { Pagination, PaginationItem } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
 import { FaAngleLeft, FaChevronRight } from "react-icons/fa6";
 
 export default function Page() {
-  const [blogs, setBlogs] = useState<Blog[]>();
-  console.log("blogs", blogs);
+  const [blogs, setBlogs] = useState<Blogs>();
+  const [search, setSearch] = useState<string>();
+  const [topic, setTopic] = useState<string>();
+
+  const itemsPerPage = 10;
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+
+  const handlePageChange = (event: ChangeEvent<unknown>, newPage: number) => {
+    setCurrentPage(newPage);
+    console.log(newPage);
+  };
 
   useEffect(() => {
+    if (blogs) {
+      setTotalPages(Math.ceil(blogs.totalCount / itemsPerPage));
+      // console.log(blogs.totalCount);
+    }
+  }, [blogs]);
+  useEffect(() => {
     const fetchAndSetPost = async () => {
-      const post = await getPosts();
+      const post = await getPosts(search, topic, currentPage, itemsPerPage);
       setBlogs(post);
     };
 
     fetchAndSetPost();
-  }, []);
+  }, [search, topic, currentPage]);
 
+  // console.log("blogs", blogs);
   return (
     <div>
       <ServicesBanner
@@ -31,26 +49,33 @@ export default function Page() {
         breadcrumb="Blog/Newsletter page"
         img="/blog/banner.png"
       />
+
       <div className="max-w-layout mx-auto mt-10">
         <div className="flex gap-4 xl:gap-10 flex-col lg:flex-row items-center lg:items-start">
           {/* -------left side----- */}
           <div className="w-[370px] flex flex-col gap-5 px-2">
-            <Search />
-            <Topics />
+            <Search setSearch={setSearch} />
+            <Topics setTopic={setTopic} topic={topic} />
             <Featured />
             <UserCard />
           </div>
           {/* ---------right side------- */}
           <div className="flex flex-col gap-[50px] max-w-[370px] md:max-w-none">
             <div className="w-full flex flex-col gap-[10px] px-2">
-              {blogs?.map((item) => (
-                <BlogCard key={item._id} item={item} />
-              ))}
+              {blogs ? (
+                blogs?.posts.map((item) => (
+                  <BlogCard key={item._id} item={item} />
+                ))
+              ) : (
+                <LoadingSpinner />
+              )}
             </div>
             {/* ------pagination------- */}
             <div className="flex items-center justify-center w-full px-2">
               <Pagination
-                count={10}
+                count={totalPages}
+                page={currentPage}
+                onChange={handlePageChange}
                 variant="outlined"
                 shape="rounded"
                 renderItem={(item) => (

@@ -35,19 +35,6 @@ export default function Welcome() {
   };
 
   const handleSubscribe = async () => {
-    // const submitData = {
-    //   email: formData.email,
-    //   fields: {
-    //     name: formData.name,
-    //     phone: formData.phoneNumber,
-    //     z_i_p: formData.zipCode,
-    //     address: formData.address,
-    //     post: formData.postalCode,
-    //     message: formData.message,
-    //     photo: formData.photo,
-    //   },
-    //   groups: ["104820045415188447"],
-    // };
     try {
       console.log("Subscription successful:", formData);
     } catch (error) {
@@ -62,7 +49,7 @@ export default function Welcome() {
         className="!text-center"
       />
       <div className="max-w-[630px] mx-auto flex flex-col mt-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[220px] md:max-w-none ml-auto mr-auto md:mr-0 md:ml-10">
           <div className="flex items-center gap-4">
             <span className="p-2 rounded-lg bg-primary text-white">
               <IoCall size={24} />

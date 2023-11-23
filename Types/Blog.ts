@@ -1,6 +1,11 @@
 import { PortableTextBlock } from "sanity";
 
-export type Blog = {
+export type Blogs = {
+  posts: Post[];
+  totalCount: number;
+};
+
+export type Post = {
   _id: string;
   _createdAt: string;
   author: {
@@ -30,4 +35,7 @@ export type Blog = {
 
   summeryTitle: string;
   summery: PortableTextBlock[];
+
+  previousSlug: string;
+  nextSlug: string;
 };

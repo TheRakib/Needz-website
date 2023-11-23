@@ -1,6 +1,6 @@
 "use client";
 
-import { Blog } from "@/Types";
+import { Post } from "@/Types";
 import MainTexts from "@/components/Blog/SingleBlog/MainTexts";
 import MiddleText from "@/components/Blog/SingleBlog/MiddleText";
 import SecondText from "@/components/Blog/SingleBlog/SecondText";
@@ -13,10 +13,10 @@ import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 export default function Page() {
-  const [blog, setBlog] = useState<Blog>();
+  const [blog, setBlog] = useState<Post | null>();
   const param = useParams();
   // console.log("param", param.id);
-  console.log(blog);
+  // console.log(blog);
 
   useEffect(() => {
     const fetchAndSetPost = async () => {
@@ -25,6 +25,7 @@ export default function Page() {
     };
 
     fetchAndSetPost();
+    // console.log("post", blog);
   }, [param]);
 
   return (
@@ -82,7 +83,11 @@ export default function Page() {
           ) : (
             <p className="text-lg max-w-layout mx-auto">Coming soon...</p>
           )}
-          <Social />
+          <Social
+            previousPost={blog.previousSlug}
+            nextPost={blog.nextSlug}
+            title={blog.title}
+          />
         </div>
       ) : null}
     </>
