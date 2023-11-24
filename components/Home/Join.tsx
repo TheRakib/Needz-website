@@ -33,7 +33,7 @@ export default function Join() {
                 {/* <Hexagon content="01" /> */}
                 {/* hexagon */}
                 <div
-                  className={`hex relative bg-${content.hexagonColor} after:border-t-${content.hexagonColor} after:border-t-[20px] before:border-b-${content.hexagonColor} before:border-b-[20px]`}
+                  className={`hex relative ${content.hexagonColor} after:border-t-[20px] before:border-b-[20px]`}
                 >
                   <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl text-white font-semibold">
                     {content.id}
@@ -101,20 +101,21 @@ const joinContents = [
     title: "We're here to help, 24/7 - call or book online!",
     img: "/home/join/icon3.png",
     hexagonClass: "top-[45%] -right-5",
-    hexagonColor: "primary",
+    hexagonColor: " bg-primary after:border-t-primary before:border-b-primary",
   },
   {
     id: 2,
     title: "Certified technicians to your door in 1 hour or less!",
     img: "/home/join/icon2.png",
     hexagonClass: "top-[10%] -right-5",
-    hexagonColor: "secondary",
+    hexagonColor:
+      " bg-secondary after:border-t-secondary before:border-b-secondary",
   },
   {
     id: 3,
     title: "Pay your way - installments or invoice",
     img: "/home/join/icon1.png",
     hexagonClass: "top-[45%] -right-5",
-    hexagonColor: "yellow",
+    hexagonColor: " bg-yellow after:border-t-yellow before:border-b-yellow",
   },
 ];
