@@ -34,7 +34,7 @@ export async function POST(
       statusText: "Successfully sent",
     });
   } catch (error) {
-    console.error(error);
+    // console.error(error);
 
     return new Response(
       JSON.stringify({ message: "Something went wrong", error: error }),
