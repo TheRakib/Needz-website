@@ -3,6 +3,7 @@ import React from "react";
 import SectionTitle from "../Shared/SectionTitle";
 import { Button, InputBase, MenuItem, Select } from "@mui/material";
 import { BsArrowRightCircle } from "react-icons/bs";
+import { services } from "@/Constants";
 
 export default function Emergencies() {
   return (
@@ -75,7 +76,7 @@ export default function Emergencies() {
                   <MenuItem value="" disabled>
                     Choose Service
                   </MenuItem>
-                  {menuItems.map((item) => (
+                  {services.map((item) => (
                     <MenuItem
                       key={item.id}
                       value={item.id}
@@ -102,34 +103,3 @@ export default function Emergencies() {
     </div>
   );
 }
-
-const menuItems = [
-  {
-    id: 1,
-    title: "Stop in Drains",
-  },
-  {
-    id: 2,
-    title: "Plumber",
-  },
-  {
-    id: 3,
-    title: "Electrician",
-  },
-  {
-    id: 4,
-    title: "Camera Inspection",
-  },
-  {
-    id: 5,
-    title: "Charging Box",
-  },
-  {
-    id: 6,
-    title: "Electric Car Charger",
-  },
-  {
-    id: 7,
-    title: "Electrical Installations",
-  },
-];
