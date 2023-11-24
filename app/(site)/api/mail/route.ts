@@ -7,43 +7,43 @@ export async function POST(
   request: NextRequest,
   { params }: { params: { slug: string } }
 ) {
-  const searchParams = request.nextUrl.searchParams;
-  const query = searchParams.get("hello");
+  try {
+    const searchParams = request.nextUrl.searchParams;
+    const query = searchParams.get("hello");
 
-  const body = request.body;
-  let passedValue = await new Response(body).text();
-  let valueToJson = JSON.parse(passedValue);
+    const body = request.body;
+    let passedValue = await new Response(body).text();
+    let dataToJson = JSON.parse(passedValue);
 
-  const message = `
-  Name: ${valueToJson.name}\r\n
-  Email: ${valueToJson.email}\r\n
-  Message: ${valueToJson.message}
-  `;
+    const message = `
+      Tack för ditt meddelande! En av våra representanter kommer att kontakta dig snart. Vid mer akuta ärenden, var vänlig ring direkt på 08-30 22 41
+    `;
 
-  const data = {
-    to: "neamulhaque2002@gmail.com",
-    from: "order@jour365.se",
-    subject: "Test web message",
-    text: message,
-    html: message.replace("\r\ng", "<br/>"),
-  };
+    const data = {
+      to: dataToJson.email,
+      from: "order@jour365.se",
+      subject: "Bekräftelse: Ditt meddelande till oss är mottaget",
+      text: message,
+      html: message.replace("\r\ng", "<br/>"),
+    };
 
-  (async () => {
-    try {
-      await mail.send(data);
-    } catch (error: any) {
-      console.error(error);
+    await mail.send(data);
 
-      if (error.response) {
-        console.error(error.response.body);
+    return new Response(JSON.stringify({ message: "Mail sent successfully" }), {
+      status: 200,
+      statusText: "Successfully sent",
+    });
+  } catch (error) {
+    // console.error(error);
+
+    return new Response(
+      JSON.stringify({ message: "Something went wrong", error: error }),
+      {
+        status: 500,
+        statusText: "Internal Server Error",
       }
-    }
-  })();
-
-  return new Response(JSON.stringify(data), {
-    status: 200,
-    statusText: "successfully api send",
-  });
+    );
+  }
 }
 
 // ------------get request

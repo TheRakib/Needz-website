@@ -6,6 +6,7 @@ import Image from "next/image";
 import { IoMdAttach } from "react-icons/io";
 import styled from "styled-components";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 type Props = {
   semiTitle?: string;
@@ -35,25 +36,29 @@ const VisuallyHiddenInput = styled("input")({
   width: 1,
 });
 
+const initialState = () => ({
+  name: "",
+  email: "",
+  phoneNumber: "",
+  address: "",
+  zipCode: "",
+  postalCode: "",
+  message: "",
+  photo: null,
+});
+
 export default function ContactUs({
   semiTitle = "Need Any Services",
   helperText = "Fill out the form for a free quote. You can also call 08-30 22 41 between 08:00 and 16:00 on weekdays. On-call and urgent matters 24 hours a day, 365 days a year.",
   disabledHelperText = false,
 }: Props) {
-  const [formData, setFormData] = useState<FormState>({
-    name: "",
-    email: "",
-    phoneNumber: "",
-    address: "",
-    zipCode: "",
-    postalCode: "",
-    message: "",
-    photo: null,
-  });
+  const [formData, setFormData] = useState<FormState>(initialState());
+  const [successMessage, setSuccessMessage] = useState<string>("");
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
+    setSuccessMessage("");
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -70,24 +75,19 @@ export default function ContactUs({
   };
 
   const handleSubscribe = async () => {
-    const submitData = {
-      email: formData.email,
-      fields: {
-        name: formData.name,
-        phone: formData.phoneNumber,
-        z_i_p: formData.zipCode,
-        address: formData.address,
-        post: formData.postalCode,
-        message: formData.message,
-        photo: formData.photo,
-      },
-      groups: ["104820045415188447"],
-    };
+    if (!formData.email) {
+      return toast.error("Email is required");
+    }
     try {
       const res = await axios.post("/api/mail", formData);
       console.log(res);
+      if (res.status === 200) {
+        setSuccessMessage("Email send successfully..");
+        setFormData(initialState());
+      }
     } catch (error) {
-      // Handle error, e.g., show an error message to the user
+      console.log(error);
+      setSuccessMessage("Something went wrong. Try again");
     }
   };
 
@@ -123,6 +123,7 @@ export default function ContactUs({
                     onChange={handleChange}
                     name="phoneNumber"
                     id="phone-_number"
+                    type="number"
                     placeholder="Phone Number"
                     className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
                   />
@@ -130,6 +131,7 @@ export default function ContactUs({
                     onChange={handleChange}
                     name="zipCode"
                     id="zip_code"
+                    type={"number"}
                     placeholder="Zip Code"
                     className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
                   />
@@ -139,6 +141,8 @@ export default function ContactUs({
                     onChange={handleChange}
                     name="email"
                     id="email"
+                    type="email"
+                    required
                     placeholder="Email"
                     className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px] w-full `}
                   />
@@ -153,6 +157,7 @@ export default function ContactUs({
                     onChange={handleChange}
                     name="postalCode"
                     id="postal_code"
+                    type="number"
                     placeholder="Postal Code"
                     className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
                   />
@@ -184,12 +189,17 @@ export default function ContactUs({
                   type="file"
                 />
               </Button>
-
+              {successMessage && (
+                <p className="text-lg text-yellow font-bold text-center">
+                  {successMessage}
+                </p>
+              )}
               <div className="mt-6 w-[286px] mx-auto md:mr-auto ">
                 <Button
-                  className="bg-white w-full text-primary text-2xl h-[92px] capitalize hover:bg-primary hover:text-white rounded-xl hover:border-white"
+                  className="bg-white w-full text-primary text-2xl h-[92px] capitalize hover:bg-primary hover:text-white rounded-xl hover:border-white disabled:bg-white/60"
                   variant="outlined"
                   onClick={handleSubscribe}
+                  disabled={!!successMessage}
                 >
                   Send Message
                 </Button>

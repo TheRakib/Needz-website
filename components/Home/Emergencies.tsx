@@ -1,10 +1,82 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { ChangeEvent, useState } from "react";
 import SectionTitle from "../Shared/SectionTitle";
-import { Button, InputBase, MenuItem, Select } from "@mui/material";
+import {
+  Button,
+  InputBase,
+  MenuItem,
+  Select,
+  SelectChangeEvent,
+} from "@mui/material";
 import { BsArrowRightCircle } from "react-icons/bs";
+import { services } from "@/Constants";
+import { toast } from "react-toastify";
+import axios from "axios";
+
+interface FormState {
+  name: string;
+  phoneNumber: string;
+  service: string;
+}
+
+const initialState = () => ({
+  name: "",
+  phoneNumber: "",
+  service: "",
+});
 
 export default function Emergencies() {
+  const [formData, setFormData] = useState<FormState>(initialState());
+  const [successMessage, setSuccessMessage] = useState<string>("");
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setSuccessMessage("");
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSelectChange = (e: SelectChangeEvent<string>) => {
+    setSuccessMessage("");
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name as string]: value,
+    }));
+  };
+
+  const handleSubscribe = async () => {
+    console.log(formData);
+    if (!formData.name) {
+      return toast.error("Name is required");
+    } else if (!formData.service) {
+      return toast.error("Please select a service");
+    } else if (!formData.phoneNumber) {
+      return toast.error("please enter phone number");
+    }
+
+    try {
+      console.log(formData);
+      // const res = await axios.post("/api/mail", formData);
+      // console.log(res);
+      // if (res.status === 200) {
+      //   setSuccessMessage("Email send successfully..");
+      //   setFormData(initialState());
+      // }
+      setSuccessMessage("Email send successfully..");
+      setFormData(initialState());
+    } catch (error) {
+      console.log(error);
+      setSuccessMessage("Something went wrong. Try again");
+      setSuccessMessage("Something went wrong. Try again");
+    }
+  };
+
   return (
     <div className="bg-primary max-w-maxLayout mx-auto px-2">
       <div className="max-w-layout mx-auto py-14">
@@ -50,12 +122,19 @@ export default function Emergencies() {
             </div>
             <div className="flex flex-col gap-5 items-center  justify-center mt-7 w-[310px] lg:w-[420px] mx-auto">
               <InputBase
-                id="outlined-basic"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={(text) => handleChange(text)}
                 placeholder="Full Name"
                 className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px] w-full `}
               />
               <InputBase
-                id="outlined-basic"
+                id="phone"
+                name="phoneNumber"
+                type="number"
+                value={formData.phoneNumber}
+                onChange={handleChange}
                 placeholder="Phone Number"
                 className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
               />
@@ -63,10 +142,11 @@ export default function Emergencies() {
                 <Select
                   variant="standard"
                   labelId="our-services-select"
-                  id="our-services-select"
-                  value=""
+                  id="service"
+                  value={formData.service}
+                  name="service"
                   displayEmpty
-                  // onChange={handleCloseNavMenu}
+                  onChange={handleSelectChange}
                   className="text-black/40 bg-white w-full py-[20px] px-5 "
                   sx={{
                     minWidth: "120px",
@@ -75,7 +155,7 @@ export default function Emergencies() {
                   <MenuItem value="" disabled>
                     Choose Service
                   </MenuItem>
-                  {menuItems.map((item) => (
+                  {services.map((item) => (
                     <MenuItem
                       key={item.id}
                       value={item.id}
@@ -86,10 +166,18 @@ export default function Emergencies() {
                   ))}
                 </Select>
               </div>
+
+              {successMessage && (
+                <p className="text-lg text-yellow font-bold text-center">
+                  {successMessage}
+                </p>
+              )}
               <div className="mt-6 w-full">
                 <Button
-                  className="bg-white w-full text-primary text-2xl h-[80px] capitalize hover:bg-transparent hover:text-white hover:!border-2 hover:!border-white "
+                  onClick={handleSubscribe}
+                  className="bg-white w-full text-primary text-2xl h-[80px] capitalize hover:bg-transparent hover:text-white hover:!border-2 hover:!border-white disabled:bg-white/60"
                   variant="outlined"
+                  disabled={!!successMessage}
                 >
                   <BsArrowRightCircle className="mr-3 font-semibold" /> Submit
                   Now
@@ -102,34 +190,3 @@ export default function Emergencies() {
     </div>
   );
 }
-
-const menuItems = [
-  {
-    id: 1,
-    title: "Stop in Drains",
-  },
-  {
-    id: 2,
-    title: "Plumber",
-  },
-  {
-    id: 3,
-    title: "Electrician",
-  },
-  {
-    id: 4,
-    title: "Camera Inspection",
-  },
-  {
-    id: 5,
-    title: "Charging Box",
-  },
-  {
-    id: 6,
-    title: "Electric Car Charger",
-  },
-  {
-    id: 7,
-    title: "Electrical Installations",
-  },
-];
