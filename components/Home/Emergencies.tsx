@@ -67,10 +67,10 @@ export default function Emergencies() {
       const res = await axios.post("/api/mail", formData);
       console.log(res);
       if (res.status === 200) {
-        setSuccessMessage("Email send successfully..");
+        setSuccessMessage("E-post skickades ");
         setFormData(initialState());
       }
-      setSuccessMessage("Email send successfully..");
+      setSuccessMessage("E-post skickades ");
       setFormData(initialState());
     } catch (error) {
       console.log(error);
@@ -84,8 +84,7 @@ export default function Emergencies() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="col-span-1 flex flex-col">
             <SectionTitle
-              title="Plumbing and electrical emergencies? 
-                We're here to help!"
+              title="Akutbehov av rörmokare eller elektriker? Vi finns här för jour hjälp."
               className="text-white font-semibold  tracking-tight"
             />
             <div className="flex gap-4 mt-8 mb-9">
@@ -180,8 +179,8 @@ export default function Emergencies() {
                   variant="outlined"
                   disabled={!!successMessage}
                 >
-                  <BsArrowRightCircle className="mr-3 font-semibold" /> Submit
-                  Now
+                  <BsArrowRightCircle className="mr-3 font-semibold" /> Skicka
+                  Nu
                 </Button>
               </div>
             </div>

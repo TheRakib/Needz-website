@@ -82,7 +82,7 @@ export default function ContactUs({
       const res = await axios.post("/api/mail", formData);
       console.log(res);
       if (res.status === 200) {
-        setSuccessMessage("Email send successfully..");
+        setSuccessMessage("E-post skickades ");
         setFormData(initialState());
       }
     } catch (error) {
