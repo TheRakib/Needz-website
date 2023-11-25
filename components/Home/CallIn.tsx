@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function CallIn() {
@@ -14,20 +15,24 @@ export default function CallIn() {
             Jour i hela Stockholm, 24/7!
           </h2>
           <p className="md:text-[18px] text-[16px] text-black/70 lg:mr-36 leading-8 max-w-full text-center md:text-left">
-            Jour Eliten AB offers plumbing and electrical on-call in Stockholm
-            24 hours a day, but we also carry out planned work for private
-            individuals and companies. We use experienced and certified plumbers
-            and electricians.
+            Jour Eliten AB erbjuder VVS och elektriska jourtjänster i Stockholm
+            dygnet runt. Vi utför inte bara akuta arbeten utan hanterar också
+            planerade uppdrag för både privatpersoner och företag. Vårt team
+            består av erfarna och certifierade rörmokare och elektriker som
+            garanterar kvalitet och professionalism i varje jobb.
           </p>
 
           <div className="">
             <div className="flex flex-col gap-4 items-center md:items-start md:mr-10">
-              <Button
-                className="capitalize py-7 px-[50px] text-[26px] bg-primary hover:bg-primary/80 text-white rounded-lg"
-                size="large"
-              >
-                Mer om oss
-              </Button>
+              {/* about-us */}
+              <Link href={"/about-us"}>
+                <Button
+                  className="capitalize py-7 px-[50px] text-[26px] bg-primary hover:bg-primary/80 text-white rounded-lg"
+                  size="large"
+                >
+                  Mer om oss
+                </Button>
+              </Link>
               <Button
                 className="capitalize py-7 text-[26px] bg-white hover:bg-primary/5 text-black rounded-lg"
                 size="large"

@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { BiPhoneCall } from "react-icons/bi";
 
@@ -22,23 +23,24 @@ export default function Banner() {
               Jourtjänster tillgängliga i hela Stockholm, dygnet runt!
             </h2>
             <p className=" my-6 leading-6 max-w-[686px] text-center">
-              Jour Eliten AB erbjuder VVS och elektriska jourtjänster i
-              Stockholm dygnet runt. Vi utför inte bara akuta arbeten utan
-              hanterar också planerade uppdrag för både privatpersoner och
-              företag. Vårt team består av erfarna och certifierade rörmokare
-              och elektriker som garanterar kvalitet och professionalism i varje
-              jobb.
+              Behöver du snabb hjälp av rörmokare eller elektriker i Stockholm?
+              Jour365 är tillgängliga dygnet runt! Vi erbjuder pålitliga
+              jourtjänster för VVS och el, samt planerade arbeten för alla typer
+              av kunder. Våra certifierade proffs garanterar högklassig service
+              varje gång.
             </p>
 
             <div className="flex flex-col md:flex-row gap-4">
+              <Link href={"/contact-us"}>
+                <Button
+                  className="capitalize text-xl md:text-2xl md:py-7 md:px-12 px-10 py-4 rounded-xl bg-primary hover:bg-primary/50 text-white flex-nowrap whitespace-nowrap "
+                  size="large"
+                >
+                  Kontakta oss
+                </Button>
+              </Link>
               <Button
-                className="capitalize text-xl md:text-2xl md:py-7 md:px-12 px-10 py-4 rounded-xl bg-primary hover:bg-primary/70 text-white flex-nowrap whitespace-nowrap "
-                size="large"
-              >
-                Kontakta oss
-              </Button>
-              <Button
-                className="capitalize text-xl md:text-2xl md:py-7 md:px-12 px-10 py-4 rounded-xl bg-secondary hover:bg-secondary/70 text-white flex-nowrap whitespace-nowrap "
+                className="capitalize text-xl md:text-2xl md:py-7 md:px-12 px-10 py-4 rounded-xl bg-secondary hover:bg-secondary/50 text-white flex-nowrap whitespace-nowrap "
                 size="large"
               >
                 <a href="tel:08302241" className="flex items-center">
