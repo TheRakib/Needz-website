@@ -19,7 +19,7 @@ export default function ServicesBanner({
   img,
   titleClass,
   extraInfo,
-  firstItem = "Our Services",
+  firstItem = "våra tjänster",
 }: Props) {
   return (
     <div className="flex-col blur-[0.5px] overflow-hidden relative flex min-h-[362px] items-center justify-center px-5 max-w-maxLayout mx-auto">

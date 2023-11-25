@@ -23,6 +23,7 @@ export default function Footer() {
           </div>
           <div className="col-span-4 flex justify-center mr-4">
             <div className="flex flex-col gap-2">
+              <p className="text-black/70 text-center mt-1 ">Försäkrad med</p>
               <Image
                 src={"/about/icon.png"}
                 alt="icon"
@@ -30,7 +31,6 @@ export default function Footer() {
                 width={282}
                 className="pt-1"
               />
-              <p className="text-black/70 text-center mt-1 ">Försäkrad med</p>
             </div>
           </div>
           <div className="col-span-4 grid grid-cols-2 gap-1 overflow-x-scroll no-scrollbar">

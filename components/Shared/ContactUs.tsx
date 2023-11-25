@@ -49,7 +49,7 @@ const initialState = () => ({
 
 export default function ContactUs({
   semiTitle = "Need Any Services",
-  helperText = "Fill out the form for a free quote. You can also call 08-30 22 41 between 08:00 and 16:00 on weekdays. On-call and urgent matters 24 hours a day, 365 days a year.",
+  helperText = "Fyll i formuläret för en kostnadsfri offert. Du kan också ringa 08-30 22 41 mellan 08:00 och 16:00 på vardagar. För akuta ärenden och jourtjänst är vi tillgängliga dygnet runt, 365 dagar om året.Fill out the form for a free quote. You can also call 08-30 22 41 between 08:00 and 16:00 on weekdays. On-call and urgent matters 24 hours a day, 365 days a year.",
   disabledHelperText = false,
 }: Props) {
   const [formData, setFormData] = useState<FormState>(initialState());

@@ -6,12 +6,11 @@ export default function OnCall() {
   return (
     <div className="max-w-layout mx-auto flex flex-col gap-[60px] mt-20 mb-[120px] px-2">
       <div className="flex flex-col gap-5">
-        <SecondTitle title="On call in all of Stockholm, 24/7" />
+        <SecondTitle title="JOUR I HELA STOCKHOLM, DYGNET RUNT!" />
         <p className="lg:text-[18px] text-black/70 max-w-[980px] ">
-          Jour 365 AB offers plumbing and electrical on-call in Stockholm 24
-          hours a day, but we also carry out planned work for private
-          individuals and companies. We use experienced and certified plumbers
-          and electricians.
+          Jour365 AB erbjuder VVS och EL jour i Stockholm 24 timmar om dygnet,
+          men vi utför även planerade arbeten för privatpersoner och företag. Vi
+          använder oss av erfarna och certifierade rörmokare och elektriker.
         </p>
       </div>
       <div className="flex gap-10 flex-col lg:flex-row">
@@ -34,6 +33,7 @@ export default function OnCall() {
           </div>
           <div className="flex gap-2 lg:gap-10 items-center justify-center">
             <div className="flex flex-col gap-2">
+              <p className="text-black/70 text-center mt-1 ">Försäkrad med</p>
               <Image
                 src={"/about/icon.png"}
                 alt="icon"
@@ -41,11 +41,10 @@ export default function OnCall() {
                 width={282}
                 className="pt-1"
               />
-              <p className="text-black/70 text-center mt-1 ">Insured With</p>
             </div>
             <div className="flex flex-col gap-0">
               <p className="text-[44px] font-semibold">4.8</p>
-              <p className="text-black/70 text-center">Insured With</p>
+              <p className="text-black/70 text-center">Kundomdöme</p>
             </div>
           </div>
           <p className="text-[26px] font-semibold text-center">
