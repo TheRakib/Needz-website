@@ -15,10 +15,10 @@ export default function PlumberServices() {
       <div className="max-w-layout mx-auto">
         <div className="">
           <p className="text-[18px] capitalize text-center text-white/70">
-            Plumbing Services We Offer
+            VVS-tjänster Vi Erbjuder
           </p>
           <SecondTitle
-            title="Trusted plumbers, here to help when you need us most. We adapt our services to meet your unique needs, 24/7."
+            title="Pålitliga rörmokare, här för att hjälpa dig när du behöver det som mest. Vi anpassar våra tjänster för att möta dina unika behov, dygnet runt."
             className="max-w-[1000px] mx-auto tracking-tighter !leading-[54px] "
           />
         </div>
@@ -67,51 +67,51 @@ export default function PlumberServices() {
 const serviceCardItems = [
   {
     id: 1,
-    title: "Water Heater",
+    title: "vattenvärmaren",
     img: "/home/services/plumber/icon1.svg",
     description:
-      "Are you not getting any hot water into the property? Then it is most likely your water heater that is creating problems for you. Are you not getting any hot water into the property? Then it is most likely your water heater that is creating problems for you. ",
+      "Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig. Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
   },
   {
     id: 2,
-    title: "Heat Pumps",
+    title: "Värmepumpar",
     img: "/home/services/plumber/icon2.svg",
     description:
-      "We service and install all types of heat pumps. Choosing a heat pump as a heat source in your home is an investment, not only for your wallet. Are you not getting any hot water into the property? Then it is most likely your water heater that is creating problems for you. ",
+      "Vi servar och installerar alla typer av värmepumpar. Att välja en värmepump som värmekälla i ditt hem är en investering, inte bara för din plånbok. Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
   },
   {
     id: 3,
-    title: "Radiators and elements",
+    title: "Radiatorer och element",
     img: "/home/services/plumber/icon3.svg",
     description:
-      "Are all your radiators cold? Or do they work flawlessly in some rooms and not at all in others? Then you need a plumbing technician!. Are you not getting any hot water into the property? Then it is most likely your water heater that is creating problems for you. ",
+      "Är alla dina radiatorer kalla? Eller fungerar de felfritt i vissa rum men inte alls i andra? Då behöver du en VVS-tekniker! Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
   },
   {
     id: 3,
     title: "Ventilation",
     img: "/home/services/plumber/icon4.svg",
     description:
-      "Did you know that it is a plumber who fixes the ventilation? The correct term for plumbing technician actually means heating. Are you not getting any hot water into the property? Then it is most likely your water heater that is creating problems for you. ",
+      "Visste du att det är en rörmokare som fixar ventilationen? Den korrekta termen för VVS-tekniker betyder faktiskt uppvärmning. Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
   },
   {
     id: 4,
-    title: "Pipe Service",
+    title: "Rörservice",
     img: "/home/services/plumber/icon5.svg",
     description:
-      "Maintenance or repairs of the pipes? No job is too small or too big for us. We also offer service and maintenance agreements for housing. Are you not getting any hot water into the property? Then it is most likely your water heater that is creating problems for you. ",
+      "Underhåll eller reparationer av rören? Inget jobb är för litet eller för stort för oss. Vi erbjuder också service- och underhållsavtal för bostäder. Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
   },
   {
     id: 5,
-    title: "Planning",
+    title: "Planering",
     img: "/home/services/plumber/icon6.svg",
     description:
-      "Do you have plans to install new pipes? Do you need to upgrade your heating system, or run a drain to your new attic? We help you from start to finish!. Are you not getting any hot water into the property? Then it is most likely your water heater that is creating problems for you. ",
+      "Har du planer på att installera nya rör? Behöver du uppgradera ditt värmesystem eller dra ett avlopp till din nya vind? Vi hjälper dig från start till mål! Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
   },
   {
     id: 6,
-    title: "Renovations and new builds",
+    title: "Renoveringar och nybyggnation",
     img: "/home/services/plumber/icon7.svg",
     description:
-      "We help you plan for the replacement of everything from mixers to new pipes. When renovating all types of rooms with water and. Are you not getting any hot water into the property? Then it is most likely your water heater that is creating problems for you. ",
+      "Vi hjälper dig att planera för byte av allt från blandare till nya rör. När du renoverar alla typer av utrymmen med vatten och. Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
   },
 ];

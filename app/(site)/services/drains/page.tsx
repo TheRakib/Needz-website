@@ -4,6 +4,17 @@ import ServicesBanner from "@/components/Services/ServicesBanner";
 import ContactUs from "@/components/Shared/ContactUs";
 import React from "react";
 
+// Avloppsstopp
+// Rörmokare för stopp i avlopp
+// Avloppsrensning
+// Akut avloppsstopp
+// Avloppsservice
+// Lösa avloppsstopp
+// Professionell avloppsrengöring
+// Avloppsstopp lösningar
+// Hjälp med stopp i avlopp
+// Effektiv avloppsrensning
+
 export default function drains() {
   return (
     <div>

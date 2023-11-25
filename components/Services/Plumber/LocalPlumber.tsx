@@ -9,15 +9,15 @@ export default function LocalPlumber() {
       <div className="">
         <div className="flex flex-col gap-5 items-center justify-center mb-[90px]  max-w-[712px] mx-auto">
           <SecondTitle
-            title="Your local plumbers in Stockholm - for homes and businesses"
+            title="Dina lokala rörmokare i Stockholm - för privatpersoner och företag"
             className="!text-center"
           />
           <p className="text-[18px] text-black/70 text-center">
-            At Jour 365, we offer comprehensive plumbing services to homeowners
-            and businesses throughout Stockholm. Our experienced and certified
-            plumbers are ready to help you with everything from minor
-            installations to complete renovations. We are also experts in
-            ventilation, heating, and sanitation systems.
+            På Jour 365 erbjuder vi omfattande VVS-tjänster till både husägare
+            och företag i hela Stockholm. Våra erfarna och certifierade
+            rörmokare är redo att hjälpa dig med allt från mindre installationer
+            till kompletta renoveringar. Vi är också experter på ventilation,
+            uppvärmning och sanitetssystem.
           </p>
         </div>
         <AccordionPic items={serviceAccordions} withBullets />
@@ -25,13 +25,13 @@ export default function LocalPlumber() {
       <div className="mt-[120px] flex flex-col gap-[70px]">
         <div className="text-[20px] max-w-[1005px] mx-auto">
           <p className="text-center">
-            Our experienced and certified plumbers can handle any plumbing
-            problem you have, no matter how big or small. We are experts in all
-            types of plumbing systems, including ventilation, heating, and
-            sanitation.
+            Våra erfarna och certifierade rörmokare kan hantera alla typer av
+            VVS-problem du kan ha, oavsett hur stora eller små de är. Vi är
+            experter på alla typer av VVS-system, inklusive ventilation,
+            uppvärmning och sanitet.
           </p>
           <p className="text-secondary text-center">
-            Kontakta oss today for a free quote!
+            Kontakta oss idag för en kostnadsfri offert!
           </p>
         </div>
         <div className="flex flex-col md:flex-row gap-10 items-center justify-center">

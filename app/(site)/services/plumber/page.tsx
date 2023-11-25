@@ -10,8 +10,8 @@ export default function page() {
   return (
     <div>
       <ServicesBanner
-        title="Plumbers throughout Stockholm"
-        breadcrumb="Plumber page"
+        title="Rörmokare över hela Stockholm"
+        breadcrumb="Rörmakare sida"
         img="/services/plumber.png"
       />
 
