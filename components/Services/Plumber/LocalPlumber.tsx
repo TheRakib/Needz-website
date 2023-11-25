@@ -31,7 +31,7 @@ export default function LocalPlumber() {
             sanitation.
           </p>
           <p className="text-secondary text-center">
-            Contact us today for a free quote!
+            Kontakta oss today for a free quote!
           </p>
         </div>
         <div className="flex flex-col md:flex-row gap-10 items-center justify-center">

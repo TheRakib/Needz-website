@@ -45,7 +45,7 @@ export default function Welcome() {
   return (
     <div className="max-w-layout mx-auto mt-[150px] mb-7">
       <SectionTitle
-        title="You are welcome to contact us."
+        title="You are welcome to Kontakta oss."
         className="!text-center"
       />
       <div className="max-w-[630px] mx-auto flex flex-col mt-10">

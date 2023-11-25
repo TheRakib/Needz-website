@@ -11,7 +11,7 @@ export default function Description() {
 const detailsProps = {
   description: {
     para1:
-      "If you have a stopped sewer, contact us. Whether your drain clog is due to food residue, grease left in the sink, or a plastic object stuck in the toilet seat, our technicians will help you.",
+      "If you have a stopped sewer, Kontakta oss. Whether your drain clog is due to food residue, grease left in the sink, or a plastic object stuck in the toilet seat, our technicians will help you.",
     para2: `All drains need to be flushed of residue and grease at least every five years to maintain good water flow.`,
   },
   title2: "Drain Cleaning",

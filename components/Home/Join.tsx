@@ -9,12 +9,12 @@ export default function Join() {
     <div className="max-w-layout mx-auto">
       <div className="flex flex-col items-center justify-center">
         <h2 className="uppercase font-semibold text-[20px] md:text-[25px]">
-          Jour Eliten
+          Jour 365
         </h2>
-        <SectionTitle title="how it works" className="text-center uppercase" />
-        {/* <h3 className="text-title font-semibold ">
-          
-        </h3> */}
+        <SectionTitle
+          title="Hur det fungerar"
+          className="text-center uppercase"
+        />
       </div>
 
       <div className="mt-10 relative">
@@ -60,14 +60,14 @@ export default function Join() {
 const joinContents = [
   {
     id: 1,
-    title: "We're here to help, 24/7 - call or book online!",
+    title: "Vi finns här för att hjälpa, dygnet runt - ring eller boka online!",
     img: "/home/join/icon3.png",
     hexagonClass: "top-[45%] -right-5",
     hexagonColor: " bg-primary after:border-t-primary before:border-b-primary",
   },
   {
     id: 2,
-    title: "Certified technicians to your door in 1 hour or less!",
+    title: "Certifierade tekniker till din dörr på 1 timme eller mindre!",
     img: "/home/join/icon2.png",
     hexagonClass: "top-[10%] -right-5",
     hexagonColor:
@@ -75,7 +75,7 @@ const joinContents = [
   },
   {
     id: 3,
-    title: "Pay your way - installments or invoice",
+    title: "Betalningsalternativ - delbetalning eller faktura",
     img: "/home/join/icon1.png",
     hexagonClass: "top-[45%] -right-5",
     hexagonColor: " bg-yellow after:border-t-yellow before:border-b-yellow",

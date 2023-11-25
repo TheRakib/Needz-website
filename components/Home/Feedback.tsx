@@ -54,7 +54,7 @@ export default function Feedback() {
     <div className="max-w-layout relative mx-auto mt-[120px] mb-48 px-1">
       <div className="w-full flex justify-center">
         <SectionTitle
-          title="What our customers say about us"
+          title="Kundomdömen om vår service"
           className="!text-center max-w-[688px]"
         />
       </div>
@@ -128,3 +128,11 @@ export default function Feedback() {
     </div>
   );
 }
+
+// const reviewItems: [
+//   {
+//     id: 1;
+//     title: " Excellent value for money holiday. My questions were all answered promptly and when my consultant was unavailable, another staff member would respond.";
+//     img: "";
+//   }
+// ];

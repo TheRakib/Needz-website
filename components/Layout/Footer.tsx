@@ -41,8 +41,8 @@ export default function Footer() {
               About us
             </h3>
             <p className="max-w-[284px] ml-auto md:ml-0 mr-auto text-black/80 text-[14px] leading-6  ">
-              Jour Eliten AB offers plumbing and electrical on-call in Stockholm
-              24 hours a day, but we also carry out planned work for private
+              Jour 365 AB offers plumbing and electrical on-call in Stockholm 24
+              hours a day, but we also carry out planned work for private
               individuals and companies. We use experienced and certified
               plumbers and electricians.
             </p>
@@ -146,7 +146,7 @@ const contactInfo: ContactInfo[] = [
   //     {
   //       id: 5,
   //       link: "/contact-us",
-  //       title: "Contact Us",
+  //       title: "Kontakta oss",
   //     },
   //   ],
   // },

@@ -7,6 +7,7 @@ import { Button } from "@mui/material";
 import { LuPhoneCall } from "react-icons/lu";
 import { useRouter } from "next/navigation";
 import { Services } from "@/Types";
+import { services } from "@/Constants";
 
 export default function OurServices() {
   const [isHovered, setIsHovered] = useState<boolean | number>(false);
@@ -27,10 +28,10 @@ export default function OurServices() {
 
   return (
     <div className="max-w-layout mx-auto my-[120px] " id="our_services">
-      <SectionTitle title="Our Services" className="w-full !text-center" />
+      <SectionTitle title="Våra tjänster" className="w-full !text-center" />
 
       <div className="flex flex-wrap gap-5 lg:gap-16 mt-11 md:mx-24 xl:mx-0">
-        {serviceItems.map((item) => (
+        {services.map((item) => (
           <div
             key={item.id}
             onMouseOver={() => handleMouseOver(item.id)}
@@ -67,7 +68,7 @@ export default function OurServices() {
             className="w-[291px] h-[92px] bg-primary hover:bg-transparent hover:text-primary text-white text-[26px] capitalize rounded-lg"
             variant="outlined"
           >
-            Book Your Service
+            Boka din tjänst
           </Button>
           <Button
             className="w-[291px] h-[92px] bg-transparent  hover:bg-primary hover:text-white text-primary text-[26px] capitalize rounded-lg flex gap-3 items-center"

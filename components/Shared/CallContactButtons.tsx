@@ -35,7 +35,7 @@ export default function CallContactButtons({
         size="large"
         variant="outlined"
       >
-        Contact Us
+        Kontakta oss
       </Button>
     </>
   );

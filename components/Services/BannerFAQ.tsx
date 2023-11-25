@@ -27,7 +27,7 @@ export default function BannerFAQ() {
           className="capitalize text-xl md:text-2xl md:py-7 md:px-12 px-10 py-4 rounded-xl bg-white hover:bg-primary/5 text-black flex-nowrap whitespace-nowrap "
           size="large"
         >
-          Contact Us
+          Kontakta oss
         </Button>
       </div>
     </div>

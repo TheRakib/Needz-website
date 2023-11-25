@@ -30,7 +30,7 @@ const detailsProps = {
     para1: "Need an electrician in Stockholm? We&apos;re here to help!",
     para2: ` We offer expert electrical installations and repairs for
     businesses and homes, and we&apos;re available 365 days a year.
-    Contact us and we will help you immediately!`,
+    Kontakta oss and we will help you immediately!`,
   },
   title2: "Trustworthy Electrical Installers in Stockholm",
   description2Limit: 52,

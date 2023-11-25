@@ -52,7 +52,7 @@ export default function Description() {
               Are you renovating or rebuilding? We undertake assignments in new
               construction, remodeling and new installation throughout Greater
               Stockholm and the surrounding area. The size of your project is of
-              no importance to Jour Eliten. We help you develop proposals for a
+              no importance to Jour 365. We help you develop proposals for a
               modern, efficient and energy-saving solution. With us, you get a
               clear and concise picture of the costs and scope of the renovation
               work.

@@ -8,7 +8,7 @@ export default function OnCall() {
       <div className="flex flex-col gap-5">
         <SecondTitle title="On call in all of Stockholm, 24/7" />
         <p className="lg:text-[18px] text-black/70 max-w-[980px] ">
-          Jour Eliten AB offers plumbing and electrical on-call in Stockholm 24
+          Jour 365 AB offers plumbing and electrical on-call in Stockholm 24
           hours a day, but we also carry out planned work for private
           individuals and companies. We use experienced and certified plumbers
           and electricians.

@@ -51,7 +51,7 @@ type Props = {
 };
 
 export default function FAQ({
-  title = "Frequently Asked Questions",
+  title = "Vanliga frågor",
   variant = "home",
   titleClass = "!text-center mb-20",
   faqItems,

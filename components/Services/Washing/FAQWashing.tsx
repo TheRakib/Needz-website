@@ -25,32 +25,32 @@ const faqItems = [
     id: 2,
     title: "What happens when I have ordered a washing machine?",
     description:
-      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour Eliten have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
+      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour 365 have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
   },
   {
     id: 3,
     title: "Is it possible to flush the drain yourself?",
     description:
-      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour Eliten have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
+      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour 365 have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
   },
   {
     id: 4,
     title: "How does drain flushing work?",
     description:
-      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour Eliten have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
+      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour 365 have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
   },
 
   {
     id: 5,
     title: "How long do you flush the drains?",
     description:
-      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour Eliten have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
+      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour 365 have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
   },
 
   {
     id: 6,
     title: "How many times do I need to flush the drain?",
     description:
-      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour Eliten have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
+      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour 365 have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
   },
 ];

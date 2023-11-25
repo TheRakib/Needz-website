@@ -12,8 +12,8 @@ export default function DescriptionWashing() {
           <TextTitle title="Description" />
           <div className="flex flex-col gap-6 mt-5 mb-11 text-black/70 text-[18px]">
             <p className="">
-              Have you got a blockage in the drain? Do not worry! Contact us at
-              Jour Elite and we will come out with a washing machine for you.
+              Have you got a blockage in the drain? Do not worry! Kontakta oss
+              at Jour Elite and we will come out with a washing machine for you.
             </p>
             <p className="">
               A stop in the drain can come very untimely. Sometimes it is enough

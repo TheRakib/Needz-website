@@ -66,7 +66,7 @@ const pressureItems = [
 
 const text = ` Are you looking for a reliable and efficient electrical company
 for your home or business electrical installations? Then
-you've come to the right place! We at Jour Eliten understand
+you've come to the right place! We at Jour 365 understand
 the importance of an electrical installation being safe and
 reliable and how important it is that the electricity works as it
 should, at home,  Then

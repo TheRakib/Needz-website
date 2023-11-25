@@ -96,10 +96,10 @@ export default function ContactUs({
       <div className="max-w-layout mx-auto">
         <div className="flex justify-between items-center flex-col md:flex-row">
           <div className="flex flex-col gap-2">
-            <h3 className="text-[18px] font-semibold text-center md:text-left ">
+            {/* <h3 className="text-[18px] font-semibold text-center md:text-left ">
               {semiTitle}
-            </h3>
-            <SectionTitle title="Contact Us" />
+            </h3> */}
+            <SectionTitle title="Kontakta oss" />
           </div>
           {!disabledHelperText ? (
             <p className="text-white/70 text-[18px] max-w-[580px] text-center md:text-left mt-6 md:mt-0">
@@ -117,7 +117,7 @@ export default function ContactUs({
                     name="name"
                     value={formData.name}
                     id="outlined-basic"
-                    placeholder="Name"
+                    placeholder="Namn"
                     className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px] w-full `}
                   />
                   <InputBase
@@ -125,8 +125,8 @@ export default function ContactUs({
                     name="phoneNumber"
                     id="phone-_number"
                     value={formData.phoneNumber}
-                    type="number"
-                    placeholder="Phone Number"
+                    type="tel"
+                    placeholder="Nummer"
                     className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
                   />
                   <InputBase
@@ -135,7 +135,7 @@ export default function ContactUs({
                     id="zip_code"
                     value={formData.zipCode}
                     type={"number"}
-                    placeholder="Zip Code"
+                    placeholder="Postkod"
                     className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
                   />
                 </div>
@@ -147,7 +147,7 @@ export default function ContactUs({
                     id="email"
                     type="email"
                     required
-                    placeholder="Email"
+                    placeholder="E-post"
                     className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px] w-full `}
                   />
                   <InputBase
@@ -155,7 +155,7 @@ export default function ContactUs({
                     name="address"
                     value={formData.address}
                     id="address"
-                    placeholder="Address"
+                    placeholder="Adress"
                     className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
                   />
                   <InputBase
@@ -163,8 +163,7 @@ export default function ContactUs({
                     name="postalCode"
                     value={formData.postalCode}
                     id="postal_code"
-                    type="number"
-                    placeholder="Postal Code"
+                    placeholder="Stad"
                     className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
                   />
                 </div>
@@ -177,11 +176,11 @@ export default function ContactUs({
                   value={formData.message}
                   onChange={handleChange}
                   rows={7}
-                  placeholder="Your Message"
+                  placeholder="Ditt meddelande"
                   className="text-[18px] pt-6 pl-5 w-full text-black focus:outline-none "
                 />
               </div>
-              <Button
+              {/* <Button
                 component="label"
                 variant="outlined"
                 startIcon={
@@ -195,7 +194,7 @@ export default function ContactUs({
                   onChange={handlePhotoChange}
                   type="file"
                 />
-              </Button>
+              </Button> */}
               {successMessage && (
                 <p className="text-lg text-yellow font-bold text-center">
                   {successMessage}
@@ -208,7 +207,7 @@ export default function ContactUs({
                   onClick={handleSubscribe}
                   disabled={!!successMessage}
                 >
-                  Send Message
+                  Skicka meddelande
                 </Button>
               </div>
             </div>
