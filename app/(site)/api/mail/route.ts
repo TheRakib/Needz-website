@@ -30,24 +30,36 @@ export async function POST(
     await mail.send(data);
 
     //----------------------- Now, send an email to the company with user details
-    const companyMessage = `
-      Meddelande från användare: \r\n/g
-      Namn: ${dataToJson.name} \r\n/g
-      Telefonnummer: ${dataToJson.phone} \r\n/g
-      email: ${dataToJson.phone} \r\n/g
-      zipCode: ${dataToJson.zipCode} \r\n/g
-      postalCode: ${dataToJson.postalCode} \r\n/g
-      address: ${dataToJson.address} \r\n/g
-      photo: ${dataToJson.photo},
-      Meddelande: ${dataToJson.message} \r\n/g
+    const companyMessageText = `
+      Meddelande från användare: 
+      Namn: ${dataToJson?.name}, 
+      Telefonnummer: ${dataToJson?.phone}, 
+      email: ${dataToJson?.email}, 
+      zipCode: ${dataToJson?.zipCode}, 
+      postalCode: ${dataToJson?.postalCode}, 
+      address: ${dataToJson?.address}, 
+      photo: ${dataToJson?.photo}, 
+      Meddelande: ${dataToJson?.message} 
+    `;
+
+    const companyMessageHTML = `
+      Meddelande från användare: <br/>
+      Namn: ${dataToJson?.name}, <br/>
+      Telefonnummer: ${dataToJson?.phone}, <br/>
+      email: ${dataToJson?.email}, <br/>
+      zipCode: ${dataToJson?.zipCode}, <br/>
+      postalCode: ${dataToJson?.postalCode}, <br/>
+      address: ${dataToJson?.address}, <br/>
+      photo: ${dataToJson?.photo}, <br/>
+      Meddelande: ${dataToJson?.message} <br/>
     `;
 
     const companyData = {
       to: "wordpress@jour365.se", // Replace with the company's email
       from: "order@jour365.se",
       subject: "Nytt meddelande från användare",
-      text: companyMessage,
-      html: companyMessage.replace("\r\n/g", "<br/>"),
+      text: companyMessageText,
+      html: companyMessageHTML,
     };
 
     await mail.send(companyData);
@@ -57,7 +69,7 @@ export async function POST(
       statusText: "Successfully sent",
     });
   } catch (error) {
-    // console.error(error);
+    console.error(error);
 
     return new Response(
       JSON.stringify({ message: "Something went wrong", error: error }),

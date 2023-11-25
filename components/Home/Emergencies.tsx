@@ -15,12 +15,14 @@ import { toast } from "react-toastify";
 import axios from "axios";
 
 interface FormState {
+  email: string;
   name: string;
   phoneNumber: string;
   service: string;
 }
 
 const initialState = () => ({
+  email: "service@contact.com",
   name: "",
   phoneNumber: "",
   service: "",
@@ -61,13 +63,13 @@ export default function Emergencies() {
     }
 
     try {
-      console.log(formData);
-      // const res = await axios.post("/api/mail", formData);
-      // console.log(res);
-      // if (res.status === 200) {
-      //   setSuccessMessage("Email send successfully..");
-      //   setFormData(initialState());
-      // }
+      // console.log(formData);
+      const res = await axios.post("/api/mail", formData);
+      console.log(res);
+      if (res.status === 200) {
+        setSuccessMessage("Email send successfully..");
+        setFormData(initialState());
+      }
       setSuccessMessage("Email send successfully..");
       setFormData(initialState());
     } catch (error) {
@@ -157,7 +159,7 @@ export default function Emergencies() {
                   {services.map((item) => (
                     <MenuItem
                       key={item.id}
-                      value={item.id}
+                      value={item.title}
                       className="py-[15px] pl-[20px]"
                     >
                       {item.title}

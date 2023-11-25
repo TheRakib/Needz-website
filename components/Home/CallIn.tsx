@@ -24,7 +24,6 @@ export default function CallIn() {
 
           <div className="">
             <div className="flex flex-col gap-4 items-center md:items-start md:mr-10">
-              {/* about-us */}
               <Link href={"/about-us"}>
                 <Button
                   className="capitalize py-7 px-[50px] text-[26px] bg-primary hover:bg-primary/80 text-white rounded-lg"
@@ -39,7 +38,6 @@ export default function CallIn() {
               >
                 Ring: 08-30 22 41
               </Button>
-              {/* <p className="text-[26px] font-semibold">Ring: 08-30 22 41</p> */}
             </div>
           </div>
         </div>
