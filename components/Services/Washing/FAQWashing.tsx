@@ -19,7 +19,7 @@ const faqItems = [
     id: 1,
     title: "What is the price for ordering a washing machine from you?",
     description:
-      "We always have a fixed price when you order a washing machine from us and, of course, also apply a root deduction in cases where it is applicable. Prices vary depending on the time for the work. Call us and we'll send you a quote right away!",
+      "We always have a fixed price when you order a washing machine from us and, of course, also apply a root deduction in cases where it is applicable. Prices vary depending on the time for the work. Ring and we'll send you a quote right away!",
   },
   {
     id: 2,

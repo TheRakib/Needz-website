@@ -66,7 +66,7 @@ export default function DescriptionWashing() {
               that a flushing truck is needed.
             </p>
             <p className="font-semibold text-black">
-              Not sure if you need a washing machine? Call us for a quick
+              Not sure if you need a washing machine? Ring for a quick
               consultation.
             </p>
           </div>

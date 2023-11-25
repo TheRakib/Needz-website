@@ -73,7 +73,6 @@ export default function Emergencies() {
     } catch (error) {
       console.log(error);
       setSuccessMessage("Something went wrong. Try again");
-      setSuccessMessage("Something went wrong. Try again");
     }
   };
 
@@ -108,16 +107,16 @@ export default function Emergencies() {
               />
             </div>
             <p className="md:text-[35px] text-[25px] text-white text-center md:text-left ">
-              Call Us: <span className="font-bold">08-30 22 41</span>
+              Ring: <span className="font-bold">08-30 22 41</span>
             </p>
           </div>
           <div className="col-span-1">
             <div className="flex flex-col text-white">
               <h3 className="font-semibold text-[20px] md:text-[25px] text-center">
-                Online Book A Service
+                Kontakta oss nu
               </h3>
               <p className=" text-[16px] md:text-[18px] text-white/60 text-center ">
-                You’re response within a minute
+                Snabb Respons på Din Förfrågan
               </p>
             </div>
             <div className="flex flex-col gap-5 items-center  justify-center mt-7 w-[310px] lg:w-[420px] mx-auto">
@@ -126,7 +125,7 @@ export default function Emergencies() {
                 name="name"
                 value={formData.name}
                 onChange={(text) => handleChange(text)}
-                placeholder="Full Name"
+                placeholder="Fullständigt Namn"
                 className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px] w-full `}
               />
               <InputBase
@@ -135,7 +134,7 @@ export default function Emergencies() {
                 type="number"
                 value={formData.phoneNumber}
                 onChange={handleChange}
-                placeholder="Phone Number"
+                placeholder="Telefon Nummer"
                 className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
               />
               <div className="w-full">
@@ -153,7 +152,7 @@ export default function Emergencies() {
                   }}
                 >
                   <MenuItem value="" disabled>
-                    Choose Service
+                    Välj Tjänst
                   </MenuItem>
                   {services.map((item) => (
                     <MenuItem

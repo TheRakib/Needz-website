@@ -29,6 +29,32 @@ export const metadata: Metadata = {
   },
 };
 
+// -------------- tags:
+// Jour 365 AB
+// Jourtjänster Stockholm
+// Dygnet runt VVS Stockholm
+// Akut elektriker Stockholm
+// Certifierade rörmokare Stockholm
+// Planerade elprojekt
+// Erfarna elektriker Stockholm
+// Pålitliga VVS-tjänster
+
+// Jour tjänster Stockholm
+// Akut rörmokarservice
+// Dygnet runt elektrikertjänster
+// Snabb VVS hjälp
+// Nödtjänster elektriker
+// Omedelbar hjälp VVS
+// Akut hjälp elektricitet
+// Professionella jourtjänster
+// Pålitliga akut tjänster
+// 24/7 VVS och elektriker
+// Jourhjälp för hemmet
+// Företagstjänster jour
+// Akut underhållstjänster
+// Säkerhetskontroll jour
+// Snabbinsats elektriker och rörmokare
+
 export default function RootLayout({
   children,
 }: {

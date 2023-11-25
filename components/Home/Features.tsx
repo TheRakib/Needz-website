@@ -32,9 +32,9 @@ export default function Features() {
               Contact Us
             </Button>
             <Button className="bg-white hover:bg-primary/5 text-black capitalize rounded-xl font-semibold text-[26px] py-[25px] ">
-              Call Us: 08-30 22 41
+              Ring: 08-30 22 41
             </Button>
-            {/* <p className="text-[26px] font-semibold ">Call Us: 08-30 22 41</p> */}
+            {/* <p className="text-[26px] font-semibold ">Ring: 08-30 22 41</p> */}
           </div>
         </div>
         <div className="col-span-1">

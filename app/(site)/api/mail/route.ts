@@ -24,10 +24,33 @@ export async function POST(
       from: "order@jour365.se",
       subject: "Bekräftelse: Ditt meddelande till oss är mottaget",
       text: message,
-      html: message.replace("\r\ng", "<br/>"),
+      html: message.replace("\r\n/g", "<br/>"),
     };
 
     await mail.send(data);
+
+    //----------------------- Now, send an email to the company with user details
+    const companyMessage = `
+      Meddelande från användare: \r\n/g
+      Namn: ${dataToJson.name} \r\n/g
+      Telefonnummer: ${dataToJson.phone} \r\n/g
+      email: ${dataToJson.phone} \r\n/g
+      zipCode: ${dataToJson.zipCode} \r\n/g
+      postalCode: ${dataToJson.postalCode} \r\n/g
+      address: ${dataToJson.address} \r\n/g
+      photo: ${dataToJson.photo},
+      Meddelande: ${dataToJson.message} \r\n/g
+    `;
+
+    const companyData = {
+      to: "wordpress@jour365.se", // Replace with the company's email
+      from: "order@jour365.se",
+      subject: "Nytt meddelande från användare",
+      text: companyMessage,
+      html: companyMessage.replace("\r\n/g", "<br/>"),
+    };
+
+    await mail.send(companyData);
 
     return new Response(JSON.stringify({ message: "Mail sent successfully" }), {
       status: 200,

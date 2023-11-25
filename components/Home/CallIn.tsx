@@ -11,7 +11,7 @@ export default function CallIn() {
         </div>
         <div className="col-span-1 flex flex-col justify-center gap-6">
           <h2 className="text-[36px] md:text-title font-bold text-center md:text-left ">
-            On call in all of Stockholm, 24/7!
+            Jour i hela Stockholm, 24/7!
           </h2>
           <p className="md:text-[18px] text-[16px] text-black/70 lg:mr-36 leading-8 max-w-full text-center md:text-left">
             Jour Eliten AB offers plumbing and electrical on-call in Stockholm
@@ -26,15 +26,15 @@ export default function CallIn() {
                 className="capitalize py-7 px-[50px] text-[26px] bg-primary hover:bg-primary/80 text-white rounded-lg"
                 size="large"
               >
-                More about us
+                Mer om oss
               </Button>
               <Button
                 className="capitalize py-7 text-[26px] bg-white hover:bg-primary/5 text-black rounded-lg"
                 size="large"
               >
-                Call Us: 08-30 22 41
+                Ring: 08-30 22 41
               </Button>
-              {/* <p className="text-[26px] font-semibold">Call Us: 08-30 22 41</p> */}
+              {/* <p className="text-[26px] font-semibold">Ring: 08-30 22 41</p> */}
             </div>
           </div>
         </div>

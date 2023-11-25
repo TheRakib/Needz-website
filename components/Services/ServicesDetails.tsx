@@ -37,7 +37,7 @@ export default function ServicesDetails() {
         </div>
       </div>
       <p className="text-secondary text-[20px] text-center mt-12">
-        Need help with an electrical problem? Call us now at 08 – 23 55 20!
+        Need help with an electrical problem? Ring now at 08 – 23 55 20!
       </p>
     </div>
   );

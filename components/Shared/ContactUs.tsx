@@ -115,6 +115,7 @@ export default function ContactUs({
                   <InputBase
                     onChange={handleChange}
                     name="name"
+                    value={formData.name}
                     id="outlined-basic"
                     placeholder="Name"
                     className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px] w-full `}
@@ -123,6 +124,7 @@ export default function ContactUs({
                     onChange={handleChange}
                     name="phoneNumber"
                     id="phone-_number"
+                    value={formData.phoneNumber}
                     type="number"
                     placeholder="Phone Number"
                     className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
@@ -131,6 +133,7 @@ export default function ContactUs({
                     onChange={handleChange}
                     name="zipCode"
                     id="zip_code"
+                    value={formData.zipCode}
                     type={"number"}
                     placeholder="Zip Code"
                     className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
@@ -140,6 +143,7 @@ export default function ContactUs({
                   <InputBase
                     onChange={handleChange}
                     name="email"
+                    value={formData.email}
                     id="email"
                     type="email"
                     required
@@ -149,6 +153,7 @@ export default function ContactUs({
                   <InputBase
                     onChange={handleChange}
                     name="address"
+                    value={formData.address}
                     id="address"
                     placeholder="Address"
                     className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
@@ -156,6 +161,7 @@ export default function ContactUs({
                   <InputBase
                     onChange={handleChange}
                     name="postalCode"
+                    value={formData.postalCode}
                     id="postal_code"
                     type="number"
                     placeholder="Postal Code"
@@ -168,6 +174,7 @@ export default function ContactUs({
                 <textarea
                   name="message"
                   id=""
+                  value={formData.message}
                   onChange={handleChange}
                   rows={7}
                   placeholder="Your Message"
