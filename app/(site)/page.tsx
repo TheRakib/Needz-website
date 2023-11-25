@@ -4,18 +4,14 @@ import Emergencies from "@/components/Home/Emergencies";
 import Features from "@/components/Home/Features";
 import Feedback from "@/components/Home/Feedback";
 import Join from "@/components/Home/Join";
-import { Box, Fab, Fade, useScrollTrigger } from "@mui/material";
+import { Box, Button, Fab, Fade, useScrollTrigger } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import ScrollTop from "@/components/Shared/ScrollTop";
 import OurServices from "@/components/Home/OurServices";
 import FAQ from "@/components/Shared/FAQ";
 import ContactUs from "@/components/Shared/ContactUs";
+import MainAction from "@/components/MainAction";
 
-/* interface Props {
-  window?: () => Window;
-  children: React.ReactElement;
-} */
-//const Home: React.FC<Props> = (props) => {
 const Home = () => {
   return (
     <main className="font-inter min-h-screen">
@@ -31,7 +27,6 @@ const Home = () => {
       <ContactUs disabledHelperText />
 
       {/* ----------back to top button---- */}
-      {/*  <ScrollTop {...props}>*/}
       <ScrollTop>
         <Fab
           size="small"

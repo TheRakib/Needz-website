@@ -136,13 +136,12 @@ function Navbar() {
         sx={{ flexGrow: 0 }}
         className={twMerge(`${className && className} xl:gap-2 flex`)}
       >
-        {/* <Button className=" text-black capitalize text-base xl:text-[17px] font-inter whitespace-nowrap ">
-          Partner
-        </Button> */}
-        <Button className=" text-black capitalize text-base xl:text-[17px] font-inter whitespace-nowrap ">
-          <BiPhoneCall className="mr-2 text-2xl" />
-          08-302241
-        </Button>
+        <a href="tel:08302241" className="py-1">
+          <Button className=" text-black capitalize text-base xl:text-[17px] font-inter whitespace-nowrap ">
+            <BiPhoneCall className="mr-2 text-2xl" />
+            08-302241
+          </Button>
+        </a>
       </Box>
     );
   };

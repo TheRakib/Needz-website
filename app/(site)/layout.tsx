@@ -7,6 +7,7 @@ import Footer from "@/components/Layout/Footer";
 import Script from "next/script";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import MainAction from "@/components/MainAction";
 
 const inter = Inter({
   weight: ["200", "300", "400", "500", "500", "600", "700"],
@@ -46,10 +47,16 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         {/* <!-- End Google Tag Manager (noscript) --> */}
+
+        {/* ------------------------------------- */}
         <Navbar />
         <main>{children}</main>
+
+        <MainAction />
+
         <Footer />
         <ToastContainer />
+        {/* ------------------------------------- */}
       </body>
 
       {/* <!-- Google Tag Manager --> */}
@@ -59,10 +66,6 @@ export default function RootLayout({
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-KHV7BCTV');`}</Script>
       {/* <!-- End Google Tag Manager --> */}
-      {/* <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=GTM-KHV7BCTV"
-      ></Script> */}
 
       {/* <!-- Google tag (gtag.js) --> */}
       <Script
