@@ -11,11 +11,11 @@ export default function Description() {
 const detailsProps = {
   description: {
     para1:
-      "If you have a stopped sewer, Kontakta oss. Whether your drain clog is due to food residue, grease left in the sink, or a plastic object stuck in the toilet seat, our technicians will help you.",
-    para2: `All drains need to be flushed of residue and grease at least every five years to maintain good water flow.`,
+      "Om du har ett stopp i avloppet, kontakta oss. Oavsett om ditt avlopp är igensatt på grund av matrester, fett som blivit kvar i vasken, eller ett plastföremål som fastnat i toalettsitsen, kommer våra tekniker att hjälpa dig.",
+    para2: `Alla avlopp behöver spolas rena från rester och fett minst vart femte år för att bibehålla ett bra vattenflöde`,
   },
-  title2: "Drain Cleaning",
+  title2: "Avloppsrengöring",
   description2Limit: 47,
   description2:
-    "A warning sign that the drain should be cleaned is that the water starts to flow slowly or that a gurgling/gurgling sound is heard in the drain. A bad smell from the bathroom can also be a sign that a blockage has occurred in the drain. A bad smell from the bathroom can also be a sign that a blockage has occurred in the drain.",
+    "Ett varningstecken på att avloppet behöver rengöras är att vattnet börjar rinna långsamt eller att ett gurglande ljud hörs i avloppet. En dålig lukt från badrummet kan också vara ett tecken på att en blockering har inträffat i avloppet. Samma dåliga lukt kan även indikera att det är dags att rengöra avloppet för att förhindra ytterligare problem.",
 };

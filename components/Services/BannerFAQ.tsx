@@ -37,50 +37,20 @@ export default function BannerFAQ() {
 const faqItems = [
   {
     id: 1,
-    title: "What is the price for an electrician?",
+    title: "Vad kostar en elektriker?",
     description:
-      "When you order an electrician from us, we have a minimum charge of 2 hours, which is lower than many competitors who have a minimum charge of half a day. Depending on the type of work to be carried out, how long it takes and if materials need to be purchased, the price may vary. We always offer competitive and fixed prices.",
+      "Akuta elfel kan inträffa vid obekväma tider. Om en olycka inträffar på kvällen, natten eller under helgen när många företag är stängda kan kostnaden för att få en jour elektriker att komma ut vara högre än normalt. Priset för jourtjänster kan variera beroende på olika faktorer. Det bästa är att kontakta vår jourtelefon på 08–302241, som är öppen dygnet runt, så att vi kan få mer information om din specifika situation.",
   },
   {
     id: 2,
-    title: "Is it possible to run an electric cable yourself?",
+    title: "När kan in vara på plats?",
     description:
-      "When you order an electrician from us, we have a minimum charge of 2 hours, which is lower than many competitors who have a minimum charge of half a day. Depending on the type of work to be carried out, how long it takes and if materials need to be purchased, the price may vary. We always offer competitive and fixed prices.",
+      "Vi strävar alltid efter att vara på plats inom en timme efter att du har ringt vår eljour och om du befinner dig i Stockholmsområdet. Vi garanterar att vi kan hjälpa dig samma dag som du kontaktar oss",
   },
   {
     id: 3,
-    title: "Is it allowed to replace the electrical outlet yourself?",
+    title: "Är det nödvändigt med jordade eluttag?",
     description:
-      "When you order an electrician from us, we have a minimum charge of 2 hours, which is lower than many competitors who have a minimum charge of half a day. Depending on the type of work to be carried out, how long it takes and if materials need to be purchased, the price may vary. We always offer competitive and fixed prices.",
-  },
-  {
-    id: 4,
-    title: "How much does it cost to rewire the electricity in an older house?",
-    description:
-      "When you order an electrician from us, we have a minimum charge of 2 hours, which is lower than many competitors who have a minimum charge of half a day. Depending on the type of work to be carried out, how long it takes and if materials need to be purchased, the price may vary. We always offer competitive and fixed prices.",
-  },
-  {
-    id: 5,
-    title: "What is the cost of changing the power plant?",
-    description:
-      "When you order an electrician from us, we have a minimum charge of 2 hours, which is lower than many competitors who have a minimum charge of half a day. Depending on the type of work to be carried out, how long it takes and if materials need to be purchased, the price may vary. We always offer competitive and fixed prices.",
-  },
-  {
-    id: 6,
-    title: "How often should I replace my electrical cables?",
-    description:
-      "When you order an electrician from us, we have a minimum charge of 2 hours, which is lower than many competitors who have a minimum charge of half a day. Depending on the type of work to be carried out, how long it takes and if materials need to be purchased, the price may vary. We always offer competitive and fixed prices.",
-  },
-  {
-    id: 7,
-    title: "Is it necessary to have grounded sockets?",
-    description:
-      "When you order an electrician from us, we have a minimum charge of 2 hours, which is lower than many competitors who have a minimum charge of half a day. Depending on the type of work to be carried out, how long it takes and if materials need to be purchased, the price may vary. We always offer competitive and fixed prices.",
-  },
-  {
-    id: 8,
-    title: "Do I have any rights if an electrician makes a mistake?",
-    description:
-      "When you order an electrician from us, we have a minimum charge of 2 hours, which is lower than many competitors who have a minimum charge of half a day. Depending on the type of work to be carried out, how long it takes and if materials need to be purchased, the price may vary. We always offer competitive and fixed prices.",
+      "Jordade eluttag är en viktig säkerhetsåtgärd i elektriska installationer. De hjälper till att förhindra elektriska stötar och skyddar människor och elektroniska enheter från farliga spänningar. Jordade uttag har en extra jordledare som är ansluten till jord, vilket gör det möjligt att leda bort överskottselektricitet om det skulle uppstå en felström. Detta minskar risken för elektriska olyckor och bränder. I många länder är det obligatoriskt att använda jordade uttag i vissa applikationer och områden för att uppfylla säkerhetsstandarder och byggregler. Det är viktigt att rådgöra med en kvalificerad elektriker för att säkerställa att din elektriska installation är korrekt jordad och uppfyller de lokala kraven och säkerhetsföreskrifterna.",
   },
 ];

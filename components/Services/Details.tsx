@@ -19,7 +19,7 @@ type Props = {
 export default function Details({
   description,
   title2,
-  title = "Description",
+  title = "Beskrivning",
   description2,
   description2Limit,
   title2Class,

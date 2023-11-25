@@ -7,6 +7,26 @@ import ServicesContactUs from "@/components/Services/ServicesContactUs";
 import ServicesDetails from "@/components/Services/ServicesDetails";
 import React from "react";
 
+// Certifierade elektriker
+// Elektriska tjänster
+// Akut elektrisk hjälp
+// Elektriska reparationer
+// Elektriska installationer
+// 24/7 elektrisk assistans
+// Erfarna elektriska lösningar
+// Kvalificerade elektriker
+// Auktoriserade elektriker
+// Elektriskt underhåll
+// Elektrisk säkerhet
+// Elektrisk kabeldragning
+// Felsökning av elektriska problem
+// Bostadselektriker
+// Kommersiella elektriska tjänster
+// Elektriska entreprenörer nära mig
+// Elektriker i [Ditt stad/område]
+// Reaktion på elektriska nödsituationer
+// Elektriskt hantverk"
+
 export default function page() {
   return (
     <div>

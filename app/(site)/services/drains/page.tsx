@@ -8,13 +8,13 @@ export default function drains() {
   return (
     <div>
       <ServicesBanner
-        title="Stop in drains"
-        breadcrumb="Stop in drains page"
+        title="Stopp i avlopp"
+        breadcrumb="Stopp i avlopp sida"
         img="/services/drains.png"
       />
       <Description />
       <Pressure />
-      <ContactUs helperText="Fill out the form for a free quote. You can also Ring: 08-30 22 41 between 08:00 and 16:00 on weekdays. On-call and urgent matters 24 hours a day, 365 days a year." />
+      <ContactUs />
     </div>
   );
 }
