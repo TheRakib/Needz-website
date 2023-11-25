@@ -66,7 +66,7 @@ export default function Details({
                       className="text-primary underline cursor-pointer"
                       onClick={toggleShowMore}
                     >
-                      {" Read more"}
+                      {" Läs mer"}
                     </span>
                   )}
                 </p>

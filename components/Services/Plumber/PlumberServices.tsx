@@ -47,7 +47,7 @@ export default function PlumberServices() {
                   {truncateDescription(item.description)}{" "}
                   {item.description.length > TEXT_LENGTH && (
                     <span className="text-primary underline whitespace-nowrap">
-                      Read More
+                      Läs mer
                     </span>
                   )}
                 </p>

@@ -15,9 +15,10 @@ export default function UserCard() {
           className="rounded-full overflow-hidden"
         />
         <p className="text-[22px] text-white font-semibold capitalize text-center mt-4 ">
-          John Miller K.
+          Gustaf
+          {/* Astrid */}
         </p>
-        <p className="text-center text-white/70 mt-1 mb-3">Sales Excutive</p>
+        <p className="text-center text-white/70 mt-1 mb-3">Ärendehanterare</p>
         <div className="w-full h-[1px] bg-white/70 " />
       </div>
       <Button
@@ -26,7 +27,7 @@ export default function UserCard() {
       >
         <FiPhoneCall />
         <span className="md:tracking-tighter xl:tracking-normal tracking-tight">
-          Call 08 – 23 55 20
+          Ring: 08-302241
         </span>
       </Button>
     </div>

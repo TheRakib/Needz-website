@@ -11,8 +11,8 @@ export default function page() {
   return (
     <div>
       <ServicesBanner
-        title="Electrician in Stockholm"
-        breadcrumb="Electrician page"
+        title="Elektriker i Stockholm."
+        breadcrumb="Elektriker sida"
         img="/services/banner.png"
       />
       <Details {...detailsProps} />
@@ -27,13 +27,12 @@ export default function page() {
 
 const detailsProps = {
   description: {
-    para1: "Need an electrician in Stockholm? We&apos;re here to help!",
-    para2: ` We offer expert electrical installations and repairs for
-    businesses and homes, and we&apos;re available 365 days a year.
-    Kontakta oss and we will help you immediately!`,
+    para1:
+      "Behöver du en elektriker i Stockholm? Vi är här för att hjälpa dig!",
+    para2: `Vi erbjuder expertinstallationer och reparationer av elektriska system för företag och hem, och vi är tillgängliga 365 dagar om året. Kontakta oss så hjälper vi dig omedelbart!`,
   },
-  title2: "Trustworthy Electrical Installers in Stockholm",
+  title2: "Pålitliga elektriska installatörer i Stockholm",
   description2Limit: 52,
   description2:
-    "Have you considered installing solar cells? Or has the earth fault breaker suddenly tripped and now the food is in the freezer and going bad? No matter what your problem is, you can trust that our electricians are well qualified for the job and we are available around the clock for consultation. Or has the earth fault breaker suddenly tripped and now the food is in the freezer and going bad? No matter what your problem is,",
+    "Har du funderat på att installera solceller? Eller har jordfelsbrytaren plötsligt löst ut och nu är maten i frysen på väg att bli dålig? Oavsett vad ditt problem är, kan du lita på att våra elektriker är välkvalificerade för jobbet, och vi finns tillgängliga dygnet runt för konsultation. Har jordfelsbrytaren plötsligt löst ut och nu är maten i frysen på väg att bli dålig? Oavsett vad ditt problem är. ",
 };
