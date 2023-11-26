@@ -54,6 +54,7 @@ export default function ContactUs({
 }: Props) {
   const [formData, setFormData] = useState<FormState>(initialState());
   const [successMessage, setSuccessMessage] = useState<string>("");
+  const [errors, setErrors] = useState<Partial<FormState>>({});
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -74,15 +75,48 @@ export default function ContactUs({
     }));
   };
 
-  const handleSubscribe = async () => {
-    if (!formData.email) {
-      return toast.error("Email is required");
+  const validateForm = (): boolean => {
+    const newErrors: Partial<FormState> = {};
+    let isValid = true;
+
+    // Check required fields
+    Object.keys(formData).forEach((key) => {
+      const formKey = key as keyof FormState;
+      const value = formData[formKey];
+
+      if (value === "" && key !== "photo") {
+        // @ts-ignore
+        newErrors[formKey] = `${
+          (key.charAt(0).toUpperCase() + key.slice(1)) as Extract<
+            keyof FormState,
+            string
+          >
+        } is required`;
+        isValid = false;
+      }
+    });
+
+    // Check email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (formData.email && !emailRegex.test(formData.email)) {
+      newErrors.email = "Invalid email format";
+      isValid = false;
     }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
+  const handleSubscribe = async () => {
+    if (!validateForm()) {
+      return toast.error("Please fill in all required fields correctly");
+    }
+
     try {
       const res = await axios.post("/api/mail", formData);
       console.log(res);
       if (res.status === 200) {
-        setSuccessMessage("E-post skickades ");
+        setSuccessMessage("Email sent successfully");
         setFormData(initialState());
       }
     } catch (error) {
@@ -112,60 +146,127 @@ export default function ContactUs({
             <div className="w-full flex flex-col gap-5 items-center  justify-center mt-7">
               <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-[30px] ">
                 <div className="col-span-1 flex flex-col gap-[30px]">
-                  <InputBase
-                    onChange={handleChange}
-                    name="name"
-                    value={formData.name}
-                    id="outlined-basic"
-                    placeholder="Namn"
-                    className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px] w-full `}
-                  />
-                  <InputBase
-                    onChange={handleChange}
-                    name="phoneNumber"
-                    id="phone-_number"
-                    value={formData.phoneNumber}
-                    type="tel"
-                    placeholder="Nummer"
-                    className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
-                  />
-                  <InputBase
-                    onChange={handleChange}
-                    name="zipCode"
-                    id="zip_code"
-                    value={formData.zipCode}
-                    type={"number"}
-                    placeholder="Postkod"
-                    className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
-                  />
+                  <div>
+                    <InputBase
+                      onChange={handleChange}
+                      name="name"
+                      value={formData.name}
+                      id="outlined-basic"
+                      placeholder="Namn"
+                      className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px] w-full `}
+                    />
+
+                    {Object.entries(errors).map(
+                      ([key, error]) =>
+                        key === "name" && (
+                          <p key={key} className=" text-secondary">
+                            {error as string}
+                          </p>
+                        )
+                    )}
+                  </div>
+                  {/* {console.log(Object.entries(errors))} */}
+                  <div>
+                    <InputBase
+                      onChange={handleChange}
+                      name="phoneNumber"
+                      id="phone-_number"
+                      value={formData.phoneNumber}
+                      type="tel"
+                      placeholder="Nummer"
+                      className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
+                    />
+
+                    {Object.entries(errors).map(
+                      ([key, error]) =>
+                        key === "phoneNumber" && (
+                          <p key={key} className=" text-secondary">
+                            {error as string}
+                          </p>
+                        )
+                    )}
+                  </div>
+                  <div>
+                    <InputBase
+                      onChange={handleChange}
+                      name="zipCode"
+                      id="zip_code"
+                      value={formData.zipCode}
+                      type={"number"}
+                      placeholder="Postkod"
+                      className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
+                    />
+
+                    {Object.entries(errors).map(
+                      ([key, error]) =>
+                        key === "zipCode" && (
+                          <p key={key} className=" text-secondary">
+                            {error as string}
+                          </p>
+                        )
+                    )}
+                  </div>
                 </div>
                 <div className="col-span-1 flex flex-col gap-[30px]">
-                  <InputBase
-                    onChange={handleChange}
-                    name="email"
-                    value={formData.email}
-                    id="email"
-                    type="email"
-                    required
-                    placeholder="E-post"
-                    className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px] w-full `}
-                  />
-                  <InputBase
-                    onChange={handleChange}
-                    name="address"
-                    value={formData.address}
-                    id="address"
-                    placeholder="Adress"
-                    className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
-                  />
-                  <InputBase
-                    onChange={handleChange}
-                    name="postalCode"
-                    value={formData.postalCode}
-                    id="postal_code"
-                    placeholder="Stad"
-                    className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
-                  />
+                  <div>
+                    <InputBase
+                      onChange={handleChange}
+                      name="email"
+                      value={formData.email}
+                      id="email"
+                      type="email"
+                      required
+                      placeholder="E-post"
+                      className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px] w-full `}
+                    />
+
+                    {Object.entries(errors).map(
+                      ([key, error]) =>
+                        key === "email" && (
+                          <p key={key} className=" text-secondary">
+                            {error as string}
+                          </p>
+                        )
+                    )}
+                  </div>
+                  <div className="">
+                    <InputBase
+                      onChange={handleChange}
+                      name="address"
+                      value={formData.address}
+                      id="address"
+                      placeholder="Adress"
+                      className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
+                    />
+
+                    {Object.entries(errors).map(
+                      ([key, error]) =>
+                        key === "address" && (
+                          <p key={key} className=" text-secondary">
+                            {error as string}
+                          </p>
+                        )
+                    )}
+                  </div>
+                  <div className="">
+                    <InputBase
+                      onChange={handleChange}
+                      name="postalCode"
+                      value={formData.postalCode}
+                      id="postal_code"
+                      placeholder="Stad"
+                      className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
+                    />
+
+                    {Object.entries(errors).map(
+                      ([key, error]) =>
+                        key === "postalCode" && (
+                          <p key={key} className=" text-secondary">
+                            {error as string}
+                          </p>
+                        )
+                    )}
+                  </div>
                 </div>
               </div>
 
@@ -179,22 +280,16 @@ export default function ContactUs({
                   placeholder="Ditt meddelande"
                   className="text-[18px] pt-6 pl-5 w-full text-black focus:outline-none "
                 />
+
+                {Object.entries(errors).map(
+                  ([key, error]) =>
+                    key === "message" && (
+                      <p key={key} className=" text-secondary">
+                        {error as string}
+                      </p>
+                    )
+                )}
               </div>
-              {/* <Button
-                component="label"
-                variant="outlined"
-                startIcon={
-                  <IoMdAttach className="mr-1 text-3xl font-semibold" />
-                }
-                className="bg-transparent  border-white w-full text-white text-[16px] md:text-[18px] h-[81px] capitalize hover:border-white "
-              >
-                Attach your picture and other relevant files
-                <VisuallyHiddenInput
-                  name="photo"
-                  onChange={handlePhotoChange}
-                  type="file"
-                />
-              </Button> */}
               {successMessage && (
                 <p className="text-lg text-yellow font-bold text-center">
                   {successMessage}

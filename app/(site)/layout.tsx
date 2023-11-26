@@ -167,3 +167,20 @@ export default function RootLayout({
 // Avloppsinspektion
 // Rörfilmningstjänster
 // Ekovänliga avloppslösningar
+
+// -----electric installation
+// Elinstallationer
+// Elektriker Stockholm
+// Elentreprenad
+// Nybyggnation el
+// Ombyggnad elinstallation
+// Smarta hemlösningar
+// Renovering el
+// Energibesparande lösningar
+// Elsäkerhet
+// Miljövänliga elinstallationer
+// Elservice Stockholm
+// Felsökning el
+// Elektriska uttag
+// Vitvaruinstallation
+// Eltekniker
