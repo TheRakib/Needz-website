@@ -17,26 +17,26 @@ export default function FAQPlumber() {
 const faqItems = [
   {
     id: 1,
-    title: "What is the cost of a plumber?",
+    title: "Vad kostar en rörmokare?",
     description:
-      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour Eliten have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
+      "Kostnaden varierar beroende på typen av arbete som ska utföras och hur lång tid det tar. Vi på Jour 365 har en minimikostnad på 2 timmar, jämfört med många konkurrenter som tar antingen en hel eller halv dag. Vi erbjuder alltid ett fast och konkurrenskraftigt pris.",
   },
   {
     id: 2,
-    title: "Is there a difference between a plumber and a plumber?",
+    title: "Finns det någon skillnad mellan en rörmokare och en VVS-tekniker?",
     description:
-      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour Eliten have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
+      "Ja, det finns en viss skillnad. En rörmokare fokuserar främst på att installera och reparera rör och avloppssystem, medan en VVS-tekniker (Värme, Ventilation och Sanitet) har ett bredare ansvarsområde som inkluderar värmesystem och ventilation. Båda yrkena kräver expertis inom VVS-området, och vi på Jour 365 har specialister som kan hantera olika behov.",
   },
   {
     id: 3,
-    title: "What jobs can I do myself without hiring a plumber?",
+    title: "Vilka jobb kan jag göra själv utan att anlita en rörmokare?",
     description:
-      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour Eliten have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
+      "Det finns vissa mindre VVS-uppgifter som du kan utföra själv. Enkla saker som att byta ut en tätningsring eller fixa en läckande kran är exempel på projekt som du kanske kan hantera. Vi på Jour 365 delar gärna med oss av tips och råd för att hjälpa dig med mindre uppgifter. Dock är det viktigt att känna till dina egna färdigheter och gränser, och för mer komplicerade problem är det bäst att söka professionell hjälp.",
   },
   {
     id: 4,
-    title: "How do I know that the plumbers I hire are certified?",
+    title: "Hur vet jag att de rörmokare jag anlitar är certifierade?",
     description:
-      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour Eliten have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
+      "Det är viktigt att säkerställa att de rörmokare du anlitar är certifierade och kvalificerade. Vid Jour 365 arbetar våra rörmokare under noga övervakning och är certifierade inom VVS-branschen. Du kan också begära att se deras certifikat eller licenser för att bekräfta deras legitimitet. Vi strävar alltid efter att tillhandahålla pålitliga och professionella rörmokartjänster, och vår certifiering är ett tecken på vårt åtagande för högsta standard.",
   },
 ];

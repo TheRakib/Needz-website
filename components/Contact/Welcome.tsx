@@ -45,7 +45,7 @@ export default function Welcome() {
   return (
     <div className="max-w-layout mx-auto mt-[150px] mb-7">
       <SectionTitle
-        title="You are welcome to contact us."
+        title="You are welcome to Kontakta oss."
         className="!text-center"
       />
       <div className="max-w-[630px] mx-auto flex flex-col mt-10">
@@ -55,7 +55,7 @@ export default function Welcome() {
               <IoCall size={24} />
             </span>
             <div className="flex flex-col gap-1">
-              <p className="text-[14px] text-black/70 ">Call Us</p>
+              <p className="text-[14px] text-black/70 ">Ring</p>
               <p className=" ">08-30 22 41</p>
             </div>
           </div>

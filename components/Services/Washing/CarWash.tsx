@@ -9,7 +9,7 @@ export default function CarWash() {
         items={serviceAccordions}
         carWashChildren={
           <Typography className="text-[18px] text-secondary mt-5">
-            Call us on 08 – 23 55 20 and we will send out a washing machine
+            Ring on 08 – 23 55 20 and we will send out a washing machine
             immediately
           </Typography>
         }

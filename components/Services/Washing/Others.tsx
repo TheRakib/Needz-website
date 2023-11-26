@@ -18,43 +18,43 @@ export default function Others() {
 const serviceAccordions = [
   {
     id: 1,
-    title: "How does a flush work?",
+    title: "Varför behöver jag en spolbil?",
     img: "/services/washing-machine/flusk-work.png",
     description: [
-      "What a flush truck does is clean your drain with high pressure – a truck comes out and flushes the pipes clean with a high pressure flush of hot water.",
-      "A flush contains only hot water, i.e. no unnecessary chemicals or anything else that could be harmful to the environment. A flushing truck is therefore not only the most efficient method, but also the most environmentally friendly method of getting rid of blockages in the drains.",
-      "In addition to being gentle on the environment A flushing truck is therefore not only the most efficient method, but also the most environmentally friendly method of getting rid of blockages in the drains.",
+      "En spolbil är den mest effektiva och miljövänliga metoden för att bli av med blockeringar i avloppet. ",
+      "Genom att använda högt vattenflöde och högt tryck rengör en spolbil ditt avloppssystem noggrant. Denna metod är skonsam mot miljön eftersom den bara använder varmt vatten utan onödiga kemikalier eller ämnen som kan vara skadliga.",
+      "Genom att välja en spolbil får du inte bara en effektiv rensning av ditt avloppssystem utan bidrar även till att bevara miljön.",
     ],
   },
   {
     id: 2,
-    title: "Pipe inspection - film your pipes from the inside",
+    title: "Rörfilmning - filma dina rör från insidan",
     img: "/services/washing-machine/Pipe-inspection.jpeg",
     description: [
-      "Mechanical exhaust ventilation – With the help of a fan, the air is led out of the house. Air enters through small vents in the wall. This is called the F system.",
-      "Mechanical supply and exhaust ventilation – In this system, you have two fans, one that draws air in and one that brings air out. This is called the FT system",
-      "Self-draft ventilation – This is a system without fans, instead a ventilation flow is created using indoor and outdoor air.",
+      "Med våra avancerade rörfilmningsmetoder kan du nu inspektera dina rör från insidan.",
+      "Genom att använda högteknologisk kamerautrustning filmar vi dina rör för att upptäcka eventuella problem, som sprickor, läckor eller blockeringar. Denna metod ger dig en tydlig insyn i rörens skick utan att behöva göra omfattande ingrepp.",
+      "Med vår professionella rörfilmningstjänst får du snabb och noggrann inspektion för att säkerställa att ditt avloppssystem fungerar optimalt. Kontakta oss för en inspektion av dina rör och förebygg potentiella problem.",
     ],
   },
   {
     id: 3,
-    title: "What is meant by deviations?",
+    title: "Vad menas med avvikelser?",
     img: "/services/washing-machine/deviations.jpeg",
     description: [
-      "Mechanical exhaust ventilation – With the help of a fan, the air is led out of the house. Air enters through small vents in the wall. This is called the F system.",
-      "Mechanical supply and exhaust ventilation – In this system, you have two fans, one that draws air in and one that brings air out. This is called the FT system",
-      "Self-draft ventilation – This is a system without fans, instead a ventilation flow is created using indoor and outdoor air.",
+      `I avloppssammanhang avser "avvikelser" eventuella avvikelser eller problem som kan uppstå i ditt avloppssystem. `,
+      "Det kan inkludera sprickor, läckor, eller andra oregelbundenheter som kan påverka prestanda och funktionalitet. Genom att förstå och åtgärda dessa avvikelser i tid kan du undvika större problem i framtiden.",
+      "Vid en professionell inspektion kan vi identifiera och rapportera eventuella avvikelser för att säkerställa att ditt avloppssystem är i toppskick. Kontakta oss för mer information om avvikelser och hur vi kan hjälpa till.*",
     ],
   },
 
   {
     id: 4,
-    title: "Sludge suction - an alternative to a washing machine",
+    title: "Slamavskiljning - ett alternativ till högtryckstvätt",
     img: "/services/washing-machine/Sludge-suction.jpeg",
     description: [
-      "Mechanical exhaust ventilation – With the help of a fan, the air is led out of the house. Air enters through small vents in the wall. This is called the F system.",
-      "Mechanical supply and exhaust ventilation – In this system, you have two fans, one that draws air in and one that brings air out. This is called the FT system",
-      "Self-draft ventilation – This is a system without fans, instead a ventilation flow is created using indoor and outdoor air.",
+      "Slamavskiljning är ett effektivt alternativ till traditionell högtryckstvätt för att rensa avloppssystem. ",
+      "Istället för att använda högt vattenflöde och tryck fokuserar slamavskiljning på att suga upp och avlägsna slam och sediment som kan ackumuleras i rören. Denna metod är särskilt användbar för att behandla problem som orsakas av organiskt material och avlagringar. ",
+      "Med vår professionella slamavskiljningstjänst erbjuder vi ett skonsamt och effektivt sätt att återställa ditt avloppssystems kapacitet. Kontakta oss för att utforska fördelarna med slamavskiljning som ett alternativ till högtryckstvätt.",
     ],
   },
 ];

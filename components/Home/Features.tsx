@@ -4,6 +4,7 @@ import React from "react";
 import SectionTitle from "../Shared/SectionTitle";
 import { Button } from "@mui/material";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Features() {
   const router = useRouter();
@@ -11,7 +12,7 @@ export default function Features() {
     <div className="max-w-layout mx-auto my-[120px] px-2">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
         <div className="col-span-1 flex flex-col justify-center gap-12">
-          <SectionTitle title="At Jour Eliten, we work quickly and efficiently" />
+          <SectionTitle title="På Jour365 arbetar vi snabbt och effektivt." />
           <ul className="flex flex-col gap-6">
             {featureItems.map((item) => (
               <li key={item.id} className="flex items-center gap-6">
@@ -25,16 +26,17 @@ export default function Features() {
             ))}
           </ul>
           <div className="w-full flex flex-col lg:flex-row items-center gap-2 lg:gap-9">
-            <Button
-              onClick={() => router.push("contact-us")}
-              className="bg-primary hover:bg-primary/80 text-white capitalize rounded-xl font-semibold text-[26px] py-[25px] px-[50px] "
-            >
-              Contact Us
-            </Button>
+            <Link href={"/contact-us"}>
+              <Button
+                onClick={() => router.push("contact-us")}
+                className="bg-primary hover:bg-primary/80 text-white capitalize rounded-xl font-semibold text-[26px] py-[25px] px-[50px] "
+              >
+                Kontakta oss
+              </Button>
+            </Link>
             <Button className="bg-white hover:bg-primary/5 text-black capitalize rounded-xl font-semibold text-[26px] py-[25px] ">
-              Call Us: 08-30 22 41
+              <a href="tel:08302241">Ring: 08-302241</a>
             </Button>
-            {/* <p className="text-[26px] font-semibold ">Call Us: 08-30 22 41</p> */}
           </div>
         </div>
         <div className="col-span-1">
@@ -50,22 +52,22 @@ export default function Features() {
 const featureItems = [
   {
     id: 1,
-    content: "Every Customers Special",
+    content: "Varje kund är speciell.",
   },
   {
     id: 2,
-    content: "Call 08-30 22 41 or use the form.",
+    content: "Ring eller maila oss",
   },
   {
     id: 3,
-    content: "The agent who answers will assist you promptly.",
+    content: "Experter som kommer att hjälpa dig snabbt.",
   },
   {
     id: 4,
-    content: "Emergency plumbing and electrical services, 24/7",
+    content: "Akut VVS och elektriska tjänster, 24/7",
   },
   {
     id: 5,
-    content: "Experienced and certified plumbers and electricians",
+    content: "Erfarna och certifierade rörmokare och elektriker",
   },
 ];

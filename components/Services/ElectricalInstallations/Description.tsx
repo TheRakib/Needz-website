@@ -14,14 +14,13 @@ export default function Description() {
       <div className=" flex flex-col lg:flex-row justify-between gap-[50px] mt-5 px-2">
         <div className="flex flex-col gap-11">
           <p className="text-black/70 text-[18px]">
-            We carry out both large and small projects. We undertake everything
-            from
+            Vi genomför både stora och små projekt. Vi åtar oss allt från
             <a
               href="https://www.joureliten.se/byta-eluttag-sjalv/"
               className="underline"
             >
               {" "}
-              replacing electrical outlets{" "}
+              byte av elektriska uttag{" "}
             </a>
             or
             <a
@@ -29,12 +28,11 @@ export default function Description() {
               className="underline"
             >
               {" "}
-              installing white goods
+              installation av vitvaror
             </a>
-            , to installing smart home solutions in an entire building
-            throughout Stockholm. Our experienced electricians visit you with
-            our well-equipped service vans and carry out a fault finding and
-            review on site.
+            , till installation av smarta hemlösningar i en hel byggnad över
+            hela Stockholm. Våra erfarna elektriker besöker dig med våra
+            välutrustade servicebilar och utför felsökning och översyn på plats.
           </p>
           <div className="w-[310px] h-[392px] md:w-[560px] lg:w-[580px] xl:w-[664px] md:h-[692px] ml-auto mr-auto lg:ml-0 relative ">
             <Image
@@ -47,33 +45,32 @@ export default function Description() {
         </div>
         <div className="flex flex-col gap-[45px]">
           <div className="flex flex-col gap-9">
-            <TextTitle title="Solid experience in new building, rebuilding, and new electrical installation" />
+            <TextTitle title="Solid erfarenhet inom nybyggnation, ombyggnad och nya elinstallationer." />
             <p className="text-black/70 text-[18px]">
-              Are you renovating or rebuilding? We undertake assignments in new
-              construction, remodeling and new installation throughout Greater
-              Stockholm and the surrounding area. The size of your project is of
-              no importance to Jour Eliten. We help you develop proposals for a
-              modern, efficient and energy-saving solution. With us, you get a
-              clear and concise picture of the costs and scope of the renovation
-              work.
+              Renoverar eller bygger du om? Vi åtar oss uppdrag inom
+              nybyggnation, ombyggnad och nya installationer i hela
+              Storstockholm och dess omgivande områden. Storleken på ditt
+              projekt spelar ingen roll för Jour 365. Vi hjälper dig att
+              utveckla förslag på en modern, effektiv och energibesparande
+              lösning. Hos oss får du en tydlig och konkret bild av kostnaderna
+              och omfattningen av renoveringsarbetet.
             </p>
           </div>
           <div className="flex flex-col gap-5">
-            <TextTitle title="Quality and safety" />
+            <TextTitle title="Kvalitet och säkerhet" />
             <div className="text-black/70 text-[18px] flex flex-col gap-7">
               <p>
-                We are responsive to your views and strive to not only meet, but
-                also exceed your expectations. All work is therefore carried out
-                by professional electricians who are approved by the Swedish
-                Electrical Safety Authority with extensive experience who
-                possess adequate, up-to-date and verified knowledge in relevant
-                areas.
+                Vi är lyhörda för dina synpunkter och strävar efter att inte
+                bara uppfylla, utan också överträffa dina förväntningar. Därför
+                utförs allt arbete av professionella elektriker som är godkända
+                av Elsäkerhetsverket med omfattande erfarenhet och som besitter
+                adekvata, aktuella och verifierade kunskaper inom relevanta
+                områden.
               </p>
               <p>
-                We protect the environment and also strive to design
-                energy-efficient solutions, as well as to choose materials and
-                products that are environmentally friendly and facilitate
-                recycling.
+                Vi skyddar miljön och strävar även efter att utforma
+                energieffektiva lösningar, samt att välja material och produkter
+                som är miljövänliga och underlättar återvinning.
               </p>
             </div>
           </div>
@@ -89,9 +86,9 @@ export default function Description() {
 const detailsProps = {
   description: {
     para1:
-      "With our broad competence in electricity, we can take on assignments in everything from electrical installations in villas and holiday homes to larger undertakings.",
-    para2: ` Our knowledgeable <a href="#" class="underline">electricians</a> help both companies and private individuals with everything from minor electrical services to more extensive contracting projects.`,
+      "Med vår breda kompetens inom elektricitet kan vi ta oss an uppdrag inom allt från elinstallationer i villor och fritidshus till större projekt.",
+    para2: ` Våra kunniga <a href="#" class="underline">elektriker</a>  hjälper både företag och privatpersoner med allt från mindre elservice till mer omfattande entreprenadprojekt.`,
   },
-  title2: "All types of electrical installations",
+  title2: "Alla typer av elinstallationer",
   title2Class: "justify-between",
 };

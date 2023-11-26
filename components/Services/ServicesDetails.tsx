@@ -7,19 +7,19 @@ export default function ServicesDetails() {
     <div className="max-w-layout mx-auto mt-5 px-2">
       <div className="flex flex-col gap-5 ">
         <div className="max-w-[680px] mr-auto flex flex-col gap-5">
-          <TextTitle title="Electrical Services for Every Need" />
+          <TextTitle title="Elektriska tjänster för alla behov" />
           <div className="flex flex-col gap-5 text-[18px] text-black/70 ">
             <p>
-              We understand that everyone has unique needs and circumstances.
-              Therefore, we offer a wide range of services that can be adapted
-              to your wishes in order to provide our customers with the best
-              possible service and results.
+              Vi förstår att alla har unika behov och omständigheter. Därför
+              erbjuder vi ett brett utbud av tjänster som kan anpassas efter
+              dina önskemål för att ge våra kunder bästa möjliga service och
+              resultat.
             </p>
           </div>
         </div>
         <div className="flex flex-col gap-4">
           <h3 className="text-[18px] font-semibold">
-            Our electrical services include, for example:
+            Våra elektriska tjänster inkluderar bland annat:
           </h3>
           <ul className="grid grid-cols-1 md:grid-cols-2 justify-between gap-y-[10px] gap-x-14 ">
             {serviceItems.map((item) => (
@@ -37,7 +37,8 @@ export default function ServicesDetails() {
         </div>
       </div>
       <p className="text-secondary text-[20px] text-center mt-12">
-        Need help with an electrical problem? Call us now at 08 – 23 55 20!
+        Har du ett akut elektriskt problem som behöver snabb hjälp? Ring nu på
+        08-30 22 41!
       </p>
     </div>
   );
@@ -46,46 +47,46 @@ export default function ServicesDetails() {
 const serviceItems = [
   {
     id: 1,
-    text: "New installations of, for example, electrical outlets and lighting",
+    text: "Nya installationer av bland annat eluttag och belysning",
   },
   {
     id: 2,
-    text: "Electricity for the heating system.",
+    text: "Elektricitet för värmesystemet.",
   },
   {
     id: 3,
-    text: "Troubleshooting of pre-existing electrical systems",
+    text: "Felsökning av befintliga elektriska system.",
   },
   {
     id: 4,
-    text: "Replacement of power station",
+    text: "Uppgradering av kraftstationen.",
   },
   {
     id: 5,
-    text: "Service and maintenance of electrical all types of electrical installations",
+    text: "Service och underhåll av alla typer av elektriska installationer.",
   },
   {
     id: 6,
-    text: "Pull cables",
+    text: "Kabelfördragning",
   },
   {
     id: 7,
-    text: "Electricity measurement for e.g. overload",
+    text: "Mätning av elektricitet, till exempel vid överbelastning.",
   },
   {
     id: 8,
-    text: "Short circuit",
+    text: "Kortslutning",
   },
   {
     id: 9,
-    text: "Earth fault circuit breaker that trips",
+    text: "Jordfelsbrytare som löser ut",
   },
   {
     id: 10,
-    text: "Mount solar cells",
+    text: "Montera solceller",
   },
   {
     id: 11,
-    text: "Charging posts",
+    text: "Laddningsstolpar",
   },
 ];

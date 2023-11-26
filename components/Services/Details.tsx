@@ -19,7 +19,7 @@ type Props = {
 export default function Details({
   description,
   title2,
-  title = "Description",
+  title = "Beskrivning",
   description2,
   description2Limit,
   title2Class,
@@ -66,7 +66,7 @@ export default function Details({
                       className="text-primary underline cursor-pointer"
                       onClick={toggleShowMore}
                     >
-                      {" Read more"}
+                      {" Läs mer"}
                     </span>
                   )}
                 </p>

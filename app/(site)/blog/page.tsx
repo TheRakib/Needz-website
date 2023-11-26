@@ -45,8 +45,8 @@ export default function Page() {
   return (
     <div>
       <ServicesBanner
-        title="Blog/Newsletter"
-        breadcrumb="Blog/Newsletter page"
+        title="Blogg"
+        breadcrumb="Blogg sida"
         img="/blog/banner.png"
       />
 
@@ -84,12 +84,12 @@ export default function Page() {
                       previous: () => (
                         <div className="flex items-center gap-1">
                           <FaAngleLeft size={10} />
-                          Previous
+                          Föregående
                         </div>
                       ),
                       next: () => (
                         <div className="flex items-center gap-1">
-                          <span>Next</span>
+                          <span>Nästa</span>
                           <FaChevronRight size={10} />
                         </div>
                       ),

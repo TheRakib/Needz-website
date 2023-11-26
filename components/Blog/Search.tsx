@@ -9,7 +9,7 @@ export default function Search({
 }) {
   return (
     <div className="w-full border rounded-lg border-black/40 text-black/70 flex flex-col gap-[18px] p-[30px] ">
-      <h3 className="font-semibold text-black">Blog Search</h3>
+      <h3 className="font-semibold text-black">Blogg Sök</h3>
       <InputBase
         onChange={(e) => setSearch(e.target.value)}
         placeholder="Enter your keyword"

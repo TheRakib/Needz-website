@@ -24,17 +24,52 @@ export async function POST(
       from: "order@jour365.se",
       subject: "Bekräftelse: Ditt meddelande till oss är mottaget",
       text: message,
-      html: message.replace("\r\ng", "<br/>"),
+      html: message.replace("\r\n/g", "<br/>"),
     };
 
     await mail.send(data);
+
+    //----------------------- Now, send an email to the company with user details
+    const companyMessageText = `
+      Meddelande från användare: 
+      Namn: ${dataToJson?.name}, 
+      Telefonnummer: ${dataToJson?.phone}, 
+      email: ${dataToJson?.email}, 
+      zipCode: ${dataToJson?.zipCode}, 
+      postalCode: ${dataToJson?.postalCode}, 
+      address: ${dataToJson?.address}, 
+      photo: ${dataToJson?.photo}, 
+      Meddelande: ${dataToJson?.message} 
+    `;
+
+    const companyMessageHTML = `
+      Meddelande från användare: <br/>
+      Namn: ${dataToJson?.name}, <br/>
+      Telefonnummer: ${dataToJson?.phone}, <br/>
+      email: ${dataToJson?.email}, <br/>
+      zipCode: ${dataToJson?.zipCode}, <br/>
+      postalCode: ${dataToJson?.postalCode}, <br/>
+      address: ${dataToJson?.address}, <br/>
+      photo: ${dataToJson?.photo}, <br/>
+      Meddelande: ${dataToJson?.message} <br/>
+    `;
+
+    const companyData = {
+      to: "wordpress@jour365.se", // Replace with the company's email
+      from: "order@jour365.se",
+      subject: "Nytt meddelande från användare",
+      text: companyMessageText,
+      html: companyMessageHTML,
+    };
+
+    await mail.send(companyData);
 
     return new Response(JSON.stringify({ message: "Mail sent successfully" }), {
       status: 200,
       statusText: "Successfully sent",
     });
   } catch (error) {
-    // console.error(error);
+    console.error(error);
 
     return new Response(
       JSON.stringify({ message: "Something went wrong", error: error }),

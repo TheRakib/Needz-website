@@ -1,21 +1,20 @@
 import Image from "next/image";
 import React from "react";
-import "./styles.css";
-import Hexagon from "./Hexagon";
-import { twMerge } from "tailwind-merge";
 import SectionTitle from "../Shared/SectionTitle";
+import { twMerge } from "tailwind-merge";
+import "./styles.css";
 
 export default function Join() {
   return (
     <div className="max-w-layout mx-auto">
       <div className="flex flex-col items-center justify-center">
         <h2 className="uppercase font-semibold text-[20px] md:text-[25px]">
-          Jour Eliten
+          Jour 365
         </h2>
-        <SectionTitle title="how it works" className="text-center uppercase" />
-        {/* <h3 className="text-title font-semibold ">
-          
-        </h3> */}
+        <SectionTitle
+          title="Hur det fungerar"
+          className="text-center uppercase"
+        />
       </div>
 
       <div className="mt-10 relative">
@@ -46,43 +45,6 @@ export default function Join() {
               </p>
             </div>
           ))}
-
-          {/* 2nd */}
-          {/* <div className="flex flex-col gap-7 items-center justify-center w-[300px] p-2 relative ">
-            <div className="w-[288px] h-[288px] relative rounded-full overflow-hidden">
-              <Image alt="join logo" src={"/home/join/icon2.png"} fill />
-            </div>
-            <div className="absolute -right-5 top-[10%]">
-              <div
-                className={`hex relative bg-secondary after:border-t-secondary after:border-t-[20px] before:border-b-secondary before:border-b-[20px]`}
-              >
-                <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl text-white font-semibold">
-                  02
-                </p>
-              </div>
-            </div>
-            <p className="font-semibold text-2xl text-center">
-              Certified technicians to your door in 1 hour or less!
-            </p>
-          </div> 
-
-          <div className="flex flex-col gap-7 items-center justify-center w-[300px] p-2 relative ">
-            <div className="w-[288px] h-[288px] relative rounded-full overflow-hidden">
-              <Image alt="join logo" src={"/home/join/icon1.png"} fill />
-            </div>
-            <div className="absolute -right-5 top-[45%]">
-              <div
-                className={`hex relative bg-yellow after:border-t-yellow after:border-t-[20px] before:border-b-yellow before:border-b-[20px]`}
-              >
-                <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl text-white font-semibold">
-                  03
-                </p>
-              </div>
-            </div>
-            <p className="font-semibold text-2xl text-center">
-              Pay your way - installments or invoice
-            </p>
-          </div>*/}
         </div>
         <div className="absolute top-[25%] left-0 h-[40%] xl:w-[100%] w-[97%] mr-auto -z-10 hidden lg:block ">
           <Image src={"/home/join/line.png"} alt="line" fill />
@@ -98,14 +60,14 @@ export default function Join() {
 const joinContents = [
   {
     id: 1,
-    title: "We're here to help, 24/7 - call or book online!",
+    title: "Vi finns här för att hjälpa, dygnet runt - ring eller boka online!",
     img: "/home/join/icon3.png",
     hexagonClass: "top-[45%] -right-5",
     hexagonColor: " bg-primary after:border-t-primary before:border-b-primary",
   },
   {
     id: 2,
-    title: "Certified technicians to your door in 1 hour or less!",
+    title: "Certifierade tekniker till din dörr på 1 timme eller mindre!",
     img: "/home/join/icon2.png",
     hexagonClass: "top-[10%] -right-5",
     hexagonColor:
@@ -113,7 +75,7 @@ const joinContents = [
   },
   {
     id: 3,
-    title: "Pay your way - installments or invoice",
+    title: "Betalningsalternativ - delbetalning eller faktura",
     img: "/home/join/icon1.png",
     hexagonClass: "top-[45%] -right-5",
     hexagonColor: " bg-yellow after:border-t-yellow before:border-b-yellow",

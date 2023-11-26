@@ -42,7 +42,7 @@ export default function AgreementDescription() {
             </p>
             <p>
               We currently help many BRFs with their service contracts. Welcome
-              to contact us!
+              to Kontakta oss!
             </p>
           </div>
           <div className="flex flex-col justify-center gap-10">

@@ -25,7 +25,7 @@ export default function CallContactButtons({
         variant="outlined"
       >
         <BiPhoneCall className="mr-2" />
-        Call 08-302241
+        Ring: 08-302241
       </Button>
       <Button
         onClick={() => router.push("/contact-us")}
@@ -35,7 +35,7 @@ export default function CallContactButtons({
         size="large"
         variant="outlined"
       >
-        Contact Us
+        Kontakta oss
       </Button>
     </>
   );

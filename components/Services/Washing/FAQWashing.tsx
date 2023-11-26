@@ -6,7 +6,7 @@ export default function FAQWashing() {
     <div className="my-[120px]">
       <FAQ
         faqItems={faqItems}
-        title="FAQ - Washing Machine"
+        title="Vanliga frågor - Tvätt"
         variant="services"
         titleClass="mb-2 !text-center"
       />
@@ -17,40 +17,26 @@ export default function FAQWashing() {
 const faqItems = [
   {
     id: 1,
-    title: "What is the price for ordering a washing machine from you?",
+    title: "Vad är priset för att beställa en högtryckstvätt från er?",
     description:
-      "We always have a fixed price when you order a washing machine from us and, of course, also apply a root deduction in cases where it is applicable. Prices vary depending on the time for the work. Call us and we'll send you a quote right away!",
+      "Vi tillämpar alltid ett fast pris när du beställer en högtryckstvätt från oss och givetvis applicerar vi också rotavdrag i de fall där det är tillämpligt. Priserna varierar beroende på arbetets omfattning. Ring oss, så skickar vi dig en offert omedelbart!",
   },
   {
     id: 2,
-    title: "What happens when I have ordered a washing machine?",
+    title: "Vad händer när jag har beställt en högtryckstvätt?",
     description:
-      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour Eliten have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
+      "När du har beställt en högtryckstvätt från oss på Jour 365 kommer vårt team att koordinera en lämplig tid för att utföra arbetet. Vi säkerställer att du får en bekräftelse på din beställning och att våra erfarna tekniker kommer utrustade med den nödvändiga utrustningen för att genomföra tvättningen effektivt. Vi strävar efter att göra hela processen smidig och enkel för dig, från beställning till slutfört arbete. Kontakta oss om du har ytterligare frågor om vad som händer efter att du har beställt en högtryckstvätt.",
   },
   {
     id: 3,
-    title: "Is it possible to flush the drain yourself?",
+    title: "Går det att spola avloppet själv?",
     description:
-      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour Eliten have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
+      "Ja, i vissa fall är det möjligt att själv försöka spola avloppet. Enkla metoder kan inkludera att använda avloppsrensare eller andra hemmafixningsprodukter. Vi rekommenderar dock försiktighet och att undvika användning av aggressiva kemikalier som kan skada rören. Om problemet kvarstår eller om du är osäker på hur du ska gå tillväga, är det bäst att kontakta oss på Jour 365 för professionell rådgivning och hjälp.",
   },
   {
     id: 4,
-    title: "How does drain flushing work?",
+    title: "Hur fungerar avloppsrensning?",
     description:
-      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour Eliten have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
-  },
-
-  {
-    id: 5,
-    title: "How long do you flush the drains?",
-    description:
-      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour Eliten have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
-  },
-
-  {
-    id: 6,
-    title: "How many times do I need to flush the drain?",
-    description:
-      "The cost varies depending on the type of work to be carried out and how long it takes. We at Jour Eliten have a minimum charge of 2 hours, compared to many competitors who charge either a full or half day. We always offer a fixed and competitive price.",
+      "Beskrivning: Avloppsrensning innebär att använda högt vattenflöde och högt tryck för att effektivt rengöra avloppsrören. Vårt erfarna team på Jour 365 använder specialutrustning, inklusive högtryckstvättar, för att skickligt spola avloppet och eliminera eventuella blockeringar, avlagringar eller andra hinder. Genom att använda denna metod säkerställer vi att ditt avloppssystem återställs till optimal funktion. Kontakta oss för mer information om hur avloppsrensning fungerar och hur det kan gynna ditt avloppssystem.",
   },
 ];

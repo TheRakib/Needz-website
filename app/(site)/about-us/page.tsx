@@ -15,8 +15,8 @@ export default function page() {
   return (
     <div>
       <ServicesBanner
-        title="About Us"
-        breadcrumb="About us page"
+        title="Om oss"
+        breadcrumb="om oss sida"
         img="/about/banner.png"
       />
       <OnCall />

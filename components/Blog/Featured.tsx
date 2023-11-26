@@ -21,7 +21,7 @@ export default function Featured() {
 
   return (
     <div className="w-full rounded-lg bg-primary/10 h-[362px] p-[30px] flex flex-col gap-6 relative">
-      <h3 className="text-[24px] font-semibold ">Featured Services</h3>
+      <h3 className="text-[24px] font-semibold ">Utvalda tjänster</h3>
       <div className="">
         <Swiper
           loop={true}

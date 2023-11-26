@@ -15,12 +15,14 @@ import { toast } from "react-toastify";
 import axios from "axios";
 
 interface FormState {
+  email: string;
   name: string;
   phoneNumber: string;
   service: string;
 }
 
 const initialState = () => ({
+  email: "service@contact.com",
   name: "",
   phoneNumber: "",
   service: "",
@@ -61,18 +63,17 @@ export default function Emergencies() {
     }
 
     try {
-      console.log(formData);
-      // const res = await axios.post("/api/mail", formData);
-      // console.log(res);
-      // if (res.status === 200) {
-      //   setSuccessMessage("Email send successfully..");
-      //   setFormData(initialState());
-      // }
-      setSuccessMessage("Email send successfully..");
+      // console.log(formData);
+      const res = await axios.post("/api/mail", formData);
+      console.log(res);
+      if (res.status === 200) {
+        setSuccessMessage("E-post skickades ");
+        setFormData(initialState());
+      }
+      setSuccessMessage("E-post skickades ");
       setFormData(initialState());
     } catch (error) {
       console.log(error);
-      setSuccessMessage("Something went wrong. Try again");
       setSuccessMessage("Something went wrong. Try again");
     }
   };
@@ -83,8 +84,7 @@ export default function Emergencies() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="col-span-1 flex flex-col">
             <SectionTitle
-              title="Plumbing and electrical emergencies? 
-                We're here to help!"
+              title="Akutbehov av rörmokare eller elektriker? Vi finns här för jour hjälp."
               className="text-white font-semibold  tracking-tight"
             />
             <div className="flex gap-4 mt-8 mb-9">
@@ -108,16 +108,16 @@ export default function Emergencies() {
               />
             </div>
             <p className="md:text-[35px] text-[25px] text-white text-center md:text-left ">
-              Call Us: <span className="font-bold">08-30 22 41</span>
+              Ring: <span className="font-bold">08-30 22 41</span>
             </p>
           </div>
           <div className="col-span-1">
             <div className="flex flex-col text-white">
               <h3 className="font-semibold text-[20px] md:text-[25px] text-center">
-                Online Book A Service
+                Kontakta oss nu
               </h3>
               <p className=" text-[16px] md:text-[18px] text-white/60 text-center ">
-                You’re response within a minute
+                Snabb Respons på Din Förfrågan
               </p>
             </div>
             <div className="flex flex-col gap-5 items-center  justify-center mt-7 w-[310px] lg:w-[420px] mx-auto">
@@ -126,7 +126,7 @@ export default function Emergencies() {
                 name="name"
                 value={formData.name}
                 onChange={(text) => handleChange(text)}
-                placeholder="Full Name"
+                placeholder="Fullständigt Namn"
                 className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px] w-full `}
               />
               <InputBase
@@ -135,7 +135,7 @@ export default function Emergencies() {
                 type="number"
                 value={formData.phoneNumber}
                 onChange={handleChange}
-                placeholder="Phone Number"
+                placeholder="Telefon Nummer"
                 className={` rounded-none border border-black/40 h-[40px] pl-5 py-9 bg-white text-black/800 text-[18px]  w-full`}
               />
               <div className="w-full">
@@ -153,12 +153,12 @@ export default function Emergencies() {
                   }}
                 >
                   <MenuItem value="" disabled>
-                    Choose Service
+                    Välj Tjänst
                   </MenuItem>
                   {services.map((item) => (
                     <MenuItem
                       key={item.id}
-                      value={item.id}
+                      value={item.title}
                       className="py-[15px] pl-[20px]"
                     >
                       {item.title}
@@ -179,8 +179,8 @@ export default function Emergencies() {
                   variant="outlined"
                   disabled={!!successMessage}
                 >
-                  <BsArrowRightCircle className="mr-3 font-semibold" /> Submit
-                  Now
+                  <BsArrowRightCircle className="mr-3 font-semibold" /> Skicka
+                  Nu
                 </Button>
               </div>
             </div>

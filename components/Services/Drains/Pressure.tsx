@@ -12,8 +12,6 @@ export default function Pressure() {
     setShowMore(!showMore);
   };
 
-  const words = text.split(" ");
-  const displayText = showMore ? text : words.slice(0, 50).join(" ");
   return (
     <div className="px-2 max-w-layout mx-auto my-10 flex flex-col md:flex-row justify-between gap-4">
       <div className="flex flex-col gap-11 w-[350px] h-[444px] md:w-[680px] md:h-[594px] relative mx-auto">
@@ -21,16 +19,16 @@ export default function Pressure() {
       </div>
       <div className="max-w-[510px] flex flex-col justify-between">
         <div className=" flex flex-col gap-5 ">
-          <TextTitle title="High Pressure" />
+          <TextTitle title="Högtrycksspolning" />
           <div className="flex flex-col gap-5 text-[18px] text-black/70 ">
             <p className="text-left leading-7 tracking-tight">
-              FLUSHING Sewer flushing through high pressure is a gentle and
-              environmentally friendly method that quickly solves all kinds of
-              blockages in drains. The flushing is carried out in a gentle
-              manner to avoid damage to the sewage system and effectively rinses
-              away all sludge collected in the drain. Since only hot water is
-              used, no chemicals are needed for cleaning. For larger stoppages,
-              a flush truck may be a better option.
+              Spolning av avlopp med högtryck är en skonsam och miljövänlig
+              metod som snabbt löser alla typer av blockeringar i avlopp.
+              Spolningen utförs på ett varsamt sätt för att undvika skador på
+              avloppssystemet och effektivt sköljer bort allt slam som samlats i
+              avloppet. Eftersom endast varmt vatten används, behövs inga
+              kemikalier för rengöring. För större stopp kan en spolbil vara ett
+              bättre alternativ.
             </p>
           </div>
         </div>
@@ -58,17 +56,8 @@ export default function Pressure() {
 }
 
 const pressureItems = [
-  "Open Twentyfour Seven",
-  "Individuals and companies",
-  "Certified experts",
-  "On site within 1 hour",
+  "Öppet dygnet runt",
+  "Privatpersoner och företag",
+  "Certifierade experter",
+  "på plats inom 1 timme",
 ];
-
-const text = ` Are you looking for a reliable and efficient electrical company
-for your home or business electrical installations? Then
-you've come to the right place! We at Jour Eliten understand
-the importance of an electrical installation being safe and
-reliable and how important it is that the electricity works as it
-should, at home,  Then
-you;ve come to the right place! Then
-you've come to the right place!`;

@@ -19,17 +19,16 @@ export default function CertificateDetails() {
       </div>
       <div className="max-w-[510px] flex flex-col gap-11">
         <div className=" flex flex-col gap-5 ">
-          <TextTitle title="Certified electricians" />
+          <TextTitle title="Certifierade elektriker" />
           <div className="flex flex-col gap-5 text-[18px] text-black/70 ">
             <p className="text-center md:text-left">
-              At Jour Eliten, the focus is on the customer. Our experienced
-              electricians are all certified and authorized by the Swedish
-              Electrical Safety Authority.
+              På Jour 365 är fokus på kunden. Våra erfarna elektriker är alla
+              certifierade och auktoriserade av Elsäkerhetsverket i Sverige.
             </p>
           </div>
         </div>
         <div className="max-w-[680px] flex flex-col gap-5 ">
-          <TextTitle title="Electrical Installations in Stockholm: For Businesses and Homes" />
+          <TextTitle title="Elektriska installationer i Stockholm: För företag och privatpersoner " />
           <div className="flex flex-col gap-5 text-[18px] text-black/70 ">
             <p>
               {displayText}
@@ -38,7 +37,7 @@ export default function CertificateDetails() {
                   className="text-primary underline cursor-pointer"
                   onClick={toggleShowMore}
                 >
-                  {" Read more"}
+                  {" Läs mer"}
                 </span>
               )}
             </p>
@@ -49,11 +48,4 @@ export default function CertificateDetails() {
   );
 }
 
-const text = ` Are you looking for a reliable and efficient electrical company
-for your home or business electrical installations? Then
-you've come to the right place! We at Jour Eliten understand
-the importance of an electrical installation being safe and
-reliable and how important it is that the electricity works as it
-should, at home,  Then
-you;ve come to the right place! Then
-you've come to the right place!`;
+const text = `Letar du efter ett pålitligt och effektivt elektriskt företag för installationer i ditt hem eller företag? Då har du kommit till rätt plats! Vi på Jour 365 förstår vikten av att en elektrisk installation är säker och pålitlig samt hur viktigt det är att elen fungerar som den ska, hemma eller på jobbet. Då har du kommit till rätt plats!`;

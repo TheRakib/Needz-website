@@ -36,7 +36,7 @@ export default function Page() {
             title={blog.title}
             breadcrumb={blog.title}
             img={blog.bannerImg}
-            firstItem="Blog/newsletter"
+            firstItem="Blogg"
             extraInfo={
               <div className="mt-8 flex items-center gap-3">
                 <Image
@@ -51,7 +51,7 @@ export default function Page() {
                   href="https://www.joureliten.se/author/joureliten/"
                   className="underline"
                 >
-                  the duty elite
+                  Jour365 i Jourtjänst
                 </a>
               </div>
             }
