@@ -1,3 +1,4 @@
+import { services } from "@/Constants";
 import { Button, InputBase } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
@@ -96,33 +97,7 @@ const contactInfo: ContactInfo[] = [
   {
     id: 2,
     title: "Out Services",
-    items: [
-      {
-        id: 1,
-        link: "/services/drains",
-        title: "Stop in Drains",
-      },
-      {
-        id: 2,
-        link: "/services/plumber",
-        title: "Plumber",
-      },
-      {
-        id: 3,
-        link: "/services/electrician",
-        title: "Electrician",
-      },
-      {
-        id: 4,
-        link: "/services/washing",
-        title: "Washing Machine",
-      },
-      {
-        id: 5,
-        link: "/#our_services",
-        title: "See All Services",
-      },
-    ],
+    items: [...services],
   },
   {
     id: 3,
