@@ -48,19 +48,19 @@ const serviceAccordions = [
     title: "Ventilation",
     img: "/services/plumber/Ventilation.png",
     description: [
-      "Mechanical exhaust ventilation – With the help of a fan, the air is led out of the house. Air enters through small vents in the wall. This is called the F system.",
-      "Mechanical supply and exhaust ventilation – In this system, you have two fans, one that draws air in and one that brings air out. This is called the FT system",
-      "Self-draft ventilation – This is a system without fans, instead a ventilation flow is created using indoor and outdoor air.",
+      "Mechanical exhaust ventilation – Med hjälp av en fläkt leds luften ut från huset. Luft kommer in genom små ventiler i väggen. Detta kallas F-systemet.",
+      "Mekanisk tillförsel och utsugventilation – I detta system finns två fläktar, en som drar in luft och en som för ut luft. Detta kallas FT-systemet.",
+      "Självdragsventilation – Detta är ett system utan fläktar, istället skapas en ventilationström med hjälp av inomhus- och utomhusluft.",
     ],
   },
   {
     id: 2,
-    title: "Heat",
+    title: "Värme",
     img: "/services/plumber/Heat.png",
     description: [
-      "Mechanical exhaust ventilation – With the help of a fan, the air is led out of the house. Air enters through small vents in the wall. This is called the F system.",
-      "Mechanical supply and exhaust ventilation – In this system, you have two fans, one that draws air in and one that brings air out. This is called the FT system",
-      "Self-draft ventilation – This is a system without fans, instead a ventilation flow is created using indoor and outdoor air.",
+      "Värme är en central del av ett behagligt och funktionellt boende. Genom olika värmesystem kan du skapa en optimal temperatur i ditt hem.",
+      "Ett vanligt alternativ är centralvärme, där värmen distribueras genom ett nätverk av rör.",
+      "Ytterligare alternativ inkluderar golvvärme och eldstäder för en mysig atmosfär. För att effektivt reglera värmen är det viktigt att förstå olika värmemetoder och deras påverkan på inomhusmiljön.",
     ],
   },
   {
@@ -68,9 +68,9 @@ const serviceAccordions = [
     title: "Sanitation",
     img: "/services/plumber/Sanitation.png",
     description: [
-      "Mechanical exhaust ventilation – With the help of a fan, the air is led out of the house. Air enters through small vents in the wall. This is called the F system.",
-      "Mechanical supply and exhaust ventilation – In this system, you have two fans, one that draws air in and one that brings air out. This is called the FT system",
-      "Self-draft ventilation – This is a system without fans, instead a ventilation flow is created using indoor and outdoor air.",
+      "Sanitetssystemet är kritiskt för att upprätthålla hälsan och välbefinnandet i ditt hem. Ett effektivt sanitetssystem inkluderar både vattenförsörjning och avloppshantering. Genom att använda moderna tekniker och högkvalitativa sanitetsprodukter kan du säkerställa en ren och trygg miljö.",
+      "Rätt val av VVS-utrustning, som kranar och toaletter, spelar en nyckelroll i att skapa en sanitär och bekväm livsmiljö.",
+      "Att förstå och implementera lämpliga sanitetslösningar är avgörande för att främja hälsa och hygien i hemmet.",
     ],
   },
 ];

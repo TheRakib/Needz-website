@@ -7,17 +7,17 @@ export default function Agreement() {
     <div className="max-w-layout mx-auto">
       <div className="flex flex-col gap-5">
         <SecondTitle
-          title="Service agreement with washing machine"
+          title="Serviceavtal med högtryckstvätt"
           className="!text-center"
         />
         <div className="flex flex-col gap-7 text-[20px] max-w-[1005px] mx-auto ">
           <p className="text-center">
-            Join Jour Elite&apos;s service agreement for exclusive benefits! Our
-            partners gain priority service, discounts, a personal manager, and
-            more—all for free.
+            Gå med i Jour 365:s serviceavtal för exklusiva förmåner! Våra
+            partners får prioriterad service, rabatter, en personlig manager och
+            mer – allt helt kostnadsfritt.
           </p>
           <p className="text-secondary text-center">
-            Contact Jour Elite now for details on our services and agreements.
+            Kontakta Jour 365 nu för detaljer om våra tjänster och avtal.
           </p>
         </div>
       </div>

@@ -29,56 +29,6 @@ export const metadata: Metadata = {
   },
 };
 
-// -------------- tags:
-// Jour 365 AB
-// Jourtjänster Stockholm
-// Dygnet runt VVS Stockholm
-// Akut elektriker Stockholm
-// Certifierade rörmokare Stockholm
-// Planerade elprojekt
-// Erfarna elektriker Stockholm
-// Pålitliga VVS-tjänster
-
-// Jour tjänster Stockholm
-// Akut rörmokarservice
-// Dygnet runt elektrikertjänster
-// Snabb VVS hjälp
-// Nödtjänster elektriker
-// Omedelbar hjälp VVS
-// Akut hjälp elektricitet
-// Professionella jourtjänster
-// Pålitliga akut tjänster
-// 24/7 VVS och elektriker
-// Jourhjälp för hemmet
-// Företagstjänster jour
-// Akut underhållstjänster
-// Säkerhetskontroll jour
-// Snabbinsats elektriker och rörmokare
-
-// Jour tjänster Stockholm
-// Akut rörmokarservice
-// Dygnet runt elektrikertjänster
-// Snabb VVS hjälp
-// Nödtjänster elektriker
-// Omedelbar hjälp VVS
-// Akut hjälp elektricitet
-// Professionella jourtjänster
-// Pålitliga akut tjänster
-// 24/7 VVS och elektriker
-// Jourhjälp för hemmet
-// Företagstjänster jour
-// Akut underhållstjänster
-// Säkerhetskontroll jour
-// Snabbinsats elektriker och rörmokare
-// Jour 365 AB
-// Jourtjänster Stockholm
-// Dygnet runt VVS Stockholm
-// Akut elektriker Stockholm
-// Certifierade rörmokare Stockholm
-// Planerade elprojekt
-// Erfarna elektriker Stockholm
-// Pålitliga VVS-tjänster
-
 export default function RootLayout({
   children,
 }: {
@@ -133,3 +83,87 @@ export default function RootLayout({
     </html>
   );
 }
+
+// -------------- tags:
+// Jour 365 AB
+// Jourtjänster Stockholm
+// Dygnet runt VVS Stockholm
+// Akut elektriker Stockholm
+// Certifierade rörmokare Stockholm
+// Planerade elprojekt
+// Erfarna elektriker Stockholm
+// Pålitliga VVS-tjänster
+
+// Jour tjänster Stockholm
+// Akut rörmokarservice
+// Dygnet runt elektrikertjänster
+// Snabb VVS hjälp
+// Nödtjänster elektriker
+// Omedelbar hjälp VVS
+// Akut hjälp elektricitet
+// Professionella jourtjänster
+// Pålitliga akut tjänster
+// 24/7 VVS och elektriker
+// Jourhjälp för hemmet
+// Företagstjänster jour
+// Akut underhållstjänster
+// Säkerhetskontroll jour
+// Snabbinsats elektriker och rörmokare
+
+// Jour tjänster Stockholm
+// Akut rörmokarservice
+// Dygnet runt elektrikertjänster
+// Snabb VVS hjälp
+// Nödtjänster elektriker
+// Omedelbar hjälp VVS
+// Akut hjälp elektricitet
+// Professionella jourtjänster
+// Pålitliga akut tjänster
+// 24/7 VVS och elektriker
+// Jourhjälp för hemmet
+// Företagstjänster jour
+// Akut underhållstjänster
+// Säkerhetskontroll jour
+// Snabbinsats elektriker och rörmokare
+// Jour 365 AB
+// Jourtjänster Stockholm
+// Dygnet runt VVS Stockholm
+// Akut elektriker Stockholm
+// Certifierade rörmokare Stockholm
+// Planerade elprojekt
+// Erfarna elektriker Stockholm
+// Pålitliga VVS-tjänster
+
+// ---plumber
+// Rörmokartjänster
+// Akut rörmokare
+// VVS-nödtjänster
+// Rörmokare pris
+// Värme, ventilation och sanitet
+// Rörmokare och VVS-tekniker skillnad
+// Gör-det-själv VVS-arbeten
+// Certifierade rörmokare
+// VVS-expertis
+// Fast pris rörmokare
+// Rörreparation och installation
+// Jourtjänster i hela Sverige
+// VVS-felsökning
+// Råd om små VVS-problem
+// Kvalificerade VVS-specialister
+
+// ------washing
+// Tvättmaskinstjänster
+// Högtryckstvätt
+// Avloppsrensning
+// Rörfilmning
+// Slamavskiljning
+// Serviceavtal
+// Jour365
+// Högtryckstvättning
+// Rotavdrag
+// Avloppsproblem
+// Miljövänlig avloppsrengöring
+// Professionella rörmokare
+// Avloppsinspektion
+// Rörfilmningstjänster
+// Ekovänliga avloppslösningar

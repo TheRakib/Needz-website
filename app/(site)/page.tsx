@@ -19,7 +19,8 @@ const Home = () => {
       <Banner />
       <CallIn />
       <Emergencies />
-      <Feedback />
+      {/* <Feedback /> */}
+      <div className="mb-[120px]"></div>
       <Join />
       <Features />
       <FAQ faqItems={faqItems} />

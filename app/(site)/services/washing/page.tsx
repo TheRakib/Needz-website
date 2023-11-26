@@ -11,13 +11,13 @@ export default function page() {
   return (
     <div>
       <ServicesBanner
-        title="Order a washing machine - we drive all over Stockholm"
-        breadcrumb="Washing machine page"
+        title="Beställ en biltvätt - vi kör över hela Stockholm"
+        breadcrumb="Tvättmaskinssida"
         img="/services/washing-machine.png"
         titleClass="!text-center max-w-[763px]"
       />
       <DescriptionWashing />
-      <CarWash />
+      {/* <CarWash /> */}
       <Others />
       <Agreement />
       <FAQWashing />
