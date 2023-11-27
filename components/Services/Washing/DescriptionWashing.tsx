@@ -25,7 +25,7 @@ export default function DescriptionWashing() {
               rekommenderas det att du ringer efter en högtryckstvätt.
             </p>
           </div>
-          <TextTitle title="Blocked sewage? Get it cleared quickly and efficiently with our expert plumbers." />
+          <TextTitle title="Stopp i avloppet? Få det rensat snabbt och effektivt med våra erfarna rörmokare." />
         </div>
         <UserCard />
       </div>

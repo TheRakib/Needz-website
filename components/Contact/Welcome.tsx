@@ -45,7 +45,7 @@ export default function Welcome() {
   return (
     <div className="max-w-layout mx-auto mt-[150px] mb-7">
       <SectionTitle
-        title="You are welcome to Kontakta oss."
+        title="Du är välkommen att kontakta oss."
         className="!text-center"
       />
       <div className="max-w-[630px] mx-auto flex flex-col mt-10">
@@ -74,35 +74,35 @@ export default function Welcome() {
             onChange={handleChange}
             name="firstName"
             id="outlined-basic"
-            placeholder="First Name"
+            placeholder="Förnamn"
             className={`border border-black/40 h-[40px] w-[270px] pl-5 py-6 bg-white text-black/800 text-[18px] rounded-lg `}
           />
           <InputBase
             onChange={handleChange}
             name="LastName"
             id="outlined-basic"
-            placeholder="Last Name"
+            placeholder="Efternamn"
             className={`border border-black/40 h-[40px] w-[270px] pl-5 py-6 bg-white text-black/800 text-[18px] rounded-lg `}
           />
           <InputBase
             onChange={handleChange}
             name="phone"
             id="outlined-basic"
-            placeholder="Phone"
+            placeholder="Telefon"
             className={`border border-black/40 h-[40px] w-[270px] pl-5 py-6 bg-white text-black/800 text-[18px] rounded-lg `}
           />
           <InputBase
             onChange={handleChange}
             name="email"
             id="outlined-basic"
-            placeholder="Email Address"
+            placeholder="E-postadress"
             className={`border border-black/40 h-[40px] w-[270px] pl-5 py-6 bg-white text-black/800 text-[18px] rounded-lg `}
           />
           <InputBase
             onChange={handleChange}
             name="address"
             id="outlined-basic"
-            placeholder="Address*"
+            placeholder="Adress*"
             className={`border border-black/40 h-[40px] w-full pl-5 py-6 bg-white text-black/800 text-[18px] rounded-lg `}
           />
           <div className="w-full">
@@ -111,7 +111,7 @@ export default function Welcome() {
               id=""
               onChange={handleChange}
               rows={7}
-              placeholder="What do you need help with?"
+              placeholder="Vad behöver du hjälp med?"
               className="text-[18px] pt-3 pl-5 w-full border border-black/40 rounded-lg text-black focus:outline-none "
             />
           </div>
@@ -121,7 +121,7 @@ export default function Welcome() {
               variant="outlined"
               onClick={handleSubscribe}
             >
-              Send Message
+              Skicka meddelande
             </Button>
           </div>
         </div>

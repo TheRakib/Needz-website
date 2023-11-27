@@ -38,7 +38,7 @@ export default function LocalElectrician() {
               className="w-[320px] md:w-[383px] h-[92px] capitalize text-[20px] md:text-[26px] border-2 rounded-lg "
               variant="outlined"
             >
-              Elektriker kunsholmen
+              Elektriker Kungsholmen
             </Button>
           </div>
         </div>

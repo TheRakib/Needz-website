@@ -10,9 +10,9 @@ export default function DescriptionPlumber() {
           <TextTitle title="Beskrivning" />
           <div className="flex flex-col gap-6 mt-5 text-black/70">
             <p className="">
-              Alla våra rörmokare är certifierade och godkända av Safe Water. De
-              har erfarenhet och kunskap och kan hjälpa dig med alla typer av
-              VVS-system, både i hemmet och för företag.
+              Alla våra rörmokare är certifierade. De har erfarenhet och kunskap
+              och kan hjälpa dig med alla typer av VVS-system, både i hemmet och
+              för företag.
             </p>
             <p className="">
               Vi på Jour365 hjälper dig med allt från service eller

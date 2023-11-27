@@ -105,31 +105,3 @@ export default function Topics({
     </div>
   );
 }
-
-const topicItems = [
-  {
-    id: 1,
-    title: "Plumber",
-    count: 3,
-  },
-  {
-    id: 2,
-    title: "Stop in drains",
-    count: 4,
-  },
-  {
-    id: 3,
-    title: "Washing machine",
-    count: 6,
-  },
-  {
-    id: 4,
-    title: "Electrician",
-    count: 9,
-  },
-  {
-    id: 5,
-    title: "Electrical installations",
-    count: 3,
-  },
-];

@@ -37,7 +37,7 @@ export default function Featured() {
                   <Image alt="icon" src={"/blog/feature.png"} fill />
                   <div className="absolute bottom-0 left-0 w-full ">
                     <p className="pl-4 text-white font-semibold mb-4">
-                      Electrical Installations
+                      Elinstallationer
                     </p>
                   </div>
                 </div>

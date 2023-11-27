@@ -81,7 +81,7 @@ const faqItems = [
   {
     id: 7,
     title: "Har jag rätt till ROT-avdrag?",
-    description: `För att få ROT-avdrag måste du äga din fastighet samt använda den som bostad. Vänligen meddela oss om du önskar rotavdrag vid bokning av jobb. Läs mer på <a href="https://skatteverket.se/foretag/skatterochavdrag/rotochrut/gerarbetetratttillrotavdrag.4.5c1163881590be297b5173bf.html" > Skatteverket </a> om ROT-avdrag`,
+    description: `För att få ROT-avdrag måste du äga din fastighet samt använda den som bostad. Vänligen meddela oss om du önskar rotavdrag vid bokning av jobb. Läs mer på Skatteverket om ROT-avdrag`,
   },
   {
     id: 8,
