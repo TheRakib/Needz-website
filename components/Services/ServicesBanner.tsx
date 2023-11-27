@@ -31,8 +31,9 @@ export default function ServicesBanner({
           src={img}
           className="absolute z-[-1] h-full w-full object-cover object-center inset-0"
         />
+        <div className="absolute bg-black/40 w-full h-full  object-cover object-center inset-0 z-0"></div>
       </div>
-      <div className="max-w-layout mx-auto text-white flex flex-col items-center justify-center h-full">
+      <div className="max-w-layout mx-auto text-white flex flex-col items-center justify-center h-full z-10">
         <SectionTitle title={title} className={titleClass ? titleClass : ""} />
         <Breadcrumbs aria-label="breadcrumb" className=" text-white">
           <Link
