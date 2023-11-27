@@ -17,6 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  // applicationName: '',
   metadataBase: new URL("https://360jour.vercel.app/"),
   title: {
     template: "Jour 365 | %s",
@@ -36,6 +37,29 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="1ydwKMe2NsfBUvb_56PO7uwDg02C5dv_S73W9gucFmg"
+        />
+        {/* Add meta tags for plumbing keywords */}
+        <meta
+          name="keywords"
+          content="Rörmokartjänster, Akut rörmokare, VVS-nödtjänster, ..."
+        />
+
+        {/* Add meta tags for washing keywords */}
+        <meta
+          name="keywords"
+          content="Tvättmaskinstjänster, Högtryckstvätt, Avloppsrensning, ..."
+        />
+
+        {/* Add meta tags for electric installation keywords */}
+        <meta
+          name="keywords"
+          content="Elinstallationer, Elektriker Stockholm, Elentreprenad, ..."
+        />
+      </head>
       <body className={inter.variable}>
         {/* <!-- Google Tag Manager (noscript) --> */}
         <noscript>
