@@ -1,0 +1,40 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://jour365.se</loc>
+    <priority>1</priority>
+  </url>
+
+  <url>
+    <loc>https://jour365.se/services/electrician</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jour365.se/services/drains</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jour365.se/services/plumber</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jour365.se/services/washing</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jour365.se/services/electrical-installations</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://jour365.se/about-us</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jour365.se/contact-us</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jour365.se/blog</loc>
+    <priority>0.8</priority>
+  </url>
+</urlset>
