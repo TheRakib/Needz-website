@@ -9,7 +9,7 @@ export default function Others() {
         items={serviceAccordions}
         className="lg:!flex-row-reverse"
         listStyles="!gap-7"
-        title="Others"
+        title="Övriga tjänster"
       />
     </div>
   );

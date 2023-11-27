@@ -87,7 +87,7 @@ export default function Emergencies() {
               title="Akutbehov av rörmokare eller elektriker? Vi finns här för jour hjälp."
               className="text-white font-semibold  tracking-tight"
             />
-            <div className="flex gap-4 mt-8 mb-9">
+            {/* <div className="flex gap-4 mt-8 mb-9">
               <Image
                 src={"/home/icon1.png"}
                 alt="achievement"
@@ -106,8 +106,8 @@ export default function Emergencies() {
                 height={104}
                 width={104}
               />
-            </div>
-            <p className="md:text-[35px] text-[25px] text-white text-center md:text-left ">
+            </div> */}
+            <p className="md:text-[35px] text-[25px] mt-5 text-white text-center md:text-left ">
               Ring: <span className="font-bold">08-30 22 41</span>
             </p>
           </div>

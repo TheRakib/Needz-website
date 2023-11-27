@@ -96,7 +96,7 @@ type ContactInfo = {
 const contactInfo: ContactInfo[] = [
   {
     id: 2,
-    title: "Out Services",
+    title: "Jour Tjänster",
     items: [...services],
   },
   {
