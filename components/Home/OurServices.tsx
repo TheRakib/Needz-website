@@ -71,7 +71,7 @@ export default function OurServices() {
           >
             Boka din tjänst
           </Button>
-          <a href="callto:08302241">
+          <a href="tel:08302241">
             <Button
               className="w-[291px] h-[92px] bg-transparent  hover:bg-primary hover:text-white text-primary text-[26px] capitalize rounded-lg flex gap-3 items-center"
               variant="outlined"

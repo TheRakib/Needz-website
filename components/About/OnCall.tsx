@@ -48,7 +48,7 @@ export default function OnCall() {
             </div>
           </div>
           <p className="text-[26px] font-semibold text-center">
-            <a href="callto:08302241">Ring: 08-30 22 41</a>
+            <a href="tel:08302241">Ring: 08-30 22 41</a>
           </p>
         </div>
       </div>

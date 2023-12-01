@@ -36,7 +36,7 @@ export default function CallIn() {
                 className="capitalize py-7 text-[26px] bg-white hover:bg-primary/5 text-black rounded-lg"
                 size="large"
               >
-                <a href="callto:08302241">Ring: 08-30 22 41</a>
+                <a href="tel:08302241">Ring: 08-30 22 41</a>
               </Button>
             </div>
           </div>

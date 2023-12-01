@@ -108,7 +108,7 @@ export default function Emergencies() {
               />
             </div> */}
             <p className="md:text-[35px] text-[25px] mt-5 text-white text-center md:text-left ">
-              <a href="callto:08302241">
+              <a href="tel:08302241">
                 {" "}
                 Ring: <span className="font-bold">08-30 22 41</span>
               </a>

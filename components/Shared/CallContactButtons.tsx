@@ -15,7 +15,7 @@ export default function CallContactButtons({
   const router = useRouter();
   return (
     <>
-      <a href="callto:08302241">
+      <a href="tel:08302241">
         <Button
           className={twMerge(
             `${
