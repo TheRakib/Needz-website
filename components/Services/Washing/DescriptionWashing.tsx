@@ -53,7 +53,7 @@ export default function DescriptionWashing() {
               Stopp i toaletten kan orsakas av att man spolar ner papper som
               inte är avsett att spolas ner och som fastnar någonstans.
               Våtservetter och sanitetsprodukter hör inte hemma i din toalett
-              utan bör kastas i papperskorgen. Kontakta oss på Jour 365 om du
+              utan bör kastas i papperskorgen. Kontakta oss på jour365 om du
               står inför toalettproblem.
             </p>
             <p>

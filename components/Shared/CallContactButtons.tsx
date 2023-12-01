@@ -15,18 +15,21 @@ export default function CallContactButtons({
   const router = useRouter();
   return (
     <>
-      <Button
-        className={twMerge(
-          `${
-            callClass && callClass
-          } capitalize text-xl md:text-2xl md:py-7 md:px-12 px-10 py-4 rounded-xl bg-primary hover:bg-transparent hover:text-primary text-white flex-nowrap whitespace-nowrap w-[344px]`
-        )}
-        size="large"
-        variant="outlined"
-      >
-        <BiPhoneCall className="mr-2" />
-        Ring: 08-302241
-      </Button>
+      <a href="callto:08302241">
+        <Button
+          className={twMerge(
+            `${
+              callClass && callClass
+            } capitalize text-xl md:text-2xl md:py-7 md:px-12 px-10 py-4 rounded-xl bg-primary hover:bg-transparent hover:text-primary text-white flex-nowrap whitespace-nowrap w-[344px]`
+          )}
+          size="large"
+          variant="outlined"
+        >
+          <BiPhoneCall className="mr-2" />
+          Ring: 08-302241
+        </Button>
+      </a>
+
       <Button
         onClick={() => router.push("/contact-us")}
         className={twMerge(

@@ -50,10 +50,10 @@ export default function Description() {
               Renoverar eller bygger du om? Vi åtar oss uppdrag inom
               nybyggnation, ombyggnad och nya installationer i hela
               Storstockholm och dess omgivande områden. Storleken på ditt
-              projekt spelar ingen roll för Jour 365. Vi hjälper dig att
-              utveckla förslag på en modern, effektiv och energibesparande
-              lösning. Hos oss får du en tydlig och konkret bild av kostnaderna
-              och omfattningen av renoveringsarbetet.
+              projekt spelar ingen roll för jour365. Vi hjälper dig att utveckla
+              förslag på en modern, effektiv och energibesparande lösning. Hos
+              oss får du en tydlig och konkret bild av kostnaderna och
+              omfattningen av renoveringsarbetet.
             </p>
           </div>
           <div className="flex flex-col gap-5">

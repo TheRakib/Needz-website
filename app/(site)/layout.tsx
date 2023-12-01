@@ -20,13 +20,13 @@ export const metadata: Metadata = {
   // applicationName: '',
   metadataBase: new URL("https://360jour.vercel.app/"),
   title: {
-    template: "Jour 365 | %s",
-    default: "Jour 365",
+    template: "jour365 | %s",
+    default: "jour365",
   },
   description:
-    "Jour 365: Rör- och elservice dygnet runt i Stockholm. Expert, certifierade yrkesmän för akuta situationer och planerade projekt för både privatpersoner och företag.",
+    "jour365: Rör- och elservice dygnet runt i Stockholm. Expert, certifierade yrkesmän för akuta situationer och planerade projekt för både privatpersoner och företag.",
   openGraph: {
-    title: "Jour 365",
+    title: "jour365",
   },
 };
 
@@ -109,7 +109,7 @@ export default function RootLayout({
 }
 
 // -------------- tags:
-// Jour 365 AB
+// jour365
 // Jourtjänster Stockholm
 // Dygnet runt VVS Stockholm
 // Akut elektriker Stockholm
@@ -149,7 +149,7 @@ export default function RootLayout({
 // Akut underhållstjänster
 // Säkerhetskontroll jour
 // Snabbinsats elektriker och rörmokare
-// Jour 365 AB
+// jour365
 // Jourtjänster Stockholm
 // Dygnet runt VVS Stockholm
 // Akut elektriker Stockholm

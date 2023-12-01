@@ -16,8 +16,8 @@ export default function Footer() {
               Om oss
             </h3>
             <p className="max-w-[284px] ml-auto md:ml-0 mr-auto text-black/80 text-[14px] leading-6  ">
-              Jour 365 AB erbjuder VVS- och elektrikerjour i Stockholm dygnet
-              runt, men vi utför även planerade arbeten för privatpersoner och
+              jour365 erbjuder VVS- och elektrikerjour i Stockholm dygnet runt,
+              men vi utför även planerade arbeten för privatpersoner och
               företag. Vi använder erfarna och certifierade rörmokare och
               elektriker.
             </p>
@@ -32,6 +32,9 @@ export default function Footer() {
                 width={282}
                 className="pt-1"
               />
+              <p className="text-black/70 text-center mt-1">
+                I samarbete med Jour Eliten Sverige AB
+              </p>
             </div>
           </div>
           <div className="col-span-4 grid grid-cols-2 gap-1 overflow-x-scroll no-scrollbar">
@@ -60,17 +63,6 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col gap-4 justify-center items-center mt-16">
-          {/* <div className="flex gap-8 items-center">
-            <div className="cursor-pointer">
-              <BiLogoFacebook className="text-primary text-[30px] " />
-            </div>
-            <div className="cursor-pointer">
-              <BsTwitter className="text-[#00d6ff] text-[25px] " />
-            </div>
-            <div className="cursor-pointer">
-              <BsInstagram className="text-[#ff0073] text-[25px] " />
-            </div>
-          </div> */}
           <p className="text-[14px] text-black/40 text-center md:text-left">
             Copyright &copy; 2023 Jour365.
           </p>
@@ -103,7 +95,7 @@ const contactInfo: ContactInfo[] = [
     id: 3,
     title: "Kontakt Info",
     items: [
-      "Jour365 AB",
+      "jour365",
       "Nybodagatan 6B",
       "171 42 Solna",
       "Ring: 08-30 22 41",

@@ -67,16 +67,19 @@ export default function OurServices() {
           <Button
             className="w-[291px] h-[92px] bg-primary hover:bg-transparent hover:text-primary text-white text-[26px] capitalize rounded-lg"
             variant="outlined"
+            onClick={() => router.push("contact-us")}
           >
             Boka din tjänst
           </Button>
-          <Button
-            className="w-[291px] h-[92px] bg-transparent  hover:bg-primary hover:text-white text-primary text-[26px] capitalize rounded-lg flex gap-3 items-center"
-            variant="outlined"
-          >
-            <LuPhoneCall />
-            <span>08-302241</span>
-          </Button>
+          <a href="callto:08302241">
+            <Button
+              className="w-[291px] h-[92px] bg-transparent  hover:bg-primary hover:text-white text-primary text-[26px] capitalize rounded-lg flex gap-3 items-center"
+              variant="outlined"
+            >
+              <LuPhoneCall />
+              <span>08-302241</span>
+            </Button>
+          </a>
         </div>
       </div>
     </div>

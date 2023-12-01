@@ -19,8 +19,10 @@ export default function BannerFAQ() {
           className="capitalize text-xl md:text-2xl md:py-7 md:px-12 px-10 py-4 rounded-xl bg-primary hover:bg-primary/70 text-white flex-nowrap whitespace-nowrap "
           size="large"
         >
-          <BiPhoneCall className="mr-2" />
-          Ring: 08-302241
+          <a href="callto:08302241">
+            <BiPhoneCall className="mr-2" />
+            Ring: 08-302241
+          </a>
         </Button>
         <Button
           onClick={() => router.push("/contact-us")}

@@ -35,7 +35,10 @@ export default function Features() {
               </Button>
             </Link>
             <Button className="bg-white hover:bg-primary/5 text-black capitalize rounded-xl font-semibold text-[26px] py-[25px] ">
-              <a href="tel:08302241">Ring: 08-302241</a>
+              <a href="callto:08302241">
+                {" "}
+                <a href="tel:08302241">Ring: 08-302241</a>
+              </a>
             </Button>
           </div>
         </div>

@@ -9,7 +9,7 @@ export default function Join() {
     <div className="max-w-layout mx-auto">
       <div className="flex flex-col items-center justify-center">
         <h2 className="uppercase font-semibold text-[20px] md:text-[25px]">
-          Jour 365
+          jour365
         </h2>
         <SectionTitle
           title="Hur det fungerar"
@@ -75,7 +75,7 @@ const joinContents = [
   },
   {
     id: 3,
-    title: "Betalningsalternativ - delbetalning eller faktura",
+    title: "Betalningsalternativ - eller faktura",
     img: "/home/join/icon1.png",
     hexagonClass: "top-[45%] -right-5",
     hexagonColor: " bg-yellow after:border-t-yellow before:border-b-yellow",
