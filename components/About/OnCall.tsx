@@ -8,8 +8,8 @@ export default function OnCall() {
       <div className="flex flex-col gap-5">
         <SecondTitle title="JOUR I HELA STOCKHOLM, DYGNET RUNT!" />
         <p className="lg:text-[18px] text-black/70 max-w-[980px] ">
-          Jour365 AB erbjuder VVS och EL jour i Stockholm 24 timmar om dygnet,
-          men vi utför även planerade arbeten för privatpersoner och företag. Vi
+          jour365 erbjuder VVS och EL jour i Stockholm 24 timmar om dygnet, men
+          vi utför även planerade arbeten för privatpersoner och företag. Vi
           använder oss av erfarna och certifierade rörmokare och elektriker.
         </p>
       </div>
@@ -48,7 +48,7 @@ export default function OnCall() {
             </div>
           </div>
           <p className="text-[26px] font-semibold text-center">
-            Ring: 08-30 22 41
+            <a href="tel:08302241">Ring: 08-30 22 41</a>
           </p>
         </div>
       </div>

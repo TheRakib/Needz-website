@@ -13,7 +13,7 @@ export default function LocalPlumber() {
             className="!text-center"
           />
           <p className="text-[18px] text-black/70 text-center">
-            På Jour 365 erbjuder vi omfattande VVS-tjänster till både husägare
+            På jour365 erbjuder vi omfattande VVS-tjänster till både husägare
             och företag i hela Stockholm. Våra erfarna och certifierade
             rörmokare är redo att hjälpa dig med allt från mindre installationer
             till kompletta renoveringar. Vi är också experter på ventilation,

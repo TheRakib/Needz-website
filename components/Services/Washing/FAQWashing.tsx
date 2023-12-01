@@ -25,18 +25,18 @@ const faqItems = [
     id: 2,
     title: "Vad händer när jag har beställt en högtryckstvätt?",
     description:
-      "När du har beställt en högtryckstvätt från oss på Jour 365 kommer vårt team att koordinera en lämplig tid för att utföra arbetet. Vi säkerställer att du får en bekräftelse på din beställning och att våra erfarna tekniker kommer utrustade med den nödvändiga utrustningen för att genomföra tvättningen effektivt. Vi strävar efter att göra hela processen smidig och enkel för dig, från beställning till slutfört arbete. Kontakta oss om du har ytterligare frågor om vad som händer efter att du har beställt en högtryckstvätt.",
+      "När du har beställt en högtryckstvätt från oss på jour365 kommer vårt team att koordinera en lämplig tid för att utföra arbetet. Vi säkerställer att du får en bekräftelse på din beställning och att våra erfarna tekniker kommer utrustade med den nödvändiga utrustningen för att genomföra tvättningen effektivt. Vi strävar efter att göra hela processen smidig och enkel för dig, från beställning till slutfört arbete. Kontakta oss om du har ytterligare frågor om vad som händer efter att du har beställt en högtryckstvätt.",
   },
   {
     id: 3,
     title: "Går det att spola avloppet själv?",
     description:
-      "Ja, i vissa fall är det möjligt att själv försöka spola avloppet. Enkla metoder kan inkludera att använda avloppsrensare eller andra hemmafixningsprodukter. Vi rekommenderar dock försiktighet och att undvika användning av aggressiva kemikalier som kan skada rören. Om problemet kvarstår eller om du är osäker på hur du ska gå tillväga, är det bäst att kontakta oss på Jour 365 för professionell rådgivning och hjälp.",
+      "Ja, i vissa fall är det möjligt att själv försöka spola avloppet. Enkla metoder kan inkludera att använda avloppsrensare eller andra hemmafixningsprodukter. Vi rekommenderar dock försiktighet och att undvika användning av aggressiva kemikalier som kan skada rören. Om problemet kvarstår eller om du är osäker på hur du ska gå tillväga, är det bäst att kontakta oss på jour365 för professionell rådgivning och hjälp.",
   },
   {
     id: 4,
     title: "Hur fungerar avloppsrensning?",
     description:
-      "Beskrivning: Avloppsrensning innebär att använda högt vattenflöde och högt tryck för att effektivt rengöra avloppsrören. Vårt erfarna team på Jour 365 använder specialutrustning, inklusive högtryckstvättar, för att skickligt spola avloppet och eliminera eventuella blockeringar, avlagringar eller andra hinder. Genom att använda denna metod säkerställer vi att ditt avloppssystem återställs till optimal funktion. Kontakta oss för mer information om hur avloppsrensning fungerar och hur det kan gynna ditt avloppssystem.",
+      "Beskrivning: Avloppsrensning innebär att använda högt vattenflöde och högt tryck för att effektivt rengöra avloppsrören. Vårt erfarna team på jour365 använder specialutrustning, inklusive högtryckstvättar, för att skickligt spola avloppet och eliminera eventuella blockeringar, avlagringar eller andra hinder. Genom att använda denna metod säkerställer vi att ditt avloppssystem återställs till optimal funktion. Kontakta oss för mer information om hur avloppsrensning fungerar och hur det kan gynna ditt avloppssystem.",
   },
 ];

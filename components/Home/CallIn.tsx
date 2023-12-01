@@ -15,11 +15,11 @@ export default function CallIn() {
             Jour i hela Stockholm, 24/7!
           </h2>
           <p className="md:text-[18px] text-[16px] text-black/70 lg:mr-36 leading-8 max-w-full text-center md:text-left">
-            Jour 365 AB erbjuder VVS och elektriska jourtjänster i Stockholm
-            dygnet runt. Vi utför inte bara akuta arbeten utan hanterar också
-            planerade uppdrag för både privatpersoner och företag. Vårt team
-            består av erfarna och certifierade rörmokare och elektriker som
-            garanterar kvalitet och professionalism i varje jobb.
+            jour365 erbjuder VVS och elektriska jourtjänster i Stockholm dygnet
+            runt. Vi utför inte bara akuta arbeten utan hanterar också planerade
+            uppdrag för både privatpersoner och företag. Vårt team består av
+            erfarna och certifierade rörmokare och elektriker som garanterar
+            kvalitet och professionalism i varje jobb.
           </p>
 
           <div className="">
@@ -36,7 +36,7 @@ export default function CallIn() {
                 className="capitalize py-7 text-[26px] bg-white hover:bg-primary/5 text-black rounded-lg"
                 size="large"
               >
-                Ring: 08-30 22 41
+                <a href="tel:08302241">Ring: 08-30 22 41</a>
               </Button>
             </div>
           </div>

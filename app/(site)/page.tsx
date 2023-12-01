@@ -2,15 +2,14 @@ import Banner from "@/components/Home/Banner";
 import CallIn from "@/components/Home/CallIn";
 import Emergencies from "@/components/Home/Emergencies";
 import Features from "@/components/Home/Features";
-import Feedback from "@/components/Home/Feedback";
 import Join from "@/components/Home/Join";
-import { Box, Button, Fab, Fade, useScrollTrigger } from "@mui/material";
+import { Fab } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import ScrollTop from "@/components/Shared/ScrollTop";
 import OurServices from "@/components/Home/OurServices";
 import FAQ from "@/components/Shared/FAQ";
 import ContactUs from "@/components/Shared/ContactUs";
-import MainAction from "@/components/MainAction";
+import { Metadata } from "next";
 
 const Home = () => {
   return (
