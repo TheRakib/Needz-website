@@ -16,10 +16,10 @@ export default function Footer() {
               Om oss
             </h3>
             <p className="max-w-[284px] ml-auto md:ml-0 mr-auto text-black/80 text-[14px] leading-6  ">
-              jour365 erbjuder VVS- och elektrikerjour i Stockholm dygnet runt,
-              men vi utför även planerade arbeten för privatpersoner och
-              företag. Vi använder erfarna och certifierade rörmokare och
-              elektriker.
+              <Link href={"/"}>jour365</Link> erbjuder VVS- och elektrikerjour i
+              Stockholm dygnet runt, men vi utför även planerade arbeten för
+              privatpersoner och företag. Vi använder erfarna och certifierade
+              rörmokare och elektriker.
             </p>
           </div>
           <div className="col-span-4 flex justify-center mr-4">
@@ -33,7 +33,11 @@ export default function Footer() {
                 className="pt-1"
               />
               <p className="text-black/70 text-center mt-1">
-                I samarbete med Jour Eliten Sverige AB
+                I samarbete med{" "}
+                <Link href={"https://www.joureliten.se/"} target="_blank">
+                  Jour Eliten
+                </Link>{" "}
+                Sverige AB
               </p>
             </div>
           </div>
