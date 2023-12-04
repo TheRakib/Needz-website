@@ -27,6 +27,8 @@ export const metadata: Metadata = {
     "jour365: Rör- och elservice dygnet runt i Stockholm. Expert, certifierade yrkesmän för akuta situationer och planerade projekt för både privatpersoner och företag.",
   openGraph: {
     title: "jour365",
+    description:
+      "jour365: Rör- och elservice dygnet runt i Stockholm. Expert, certifierade yrkesmän för akuta situationer och planerade projekt för både privatpersoner och företag.",
   },
 };
 
