@@ -25,9 +25,9 @@ export default function Banner() {
             <p className=" my-6 leading-6 max-w-[686px] text-center">
               Behöver snabb hjälp av rörmokare eller elektriker i Stockholm?
               Jour365 finns tillgänglig dygnet runt! Vi erbjuder tillförlitliga
-              jourtjänster för Jour elektriker, Jour stopp i avlopp, Jour
-              rörmokare, Jour spolbil oach Jour elinstallationer. Våra
-              certifierade proffs garanterar högkvalitativ service varje gång.
+              jourtjänster för elektriker, stopp i avlopp, rörmokare, spolbil
+              och elinstallationer. Våra certifierade proffs garanterar
+              högkvalitativ service varje gång.
             </p>
 
             <div className="flex flex-col md:flex-row gap-4">
