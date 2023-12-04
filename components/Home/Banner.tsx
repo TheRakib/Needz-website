@@ -23,11 +23,11 @@ export default function Banner() {
               Jourtjänster tillgängliga i hela Stockholm, dygnet runt!
             </h2>
             <p className=" my-6 leading-6 max-w-[686px] text-center">
-              Behöver du snabb hjälp av rörmokare eller elektriker i Stockholm?
-              Jour365 är tillgängliga dygnet runt! Vi erbjuder pålitliga
-              jourtjänster för VVS och el, samt planerade arbeten för alla typer
-              av kunder. Våra certifierade proffs garanterar högklassig service
-              varje gång.
+              Behöver snabb hjälp av rörmokare eller elektriker i Stockholm?
+              Jour365 finns tillgänglig dygnet runt! Vi erbjuder tillförlitliga
+              jourtjänster för Jour elektriker, Jour stopp i avlopp, Jour
+              rörmokare, Jour spolbil oach Jour elinstallationer. Våra
+              certifierade proffs garanterar högkvalitativ service varje gång.
             </p>
 
             <div className="flex flex-col md:flex-row gap-4">
