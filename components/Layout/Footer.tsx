@@ -98,6 +98,6 @@ const contactInfo: ContactInfo[] = [
   {
     id: 3,
     title: "Kontakt Info",
-    items: ["jour365", "Ring: 08-30 22 41", "Email: Order@jour365.se"],
+    items: ["jour365", "Ring: 08-30 22 41", "Email: order@jour365.se"],
   },
 ];

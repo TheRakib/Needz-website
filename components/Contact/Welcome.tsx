@@ -116,7 +116,8 @@ export default function Welcome() {
             </p>
           </a>
           <a
-            href="mailto:order@joure365.se"
+            href="mailto:order@jour365.se"
+            target="_blank"
             className="flex items-center gap-4"
           >
             <span className="p-2 rounded-lg bg-primary text-white">
@@ -124,7 +125,7 @@ export default function Welcome() {
             </span>
             <p className="flex flex-col gap-1">
               <span className="text-[14px] text-black/70 ">Email Us</span>
-              <span className=" ">order@joure365.se</span>
+              <span className=" ">order@jour365.se</span>
             </p>
           </a>
         </div>
