@@ -22,9 +22,9 @@ export default function BlogCard({ item }: { item: Post }) {
           <h3 className="font-semibold text-[20px] md:text-[24px] ">
             {item.title}
           </h3>
-          <p className="text-black/70 text-[14px] md:text-[16px] ">
+          {/* <p className="text-black/70 text-[14px] md:text-[16px] ">
             {item.author.name} - {formatDate(item._createdAt)}
-          </p>
+          </p> */}
         </div>
         <div className="flex gap-4">
           <Link
