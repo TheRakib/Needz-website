@@ -12,9 +12,13 @@ import MenuItem from "@mui/material/MenuItem";
 import AppLogo from "../Shared/AppLogo";
 import { twMerge } from "tailwind-merge";
 import { BiPhoneCall } from "react-icons/bi";
-import { Select } from "@mui/material";
+import { AccordionDetails, AccordionSummary, Select } from "@mui/material";
+import MuiAccordion, { AccordionProps } from "@mui/material/Accordion";
 import { services } from "@/Constants";
 import { usePathname, useRouter } from "next/navigation";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import styled from "styled-components";
+import { FaArrowRight } from "react-icons/fa6";
 
 const pages = [
   {
@@ -44,6 +48,16 @@ const pages = [
     link: "/about-us",
   },
 ];
+const Accordion = styled((props: AccordionProps) => (
+  <MuiAccordion disableGutters elevation={0} square {...props} />
+))(({ theme }) => ({
+  "&:not(:last-child)": {
+    borderBottom: 0,
+  },
+  "&:before": {
+    display: "none",
+  },
+}));
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -190,17 +204,46 @@ function Navbar() {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
+                width: 300,
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.id} onClick={handleCloseNavMenu}>
-                  <Typography
-                    textAlign="center"
-                    onClick={() => router.push(page.link)}
-                  >
-                    {page.title}
-                  </Typography>
-                </MenuItem>
+                <>
+                  {page.link === "services/electrician" ? (
+                    <Accordion>
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                      >
+                        <Typography>{page.title}</Typography>
+                      </AccordionSummary>
+                      <AccordionDetails className="py-0">
+                        {services.map((service) => (
+                          <Typography
+                            key={service.id}
+                            className="my-3 w-[200px] flex items-center gap-3 ml-3"
+                            onClick={() => {
+                              handleCloseNavMenu();
+                              router.push(service.link);
+                            }}
+                          >
+                            <FaArrowRight className="text-sm" /> {service.title}
+                          </Typography>
+                        ))}
+                      </AccordionDetails>
+                    </Accordion>
+                  ) : (
+                    <MenuItem key={page.id} onClick={handleCloseNavMenu}>
+                      <Typography
+                        textAlign="center"
+                        onClick={() => router.push(page.link)}
+                      >
+                        {page.title}
+                      </Typography>
+                    </MenuItem>
+                  )}
+                </>
               ))}
               <div className="border-t border-black/80 mt-4">
                 {actionButtons("flex-col mx-2")}
