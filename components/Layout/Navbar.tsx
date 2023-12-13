@@ -30,7 +30,7 @@ const pages = [
   {
     id: 2,
     title: "Jour  Tjänster",
-    link: "services/electrician",
+    link: "/services",
   },
   {
     id: 3,
@@ -209,7 +209,7 @@ function Navbar() {
             >
               {pages.map((page) => (
                 <>
-                  {page.link === "services/electrician" ? (
+                  {page.link === "/services" ? (
                     <Accordion>
                       <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
