@@ -26,7 +26,7 @@ const pages = [
   {
     id: 2,
     title: "Jour  Tjänster",
-    link: "/services",
+    link: "services/electrician",
   },
   {
     id: 3,
@@ -196,7 +196,7 @@ function Navbar() {
                 <MenuItem key={page.id} onClick={handleCloseNavMenu}>
                   <Typography
                     textAlign="center"
-                    onClick={() => router.push(`/`)}
+                    onClick={() => router.push(page.link)}
                   >
                     {page.title}
                   </Typography>
