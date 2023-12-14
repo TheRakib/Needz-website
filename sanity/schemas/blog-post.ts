@@ -15,6 +15,11 @@ const blogPost = {
       options: { source: "title" },
     },
     {
+      name: "metaDescription",
+      title: "Meta Description",
+      type: "string",
+    },
+    {
       name: "author",
       title: "Author",
       type: "reference",

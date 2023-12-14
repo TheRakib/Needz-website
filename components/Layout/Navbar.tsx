@@ -210,7 +210,7 @@ function Navbar() {
               {pages.map((page) => (
                 <>
                   {page.link === "/services" ? (
-                    <Accordion>
+                    <Accordion key={page.id}>
                       <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1a-content"

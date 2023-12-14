@@ -16,6 +16,7 @@ export type Post = {
   };
   title: string;
   slug: string;
+  metaDescription: string;
   bannerImg: string;
 
   mainText: PortableTextBlock[];
