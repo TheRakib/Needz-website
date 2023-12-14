@@ -48,6 +48,7 @@ export async function getPost(slug: string): Promise<Post | null> {
       _createdAt,
       title,
       "slug": slug.current,
+      metaDescription,
       "bannerImg": bannerImg.asset->url,
 
       mainText,

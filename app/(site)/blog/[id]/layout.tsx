@@ -1,3 +1,4 @@
+import { getPost } from "@/sanity/sanity-utils";
 import { Metadata, ResolvingMetadata } from "next";
 import React from "react";
 
@@ -11,9 +12,11 @@ export async function generateMetadata(
   const id = params.id;
 
   const parentMetadata = await parent;
+  const post = await getPost(params.id as string);
 
   return {
     title: `${parentMetadata.title?.absolute} - ${id}`,
+    description: `${post?.metaDescription}`,
   };
 }
 

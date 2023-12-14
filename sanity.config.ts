@@ -6,7 +6,7 @@ import { schemas } from "./sanity/schemas/schemas";
 const config = defineConfig({
   projectId: "mjxpl4qi",
   dataset: "production",
-  title: "My Personal Website",
+  title: "Jour365 Backend",
   apiVersion: "2023-03-09",
   basePath: "/admin",
   plugins: [deskTool(), visionTool()],

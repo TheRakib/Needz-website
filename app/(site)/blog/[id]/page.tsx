@@ -25,8 +25,8 @@ export default function Page() {
     };
 
     fetchAndSetPost();
-    // console.log("post", blog);
   }, [param]);
+  // console.log("post", blog);
 
   return (
     <>
