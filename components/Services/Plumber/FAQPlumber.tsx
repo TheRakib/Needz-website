@@ -23,9 +23,9 @@ const faqItems = [
   },
   {
     id: 2,
-    title: "Finns det någon skillnad mellan en rörmokare och en VVS-tekniker?",
+    title: "Hur vet jag att de rörmokare jag anlitar är certifierade?",
     description:
-      "Ja, det finns en viss skillnad. En rörmokare fokuserar främst på att installera och reparera rör och avloppssystem, medan en VVS-tekniker (Värme, Ventilation och Sanitet) har ett bredare ansvarsområde som inkluderar värmesystem och ventilation. Båda yrkena kräver expertis inom VVS-området, och vi på jour365 har specialister som kan hantera olika behov.",
+      "Du har som kund själv ansvar för att se till att det företag du anlitar är certifierade och har en aktuell branschlegitimation. Alla VVS-entreprenader och VVS-företag vi på Jour Eliten jobbar med har självklart rätt certifikat och branschlegitimation samt flera års erfarenhet. Vi jobbar ständigt med att hålla oss uppdaterade och väl informerade om ändringar och uppdateringar i branschen.",
   },
   {
     id: 3,
@@ -35,8 +35,8 @@ const faqItems = [
   },
   {
     id: 4,
-    title: "Hur vet jag att de rörmokare jag anlitar är certifierade?",
+    title: "Är det någon skillnad mellan VVS och rörmokare?",
     description:
-      "Det är viktigt att säkerställa att de rörmokare du anlitar är certifierade och kvalificerade. Vid jour365 arbetar våra rörmokare under noga övervakning och är certifierade inom VVS-branschen. Du kan också begära att se deras certifikat eller licenser för att bekräfta deras legitimitet. Vi strävar alltid efter att tillhandahålla pålitliga och professionella rörmokartjänster, och vår certifiering är ett tecken på vårt åtagande för högsta standard.",
+      "Enligt lag måste det vara en certifierad rörmokare som drar om rör eller ändrar system. Det finns dock en del VVS-arbeten man kan utföra själv. Det är dock viktigt att man besitter den nödvändiga kunskapen som krävs för att utföra jobbet på ett säkert och korrekt sätt. Inte bara för att arbetet ska hålla måttet men också för att de flesta försäkringsbolag inte täcker olyckor som uppstått efter eget arbete.",
   },
 ];

@@ -112,7 +112,7 @@ export default function RootLayout({
 
 // -------------- tags:
 // jour365
-// Jourtjänster Stockholm
+// Jour el, Jour spol, Jour rörmokare Stockholm
 // Dygnet runt VVS Stockholm
 // Akut elektriker Stockholm
 // Certifierade rörmokare Stockholm
@@ -127,7 +127,7 @@ export default function RootLayout({
 // Nödtjänster elektriker
 // Omedelbar hjälp VVS
 // Akut hjälp elektricitet
-// Professionella jourtjänster
+// Professionella Jour el, Jour spol, Jour rörmokare
 // Pålitliga akut tjänster
 // 24/7 VVS och elektriker
 // Jourhjälp för hemmet
@@ -143,7 +143,7 @@ export default function RootLayout({
 // Nödtjänster elektriker
 // Omedelbar hjälp VVS
 // Akut hjälp elektricitet
-// Professionella jourtjänster
+// Professionella Jour el, Jour spol, Jour rörmokare
 // Pålitliga akut tjänster
 // 24/7 VVS och elektriker
 // Jourhjälp för hemmet
@@ -152,7 +152,7 @@ export default function RootLayout({
 // Säkerhetskontroll jour
 // Snabbinsats elektriker och rörmokare
 // jour365
-// Jourtjänster Stockholm
+// Jour el, Jour spol, Jour rörmokare Stockholm
 // Dygnet runt VVS Stockholm
 // Akut elektriker Stockholm
 // Certifierade rörmokare Stockholm
@@ -172,7 +172,7 @@ export default function RootLayout({
 // VVS-expertis
 // Fast pris rörmokare
 // Rörreparation och installation
-// Jourtjänster i hela Sverige
+// Jour el, Jour spol, Jour rörmokare i hela Sverige
 // VVS-felsökning
 // Råd om små VVS-problem
 // Kvalificerade VVS-specialister

@@ -25,7 +25,7 @@ export default function UserCard() {
         className="bg-white capitalize rounded-2xl text-primary hover:bg-transparent hover:text-white hover:border-white text-[20px] md:text-[20px] lg:text-[20px] py-5 px-11 md:px-3 xl:px-11 flex gap-2"
         variant="outlined"
       >
-        <a href="tel:08302241">
+        <a href="tel:08302241" className="flex gap-2 items-center">
           <FiPhoneCall />
           <span className="md:tracking-tighter xl:tracking-normal tracking-tight">
             Ring: 08-302241

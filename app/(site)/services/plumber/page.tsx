@@ -11,7 +11,7 @@ export default function page() {
     <div>
       <ServicesBanner
         title="Rörmokare över hela Stockholm"
-        breadcrumb="Rörmakare sida"
+        breadcrumb="rörmokare sida"
         img="/services/plumber.png"
       />
 
