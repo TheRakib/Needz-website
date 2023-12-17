@@ -22,11 +22,11 @@ export default function PlumberServices() {
             className="max-w-[1000px] mx-auto tracking-tighter !leading-[54px] "
           />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px] mt-[50px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px] mt-[50px] mx-auto">
           {serviceCardItems.map((item) => (
             <div
               key={item.id}
-              className="col-span-1 min-h-[368px] max-w-[300px] min-w-[300px] lg:min-w-full mx-auto flex flex-col justify-between p-[30px] bg-white text-black rounded-xl"
+              className="col-span-1 min-h-[368px] max-w-[287px] min-w-[300px] mx-auto flex flex-col justify-between p-[30px] bg-white text-black rounded-xl"
             >
               <div className="flex flex-col gap-4">
                 <div className="flex">
@@ -54,10 +54,13 @@ export default function PlumberServices() {
               </div>
             </div>
           ))}
-          <div className="col-span-1 min-h-[368px] flex flex-col items-center justify-center p-[30px] text-white rounded-xl text-[30px] ">
-            <p className="text-center">Call now</p>
-            <p className="font-semibold text-center">08-302241</p>
-          </div>
+          <a
+            href="tel:08302241"
+            className="col-span-1 min-h-[368px] flex flex-col items-center justify-center p-[30px] text-white rounded-xl text-[30px] "
+          >
+            <span className="text-center">Ring:</span>
+            <span className="font-semibold text-center">08-302241</span>
+          </a>
         </div>
       </div>
     </div>
@@ -65,12 +68,19 @@ export default function PlumberServices() {
 }
 
 const serviceCardItems = [
+  // {
+  //   id: 1,
+  //   title: "vattenvärmaren",
+  //   img: "/home/services/plumber/icon1.svg",
+  //   description:
+  //     "Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig. Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
+  // },
   {
     id: 1,
-    title: "vattenvärmaren",
+    title: "Jour Elektriker",
     img: "/home/services/plumber/icon1.svg",
     description:
-      "Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig. Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
+      "Behöver du akut hjälp med dina elektriska installationer? Våra certifierade elektriker finns tillgängliga dygnet runt för att hantera alla typer av elrelaterade nödsituationer. Snabb service och professionell hantering av alla typer av elproblem garanteras.",
   },
   {
     id: 2,
@@ -109,9 +119,16 @@ const serviceCardItems = [
   },
   {
     id: 6,
-    title: "Renoveringar och nybyggnation",
+    title: "VVS Service",
     img: "/home/services/plumber/icon7.svg",
     description:
-      "Vi hjälper dig att planera för byte av allt från blandare till nya rör. När du renoverar alla typer av utrymmen med vatten och. Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
+      "Vi erbjuder ett brett utbud av VVS-tjänster för alla dina behov. Vårt team av kvalificerade rörmokare är utrustade med de senaste verktygen för att hantera installation, underhåll och reparationer effektivt och professionellt. Inget jobb är för stort eller för litet för oss.",
   },
+  // {
+  //   id: 6,
+  //   title: "Renoveringar och nybyggnation",
+  //   img: "/home/services/plumber/icon7.svg",
+  //   description:
+  //     "Vi hjälper dig att planera för byte av allt från blandare till nya rör. När du renoverar alla typer av utrymmen med vatten och. Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
+  // },
 ];

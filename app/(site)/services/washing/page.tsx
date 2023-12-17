@@ -11,7 +11,7 @@ export default function page() {
   return (
     <div>
       <ServicesBanner
-        title="Beställ en biltvätt - vi kör över hela Stockholm"
+        title="Beställ vår tjänst - vi kör över hela Stockholm"
         breadcrumb="Tvättmaskinssida"
         img="/services/washing-machine.png"
         titleClass="!text-center max-w-[763px]"

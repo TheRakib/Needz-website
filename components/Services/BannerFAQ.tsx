@@ -41,7 +41,7 @@ const faqItems = [
     id: 1,
     title: "Vad kostar en elektriker?",
     description:
-      "Akuta elfel kan inträffa vid obekväma tider. Om en olycka inträffar på kvällen, natten eller under helgen när många företag är stängda kan kostnaden för att få en jour elektriker att komma ut vara högre än normalt. Priset för jourtjänster kan variera beroende på olika faktorer. Det bästa är att kontakta vår jourtelefon på 08–302241, som är öppen dygnet runt, så att vi kan få mer information om din specifika situation.",
+      "Akuta elfel kan inträffa vid obekväma tider. Om en olycka inträffar på kvällen, natten eller under helgen när många företag är stängda kan kostnaden för att få en jour elektriker att komma ut vara högre än normalt. Priset för Jour el, Jour spol, Jour rörmokare kan variera beroende på olika faktorer. Det bästa är att kontakta vår jourtelefon på 08–302241, som är öppen dygnet runt, så att vi kan få mer information om din specifika situation.",
   },
   {
     id: 2,

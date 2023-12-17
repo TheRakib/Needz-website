@@ -54,5 +54,5 @@ const detailsProps = {
   title2: "Pålitliga elektriska installatörer i Stockholm",
   description2Limit: 52,
   description2:
-    "Har du funderat på att installera solceller? Eller har jordfelsbrytaren plötsligt löst ut och nu är maten i frysen på väg att bli dålig? Oavsett vad ditt problem är, kan du lita på att våra elektriker är välkvalificerade för jobbet, och vi finns tillgängliga dygnet runt för konsultation. Har jordfelsbrytaren plötsligt löst ut och nu är maten i frysen på väg att bli dålig? Oavsett vad ditt problem är. ",
+    "Har jordfelsbrytaren plötsligt löst ut och nu är maten i frysen på väg att bli dålig? Oavsett vilket elrelaterat problem du står inför, kan du lita på att våra elektriker är välkvalificerade för jobbet. Vi finns tillgängliga dygnet runt för konsultation och hjälp med dina elbehov. ",
 };

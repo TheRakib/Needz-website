@@ -83,10 +83,6 @@ const serviceItems = [
   },
   {
     id: 10,
-    text: "Montera solceller",
-  },
-  {
-    id: 11,
     text: "Laddningsstolpar",
   },
 ];

@@ -44,7 +44,7 @@ export default function OnCall() {
             </div>
             <div className="flex flex-col gap-0">
               <p className="text-[44px] font-semibold">4.8</p>
-              <p className="text-black/70 text-center">Kundomdöme</p>
+              {/* <p className="text-black/70 text-center">Kundomdöme</p> */}
             </div>
           </div>
           <p className="text-[26px] font-semibold text-center">
