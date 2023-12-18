@@ -37,7 +37,7 @@ export default function OurServices() {
             onMouseOver={() => handleMouseOver(item.id)}
             onMouseOut={handleMouseOut}
             onClick={() => handleCartClick(item)}
-            className="mx-auto w-[365px] md:w-[370px] h-[414px] relative overflow-hidden cursor-pointer"
+            className="ml-auto mr-auto lg:ml-0 lg:mr-0 w-[365px] md:w-[370px] h-[414px] relative overflow-hidden cursor-pointer"
           >
             <Image src={item.img} alt="Our services" fill />
             <div
