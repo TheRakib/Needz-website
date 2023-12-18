@@ -1,15 +1,37 @@
+"use client";
 import SecondTitle from "@/components/Shared/SecondTitle";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+
+type ServiceCardItem = {
+  id: number;
+  title: string;
+  img: string;
+  description: string;
+};
 
 const TEXT_LENGTH = 140;
 export default function PlumberServices() {
-  const truncateDescription = (description: string) => {
-    const maxLength = TEXT_LENGTH;
-    return description.length > maxLength
-      ? description.slice(0, maxLength) + "..."
-      : description;
+  const [expandedDescriptionId, setExpandedDescriptionId] = useState<
+    number | null
+  >(null);
+
+  const toggleDescription = (id: number) => {
+    if (expandedDescriptionId === id) {
+      setExpandedDescriptionId(null);
+    } else {
+      setExpandedDescriptionId(id);
+    }
   };
+
+  const renderDescription = (item: ServiceCardItem) => {
+    const isExpanded = expandedDescriptionId === item.id;
+    return isExpanded
+      ? item.description
+      : item.description.slice(0, TEXT_LENGTH) +
+          (item.description.length > TEXT_LENGTH ? "..." : "");
+  };
+
   return (
     <div className="max-w-maxLayout bg-primary text-white py-[90px] my-[120px] mx-auto px-2">
       <div className="max-w-layout mx-auto">
@@ -44,13 +66,18 @@ export default function PlumberServices() {
               </div>
               <div className="flex flex-col">
                 <p className="text-black/70 max-w-[217px]">
-                  {truncateDescription(item.description)}{" "}
-                  {item.description.length > TEXT_LENGTH && (
-                    <span className="text-primary underline whitespace-nowrap">
-                      Läs mer
-                    </span>
-                  )}
+                  {renderDescription(item)}
                 </p>
+                {item.description.length > TEXT_LENGTH && (
+                  <span
+                    className="text-primary underline whitespace-nowrap cursor-pointer"
+                    onClick={() => toggleDescription(item.id)}
+                  >
+                    {expandedDescriptionId === item.id
+                      ? "Visa mindre"
+                      : "Läs mer"}
+                  </span>
+                )}
               </div>
             </div>
           ))}
@@ -68,13 +95,6 @@ export default function PlumberServices() {
 }
 
 const serviceCardItems = [
-  // {
-  //   id: 1,
-  //   title: "vattenvärmaren",
-  //   img: "/home/services/plumber/icon1.svg",
-  //   description:
-  //     "Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig. Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
-  // },
   {
     id: 1,
     title: "Jour Elektriker",
@@ -97,28 +117,28 @@ const serviceCardItems = [
       "Är alla dina radiatorer kalla? Eller fungerar de felfritt i vissa rum men inte alls i andra? Då behöver du en VVS-tekniker! Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
   },
   {
-    id: 3,
-    title: "Ventilation",
+    id: 4,
+    title: "Stopp i Avlopp",
     img: "/home/services/plumber/icon4.svg",
     description:
-      "Visste du att det är en rörmokare som fixar ventilationen? Den korrekta termen för VVS-tekniker betyder faktiskt uppvärmning. Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
+      "Upplever du problem med stopp i dina avlopp? Våra erfarna rörmokare är experter på att snabbt identifiera och åtgärda stopp i avloppsrör, vilket säkerställer en smidig och effektiv lösning. Vi använder avancerad teknik för att diagnostisera och rensa blockeringar utan att skada dina rör.",
   },
   {
-    id: 4,
+    id: 5,
     title: "Rörservice",
     img: "/home/services/plumber/icon5.svg",
     description:
       "Underhåll eller reparationer av rören? Inget jobb är för litet eller för stort för oss. Vi erbjuder också service- och underhållsavtal för bostäder. Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
   },
   {
-    id: 5,
+    id: 6,
     title: "Planering",
     img: "/home/services/plumber/icon6.svg",
     description:
       "Har du planer på att installera nya rör? Behöver du uppgradera ditt värmesystem eller dra ett avlopp till din nya vind? Vi hjälper dig från start till mål! Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
   },
   {
-    id: 6,
+    id: 7,
     title: "VVS Service",
     img: "/home/services/plumber/icon7.svg",
     description:

@@ -75,7 +75,7 @@ const joinContents = [
   },
   {
     id: 3,
-    title: "Betalningsalternativ - eller faktura",
+    title: "Nöjda kunder och betalning.",
     img: "/home/join/icon1.png",
     hexagonClass: "top-[45%] -right-5",
     hexagonColor: " bg-yellow after:border-t-yellow before:border-b-yellow",
