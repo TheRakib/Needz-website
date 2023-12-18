@@ -23,14 +23,14 @@ export const services = [
     description:
       "Vår jour rörmokare har expertis inom VVS-system och kan hjälpa dig med allt från vattenläckor och avloppsproblem till reparation och underhåll av VVS-installationer. Vi finns här för att snabbt lösa dina VVS-utmaningar och säkerställa att ditt hem eller företag har fungerande VVS när du behöver det som mest.",
   },
-  {
-    id: 4,
-    title: "Jour spolbil",
-    link: "/services/washing",
-    img: "/home/services/Image4.png",
-    description:
-      "Vår jour spolbil är utrustad med avancerad utrustning för att spola och rengöra avloppssystem, avlägsna blockeringar och utföra underhållsarbete. Oavsett om du behöver akut rengöring av avlopp eller regelbunden service, är vår jour spolbil redo att hjälpa dig.",
-  },
+  // {
+  //   id: 4,
+  //   title: "Jour spolbil",
+  //   link: "/services/washing",
+  //   img: "/home/services/Image4.png",
+  //   description:
+  //     "Vår jour spolbil är utrustad med avancerad utrustning för att spola och rengöra avloppssystem, avlägsna blockeringar och utföra underhållsarbete. Oavsett om du behöver akut rengöring av avlopp eller regelbunden service, är vår jour spolbil redo att hjälpa dig.",
+  // },
   {
     id: 5,
     title: "Jour elinstallationer",
