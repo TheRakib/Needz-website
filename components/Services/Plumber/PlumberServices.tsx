@@ -144,11 +144,4 @@ const serviceCardItems = [
     description:
       "Vi erbjuder ett brett utbud av VVS-tjänster för alla dina behov. Vårt team av kvalificerade rörmokare är utrustade med de senaste verktygen för att hantera installation, underhåll och reparationer effektivt och professionellt. Inget jobb är för stort eller för litet för oss.",
   },
-  // {
-  //   id: 6,
-  //   title: "Renoveringar och nybyggnation",
-  //   img: "/home/services/plumber/icon7.svg",
-  //   description:
-  //     "Vi hjälper dig att planera för byte av allt från blandare till nya rör. När du renoverar alla typer av utrymmen med vatten och. Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
-  // },
 ];
