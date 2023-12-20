@@ -6,7 +6,7 @@ export default function FAQPlumber() {
     <div className="my-[120px]">
       <FAQ
         faqItems={faqItems}
-        title="FAQ - Plumbers"
+        title="FAQ - Rörmokare"
         variant="services"
         titleClass="mb-1 !text-center"
       />

@@ -51,7 +51,7 @@ const faqItems = [
     id: 2,
     title: "Finns det något sätt att kontakta er?",
     description:
-      "Ja, det finns flera sätt att kontakta oss. Du kan ringa oss på [telefonnummer], skicka ett e-postmeddelande till [e-postadress], eller fylla i vårt kontaktformulär på vår webbplats.",
+      "Ja, det finns flera sätt att kontakta oss. Du kan ringa oss på 08-302241, skicka ett e-postmeddelande till order@jour365.se, eller fylla i vårt kontaktformulär på vår webbplats.",
   },
   {
     id: 3,

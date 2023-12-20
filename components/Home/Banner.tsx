@@ -20,8 +20,8 @@ export default function Banner() {
         <div className="max-w-layout mx-auto text-white h-full ">
           <div className="col-span-1 flex flex-col justify-center h-full items-center">
             <h2 className=" text-[36px] md:text-title font-bold text-center">
-              Jour el, Jour spol, Jour rörmokare tillgängliga i hela Stockholm,
-              dygnet runt!
+              Jour el, spol, rörmokare tillgängliga i hela Stockholm, dygnet
+              runt!
             </h2>
             <p className=" my-6 leading-6 max-w-[686px] text-center">
               Behöver snabb hjälp av rörmokare eller elektriker i Stockholm?
