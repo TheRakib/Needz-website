@@ -8,9 +8,10 @@ export default function OnCall() {
       <div className="flex flex-col gap-5">
         <SecondTitle title="JOUR I HELA STOCKHOLM, DYGNET RUNT!" />
         <p className="lg:text-[18px] text-black/70 max-w-[980px] ">
-          jour365 erbjuder VVS och EL jour i Stockholm 24 timmar om dygnet, men
-          vi utför även planerade arbeten för privatpersoner och företag. Vi
-          använder oss av erfarna och certifierade rörmokare och elektriker.
+          jour365 erbjuder spol, VVS och EL jour i Stockholm 24 timmar om
+          dygnet, men vi utför även planerade arbeten för privatpersoner och
+          företag. Vi använder oss av erfarna och certifierade rörmokare och
+          elektriker.
         </p>
       </div>
       <div className="flex gap-10 flex-col lg:flex-row">
