@@ -17,28 +17,48 @@ export default function LocalElectrician() {
           </p>
           <div className="flex flex-col gap-7 mt-auto">
             <Button
-              className="w-[320px] md:w-[383px] h-[92px] capitalize text-[20px] md:text-[26px] border-2 rounded-lg "
+              className="p-0 m-0 w-[320px] md:w-[383px] h-[92px] border-0 hover:border-0"
               variant="outlined"
             >
-              Elektriker Bromma
+              <a
+                className="w-full h-full flex items-center justify-center capitalize text-[20px] md:text-[26px] border-2 border-primary/60 rounded-lg "
+                href="tel:08302241"
+              >
+                Elektriker Bromma
+              </a>
             </Button>
             <Button
-              className="w-[320px] md:w-[383px] h-[92px] capitalize text-[20px] md:text-[26px] border-2 rounded-lg "
+              className="p-0 m-0 w-[320px] md:w-[383px] h-[92px] border-0 hover:border-0"
               variant="outlined"
             >
-              Elektriker Järva
+              <a
+                className="w-full h-full flex items-center justify-center capitalize text-[20px] md:text-[26px] border-2 border-primary/60 rounded-lg "
+                href="tel:08302241"
+              >
+                Elektriker Järva
+              </a>
             </Button>
             <Button
-              className="w-[320px] md:w-[383px] h-[92px] capitalize text-[20px] md:text-[26px] border-2 rounded-lg "
+              className="p-0 m-0 w-[320px] md:w-[383px] h-[92px] border-0 hover:border-0"
               variant="outlined"
             >
-              Elektriker Älvsjö
+              <a
+                className="w-full h-full flex items-center justify-center capitalize text-[20px] md:text-[26px] border-2 border-primary/60 rounded-lg "
+                href="tel:08302241"
+              >
+                Elektriker Älvsjö
+              </a>
             </Button>
             <Button
-              className="w-[320px] md:w-[383px] h-[92px] capitalize text-[20px] md:text-[26px] border-2 rounded-lg "
+              className="p-0 m-0 w-[320px] md:w-[383px] h-[92px] border-0 hover:border-0"
               variant="outlined"
             >
-              Elektriker Kungsholmen
+              <a
+                className="w-full h-full flex items-center justify-center capitalize text-[20px] md:text-[26px] border-2 border-primary/60 rounded-lg "
+                href="tel:08302241"
+              >
+                Elektriker Kungsholmen
+              </a>
             </Button>
           </div>
         </div>
