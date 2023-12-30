@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jour365.se
+
+# Sitemaps
+Sitemap: https://jour365.se/sitemap.xml

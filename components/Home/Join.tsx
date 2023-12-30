@@ -12,7 +12,7 @@ export default function Join() {
           jour365
         </h2>
         <SectionTitle
-          title="Hur det fungerar"
+          title="Hur det fungerar!"
           className="text-center uppercase"
         />
       </div>
@@ -60,14 +60,16 @@ export default function Join() {
 const joinContents = [
   {
     id: 1,
-    title: "Vi finns här för att hjälpa, dygnet runt - ring eller boka online!",
+    title:
+      "Ring in till oss så fort du har problem, stora eller små! Vår växel är öppen dygnet runt.",
     img: "/home/join/icon3.png",
     hexagonClass: "top-[45%] -right-5",
     hexagonColor: " bg-primary after:border-t-primary before:border-b-primary",
   },
   {
     id: 2,
-    title: "Certifierade tekniker till din dörr på 1 timme eller mindre!",
+    title:
+      " Vår mötesbokare hjälper dig att få ut en tekniker som kan hjälp till med just ditt problem",
     img: "/home/join/icon2.png",
     hexagonClass: "top-[10%] -right-5",
     hexagonColor:
@@ -75,7 +77,8 @@ const joinContents = [
   },
   {
     id: 3,
-    title: "Nöjda kunder och betalning.",
+    title:
+      "När beställningen är klar är teknikern på plats hos dig inom 2 timmar!",
     img: "/home/join/icon1.png",
     hexagonClass: "top-[45%] -right-5",
     hexagonColor: " bg-yellow after:border-t-yellow before:border-b-yellow",

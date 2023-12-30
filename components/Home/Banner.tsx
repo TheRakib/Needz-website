@@ -20,15 +20,15 @@ export default function Banner() {
         <div className="max-w-layout mx-auto text-white h-full ">
           <div className="col-span-1 flex flex-col justify-center h-full items-center">
             <h2 className=" text-[36px] md:text-title font-bold text-center">
-              Jour el, spol, rörmokare tillgängliga i hela Stockholm, dygnet
-              runt!
+              Jour El, VVS och spol tillgänliga i hela stockholm dygnet runt!
             </h2>
             <p className=" my-6 leading-6 max-w-[686px] text-center">
-              Behöver snabb hjälp av rörmokare eller elektriker i Stockholm?
-              Jour365 finns tillgänglig dygnet runt! Vi erbjuder tillförlitliga
-              Jour el, Jour spol, Jour rörmokare för elektriker, stopp i avlopp,
-              rörmokare, spolbil och elinstallationer. Våra certifierade proffs
-              garanterar högkvalitativ service varje gång.
+              Behöver du snabb hjälp inom VVS eller El i Stockholm? Jour365 är
+              tillgängliga dygnet runt i hela stor-stockholm! Vi har pålitliga,
+              jourhavande tekniker inom el, vvs och spol. Alla våra tekniker är
+              certifierade och erfarna inom sitt område. På Jour 365 sätter vi
+              alltid kunden i fokus strävar efter att leverera högkvalitativ
+              service varje gång!
             </p>
 
             <div className="flex flex-col md:flex-row gap-4">
