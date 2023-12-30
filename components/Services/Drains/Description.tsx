@@ -11,11 +11,11 @@ export default function Description() {
 const detailsProps = {
   description: {
     para1:
-      "Om du har ett stopp i avloppet, kontakta oss. Oavsett om ditt avlopp är igensatt på grund av matrester, fett som blivit kvar i vasken, eller ett plastföremål som fastnat i toalettsitsen, kommer våra tekniker att hjälpa dig.",
-    para2: `Alla avlopp behöver spolas rena från rester och fett minst vart femte år för att bibehålla ett bra vattenflöde`,
+      "Har du problem med stopp i avloppet? Kontakta oss så hjälper vi dig! Det finns månfa orsaker till stopp i avlopp. Det kan bl.a vara matrester, fett, föremål som fastnat och mycket mer. Oavsett vad som orsakat ditt stopp så har vi skickliga tekniker som hjälper dig att bli kvitt stoppet och ser till så att avloppet fungerar som det ska igen.",
+    para2: ` Vi hjälper även till med underhållsspolning, vilket vi rekommenderar att man gör ca var 4e-5e år. Ring oss så berättar vi mer!.`,
   },
-  title2: "Avloppsrengöring",
+  title2: "Avloppsrensning",
   description2Limit: 47,
   description2:
-    "Ett varningstecken på att avloppet behöver rengöras är att vattnet börjar rinna långsamt eller att ett gurglande ljud hörs i avloppet. En dålig lukt från badrummet kan också vara ett tecken på att en blockering har inträffat i avloppet. Samma dåliga lukt kan även indikera att det är dags att rengöra avloppet för att förhindra ytterligare problem.",
+    "Tecken på att det börjar bli dags för avloppsrensning är t.ex; (PUNKTFORM) -Vattnet börjar ringa långsamt -Gurglande ljud i avloppet - Dålig lukt i avloppet. Dessa är vanliga tecken på att det börjar bli stopp i avloppet och  avloppet. Det är därför bra att hå",
 };

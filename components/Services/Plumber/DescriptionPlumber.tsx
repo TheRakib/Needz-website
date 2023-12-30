@@ -10,18 +10,18 @@ export default function DescriptionPlumber() {
           <TextTitle title="Beskrivning" />
           <div className="flex flex-col gap-6 mt-5 text-black/70">
             <p className="">
-              Alla våra rörmokare är certifierade. De har erfarenhet och kunskap
-              och kan hjälpa dig med alla typer av VVS-system, både i hemmet och
-              för företag.
+              Vi har ett flertal rörmokare inom stockholmsområdet som alla
+              innehar säkert vatten. De harlång erfarenhet och bred kunskap inom
+              flera olika typer av ärenden. Vi på Jour365 hjälper dig med allt
+              från service av befintliga installationer till nya installationer.
             </p>
             <p className="">
-              Vi på Jour365 hjälper dig med allt från service eller
-              småreparationer till installation av helt nya system.
+              För oss är alltid kunden i fokus och därför ser vi alltid till att
+              leverera med både bra service och kvalité.
             </p>
             <p className="">
-              Alla våra rörmokare har bred kompetens, omfattande erfarenhet och
-              samarbetar med dig som kund för bästa möjliga resultat.
-              Tillgängliga i hela Stockholm!
+              Tveka inte på att höra av dig, vi finns tillgängliga i hela
+              stockholm dygnet runt!
             </p>
           </div>
         </div>

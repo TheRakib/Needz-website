@@ -45,19 +45,19 @@ const faqItems = [
     id: 1,
     title: "Hur snabbt är ni där?",
     description:
-      "Vi garanterar hjälp samma dag och strävar efter att vara på plats inom 1 timme från beställning vid adresser i Stockholmsområdet",
+      "Vi garanterar alltid hjälp samma dag och strävar efter att vara på plats inom 2 timmar, oavsett vart i Stockholm du befinner dig.",
   },
   {
     id: 2,
     title: "Finns det något sätt att kontakta er?",
     description:
-      "Ja, det finns flera sätt att kontakta oss. Du kan ringa oss på 08-302241, skicka ett e-postmeddelande till order@jour365.se, eller fylla i vårt kontaktformulär på vår webbplats.",
+      "Ja, det finns flera sätt att kontakta oss. Lättast når du oss på 08 - 30 22 41, vår växel är öppen dygnet runt. För mindre akuta ärenden kan du maila oss på order@jour365.se, eller fylla i vårt kontaktformulär som du hittar här på hemsidan under fliken 'om oss'. Vi besvarar ditt mail så fort vi kan.",
   },
   {
     id: 3,
     title: "Är ni dyrare eftersom ni har jour?",
     description:
-      "Våra jourpriser för rörmokare och elektriker följer standarden som övriga jour-företag i Stockholm tillämpar. Vi utför även planerade arbeten på dagtid till mycket förmånliga priser.",
+      "Vi erbjuder konkurrenskraftiga och marknadsmässiga priser på alla våra tjänster. Ring oss för ett prisförslag i just ditt ärende!",
   },
   {
     id: 4,
@@ -80,12 +80,12 @@ const faqItems = [
   {
     id: 7,
     title: "Har jag rätt till ROT-avdrag?",
-    description: `För att få ROT-avdrag måste du äga din fastighet samt använda den som bostad. Vänligen meddela oss om du önskar rotavdrag vid bokning av jobb. Läs mer på Skatteverket om ROT-avdrag`,
+    description: `För att få ROT-avdrag måste du stå som ägare av fastigheten. Har du frågor kring om ditt ärende innefattas av ROT-avdrag så kan du kontaka oss på 08 - 30 22 41 så hjälper vi dig.`,
   },
   {
     id: 8,
     title: "Måste jag själv ansöka om ROT-avdrag?",
-    description: `Vi som företag ansöker om ROT-avdraget åt kunden efter att betalning av fakturan skett. Om vi får avslag från skatteverket blir kunden betalningsskyldig för ROT-avdraget.`,
+    description: `Vi på Jour 365 tar hand om ansökan av ROT-avdrag så att du som kund kan känna dig trygg och säker på att det blir rätt. `,
   },
 ];
 export default Home;

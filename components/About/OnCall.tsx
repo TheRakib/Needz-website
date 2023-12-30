@@ -6,12 +6,15 @@ export default function OnCall() {
   return (
     <div className="max-w-layout mx-auto flex flex-col gap-[60px] mt-20 mb-[120px] px-2">
       <div className="flex flex-col gap-5">
-        <SecondTitle title="JOUR I HELA STOCKHOLM, DYGNET RUNT!" />
-        <p className="lg:text-[18px] text-black/70 max-w-[980px] ">
-          jour365 erbjuder spol, VVS och EL jour i Stockholm 24 timmar om
-          dygnet, men vi utför även planerade arbeten för privatpersoner och
-          företag. Vi använder oss av erfarna och certifierade rörmokare och
-          elektriker.
+        <SecondTitle
+          title="JOUR I HELA STOCKHOLM, DYGNET RUNT!"
+          className="!text-center"
+        />
+        <p className="lg:text-[18px] text-black/70 max-w-[980px] text-center mx-auto ">
+          Jour365 erbjuder Spol, VVS och El jour i hela stockholm, 24 timmar om
+          dygnet 365 dagar om året. Vi utför också planerade arbeten för både
+          privat personer och företag. Oavsett vilken typ av jobb du behöver så
+          har vi kunniga och erfarna tekniker redo för att hjälpa just dig.
         </p>
       </div>
       <div className="flex gap-10 flex-col lg:flex-row">

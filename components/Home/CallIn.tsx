@@ -15,11 +15,11 @@ export default function CallIn() {
             Jour i hela Stockholm, 24/7!
           </h2>
           <p className="md:text-[18px] text-[16px] text-black/70 lg:mr-36 leading-8 max-w-full text-center md:text-left">
-            jour365 erbjuder spol, VVS och elektriska Jour el, Jour spol, Jour
-            rörmokare i Stockholm dygnet runt. Vi utför inte bara akuta arbeten
-            utan hanterar också planerade uppdrag för både privatpersoner och
-            företag. Vårt team består av erfarna och certifierade rörmokare och
-            elektriker som garanterar kvalitet och professionalism i varje jobb.
+            Jour365 erbjuder jourtäjnster inom El, Spol och VVS i Stockholm
+            dygnet runt. Vi hjälper dig med alla dina akuta ärenden men också
+            planerade ärenden, för såväl privat personer som företag. Vårt team
+            av skickliga och certifierade team levererar kvalitet och
+            proffesionellt bemötande oavset vem och när!
           </p>
 
           <div className="">

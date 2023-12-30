@@ -10,10 +10,10 @@ export default function LocalElectrician() {
         <div className="col-span-1 p-[30px] flex flex-col gap-5  ">
           <TextTitle title="Hitta din lokala elektriker" />
           <p className="text-[18px] text-black/70 tracking-tight text-center md:text-left">
-            Här kan du hitta din lokala elektriker i din stad och få hjälp med
-            alla typer av elektriskt arbete. Alla våra elektriker är
-            certifierade och auktoriserade att utföra både små och stora
-            elektriska jobb.
+            Vi har elektriker över hela stockholms området och jobbar med alla
+            typer av ärenden. Alla våra elektriker är erfarna och innehar intyg
+            från elsäkerhetsverket och ha r erfarenhet av både mindre och större
+            jobb.
           </p>
           <div className="flex flex-col gap-7 mt-auto">
             <Button

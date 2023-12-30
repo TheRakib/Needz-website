@@ -40,7 +40,7 @@ export default function PlumberServices() {
             VVS-tjänster Vi Erbjuder
           </p>
           <SecondTitle
-            title="Pålitliga rörmokare, här för att hjälpa dig när du behöver det som mest. Vi anpassar våra tjänster för att möta dina unika behov, dygnet runt."
+            title="Pålitliga rörmokare dygnet runt i hela stockholm! Vi finns här oavsett vad du behöver hjälp med och oavsett vilken tid på dygnet. "
             className="max-w-[1000px] mx-auto tracking-tighter !leading-[54px] "
           />
         </div>
@@ -100,48 +100,48 @@ const serviceCardItems = [
     title: "Jour Elektriker",
     img: "/home/services/plumber/icon1.svg",
     description:
-      "Behöver du akut hjälp med dina elektriska installationer? Våra certifierade elektriker finns tillgängliga dygnet runt för att hantera alla typer av elrelaterade nödsituationer. Snabb service och professionell hantering av alla typer av elproblem garanteras.",
+      "Har du ett el-problem som inte kan vänta? Våra certifierade elektriker finns tillgängliga dygnet runt för att hjälpa dig med alla olika sorters problem som kan uppkoma. Vi garanterar snabb service och proffsigt bemötande i varje ärende. ",
   },
   {
     id: 2,
     title: "Värmepumpar",
     img: "/home/services/plumber/icon2.svg",
     description:
-      "Vi servar och installerar alla typer av värmepumpar. Att välja en värmepump som värmekälla i ditt hem är en investering, inte bara för din plånbok. Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
+      "Vi har stor erfarenhet av flera olika typer av värmepumpar och finns alltid på plats när du behöver oss. Vi hjälper till både med installationer av nya värmepumpar samt serviec av redan befintliga pumpar. Har du problem varmvattnet? Kontakta oss så kommer vi och hjälper dig redan idag! ",
   },
   {
     id: 3,
     title: "Radiatorer och element",
     img: "/home/services/plumber/icon3.svg",
     description:
-      "Är alla dina radiatorer kalla? Eller fungerar de felfritt i vissa rum men inte alls i andra? Då behöver du en VVS-tekniker! Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
+      "Får du ingen värme från dina element? Eller kanske är ett rum iskallt medans de övriga är som de ska? Då har vi tekniker som kan hjälpa dig! Oavset vilken typ av element du har så har vi rätt tekniker för jobbet. ",
   },
   {
     id: 4,
     title: "Stopp i Avlopp",
     img: "/home/services/plumber/icon4.svg",
     description:
-      "Upplever du problem med stopp i dina avlopp? Våra erfarna rörmokare är experter på att snabbt identifiera och åtgärda stopp i avloppsrör, vilket säkerställer en smidig och effektiv lösning. Vi använder avancerad teknik för att diagnostisera och rensa blockeringar utan att skada dina rör.",
+      "Har du fått stopp i avloppen? Våra spolbilar är snabbt på plats för att hjälpa dig lokalisera och lösa problemet, så smidigt och effektivt som möjligt! ",
   },
   {
     id: 5,
     title: "Rörservice",
     img: "/home/services/plumber/icon5.svg",
     description:
-      "Underhåll eller reparationer av rören? Inget jobb är för litet eller för stort för oss. Vi erbjuder också service- och underhållsavtal för bostäder. Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
+      "Har du problem med rör som behöver repareras? Eller kanske vill  underhålla de i förebyggande syfte? Oavsett hur situationen ser ut så har vi erfarna rörmokare som hjälper dig med allt från ny rördragning till underhåll och reparation av befintliga rör. Glöm inte att vi också erbjuder avtal för både företag och BRF:er som ger dig rabatt på samtliga av våra tjänster.",
   },
   {
     id: 6,
     title: "Planering",
     img: "/home/services/plumber/icon6.svg",
     description:
-      "Har du planer på att installera nya rör? Behöver du uppgradera ditt värmesystem eller dra ett avlopp till din nya vind? Vi hjälper dig från start till mål! Får du inte varmt vatten i fastigheten? Då är det troligen din varmvattenberedare som skapar problem för dig.",
+      "Har du planer på att installera nya rör? Kanske behöver du dra avlopp till det nya badrummet uppe på vinden? Eller kanske vill du flytta på diskhon och behöver därmed även flytta på avloppet? Vi på Jour365 hjälper dig att både dra nya rör och dra om befintliga. Ring oss så hjälper vi dig boka in en tid!",
   },
   {
     id: 7,
     title: "VVS Service",
     img: "/home/services/plumber/icon7.svg",
     description:
-      "Vi erbjuder ett brett utbud av VVS-tjänster för alla dina behov. Vårt team av kvalificerade rörmokare är utrustade med de senaste verktygen för att hantera installation, underhåll och reparationer effektivt och professionellt. Inget jobb är för stort eller för litet för oss.",
+      "Vi erbjuder ett brett utbud av VVS-tjänster. Oavsett behov så har vi rörmokare redo för att hjälpa just dig. Vårt team av kvalificerade rörmokare har flera års erfarenhet och är redo dygnet runt föratt hkälpa dig med alla sorters problem som kan uppstå. Vi garanterar alltid ett proffsigt och kvalitativt arbete - inget jobb är för litet eller stort för oss! ",
   },
 ];

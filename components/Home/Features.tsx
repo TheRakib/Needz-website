@@ -52,22 +52,23 @@ export default function Features() {
 const featureItems = [
   {
     id: 1,
-    content: "Varje kund är speciell.",
+    content: "På Jour365 värderar vi kundnöjdhet.",
   },
   {
     id: 2,
-    content: "Ring eller maila oss",
+    content: "du som kund är alltid i fokus!.",
   },
   {
     id: 3,
-    content: "Experter som kommer att hjälpa dig snabbt.",
+    content: " Vi är kontaktbara 24/7 på telefon för alla sorters ärenden.",
   },
   {
     id: 4,
-    content: "Akut VVS och elektriska tjänster, 24/7",
+    content: "Alla våra tekniker är certifierade och erfarna.",
   },
   {
     id: 5,
-    content: "Erfarna och certifierade rörmokare och elektriker",
+    content:
+      "Vi har lång erfarenhet inom jour och strävar alltid efter att lösa problemen snabbt, kvalitativt och effektivt. E13",
   },
 ];

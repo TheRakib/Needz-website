@@ -19,16 +19,18 @@ export default function Pressure() {
       </div>
       <div className="max-w-[510px] flex flex-col justify-between">
         <div className=" flex flex-col gap-5 ">
-          <TextTitle title="Högtrycksspolning" />
+          <TextTitle
+            className="capitalize"
+            title="är tydliga tecken på att det börjar bli dags att spola avloppen innan stoppet blir större. "
+          />
           <div className="flex flex-col gap-5 text-[18px] text-black/70 ">
             <p className="text-left leading-7 tracking-tight">
-              Spolning av avlopp med högtryck är en skonsam och miljövänlig
-              metod som snabbt löser alla typer av blockeringar i avlopp.
-              Spolningen utförs på ett varsamt sätt för att undvika skador på
-              avloppssystemet och effektivt sköljer bort allt slam som samlats i
-              avloppet. Eftersom endast varmt vatten används, behövs inga
-              kemikalier för rengöring. För större stopp kan en spolbil vara ett
-              bättre alternativ.
+              Att högtrycksspola är en skoningssam lösning och den mest
+              effektiva när det kommer till att lösa upp stopp i avlopp. Det går
+              till genom att man med hjälp av en slang spolar rent avloppen med
+              vatten som högtrycksspolas. Eftersom det endast är varmvatten som
+              används så är det inte bara skonsamt för dina rör utan också för
+              miljön.
             </p>
           </div>
         </div>
@@ -56,8 +58,8 @@ export default function Pressure() {
 }
 
 const pressureItems = [
-  "Öppet dygnet runt",
-  "Privatpersoner och företag",
-  "Certifierade experter",
-  "på plats inom 1 timme",
+  "Öppet dygnet runt.",
+  "Hjälp för både privat personer och företag.",
+  "Certifierade tekniker.",
+  "På plats inom 2 timmar. ",
 ];
