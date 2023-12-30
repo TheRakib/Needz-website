@@ -48,11 +48,11 @@ export default function page() {
 const detailsProps = {
   description: {
     para1:
-      "Behöver du en elektriker i Stockholm? Vi är här för att hjälpa dig!",
-    para2: `Vi erbjuder expertinstallationer och reparationer av elektriska system för företag och hem, och vi är tillgängliga 365 dagar om året. Kontakta oss så hjälper vi dig omedelbart!`,
+      "Behöver du en elektriker i stockholmsområdet? Vi finns här för att hjälpa dig! Vi erbjuder skickliga tekniker för alla olika typer av ärenden.",
+    para2: ` Vår jour har öppet dygnet runt, 365 dagar om året! Kontakta oss för hjälp omgående!`,
   },
-  title2: "Pålitliga elektriska installatörer i Stockholm",
+  title2: "Pålitliga elektriker i Stockholm",
   description2Limit: 52,
   description2:
-    "Har jordfelsbrytaren plötsligt löst ut och nu är maten i frysen på väg att bli dålig? Oavsett vilket elrelaterat problem du står inför, kan du lita på att våra elektriker är välkvalificerade för jobbet. Vi finns tillgängliga dygnet runt för konsultation och hjälp med dina elbehov. ",
+    "Har din jordfelsbrytare löst ut och maten i kylen riskerar att bli dålig? Eller har eluttaget till tv:n slutat fungera mitt i filmkvällen? Oavsett vad för problem du står inför så kan du lita på att vi har elektriker som är välkvalificerade för jobbet. Vi finns tillgängliga alla timmar på dygnet, oavsett när olyckan slår till så är vi redo att hjälpa dig.",
 };

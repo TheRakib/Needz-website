@@ -22,13 +22,15 @@ export default function CertificateDetails() {
           <TextTitle title="Certifierade elektriker" />
           <div className="flex flex-col gap-5 text-[18px] text-black/70 ">
             <p className="text-center md:text-left">
-              På jour365 är fokus på kunden. Våra erfarna elektriker är alla
-              certifierade och auktoriserade av Elsäkerhetsverket i Sverige.
+              På Jour365 har vi alltid kunden i fokus. Vi värdesätter
+              kundnöjdhet och kvalité. Därför har alla våra elfirmor intyg från
+              Elsäkerhetsverket, så att du som kund kan känna att du är i trygga
+              händer.
             </p>
           </div>
         </div>
         <div className="max-w-[680px] flex flex-col gap-5 ">
-          <TextTitle title="Elektriska installationer i Stockholm: För företag och privatpersoner " />
+          <TextTitle title="El-installationer i stockholm - För företag och privatpersoner" />
           <div className="flex flex-col gap-5 text-[18px] text-black/70 ">
             <p>
               {displayText}
@@ -48,4 +50,4 @@ export default function CertificateDetails() {
   );
 }
 
-const text = `Letar du efter ett pålitligt och effektivt elektriskt företag för installationer i ditt hem eller företag? Då har du kommit till rätt plats! Vi på jour365 förstår vikten av att en elektrisk installation är säker och pålitlig samt hur viktigt det är att elen fungerar som den ska, hemma eller på jobbet. Då har du kommit till rätt plats!`;
+const text = `Är du på jakt efter en pålitlig elfirma som kan vara snabbt på plats, antingen hemma eller på jobbet? Då har du hittat rätt! Vi på Jour365 förstår vikten av att ha en pålitlig elektriker för alla sina elbehov, som kan vara snabbt på plats när det behövs. Därför har vi alltid erfarna elektriker redo att hjälpa till - så att du alltid kan vara säker på att elen fungerar som den ska när du behöver det. `;

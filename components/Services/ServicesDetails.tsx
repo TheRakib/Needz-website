@@ -7,13 +7,13 @@ export default function ServicesDetails() {
     <div className="max-w-layout mx-auto mt-5 px-2">
       <div className="flex flex-col gap-5 ">
         <div className="max-w-[680px] mr-auto flex flex-col gap-5">
-          <TextTitle title="Elektriska tjänster för alla behov" />
+          <TextTitle title="El installationer" />
           <div className="flex flex-col gap-5 text-[18px] text-black/70 ">
             <p>
-              Vi förstår att alla har unika behov och omständigheter. Därför
-              erbjuder vi ett brett utbud av tjänster som kan anpassas efter
-              dina önskemål för att ge våra kunder bästa möjliga service och
-              resultat.
+              Vi på Jour365 förstår att alla har olika behov och unika
+              förutsättningar. Därför erbjuder vi ett brett sortiment av
+              tjänster; men elektriker som kan anpassa sig efter just dina
+              behov.
             </p>
           </div>
         </div>
@@ -46,43 +46,47 @@ export default function ServicesDetails() {
 
 const serviceItems = [
   {
+    id: 23,
+    text: "Vi jobbar bl.a med Installationer av eluttag och belysning",
+  },
+  {
     id: 1,
-    text: "Nya installationer av bland annat eluttag och belysning",
+    text: "Värmepannor - Felsökning av befintliga installationer",
   },
   {
     id: 2,
-    text: "Elektricitet för värmesystemet.",
+    text: "Service och underhåll av befintliga installationer",
   },
   {
     id: 3,
-    text: "Felsökning av befintliga elektriska system.",
+    text: "Installationer och uppgraderingar av elcentraler",
   },
   {
     id: 4,
-    text: "Uppgradering av kraftstationen.",
+    text: "Kabeldragning",
   },
   {
     id: 5,
-    text: "Service och underhåll av alla typer av elektriska installationer.",
+    text: "Jordfelsbrytare",
   },
   {
     id: 6,
-    text: "Kabelfördragning",
+    text: "Laddningsstolpar och mycket mer. ",
   },
-  {
-    id: 7,
-    text: "Mätning av elektricitet, till exempel vid överbelastning.",
-  },
-  {
-    id: 8,
-    text: "Kortslutning",
-  },
-  {
-    id: 9,
-    text: "Jordfelsbrytare som löser ut",
-  },
-  {
-    id: 10,
-    text: "Laddningsstolpar",
-  },
+  // {
+  //   id: 7,
+  //   text: "Mätning av elektricitet, till exempel vid överbelastning.",
+  // },
+  // {
+  //   id: 8,
+  //   text: "Kortslutning",
+  // },
+  // {
+  //   id: 9,
+  //   text: "Jordfelsbrytare som löser ut",
+  // },
+  // {
+  //   id: 10,
+  //   text: "Laddningsstolpar",
+  // },
 ];
