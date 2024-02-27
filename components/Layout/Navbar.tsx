@@ -208,7 +208,7 @@ function Navbar() {
               }}
             >
               {pages.map((page) => (
-                <>
+                <div key={page.id}>
                   {page.link === "/services" ? (
                     <Accordion key={page.id}>
                       <AccordionSummary
@@ -243,7 +243,7 @@ function Navbar() {
                       </Typography>
                     </MenuItem>
                   )}
-                </>
+                </div>
               ))}
               <div className="border-t border-black/80 mt-4">
                 {actionButtons("flex-col mx-2")}
