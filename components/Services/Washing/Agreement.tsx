@@ -12,12 +12,12 @@ export default function Agreement() {
         />
         <div className="flex flex-col gap-7 text-[20px] max-w-[1005px] mx-auto ">
           <p className="text-center">
-            Gå med i jour365:s serviceavtal för exklusiva förmåner! Våra
-            partners får prioriterad service, rabatter, en personlig manager och
-            mer – allt helt kostnadsfritt.
+            Gå med i needz:s serviceavtal för exklusiva förmåner! Våra partners
+            får prioriterad service, rabatter, en personlig manager och mer –
+            allt helt kostnadsfritt.
           </p>
           <p className="text-secondary text-center">
-            Kontakta jour365 nu för detaljer om våra tjänster och avtal.
+            Kontakta needz nu för detaljer om våra tjänster och avtal.
           </p>
         </div>
       </div>

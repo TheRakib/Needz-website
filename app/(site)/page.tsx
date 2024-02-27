@@ -51,7 +51,7 @@ const faqItems = [
     id: 2,
     title: "Finns det något sätt att kontakta er?",
     description:
-      "Ja, det finns flera sätt att kontakta oss. Lättast når du oss på 08 - 30 22 41, vår växel är öppen dygnet runt. För mindre akuta ärenden kan du maila oss på order@jour365.se, eller fylla i vårt kontaktformulär som du hittar här på hemsidan under fliken 'om oss'. Vi besvarar ditt mail så fort vi kan.",
+      "Ja, det finns flera sätt att kontakta oss. Lättast når du oss på 08 - 30 22 41, vår växel är öppen dygnet runt. För mindre akuta ärenden kan du maila oss på order@needz.se, eller fylla i vårt kontaktformulär som du hittar här på hemsidan under fliken 'om oss'. Vi besvarar ditt mail så fort vi kan.",
   },
   {
     id: 3,

@@ -13,10 +13,10 @@ export default function LocalPlumber() {
             className="!text-center"
           />
           <p className="text-[18px] text-black/70 text-center">
-            På Jour365 erbjuder vi omfattande VVS-tjänster för både
-            privapersoner och företag i hela stockholm. Våra erfarna och
-            certifierade är redo att hjälpa dig med allt från minsre
-            reparationer till större installationer.
+            På needz erbjuder vi omfattande VVS-tjänster för både privapersoner
+            och företag i hela stockholm. Våra erfarna och certifierade är redo
+            att hjälpa dig med allt från minsre reparationer till större
+            installationer.
           </p>
         </div>
         <AccordionPic items={serviceAccordions} withBullets />

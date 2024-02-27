@@ -51,7 +51,7 @@ export default function Page() {
                   href="https://www.joureliten.se/author/joureliten/"
                   className="underline"
                 >
-                  Jour365 i Jourtjänst
+                  needz i Jourtjänst
                 </a>
               </div>
             }

@@ -11,7 +11,7 @@ export default function OnCall() {
           className="!text-center"
         />
         <p className="lg:text-[18px] text-black/70 max-w-[980px] text-center mx-auto ">
-          Jour365 erbjuder Spol, VVS och El jour i hela stockholm, 24 timmar om
+          needz erbjuder Spol, VVS och El jour i hela stockholm, 24 timmar om
           dygnet 365 dagar om året. Vi utför också planerade arbeten för både
           privat personer och företag. Oavsett vilken typ av jobb du behöver så
           har vi kunniga och erfarna tekniker redo för att hjälpa just dig.

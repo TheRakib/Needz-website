@@ -15,10 +15,10 @@ export default function CallIn() {
             Jour i hela Stockholm, 24/7!
           </h2>
           <p className="md:text-[18px] text-[16px] text-black/70 lg:mr-36 leading-8 max-w-full text-center md:text-left">
-            Jour365 erbjuder jourtäjnster inom El, Spol och VVS i Stockholm
-            dygnet runt. Vi hjälper dig med alla dina akuta ärenden men också
-            planerade ärenden, för såväl privat personer som företag. Vårt team
-            av skickliga och certifierade team levererar kvalitet och
+            needz erbjuder jourtäjnster inom El, Spol och VVS i Stockholm dygnet
+            runt. Vi hjälper dig med alla dina akuta ärenden men också planerade
+            ärenden, för såväl privat personer som företag. Vårt team av
+            skickliga och certifierade team levererar kvalitet och
             proffesionellt bemötande oavset vem och när!
           </p>
 

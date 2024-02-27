@@ -1,7 +1,7 @@
 import "../globals.css";
 
 export const metadata = {
-  title: "jour365",
+  title: "needz",
 };
 
 export default function RootLayout({

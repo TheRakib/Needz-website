@@ -16,7 +16,7 @@ export default function Footer() {
               Om oss
             </h3>
             <p className="max-w-[284px] ml-auto md:ml-0 mr-auto text-black/80 text-[14px] leading-6  ">
-              <Link href={"/"}>jour365</Link> erbjuder VVS- och elektrikerjour i
+              <Link href={"/"}>needz</Link> erbjuder VVS- och elektrikerjour i
               Stockholm dygnet runt, men vi utför även planerade arbeten för
               privatpersoner och företag. Vi använder erfarna och certifierade
               rörmokare och elektriker.
@@ -68,7 +68,7 @@ export default function Footer() {
 
         <div className="flex flex-col gap-4 justify-center items-center mt-16">
           <p className="text-[14px] text-black/40 text-center md:text-left">
-            Copyright &copy; 2023 Jour365.
+            Copyright &copy; 2023 needz.
           </p>
         </div>
       </div>
@@ -98,6 +98,6 @@ const contactInfo: ContactInfo[] = [
   {
     id: 3,
     title: "Kontakt Info",
-    items: ["jour365", "Ring: 08-30 22 41", "Email: order@jour365.se"],
+    items: ["needz", "Ring: 08-30 22 41", "Email: order@jour365.se"],
   },
 ];

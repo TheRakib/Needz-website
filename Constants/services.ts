@@ -5,7 +5,7 @@ export const services = [
     link: "/services/electrician",
     img: "/home/services/Image1.png",
     description:
-      "Alla våra elektriker är utbildade och erfarna samt innehar intyg från elsäkerhetsverket. De är också erfarna inom jour-verksamhet och ser alltid till att vara snabbt på plats. Inget problem är för stort eller för litet för oss på Jour365 och vi hjälper mer än gärna till med allt från en trasig lampa till ett helt strömlöst boende. Vi kan också hjälpa till med underhåll och reparationer i förebyggande syfte. Vi finns här när du behöver oss som mest - oavsett tid på dygnet!.",
+      "Alla våra elektriker är utbildade och erfarna samt innehar intyg från elsäkerhetsverket. De är också erfarna inom jour-verksamhet och ser alltid till att vara snabbt på plats. Inget problem är för stort eller för litet för oss på needz och vi hjälper mer än gärna till med allt från en trasig lampa till ett helt strömlöst boende. Vi kan också hjälpa till med underhåll och reparationer i förebyggande syfte. Vi finns här när du behöver oss som mest - oavsett tid på dygnet!.",
   },
   {
     id: 2,

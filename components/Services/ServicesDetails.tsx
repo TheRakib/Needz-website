@@ -10,7 +10,7 @@ export default function ServicesDetails() {
           <TextTitle title="El installationer" />
           <div className="flex flex-col gap-5 text-[18px] text-black/70 ">
             <p>
-              Vi på Jour365 förstår att alla har olika behov och unika
+              Vi på needz förstår att alla har olika behov och unika
               förutsättningar. Därför erbjuder vi ett brett sortiment av
               tjänster; men elektriker som kan anpassa sig efter just dina
               behov.

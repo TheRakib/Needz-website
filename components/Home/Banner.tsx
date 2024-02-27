@@ -23,7 +23,7 @@ export default function Banner() {
               Jour El, VVS och spol tillgänliga i hela stockholm dygnet runt!
             </h2>
             <p className=" my-6 leading-6 max-w-[686px] text-center">
-              Behöver du snabb hjälp inom VVS eller El i Stockholm? Jour365 är
+              Behöver du snabb hjälp inom VVS eller El i Stockholm? needz är
               tillgängliga dygnet runt i hela stor-stockholm! Vi har pålitliga,
               jourhavande tekniker inom el, vvs och spol. Alla våra tekniker är
               certifierade och erfarna inom sitt område. På Jour 365 sätter vi

@@ -20,15 +20,15 @@ export const metadata: Metadata = {
   // applicationName: '',
   metadataBase: new URL("https://360jour.vercel.app/"),
   title: {
-    template: "jour365 | %s",
-    default: "jour365",
+    template: "needz | %s",
+    default: "needz",
   },
   description:
-    "jour365: Rör- och elservice dygnet runt i Stockholm. Expert, certifierade yrkesmän för akuta situationer och planerade projekt för både privatpersoner och företag.",
+    "needz: Rör- och elservice dygnet runt i Stockholm. Expert, certifierade yrkesmän för akuta situationer och planerade projekt för både privatpersoner och företag.",
   openGraph: {
-    title: "jour365",
+    title: "needz",
     description:
-      "jour365: Rör- och elservice dygnet runt i Stockholm. Expert, certifierade yrkesmän för akuta situationer och planerade projekt för både privatpersoner och företag.",
+      "needz: Rör- och elservice dygnet runt i Stockholm. Expert, certifierade yrkesmän för akuta situationer och planerade projekt för både privatpersoner och företag.",
   },
 };
 
@@ -62,7 +62,7 @@ export default function RootLayout({
           content="Elinstallationer, Elektriker Stockholm, Elentreprenad, ..."
         />
       </head>
-      <body className={inter.variable}>
+      <body className={`${inter.variable} bg-white`}>
         {/* <!-- Google Tag Manager (noscript) --> */}
         <noscript>
           <iframe
@@ -111,7 +111,7 @@ export default function RootLayout({
 }
 
 // -------------- tags:
-// jour365
+// needz
 // Jour el, Jour spol, Jour rörmokare Stockholm
 // Dygnet runt VVS Stockholm
 // Akut elektriker Stockholm
@@ -151,7 +151,7 @@ export default function RootLayout({
 // Akut underhållstjänster
 // Säkerhetskontroll jour
 // Snabbinsats elektriker och rörmokare
-// jour365
+// needz
 // Jour el, Jour spol, Jour rörmokare Stockholm
 // Dygnet runt VVS Stockholm
 // Akut elektriker Stockholm
@@ -184,7 +184,7 @@ export default function RootLayout({
 // Rörfilmning
 // Slamavskiljning
 // Serviceavtal
-// Jour365
+// needz
 // Högtryckstvättning
 // Rotavdrag
 // Avloppsproblem
