@@ -8,6 +8,7 @@ import { LuPhoneCall } from "react-icons/lu";
 import { useRouter } from "next/navigation";
 import { Services } from "@/Types";
 import { services } from "@/Constants";
+import Link from "next/link";
 
 export default function OurServices() {
   const [isHovered, setIsHovered] = useState<boolean | number>(false);
@@ -64,14 +65,23 @@ export default function OurServices() {
           </div>
         ))}
         <div className="w-[370px] h-[414px] mx-auto relative flex flex-col gap-10 items-center justify-center ">
-          <Button
+          {/* <Button
             className="w-[291px] h-[92px] bg-primary hover:bg-transparent hover:text-primary text-white text-[26px] capitalize rounded-lg"
             variant="outlined"
             onClick={() => router.push("contact-us")}
           >
             Boka din tjänst
-          </Button>
-          <a href="tel:08302241">
+          </Button> */}
+          <Link href={"#"}>
+            <Image
+              src={"/social/playStore.png"}
+              alt="get app on play store"
+              className="lg:h-16 lg:w-52 h-12 w-34 hover:opacity-90 transform hover:scale-105 ease-in duration-200"
+              width={250}
+              height={80}
+            />
+          </Link>
+          {/* <a href="tel:08302241">
             <Button
               className="w-[291px] h-[92px] bg-transparent  hover:bg-primary hover:text-white text-primary text-[26px] capitalize rounded-lg flex gap-3 items-center"
               variant="outlined"
@@ -79,7 +89,16 @@ export default function OurServices() {
               <LuPhoneCall />
               <span>08-302241</span>
             </Button>
-          </a>
+          </a> */}
+          <Link href={"#"}>
+            <Image
+              src={"/social/appleStore2.png"}
+              alt="get app on play store"
+              className="lg:h-16 lg:w-52 h-12 w-34 hover:opacity-90 transform hover:scale-105 ease-in duration-200"
+              width={250}
+              height={80}
+            />
+          </Link>
         </div>
       </div>
     </div>

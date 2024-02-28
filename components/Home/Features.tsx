@@ -25,18 +25,34 @@ export default function Features() {
               </li>
             ))}
           </ul>
-          <div className="w-full flex flex-col lg:flex-row items-center gap-2 lg:gap-9">
-            <Link href={"/contact-us"}>
-              <Button
+          <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-9">
+            <Link href={"#"}>
+              <Image
+                src={"/social/playStore.png"}
+                alt="get app on play store"
+                className="lg:h-16 lg:w-52 h-12 w-34 hover:opacity-90 transform hover:scale-105 ease-in duration-200"
+                width={250}
+                height={80}
+              />
+              {/* <Button
                 onClick={() => router.push("contact-us")}
                 className="bg-primary hover:bg-primary/80 text-white capitalize rounded-xl font-semibold text-[26px] py-[25px] px-[50px] "
               >
                 Kontakta oss
-              </Button>
+              </Button> */}
             </Link>
-            <Button className="bg-white hover:bg-primary/5 text-black capitalize rounded-xl font-semibold text-[26px] py-[25px] ">
+            <Link href={"#"}>
+              <Image
+                src={"/social/appleStore2.png"}
+                alt="get app on play store"
+                className="lg:h-16 lg:w-52 h-12 w-34 hover:opacity-90 transform hover:scale-105 ease-in duration-200"
+                width={250}
+                height={80}
+              />
+            </Link>
+            {/* <Button className="bg-white hover:bg-primary/5 text-black capitalize rounded-xl font-semibold text-[26px] py-[25px] ">
               <a href="tel:08302241">Ring: 08-302241</a>
-            </Button>
+            </Button> */}
           </div>
         </div>
         <div className="col-span-1">

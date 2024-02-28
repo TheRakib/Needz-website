@@ -25,20 +25,36 @@ export default function CallIn() {
 
           <div className="">
             <div className="flex flex-col gap-4 items-center md:items-start md:mr-10">
-              <Link href={"/about-us"}>
-                <Button
+              <Link href={"#"}>
+                <Image
+                  src={"/social/playStore.png"}
+                  alt="get app on play store"
+                  className="lg:h-16 lg:w-52 h-12 w-34 hover:opacity-90 transform hover:scale-105 ease-in duration-200"
+                  width={250}
+                  height={80}
+                />
+                {/* <Button
                   className="capitalize py-7 px-[50px] text-[26px] bg-primary hover:bg-primary/80 text-white rounded-lg"
                   size="large"
                 >
                   Mer om oss
-                </Button>
+                </Button> */}
               </Link>
-              <Button
+              <Link href={"#"}>
+                <Image
+                  src={"/social/appleStore2.png"}
+                  alt="get app on play store"
+                  className="lg:h-16 lg:w-52 h-12 w-34 hover:opacity-90 transform hover:scale-105 ease-in duration-200"
+                  width={250}
+                  height={80}
+                />
+              </Link>
+              {/* <Button
                 className="capitalize py-7 text-[26px] bg-white hover:bg-primary/5 text-black rounded-lg"
                 size="large"
               >
                 <a href="tel:08302241">Ring: 08-30 22 41</a>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

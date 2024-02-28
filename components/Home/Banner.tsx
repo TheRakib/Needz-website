@@ -32,12 +32,11 @@ export default function Banner() {
             </p>
 
             <div className="flex flex-col md:flex-row gap-4">
-              <div className="cursor-pointer">
-                {/* <Link href={"/contact-us"}> */}
+              <Link href={"#"}>
                 <Image
                   src={"/social/playStore.png"}
                   alt="get app on play store"
-                  className="cursor-pointer"
+                  className="lg:h-16 lg:w-52 h-12 w-34 hover:opacity-90 transform hover:scale-105 ease-in duration-200"
                   width={250}
                   height={80}
                 />
@@ -47,14 +46,13 @@ export default function Banner() {
                   >
                   Kontakta oss
                 </Button> */}
-                {/* </Link> */}
-              </div>
+              </Link>
 
-              <Link href={"/contact-us"} className="cursor-pointer w-64 h-20">
+              <Link href={"#"}>
                 <Image
                   src={"/social/appleStore2.png"}
                   alt="get app on play store"
-                  className="cursor-pointer"
+                  className="lg:h-16 lg:w-52 h-12 w-34 hover:opacity-90 transform hover:scale-105 ease-in duration-200"
                   width={250}
                   height={80}
                 />
