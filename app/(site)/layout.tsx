@@ -20,15 +20,15 @@ export const metadata: Metadata = {
   // applicationName: '',
   metadataBase: new URL("https://360jour.vercel.app/"),
   title: {
-    template: "needz | %s",
-    default: "needz",
+    template: "Needz | %s",
+    default: "Needz",
   },
   description:
-    "needz: Rör- och elservice dygnet runt i Stockholm. Expert, certifierade yrkesmän för akuta situationer och planerade projekt för både privatpersoner och företag.",
+    "Needz: Rör- och elservice dygnet runt i Stockholm. Expert, certifierade yrkesmän för akuta situationer och planerade projekt för både privatpersoner och företag.",
   openGraph: {
-    title: "needz",
+    title: "Needz",
     description:
-      "needz: Rör- och elservice dygnet runt i Stockholm. Expert, certifierade yrkesmän för akuta situationer och planerade projekt för både privatpersoner och företag.",
+      "Needz: Rör- och elservice dygnet runt i Stockholm. Expert, certifierade yrkesmän för akuta situationer och planerade projekt för både privatpersoner och företag.",
   },
 };
 

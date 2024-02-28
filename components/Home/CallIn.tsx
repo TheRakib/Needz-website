@@ -8,7 +8,8 @@ export default function CallIn() {
     <div className="max-w-layout mx-auto my-[100px] px-2">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-12 lg:gap-12">
         <div className="col-span-1 relative xl:w-[583px] md:h-[625px] w-[303px]  md:w-[383px] h-[425px] mx-auto md:mr-auto">
-          <Image src={"/home/banner.jpg"} alt="banner" fill />
+          <Image src={"/appImage/app.png"} alt="banner" fill />
+          {/* <Image src={"/home/banner.jpg"} alt="banner" fill /> */}
         </div>
         <div className="col-span-1 flex flex-col justify-center gap-6">
           <h2 className="text-[36px] md:text-title font-bold text-center md:text-left ">

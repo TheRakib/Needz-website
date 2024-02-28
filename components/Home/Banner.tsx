@@ -12,7 +12,7 @@ export default function Banner() {
           alt="bg"
           loading="lazy"
           fill
-          src={"/home/banner0.png"}
+          src={"/appImage/full-screen.jpg"}
           className="absolute z-[-1] h-full w-full object-cover object-center inset-0"
         />
       </div>
@@ -32,15 +32,34 @@ export default function Banner() {
             </p>
 
             <div className="flex flex-col md:flex-row gap-4">
-              <Link href={"/contact-us"}>
-                <Button
+              <div className="cursor-pointer">
+                {/* <Link href={"/contact-us"}> */}
+                <Image
+                  src={"/social/playStore.png"}
+                  alt="get app on play store"
+                  className="cursor-pointer"
+                  width={250}
+                  height={80}
+                />
+                {/* <Button
                   className="capitalize text-xl md:text-2xl md:py-7 md:px-12 px-10 py-4 rounded-xl bg-primary hover:bg-primary/50 text-white flex-nowrap whitespace-nowrap "
                   size="large"
-                >
+                  >
                   Kontakta oss
-                </Button>
+                </Button> */}
+                {/* </Link> */}
+              </div>
+
+              <Link href={"/contact-us"} className="cursor-pointer w-64 h-20">
+                <Image
+                  src={"/social/appleStore2.png"}
+                  alt="get app on play store"
+                  className="cursor-pointer"
+                  width={250}
+                  height={80}
+                />
               </Link>
-              <Button
+              {/* <Button
                 className="capitalize text-xl md:text-2xl md:py-7 md:px-12 px-10 py-4 rounded-xl bg-secondary hover:bg-secondary/50 text-white flex-nowrap whitespace-nowrap "
                 size="large"
               >
@@ -48,7 +67,7 @@ export default function Banner() {
                   <BiPhoneCall className="mr-2" />
                   08-302241
                 </a>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
