@@ -1,34 +1,89 @@
 export const services = [
   {
     id: 1,
-    title: "Jour - Elektriker",
+    title: "Snickare",
     link: "/services/electrician",
-    img: "/home/services/Image1.png",
+    img: "/appImage/carpenter.jpg",
     description:
-      "Alla våra elektriker är utbildade och erfarna samt innehar intyg från elsäkerhetsverket. De är också erfarna inom jour-verksamhet och ser alltid till att vara snabbt på plats. Inget problem är för stort eller för litet för oss på needz och vi hjälper mer än gärna till med allt från en trasig lampa till ett helt strömlöst boende. Vi kan också hjälpa till med underhåll och reparationer i förebyggande syfte. Vi finns här när du behöver oss som mest - oavsett tid på dygnet!.",
+      "Våra skickliga snickare levererar precision och hantverksskicklighet till varje projekt, vare sig det handlar om specialtillverkade möbler, skåp eller intrikata träarbeten. Med ett skarpt öga för detaljer och ett åtagande att leverera kvalitet, säkerställer våra proffs att varje stycke är perfekt. Lita på oss för att förvandla ditt utrymme med skräddarsytt träarbete som kombinerar estetik och funktionalitet.",
   },
   {
     id: 2,
-    title: "Jour - Stopp i avlopp",
+    title: "VVS",
     link: "/services/drains",
-    img: "/home/services/Image2.png",
+    img: "/appImage/plumbing.jpg",
     description:
-      "Avloppslyft med högt tryck är en skonsam och miljövänlig metod som snabbt löser alla typer av stopp i avlopp.",
+      "Våra certifierade rörmokare är rustade för att hantera alla dina VVS-behov, från läckagereparationer till nya installationer. Med snabba svarstider och fokus på kvalitet garanterar vi effektiva lösningar på alla VVS-utmaningar, och ser till att dina system fungerar smidigt och tillförlitligt.",
   },
   {
     id: 3,
-    title: "Jour rörmokare",
+    title: "Elektriska arbeten",
     link: "/services/plumber",
-    img: "/home/services/Image3.png",
+    img: "/appImage/electrical_work.jpg",
     description:
-      "Alla våra rörmokare har erfarenhet och kunskap inom sitt område samt certifikat från säkert vatten. De har också stor erfrenhet inom jour och förstår vikten av att få ut rätt hjälp snabbt. Oavsett vad du har för problem så har vi rätt person för jobbet. Vi hjälper till med allt från mindre läckage till omfattande vattenskador. Vi hjälper även till med nya installationer och reparation/underhåll av redan befintliga installationer. Vi finns här för att se till att du dina vvs-system fungerar som dom ska när du behöver det.",
+      "Expertelektriker finns till hands med våra licensierade elektriker. Från mindre reparationer till större installationer, vi tillhandahåller säkra, tillförlitliga och effektiva elektriska lösningar, som säkerställer att ditt utrymme är korrekt och säkert försörjt, enligt de högsta branschstandarderna.",
   },
   {
     id: 4,
-    title: "Elinstallationer",
+    title: "Flytta & Leverera",
     link: "/services/electrical-installations",
-    img: "/home/services/Image8.png",
+    img: "/appImage/move_&_delivery.jpg",
     description:
-      " Våra elektriker är erfarna och kunniga inom ett flertal olika anläggningar och installationer. Oavsett om jorfelsbrytaren har gått eller om du behöver hjälp med att byta ut hela elcentralen så har vi rätt person för jobbet. Vi förstår vikten av att ha fungerande elinstallationer, både hemma och på jobbet. Därför har vi elektriker tillgängliga för att hjälpa dig dygnet runt, oavsett vad som behövs. ",
+      "Vår flytt- och leveranstjänst förenklar dina logistikbehov, erbjuder pålitlig, punktlig och varsam hantering av dina föremål. Oavsett om det handlar om att flytta ditt hem, leverera ett paket eller transportera stora föremål, garanterar vårt team en smidig, stressfri upplevelse.",
+  },
+  {
+    id: 5,
+    title: "Köp åt mig",
+    link: "/services/buy_for_me",
+    img: "/appImage/buy_for_me.jpg",
+    description:
+      "Vår 'Köp åt mig'-tjänst erbjuder ultimat bekvämlighet i personlig shopping och ärenden. Berätta vad du behöver, och vårt pålitliga team köper och levererar det direkt till din dörr. Det är den perfekta lösningen för upptagna personer som söker ett problemfritt sätt att handla.",
+  },
+  {
+    id: 6,
+    title: "Återvinning",
+    link: "/services/recycle",
+    img: "/appImage/recycle.jpg",
+    description:
+      "Anta hållbarhet med vår återvinningservice, designad för att göra det enkelt för dig att bidra till en grönare planet. Vi samlar in, sorterar och ser till att dina återvinningsbara material bearbetas ansvarsfullt, hjälper dig att minska avfall och stödja miljöbevarande.",
+  },
+];
+
+export interface FreelancingServiceType {
+  id: number;
+  title: string;
+  value: string;
+}
+
+export const FreelancingServices: FreelancingServiceType[] = [
+  {
+    id: 1,
+    title: "Carpentry",
+    value: "carpentry",
+  },
+  {
+    id: 2,
+    title: "Plumbing",
+    value: "plumbing",
+  },
+  {
+    id: 3,
+    title: "Electrical work",
+    value: "electrical_work",
+  },
+  {
+    id: 4,
+    title: "Move & Deliver",
+    value: "move_&_deliver",
+  },
+  {
+    id: 5,
+    title: "Buy For Me",
+    value: "buy_for_me",
+  },
+  {
+    id: 6,
+    title: "Recycle",
+    value: "recycle",
   },
 ];
