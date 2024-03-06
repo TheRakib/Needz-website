@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import SectionTitle from "../Shared/SectionTitle";
 import Image from "next/image";
 import { BsArrowDownLeftCircleFill } from "react-icons/bs";
-import { Button } from "@mui/material";
-import { LuPhoneCall } from "react-icons/lu";
 import { useRouter } from "next/navigation";
 import { Services } from "@/Types";
 import { services } from "@/Constants";
@@ -57,9 +55,9 @@ export default function OurServices() {
                 <BsArrowDownLeftCircleFill className="text-4xl " />
               </div>
               {isHovered === item.id && (
-                <p className="text-[17px] mt-5 leading-6 ">
-                  {item.description}{" "}
-                </p>
+                <div className="h-[100px] mt-5 overflow-y-scroll custom-scrollbar">
+                  <p className="text-[17px] leading-6  ">{item.description}</p>
+                </div>
               )}
             </div>
           </div>
