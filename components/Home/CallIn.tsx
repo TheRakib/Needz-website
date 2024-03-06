@@ -13,14 +13,16 @@ export default function CallIn() {
         </div>
         <div className="col-span-1 flex flex-col justify-center gap-6">
           <h2 className="text-[36px] md:text-title font-bold text-center md:text-left ">
-            Jour i hela Stockholm, 24/7!
+            24/7 Jourtjänster i Stockholm!
           </h2>
           <p className="md:text-[18px] text-[16px] text-black/70 lg:mr-36 leading-8 max-w-full text-center md:text-left">
-            needz erbjuder jourtäjnster inom El, Spol och VVS i Stockholm dygnet
-            runt. Vi hjälper dig med alla dina akuta ärenden men också planerade
-            ärenden, för såväl privat personer som företag. Vårt team av
-            skickliga och certifierade team levererar kvalitet och
-            proffesionellt bemötande oavset vem och när!
+            Needz utökar nu till att erbjuda ett brett spektrum av tjänster;
+            från snickeri, VVS, till elektriska arbeten, tillgängliga dygnet
+            runt över hela Stockholm. Oavsett om dina behov är akuta eller
+            planerade, för privatpersoner eller företag, säkerställer vårt
+            kvalificerade och certifierade team professionell service när du
+            behöver det mest. Vi är här för att ge snabb, pålitlig och effektiv
+            hjälp, anpassad till dina unika krav.
           </p>
 
           <div className="">

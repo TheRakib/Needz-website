@@ -20,15 +20,14 @@ export default function Banner() {
         <div className="max-w-layout mx-auto text-white h-full ">
           <div className="col-span-1 flex flex-col justify-center h-full items-center">
             <h2 className=" text-[36px] md:text-title font-bold text-center">
-              Jour El, VVS och spol tillgänliga i hela stockholm dygnet runt!
+              Rund-om-klockan Tjänster i Stockholm: Snickeri, VVS, och Mer!
             </h2>
             <p className=" my-6 leading-6 max-w-[686px] text-center">
-              Behöver du snabb hjälp inom VVS eller El i Stockholm? needz är
-              tillgängliga dygnet runt i hela stor-stockholm! Vi har pålitliga,
-              jourhavande tekniker inom el, vvs och spol. Alla våra tekniker är
-              certifierade och erfarna inom sitt område. På Jour 365 sätter vi
-              alltid kunden i fokus strävar efter att leverera högkvalitativ
-              service varje gång!
+              Behöver du omedelbar hjälp i Stockholm? Vår app erbjuder
+              tillförlitlig hjälp dygnet runt med ett brett utbud av tjänster,
+              inklusive snickeri, VVS, elektriskt arbete, och mer. Alla våra
+              proffs är certifierade, erfarna och redo att leverera snabb,
+              högkvalitativ service direkt till din dörr.
             </p>
 
             <div className="flex flex-col md:flex-row gap-4">
