@@ -9,7 +9,7 @@ import React from "react";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Jour365: 24/7 VVS & EL nödtjänster i Stockholm, erbjuder planerade arbeten för individer & företag med certifierade rörmokare & elektriker.",
+    "needz: 24/7 VVS & EL nödtjänster i Stockholm, erbjuder planerade arbeten för individer & företag med certifierade rörmokare & elektriker.",
 };
 
 export default function page() {

@@ -53,24 +53,23 @@ export default function DescriptionWashing() {
               Stopp i toaletten kan orsakas av att man spolar ner papper som
               inte är avsett att spolas ner och som fastnar någonstans.
               Våtservetter och sanitetsprodukter hör inte hemma i din toalett
-              utan bör kastas i papperskorgen. Kontakta oss på jour365 om du
-              står inför toalettproblem.
+              utan bör kastas i papperskorgen. Kontakta oss på needz om du står
+              inför toalettproblem.
             </p>
             <p>
               I duschen är det vanligt att hår och smuts fastnar, vilket så
               småningom kan leda till stopp i rören. Oavsett vad som orsakade
               stoppet är inget problem för litet eller för stort för oss på
-              Jour365. Kontakta oss för att lösa ditt avloppsproblem.
+              needz. Kontakta oss för att lösa ditt avloppsproblem.
             </p>
             <p>
               Om du ofta har blockeringar i samma avlopp eller om vattentrycket
               har påverkats i mer än en rörledning, kan du vara säker på att en
-              spolbil behövs. Kontakta oss på Jour365 för att få professionell
+              spolbil behövs. Kontakta oss på needz för att få professionell
               hjälp.
             </p>
             <p className="font-semibold text-black">
-              Inte säker på om du behöver jour365? Ring för en snabb
-              konsultation.
+              Inte säker på om du behöver needz? Ring för en snabb konsultation.
             </p>
           </div>
           <div className="flex flex-col items-center lg:items-start gap-10">

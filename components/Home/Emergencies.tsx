@@ -84,7 +84,7 @@ export default function Emergencies() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="col-span-1 flex flex-col">
             <SectionTitle
-              title="Akutbehov av rörmokare eller elektriker? Vi finns här för jour hjälp."
+              title="Brådskande hjälp? Våra jourproffs inom snickeri, VVS och el finns här."
               className="text-white font-semibold  tracking-tight"
             />
             {/* <div className="flex gap-4 mt-8 mb-9">

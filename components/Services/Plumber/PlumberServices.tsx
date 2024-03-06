@@ -135,7 +135,7 @@ const serviceCardItems = [
     title: "Planering",
     img: "/home/services/plumber/icon6.svg",
     description:
-      "Har du planer på att installera nya rör? Kanske behöver du dra avlopp till det nya badrummet uppe på vinden? Eller kanske vill du flytta på diskhon och behöver därmed även flytta på avloppet? Vi på Jour365 hjälper dig att både dra nya rör och dra om befintliga. Ring oss så hjälper vi dig boka in en tid!",
+      "Har du planer på att installera nya rör? Kanske behöver du dra avlopp till det nya badrummet uppe på vinden? Eller kanske vill du flytta på diskhon och behöver därmed även flytta på avloppet? Vi på needz hjälper dig att både dra nya rör och dra om befintliga. Ring oss så hjälper vi dig boka in en tid!",
   },
   {
     id: 7,

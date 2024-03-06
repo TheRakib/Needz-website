@@ -20,7 +20,7 @@ const Home = () => {
       <Emergencies />
       {/* <Feedback /> */}
       <div className="mb-[120px]"></div>
-      <Join />
+      {/* <Join /> */}
       <Features />
       <FAQ faqItems={faqItems} />
       <OurServices />
@@ -43,49 +43,49 @@ const Home = () => {
 const faqItems = [
   {
     id: 1,
-    title: "Hur snabbt är ni där?",
+    title: "Hur snabbt kan ni vara på plats?",
     description:
-      "Vi garanterar alltid hjälp samma dag och strävar efter att vara på plats inom 2 timmar, oavsett vart i Stockholm du befinner dig.",
+      "Vi strävar efter att erbjuda hjälp inom 2 timmar i hela Stockholm, oavsett din plats, med garanti för samma dags service.",
   },
   {
     id: 2,
-    title: "Finns det något sätt att kontakta er?",
+    title: "Hur kan jag kontakta er?",
     description:
-      "Ja, det finns flera sätt att kontakta oss. Lättast når du oss på 08 - 30 22 41, vår växel är öppen dygnet runt. För mindre akuta ärenden kan du maila oss på order@jour365.se, eller fylla i vårt kontaktformulär som du hittar här på hemsidan under fliken 'om oss'. Vi besvarar ditt mail så fort vi kan.",
+      "Kontakta oss enkelt via vår 24/7 öppna växel på 08 - 30 22 41, maila till order@needz.se för icke-akuta ärenden, eller använd vårt kontaktformulär på 'om oss' sidan.",
   },
   {
     id: 3,
-    title: "Är ni dyrare eftersom ni har jour?",
+    title: "Påverkar jourtjänsten era priser?",
     description:
-      "Vi erbjuder konkurrenskraftiga och marknadsmässiga priser på alla våra tjänster. Ring oss för ett prisförslag i just ditt ärende!",
+      "Vi håller konkurrenskraftiga priser för alla tjänster, inklusive jourarbete. Kontakta oss för en skräddarsydd offert!",
   },
   {
     id: 4,
-    title: "Lämnar ni garanti på arbetet?",
+    title: "Erbjuder ni garantier på utfört arbete?",
     description:
-      "Vi lämnar garanti på arbeten där vi både inhandlat material och utfört installation. Däremot kan vi inte lämna garanti om du som kund själv köper materialet, även om vi installerar det.",
+      "Garanti ges för arbeten med material vi tillhandahåller och installerar. Ingen garanti ges för kundinköpt material, även om installationen görs av oss.",
   },
   {
     id: 5,
-    title: "Är era hantverkare certifierade?",
+    title: "Är ert team certifierat?",
     description:
-      "Alla våra rörmokare och elektriker har rätt certifikat att utföra sina arbeten.",
+      "Alla våra tekniker, inklusive snickare, VVS-tekniker och elektriker, är certifierade och kvalificerade.",
   },
   {
     id: 6,
-    title: "Vad är ROT-avdrag?",
+    title: "Vad innebär ROT-avdrag?",
     description:
-      "ROT är en förkortning och står för renovering, ombyggnad och tillbyggnad. Privatpersoner kan få ROT-avdrag för vissa typer av arbeten som görs i hemmet. Läs mer hos Skatteverket om just ROT.",
+      "ROT står för renovering, ombyggnad, tillbyggnad och erbjuds till privatpersoner för vissa hemarbeten. Detaljer finns hos Skatteverket.",
   },
   {
     id: 7,
-    title: "Har jag rätt till ROT-avdrag?",
-    description: `För att få ROT-avdrag måste du stå som ägare av fastigheten. Har du frågor kring om ditt ärende innefattas av ROT-avdrag så kan du kontaka oss på 08 - 30 22 41 så hjälper vi dig.`,
+    title: "Vem kvalificerar för ROT-avdrag?",
+    description: `Du är berättigad om du äger fastigheten. Kontakta oss för att verifiera om ditt arbete är berättigat för ROT-avdrag.`,
   },
   {
     id: 8,
-    title: "Måste jag själv ansöka om ROT-avdrag?",
-    description: `Vi på Jour 365 tar hand om ansökan av ROT-avdrag så att du som kund kan känna dig trygg och säker på att det blir rätt. `,
+    title: "Hanterar ni ROT-avdragsansökningar?",
+    description: `Vi sköter ROT-avdragsansökningar för att du som kund ska känna dig trygg och säker med processen.`,
   },
 ];
 export default Home;

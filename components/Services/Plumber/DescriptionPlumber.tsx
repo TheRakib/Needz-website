@@ -12,7 +12,7 @@ export default function DescriptionPlumber() {
             <p className="">
               Vi har ett flertal rörmokare inom stockholmsområdet som alla
               innehar säkert vatten. De harlång erfarenhet och bred kunskap inom
-              flera olika typer av ärenden. Vi på Jour365 hjälper dig med allt
+              flera olika typer av ärenden. Vi på needz hjälper dig med allt
               från service av befintliga installationer till nya installationer.
             </p>
             <p className="">

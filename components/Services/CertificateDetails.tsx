@@ -22,7 +22,7 @@ export default function CertificateDetails() {
           <TextTitle title="Certifierade elektriker" />
           <div className="flex flex-col gap-5 text-[18px] text-black/70 ">
             <p className="text-center md:text-left">
-              På Jour365 har vi alltid kunden i fokus. Vi värdesätter
+              På needz har vi alltid kunden i fokus. Vi värdesätter
               kundnöjdhet och kvalité. Därför har alla våra elfirmor intyg från
               Elsäkerhetsverket, så att du som kund kan känna att du är i trygga
               händer.
@@ -50,4 +50,4 @@ export default function CertificateDetails() {
   );
 }
 
-const text = `Är du på jakt efter en pålitlig elfirma som kan vara snabbt på plats, antingen hemma eller på jobbet? Då har du hittat rätt! Vi på Jour365 förstår vikten av att ha en pålitlig elektriker för alla sina elbehov, som kan vara snabbt på plats när det behövs. Därför har vi alltid erfarna elektriker redo att hjälpa till - så att du alltid kan vara säker på att elen fungerar som den ska när du behöver det. `;
+const text = `Är du på jakt efter en pålitlig elfirma som kan vara snabbt på plats, antingen hemma eller på jobbet? Då har du hittat rätt! Vi på needz förstår vikten av att ha en pålitlig elektriker för alla sina elbehov, som kan vara snabbt på plats när det behövs. Därför har vi alltid erfarna elektriker redo att hjälpa till - så att du alltid kan vara säker på att elen fungerar som den ska när du behöver det. `;

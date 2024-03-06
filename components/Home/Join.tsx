@@ -9,7 +9,7 @@ export default function Join() {
     <div className="max-w-layout mx-auto">
       <div className="flex flex-col items-center justify-center">
         <h2 className="uppercase font-semibold text-[20px] md:text-[25px]">
-          jour365
+          needz
         </h2>
         <SectionTitle
           title="Hur det fungerar!"
