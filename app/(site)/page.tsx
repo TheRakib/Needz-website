@@ -20,7 +20,7 @@ const Home = () => {
       <Emergencies />
       {/* <Feedback /> */}
       <div className="mb-[120px]"></div>
-      <Join />
+      {/* <Join /> */}
       <Features />
       <FAQ faqItems={faqItems} />
       <OurServices />

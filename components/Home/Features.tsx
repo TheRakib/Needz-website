@@ -57,7 +57,7 @@ export default function Features() {
         </div>
         <div className="col-span-1">
           <div className="relative w-full h-[550px] md:h-[909px]">
-            <Image src={"/home/features.jpg"} alt="features" fill />
+            <Image src={"/appImage/app-long.png"} alt="features" fill />
           </div>
         </div>
       </div>
