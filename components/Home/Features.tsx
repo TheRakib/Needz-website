@@ -12,7 +12,7 @@ export default function Features() {
     <div className="max-w-layout mx-auto my-[120px] px-2">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
         <div className="col-span-1 flex flex-col justify-center gap-12">
-          <SectionTitle title="På needz arbetar vi snabbt och effektivt." />
+          <SectionTitle title="På needz prioriterar vi effektivitet." />
           <ul className="flex flex-col gap-6">
             {featureItems.map((item) => (
               <li key={item.id} className="flex items-center gap-6">
@@ -68,23 +68,22 @@ export default function Features() {
 const featureItems = [
   {
     id: 1,
-    content: "På needz värderar vi kundnöjdhet.",
+    content: "Kundnöjdhet står i centrum för vår verksamhet.",
   },
   {
     id: 2,
-    content: "du som kund är alltid i fokus!.",
+    content: "Din tillfredsställelse är vår högsta prioritet!",
   },
   {
     id: 3,
-    content: " Vi är kontaktbara 24/7 på telefon för alla sorters ärenden.",
+    content: "Tillgängliga dygnet runt för support och service.",
   },
   {
     id: 4,
-    content: "Alla våra tekniker är certifierade och erfarna.",
+    content: "Våra tekniker är kvalificerade och välutbildade.",
   },
   {
     id: 5,
-    content:
-      "Vi har lång erfarenhet inom jour och strävar alltid efter att lösa problemen snabbt, kvalitativt och effektivt. E13",
+    content: "Expertis i jourtjänster med snabba och pålitliga lösningar.",
   },
 ];
