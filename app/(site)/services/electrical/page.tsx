@@ -10,13 +10,13 @@ export default function page() {
   return (
     <div>
       <ServicesBanner
-        title="Rörmokare över hela Stockholm"
-        breadcrumb="rörmokare sida"
+        title="Elektriker över hela Stockholm"
+        breadcrumb="Elektriker sida"
         img="/services/plumber.png"
       />
 
       <DescriptionPlumber />
-      <PlumberServices />
+      {/* <PlumberServices /> */}
       <LocalPlumber />
       <FAQPlumber />
       <ContactUs />

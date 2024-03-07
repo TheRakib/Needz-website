@@ -21,7 +21,7 @@ export const services = [
     id: 3,
     title: "Elektriska arbeten",
     title_en: "Electrical work",
-    link: "/services/plumber",
+    link: "/services/electrical",
     img: "/appImage/electrical_work.jpg",
     description:
       "Expertelektriker finns till hands med våra licensierade elektriker. Från mindre reparationer till större installationer, vi tillhandahåller säkra, tillförlitliga och effektiva elektriska lösningar, som säkerställer att ditt utrymme är korrekt och säkert försörjt, enligt de högsta branschstandarderna.",

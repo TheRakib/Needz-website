@@ -9,14 +9,15 @@ export default function LocalPlumber() {
       <div className="">
         <div className="flex flex-col gap-5 items-center justify-center mb-[90px]  max-w-[712px] mx-auto">
           <SecondTitle
-            title="Rörmokare i stockholm - för privatpersoner och företag."
+            title="Elektrikertjänster för alla"
             className="!text-center"
           />
           <p className="text-[18px] text-black/70 text-center">
-            På needz erbjuder vi omfattande VVS-tjänster för både privapersoner
-            och företag i hela stockholm. Våra erfarna och certifierade är redo
-            att hjälpa dig med allt från minsre reparationer till större
-            installationer.
+            Needz tillhandahåller omfattande elektrikertjänster för både
+            privatpersoner och företag i Stockholm. Vårt team av certifierade
+            elektriker är beredda att assistera med allt från enkla reparationer
+            till omfattande elinstallationer, säkerställande av din säkerhet och
+            komfort.
           </p>
         </div>
         <AccordionPic items={serviceAccordions} withBullets />
@@ -45,28 +46,23 @@ const serviceAccordions = [
     title: "Jour Elektriker",
     img: "/services/plumber/Ventilation.png",
     description: [
-      "Elproblem kan uppstå vilken tid på dygnet som helst, och kräver ofta snabba och säkra lösningar. Våra certifierade elektriker är tillgängliga dygnet runt för att hantera alla typer av  elrelaterade problem. Vi hjälper dig med allt från strömavbrott, säkringar som gått till att hela huset står strömlöst.",
-      " Vi strävar alltid efter att vara på plats inom 2h från det att vi fått in en bokning, så att du kan slappna av och luta dig tillbaka.",
-      " Våra jourtjänster täcker allt från mindre reparationer till större installationer. Vi garanterar alltid ett kvalitativt och proffsigt arbete. ",
+      "Elavbrott eller elproblem kan inträffa oväntat, krävande omedelbar uppmärksamhet. Våra jourkvalificerade elektriker är redo att ingripa dygnet runt, garanterande snabb respons och effektiva lösningar på alla dina elutmaningar, alltid med målet att vara på plats inom två timmar från din förfrågan.",
     ],
   },
   {
     id: 2,
-    title: "VVS Service",
+    title: "Elektrisk Installation & Service",
     img: "/services/plumber/Heat.png",
     description: [
-      "Vi erbjuder ett brett utbud av VVS-tjänster. Vi utför både nya installationer samt underhåll och service av befintliga installationer. ",
-      "Vi kan hjälpa till med allt från läckande kranar till nya rördragningar. ",
-      "Alla våra rörmokare innehar intyg från säkert vatten och har fera års erfarenhet inom branschen. ",
+      "Behöver du installation av ny utrustning eller service på befintliga elinstallationer? Vårt erbjudande inkluderar allt från installation av belysning till större elsystem. Våra elektriker, certifierade och med lång erfarenhet, garanterar högsta kvalitet och säkerhet i alla projekt.",
     ],
   },
   {
     id: 3,
-    title: "Stopp i Avlopp",
+    title: "Problemfri Elanvändning",
     img: "/services/plumber/Sanitation.png",
     description: [
-      "Stopp i avlopp kan orsaka stora besvär i hemmet. Våra tekniker är utbildade för att snabbt och effektivt identifiera och åtgärda olika typer av stopp.",
-      " Oavsett om det är stopp i ett hand fat eller i flera avlopp samtidigt så garanterar vi snabb och smidig service. ",
+      "Uppleva problem med ditt elsystem kan vara frustrerande. Vårt expertteam är specialiserat på att effektivt diagnostisera och åtgärda alla typer av elektriska problem, oavsett om det gäller enstaka uttag eller hela systemet, för att säkerställa din el fungerar smidigt och utan avbrott.",
     ],
   },
 ];

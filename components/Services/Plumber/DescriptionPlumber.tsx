@@ -10,18 +10,14 @@ export default function DescriptionPlumber() {
           <TextTitle title="Beskrivning" />
           <div className="flex flex-col gap-6 mt-5 text-black/70">
             <p className="">
-              Vi har ett flertal rörmokare inom stockholmsområdet som alla
-              innehar säkert vatten. De harlång erfarenhet och bred kunskap inom
-              flera olika typer av ärenden. Vi på needz hjälper dig med allt
-              från service av befintliga installationer till nya installationer.
+              Vårt team består av kvalificerade elektriker i Stockholm, alla med
+              gedigen erfarenhet och expertis inom en mängd olika elektriska
+              ärenden. På needz är vi engagerade i att leverera exceptionell
+              service och kvalitet, från standardreparationer till komplexa
+              installationer.
             </p>
             <p className="">
-              För oss är alltid kunden i fokus och därför ser vi alltid till att
-              leverera med både bra service och kvalité.
-            </p>
-            <p className="">
-              Tveka inte på att höra av dig, vi finns tillgängliga i hela
-              stockholm dygnet runt!
+              Vi är här för dig dygnet runt, alltid med kundens behov i fokus.
             </p>
           </div>
         </div>
