@@ -19,7 +19,7 @@ export default function drains() {
   return (
     <div>
       <ServicesBanner
-        title="Stopp i avlopp"
+        title="Stopp i Avlopp - VVS-tjänster"
         breadcrumb="Stopp i avlopp sida"
         img="/services/drains.png"
       />

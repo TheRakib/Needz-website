@@ -12,7 +12,7 @@ export const services = [
     id: 2,
     title: "VVS",
     title_en: "Plumbing",
-    link: "/services/drains",
+    link: "/services/plumbing",
     img: "/appImage/plumbing.jpg",
     description:
       "Våra certifierade rörmokare är rustade för att hantera alla dina VVS-behov, från läckagereparationer till nya installationer. Med snabba svarstider och fokus på kvalitet garanterar vi effektiva lösningar på alla VVS-utmaningar, och ser till att dina system fungerar smidigt och tillförlitligt.",
