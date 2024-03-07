@@ -7,8 +7,8 @@ export default function page() {
   return (
     <div>
       <ServicesBanner
-        title="Elinstallationer"
-        breadcrumb="Sidan för Elinstallationer"
+        title="Flytt- och Leveranstjänster"
+        breadcrumb="Sidan för Leveranstjänster"
         img="/services/electrical-installations/banner.png"
       />
       <Description />

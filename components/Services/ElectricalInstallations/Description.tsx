@@ -14,25 +14,11 @@ export default function Description() {
       <div className=" flex flex-col lg:flex-row justify-between gap-[50px] mt-5 px-2">
         <div className="flex flex-col gap-11">
           <p className="text-black/70 text-[18px]">
-            Vi genomför både stora och små projekt. Vi åtar oss allt från
-            <a
-              href="https://www.joureliten.se/byta-eluttag-sjalv/"
-              className="underline"
-            >
-              {" "}
-              byte av elektriska uttag{" "}
-            </a>
-            or
-            <a
-              href="https://www.joureliten.se/installera-ny-diskmaskin/"
-              className="underline"
-            >
-              {" "}
-              installation av vitvaror
-            </a>
-            , till installation av smarta hemlösningar i en hel byggnad över
-            hela Stockholm. Våra erfarna elektriker besöker dig med våra
-            välutrustade servicebilar och utför felsökning och översyn på plats.
+            Ingen uppgift är för stor eller för liten. Vi hanterar allt från
+            enstaka möbelförflyttningar till fullständiga företagsflyttar,
+            inklusive transport av tunga och skrymmande objekt. Med våra
+            välutrustade fordon och erfarna team, säkerställer vi en smidig
+            process över hela Stockholm.
           </p>
           <div className="w-[310px] h-[392px] md:w-[560px] lg:w-[580px] xl:w-[664px] md:h-[692px] ml-auto mr-auto lg:ml-0 relative ">
             <Image
@@ -45,32 +31,27 @@ export default function Description() {
         </div>
         <div className="flex flex-col gap-[45px]">
           <div className="flex flex-col gap-9">
-            <TextTitle title="Solid erfarenhet inom nybyggnation, ombyggnad och nya elinstallationer." />
+            <TextTitle title="Erfarenhet i Flyttningar och Leveranser" />
             <p className="text-black/70 text-[18px]">
-              Renoverar eller bygger du om? Vi åtar oss uppdrag inom
-              nybyggnation, ombyggnad och nya installationer i hela
-              Storstockholm och dess omgivande områden. Storleken på ditt
-              projekt spelar ingen roll för needz. Vi hjälper dig att utveckla
-              förslag på en modern, effektiv och energibesparande lösning. Hos
-              oss får du en tydlig och konkret bild av kostnaderna och
-              omfattningen av renoveringsarbetet.
+              Behöver du hjälp med flyttning eller planerar du en ombyggnation
+              som kräver omfattande objektflyttningar? Vi täcker allt från
+              individuella objekt till fullskaliga företagsflyttningar och
+              nyinstallationer av möbler eller utrustning, oavsett projektets
+              storlek eller omfång.
             </p>
           </div>
           <div className="flex flex-col gap-5">
-            <TextTitle title="Kvalitet och säkerhet" />
+            <TextTitle title="Kvalitet och Pålitlighet i Service" />
             <div className="text-black/70 text-[18px] flex flex-col gap-7">
               <p>
-                Vi är lyhörda för dina synpunkter och strävar efter att inte
-                bara uppfylla, utan också överträffa dina förväntningar. Därför
-                utförs allt arbete av professionella elektriker som är godkända
-                av Elsäkerhetsverket med omfattande erfarenhet och som besitter
-                adekvata, aktuella och verifierade kunskaper inom relevanta
-                områden.
+                Vi prioriterar din tillfredsställelse och strävar efter att
+                överträffa dina förväntningar med varje uppdrag. Våra expertteam
+                är utbildade, försäkrade och engagerade i att erbjuda pålitliga,
+                effektiva och säkra lösningar.
               </p>
               <p>
-                Vi skyddar miljön och strävar även efter att utforma
-                energieffektiva lösningar, samt att välja material och produkter
-                som är miljövänliga och underlättar återvinning.
+                Vi är dedikerade till miljöansvar och fokuserar på hållbara
+                metoder i alla våra tjänster.
               </p>
             </div>
           </div>
@@ -86,8 +67,8 @@ export default function Description() {
 const detailsProps = {
   description: {
     para1:
-      "Med vår breda kompetens inom elektricitet kan vi ta oss an uppdrag inom allt från elinstallationer i villor och fritidshus till större projekt.",
-    para2: ` Våra kunniga <a href="#" class="underline">elektriker</a>  hjälper både företag och privatpersoner med allt från mindre elservice till mer omfattande entreprenadprojekt.`,
+      "Vi specialiserar oss på att tillhandahålla skräddarsydda flytt- och leveranstjänster, från att flytta innehåll i hem och kontor till att leverera stora föremål.",
+    para2: ` Vårt team erbjuder flexibla lösningar för både privatpersoner och företag, hanterar allt från enkla leveranser till stora, komplexa flyttprojekt.`,
   },
   title2: "Alla typer av elinstallationer",
   title2Class: "justify-between",
