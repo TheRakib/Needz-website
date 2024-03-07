@@ -49,7 +49,7 @@ const initialState = () => ({
 
 export default function ContactUs({
   semiTitle = "Need Any Services",
-  helperText = "Fyll i formuläret för en kostnadsfri offert. Vi erbjuder service dygnet runt, alla dagar i veckan. För akuta ärenden och jourtjänst är vi tillgängliga 24 timmar om dygnet, 365 dagar om året.",
+  helperText = "Fyll i formuläret nedan för att få en kostnadsfri offert. Vårt team är redo att assistera dig med service dygnet runt, året om. För brådskande behov är vår jourtjänst tillgänglig 24/7, varje dag på året.",
   disabledHelperText = false,
 }: Props) {
   const [formData, setFormData] = useState<FormState>(initialState());

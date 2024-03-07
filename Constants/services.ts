@@ -2,7 +2,8 @@ export const services = [
   {
     id: 1,
     title: "Snickare",
-    link: "/services/electrician",
+    title_en: "Carpentry",
+    link: "/services/snickare",
     img: "/appImage/carpenter.jpg",
     description:
       "Våra skickliga snickare levererar precision och hantverksskicklighet till varje projekt, vare sig det handlar om specialtillverkade möbler, skåp eller intrikata träarbeten. Med ett skarpt öga för detaljer och ett åtagande att leverera kvalitet, säkerställer våra proffs att varje stycke är perfekt. Lita på oss för att förvandla ditt utrymme med skräddarsytt träarbete som kombinerar estetik och funktionalitet.",
@@ -10,6 +11,7 @@ export const services = [
   {
     id: 2,
     title: "VVS",
+    title_en: "Plumbing",
     link: "/services/drains",
     img: "/appImage/plumbing.jpg",
     description:
@@ -18,6 +20,7 @@ export const services = [
   {
     id: 3,
     title: "Elektriska arbeten",
+    title_en: "Electrical work",
     link: "/services/plumber",
     img: "/appImage/electrical_work.jpg",
     description:
@@ -26,6 +29,7 @@ export const services = [
   {
     id: 4,
     title: "Flytta & Leverera",
+    title_en: "Move & Deliver",
     link: "/services/electrical-installations",
     img: "/appImage/move_&_delivery.jpg",
     description:
@@ -34,6 +38,7 @@ export const services = [
   {
     id: 5,
     title: "Köp åt mig",
+    title_en: "Buy For Me",
     link: "/services/buy_for_me",
     img: "/appImage/buy_for_me.jpg",
     description:
@@ -42,6 +47,7 @@ export const services = [
   {
     id: 6,
     title: "Återvinning",
+    title_en: "Recycle",
     link: "/services/recycle",
     img: "/appImage/recycle.jpg",
     description:

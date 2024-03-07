@@ -8,12 +8,12 @@ export default function LocalElectrician() {
     <div className="max-w-layout mx-auto mt-[80px] mb-[120px] px-2">
       <div className="bg-primary/10 grid grid-cols-1 md:grid-cols-2 ">
         <div className="col-span-1 p-[30px] flex flex-col gap-5  ">
-          <TextTitle title="Hitta din lokala elektriker" />
+          <TextTitle title="Hitta din lokala snickare" />
           <p className="text-[18px] text-black/70 tracking-tight text-center md:text-left">
-            Vi har elektriker över hela stockholms området och jobbar med alla
-            typer av ärenden. Alla våra elektriker är erfarna och innehar intyg
-            från elsäkerhetsverket och ha r erfarenhet av både mindre och större
-            jobb.
+            Vi har snickare över hela Stockholmsområdet, redo att hantera alla
+            typer av snickeriprojekt. Alla våra snickare är yrkesutbildade och
+            har gedigen erfarenhet av både små och stora uppdrag, säkerställande
+            högsta kvalitet och expertis i varje projekt.
           </p>
           <div className="flex flex-col gap-7 mt-auto">
             <Button
