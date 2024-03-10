@@ -11,7 +11,7 @@ export default function page() {
       <ServicesBanner
         title="Handla Åt Mig - Tjänster"
         breadcrumb="Handla Åt Mig sida"
-        img="/services/plumber.png"
+        img="/services/buy-for-me.jpg"
       />
 
       <DescriptionBuy />

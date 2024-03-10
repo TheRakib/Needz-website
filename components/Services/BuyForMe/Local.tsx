@@ -41,7 +41,7 @@ const serviceAccordions = [
   {
     id: 1,
     title: "Pålitlig och Effektiv Service",
-    img: "/services/plumber/Ventilation.png",
+    img: "/services/buy-for-me1.jpg",
     description: [
       "Prioritera din bekvämlighet med vår tillförlitliga och snabba leveranstjänst. Vi är dedikerade till att erbjuda en smidig och bekymmersfri upplevelse, vilket gör det möjligt för dig att njuta av mer tid och mindre stress. Våra specialiserade medarbetare hanterar dina önskemål med största professionalitet och diskretion.",
     ],
@@ -49,7 +49,7 @@ const serviceAccordions = [
   {
     id: 2,
     title: "Exceptionell Kundupplevelse",
-    img: "/services/plumber/Heat.png",
+    img: "/services/buy-for-me2.jpg",
     description: [
       `Vårt engagemang för enastående service är kärnan i allt vi gör. Vi strävar efter att leverera en personlig service som överträffar dina förväntningar, med en tydlig kommunikation och anpassning till dina specifika preferenser. Välj vår "Handla Åt Mig"-tjänst för en oöverträffad kundupplevelse som sätter dina behov i första hand.`,
     ],
