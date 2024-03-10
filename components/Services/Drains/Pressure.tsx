@@ -15,7 +15,7 @@ export default function Pressure() {
   return (
     <div className="px-2 max-w-layout mx-auto my-10 flex flex-col md:flex-row justify-between gap-4">
       <div className="flex flex-col gap-11 w-[350px] h-[444px] md:w-[680px] md:h-[594px] relative mx-auto">
-        <Image src={"/services/drains-description.png"} alt="worker" fill />
+        <Image src={"/services/plumbing-service.jpg"} alt="worker" fill />
       </div>
       <div className="max-w-[510px] flex flex-col justify-between">
         <div className=" flex flex-col gap-5 ">

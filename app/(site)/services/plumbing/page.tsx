@@ -21,7 +21,7 @@ export default function drains() {
       <ServicesBanner
         title="Stopp i Avlopp - VVS-tjänster"
         breadcrumb="Stopp i avlopp sida"
-        img="/services/drains.png"
+        img="/services/plumbing.jpg"
       />
       <Description />
       <Pressure />
