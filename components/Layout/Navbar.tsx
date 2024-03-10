@@ -19,6 +19,8 @@ import { usePathname, useRouter } from "next/navigation";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import styled from "styled-components";
 import { FaArrowRight } from "react-icons/fa6";
+import Link from "next/link";
+import Image from "next/image";
 
 const pages = [
   {
@@ -150,12 +152,30 @@ function Navbar() {
         sx={{ flexGrow: 0 }}
         className={twMerge(`${className && className} xl:gap-2 flex`)}
       >
-        <a href="tel:08302241" className="py-1">
+        {/* <a href="tel:08302241" className="py-1">
           <Button className=" text-black capitalize text-base xl:text-[17px] font-inter whitespace-nowrap ">
             <BiPhoneCall className="mr-2 text-2xl" />
             08-302241
           </Button>
-        </a>
+        </a> */}
+        <Link href={"#"}>
+          <Image
+            src={"/social/playStore.png"}
+            alt="get app on play store"
+            className="lg:h-10 lg:w-28 h-10 w-34 hover:opacity-90 transform hover:scale-105 ease-in duration-200"
+            width={250}
+            height={80}
+          />
+        </Link>
+        <Link href={"#"}>
+          <Image
+            src={"/social/appleStore2.png"}
+            alt="get app on play store"
+            className="lg:h-10 lg:w-28 h-10 w-34 hover:opacity-90 transform hover:scale-105 ease-in duration-200"
+            width={250}
+            height={80}
+          />
+        </Link>
       </Box>
     );
   };

@@ -15,22 +15,23 @@ export default function CertificateDetails() {
   return (
     <div className="px-2 max-w-layout mx-auto my-10 flex flex-col md:flex-row justify-between gap-4">
       <div className="flex flex-col gap-11 w-[350px] h-[444px] md:w-[680px] md:h-[594px] relative mx-auto">
-        <Image src={"/services/electrician.png"} alt="worker" fill />
+        <Image src={"/services/carpenter-service.jpg"} alt="worker" fill />
       </div>
       <div className="max-w-[510px] flex flex-col gap-11">
         <div className=" flex flex-col gap-5 ">
-          <TextTitle title="Certifierade elektriker" />
+          <TextTitle title="Certifierade snickare" />
           <div className="flex flex-col gap-5 text-[18px] text-black/70 ">
             <p className="text-center md:text-left">
-              På needz har vi alltid kunden i fokus. Vi värdesätter
-              kundnöjdhet och kvalité. Därför har alla våra elfirmor intyg från
-              Elsäkerhetsverket, så att du som kund kan känna att du är i trygga
-              händer.
+              Hos needz sätter vi alltid kunden först och strävar efter maximal
+              kundnöjdhet och högsta kvalitet. Våra snickare är inte bara
+              hantverksmässigt skickliga, de är också certifierade och följer
+              branschens bästa praxis, så att du kan känna dig trygg med ditt
+              val av snickare.
             </p>
           </div>
         </div>
         <div className="max-w-[680px] flex flex-col gap-5 ">
-          <TextTitle title="El-installationer i stockholm - För företag och privatpersoner" />
+          <TextTitle title="Snickeritjänster i Stockholm - För företag och privatpersoner" />
           <div className="flex flex-col gap-5 text-[18px] text-black/70 ">
             <p>
               {displayText}
@@ -50,4 +51,4 @@ export default function CertificateDetails() {
   );
 }
 
-const text = `Är du på jakt efter en pålitlig elfirma som kan vara snabbt på plats, antingen hemma eller på jobbet? Då har du hittat rätt! Vi på needz förstår vikten av att ha en pålitlig elektriker för alla sina elbehov, som kan vara snabbt på plats när det behövs. Därför har vi alltid erfarna elektriker redo att hjälpa till - så att du alltid kan vara säker på att elen fungerar som den ska när du behöver det. `;
+const text = `Söker du en tillförlitlig snickerifirma som kan vara snabbt på plats, både i hemmet och på företaget? Vi på needz förstår vikten av att ha tillgång till kvalificerade snickare som snabbt kan vara på plats. Vårt team av erfarna snickare står redo att bistå med allt från mindre reparationer till större byggprojekt, så att du alltid kan lita på att ditt snickeriarbete utförs perfekt.`;

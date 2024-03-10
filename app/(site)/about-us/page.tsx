@@ -1,6 +1,5 @@
 import OnCall from "@/components/About/OnCall";
 import Features from "@/components/Home/Features";
-import Join from "@/components/Home/Join";
 import ServicesBanner from "@/components/Services/ServicesBanner";
 import ContactUs from "@/components/Shared/ContactUs";
 import { Metadata } from "next";
@@ -16,12 +15,12 @@ export default function page() {
   return (
     <div>
       <ServicesBanner
-        title="Om oss"
+        title="JOUR I HELA STOCKHOLM, DYGNET RUNT!"
         breadcrumb="om oss sida"
-        img="/about/banner.png"
+        img="/about-us.jpg"
       />
       <OnCall />
-      <Join />
+      {/* <Join /> */}
       <Features />
       <ContactUs />
     </div>

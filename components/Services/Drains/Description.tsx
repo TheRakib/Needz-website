@@ -11,11 +11,11 @@ export default function Description() {
 const detailsProps = {
   description: {
     para1:
-      "Har du problem med stopp i avloppet? Kontakta oss så hjälper vi dig! Det finns månfa orsaker till stopp i avlopp. Det kan bl.a vara matrester, fett, föremål som fastnat och mycket mer. Oavsett vad som orsakat ditt stopp så har vi skickliga tekniker som hjälper dig att bli kvitt stoppet och ser till så att avloppet fungerar som det ska igen.",
-    para2: ` Vi hjälper även till med underhållsspolning, vilket vi rekommenderar att man gör ca var 4e-5e år. Ring oss så berättar vi mer!.`,
+      "Möter du hinder i ditt avloppssystem? Vi är här för att hjälpa! Avloppsstopp kan orsakas av allt från matrester till föremål som blockerar flödet. Våra erfarna tekniker är experter på att snabbt identifiera och åtgärda problemet, återställa ditt avlopp till optimal funktion. ",
+    para2: ` Vi erbjuder också förebyggande underhållsspolningar för att hålla dina system i toppskick. Kontakta oss för en lösning som varar.`,
   },
   title2: "Avloppsrensning",
   description2Limit: 47,
   description2:
-    "Tecken på att det börjar bli dags för avloppsrensning är t.ex; (PUNKTFORM) -Vattnet börjar ringa långsamt -Gurglande ljud i avloppet - Dålig lukt i avloppet. Dessa är vanliga tecken på att det börjar bli stopp i avloppet och  avloppet. Det är därför bra att hå",
+    "Upplever du långsamt avrinnande vatten, gurglande ljud eller dålig lukt? Detta är tecken på att avloppet kan vara på väg att täppas igen. Våra VVS-experter kan effektivt rensa ditt avlopp och förebygga framtida problem, förlänga dina rörs livslängd och säkerställa renhet och hygien.",
 };
