@@ -12,7 +12,7 @@ export default function page() {
       <ServicesBanner
         title="Elektriker över hela Stockholm"
         breadcrumb="Elektriker sida"
-        img="/services/plumber.png"
+        img="/services/electrical.jpg"
       />
 
       <DescriptionPlumber />

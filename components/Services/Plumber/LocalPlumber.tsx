@@ -44,7 +44,7 @@ const serviceAccordions = [
   {
     id: 1,
     title: "Jour Elektriker",
-    img: "/services/plumber/Ventilation.png",
+    img: "/services/electrical/electrical1.jpg",
     description: [
       "Elavbrott eller elproblem kan inträffa oväntat, krävande omedelbar uppmärksamhet. Våra jourkvalificerade elektriker är redo att ingripa dygnet runt, garanterande snabb respons och effektiva lösningar på alla dina elutmaningar, alltid med målet att vara på plats inom två timmar från din förfrågan.",
     ],
@@ -52,7 +52,7 @@ const serviceAccordions = [
   {
     id: 2,
     title: "Elektrisk Installation & Service",
-    img: "/services/plumber/Heat.png",
+    img: "/services/electrical/electrical2.jpg",
     description: [
       "Behöver du installation av ny utrustning eller service på befintliga elinstallationer? Vårt erbjudande inkluderar allt från installation av belysning till större elsystem. Våra elektriker, certifierade och med lång erfarenhet, garanterar högsta kvalitet och säkerhet i alla projekt.",
     ],
@@ -60,7 +60,7 @@ const serviceAccordions = [
   {
     id: 3,
     title: "Problemfri Elanvändning",
-    img: "/services/plumber/Sanitation.png",
+    img: "/services/electrical/electrical3.jpg",
     description: [
       "Uppleva problem med ditt elsystem kan vara frustrerande. Vårt expertteam är specialiserat på att effektivt diagnostisera och åtgärda alla typer av elektriska problem, oavsett om det gäller enstaka uttag eller hela systemet, för att säkerställa din el fungerar smidigt och utan avbrott.",
     ],
