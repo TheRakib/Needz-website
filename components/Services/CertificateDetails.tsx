@@ -15,7 +15,7 @@ export default function CertificateDetails() {
   return (
     <div className="px-2 max-w-layout mx-auto my-10 flex flex-col md:flex-row justify-between gap-4">
       <div className="flex flex-col gap-11 w-[350px] h-[444px] md:w-[680px] md:h-[594px] relative mx-auto">
-        <Image src={"/services/electrician.png"} alt="worker" fill />
+        <Image src={"/services/carpenter-service.jpg"} alt="worker" fill />
       </div>
       <div className="max-w-[510px] flex flex-col gap-11">
         <div className=" flex flex-col gap-5 ">

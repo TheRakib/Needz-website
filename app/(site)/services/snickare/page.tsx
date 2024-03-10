@@ -33,7 +33,7 @@ export default function page() {
       <ServicesBanner
         title="Snickeriarbeten i Stockholm."
         breadcrumb="Snickare sida"
-        img="/services/banner.png"
+        img="/services/carpenter.jpg"
       />
       <Details {...detailsProps} />
       <CertificateDetails />
