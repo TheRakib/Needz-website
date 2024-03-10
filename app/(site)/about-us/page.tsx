@@ -16,12 +16,12 @@ export default function page() {
   return (
     <div>
       <ServicesBanner
-        title="Om oss"
+        title="JOUR I HELA STOCKHOLM, DYGNET RUNT!"
         breadcrumb="om oss sida"
         img="/about/banner.png"
       />
       <OnCall />
-      <Join />
+      {/* <Join /> */}
       <Features />
       <ContactUs />
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import SecondTitle from "../Shared/SecondTitle";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function OnCall() {
   return (
@@ -11,10 +12,13 @@ export default function OnCall() {
           className="!text-center"
         />
         <p className="lg:text-[18px] text-black/70 max-w-[980px] text-center mx-auto ">
-          needz erbjuder Spol, VVS och El jour i hela stockholm, 24 timmar om
-          dygnet 365 dagar om året. Vi utför också planerade arbeten för både
-          privat personer och företag. Oavsett vilken typ av jobb du behöver så
-          har vi kunniga och erfarna tekniker redo för att hjälpa just dig.
+          På needz är vi din pålitliga partner för Spol, VVS, och El-tjänster
+          tillgängliga när som helst, dag som natt, året runt i hela Stockholm.
+          Vi hanterar inte bara akuta jourärenden men erbjuder även planerade
+          tjänster för både privatpersoner och företag. Med ett team av kunniga
+          och erfarna tekniker är vi alltid redo att erbjuda snabb och effektiv
+          hjälp, oavsett omfattningen på ditt projekt eller behov. Lita på oss
+          för att leverera kvalitetsservice med vår expertis.
         </p>
       </div>
       <div className="flex gap-10 flex-col lg:flex-row">
@@ -35,7 +39,7 @@ export default function OnCall() {
               loading="lazy"
             />
           </div>
-          <div className="flex gap-2 lg:gap-10 items-center justify-center">
+          {/* <div className="flex gap-2 lg:gap-10 items-center justify-center">
             <div className="flex flex-col gap-2">
               <p className="text-black/70 text-center mt-1 ">Försäkrad med</p>
               <Image
@@ -49,7 +53,43 @@ export default function OnCall() {
           </div>
           <p className="text-[26px] font-semibold text-center">
             <a href="tel:08302241">Ring: 08-30 22 41</a>
-          </p>
+          </p> */}
+          <div className="flex flex-col items-center justify-center gap-4">
+            <Link href={"#"}>
+              <Image
+                src={"/social/playStore.png"}
+                alt="get app on play store"
+                className="lg:h-16 lg:w-52 h-12 w-34 hover:opacity-90 transform hover:scale-105 ease-in duration-200"
+                width={250}
+                height={80}
+              />
+              {/* <Button
+                  className="capitalize text-xl md:text-2xl md:py-7 md:px-12 px-10 py-4 rounded-xl bg-primary hover:bg-primary/50 text-white flex-nowrap whitespace-nowrap "
+                  size="large"
+                  >
+                  Kontakta oss
+                </Button> */}
+            </Link>
+
+            <Link href={"#"}>
+              <Image
+                src={"/social/appleStore2.png"}
+                alt="get app on play store"
+                className="lg:h-16 lg:w-52 h-12 w-34 hover:opacity-90 transform hover:scale-105 ease-in duration-200"
+                width={250}
+                height={80}
+              />
+            </Link>
+            {/* <Button
+                className="capitalize text-xl md:text-2xl md:py-7 md:px-12 px-10 py-4 rounded-xl bg-secondary hover:bg-secondary/50 text-white flex-nowrap whitespace-nowrap "
+                size="large"
+              >
+                <a href="tel:08302241" className="flex items-center">
+                  <BiPhoneCall className="mr-2" />
+                  08-302241
+                </a>
+              </Button> */}
+          </div>
         </div>
       </div>
     </div>

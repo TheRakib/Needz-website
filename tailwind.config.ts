@@ -33,7 +33,7 @@ const config: Config = {
       secondary: "#283618",
       black: "#181818",
       accent: "#7d7373",
-      white: "#E7E7E7",
+      white: "#fff",
       yellow: "#ffc000",
     },
     backgroundColor: {
@@ -41,7 +41,7 @@ const config: Config = {
       secondary: "#283618",
       black: "#181818",
       accent: "#7d7373",
-      white: "#E7E7E7",
+      white: "#fff",
       yellow: "#ffc000",
     },
   },
