@@ -9,7 +9,7 @@ export default function page() {
       <ServicesBanner
         title="Flytt- och Leveranstjänster"
         breadcrumb="Sidan för Leveranstjänster"
-        img="/services/electrical-installations/banner.png"
+        img="/services/move-delivery.jpg"
       />
       <Description />
       <ContactUs />
