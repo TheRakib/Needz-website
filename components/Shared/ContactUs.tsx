@@ -308,7 +308,7 @@ export default function ContactUs({
             </div>
           </div>
           <div className="col-span-1 mx-auto md:ml-auto relative w-[300px] h-[466px] md:w-[340px]  xl:w-[580px] md:h-[666px] ">
-            <Image src={"/home/contactUs.png"} alt="Contact" fill />
+            <Image src={"/home/contact-us.jpg"} alt="Contact" fill />
           </div>
         </div>
       </div>
