@@ -103,7 +103,7 @@ export default function AccordionPic({
             onChange={handleChange(`${item.id}`)}
             className={`${
               expanded === `${item.id}` ? "border-0" : "border-b"
-            } border-black/20`}
+            } border-black/20 px-5`}
           >
             <AccordionSummary
               aria-controls="panel1d-content"
