@@ -10,7 +10,7 @@ export default function page() {
       <ServicesBanner
         title="Återvinningstjänster"
         breadcrumb="Sidan Återvinningstjänster"
-        img="/services/electrical-installations/banner.png"
+        img="/services/recycle.jpg"
       />
       <RecycleDescription />
       <FAQRecycle />

@@ -22,7 +22,7 @@ export default function RecycleDescription() {
           </p>
           <div className="w-[310px] h-[392px] md:w-[560px] lg:w-[580px] xl:w-[664px] md:h-[692px] ml-auto mr-auto lg:ml-0 relative ">
             <Image
-              src={"/services/washing-machine/description.png"}
+              src={"/services/recycle1.png"}
               alt={"description"}
               fill
               loading="lazy"
