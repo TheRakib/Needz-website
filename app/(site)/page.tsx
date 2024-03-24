@@ -51,7 +51,7 @@ const faqItems = [
     id: 2,
     title: "Hur kan jag kontakta er?",
     description:
-      "Kontakta oss enkelt via vår 24/7 öppna växel på 08 - ******, maila till order@needz.se för icke-akuta ärenden, eller använd vårt kontaktformulär på 'om oss' sidan.",
+      "Kontakta oss enkelt att maila till order@needz.se för icke-akuta ärenden, eller använd vårt kontaktformulär på 'om oss' sidan.",
   },
   {
     id: 3,
