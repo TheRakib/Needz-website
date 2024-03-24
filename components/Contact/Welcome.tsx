@@ -106,13 +106,13 @@ export default function Welcome() {
       />
       <div className="max-w-[630px] mx-auto flex flex-col mt-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[220px] md:max-w-none ml-auto mr-auto md:mr-0 md:ml-10">
-          <a href="tel:08302241" className="flex items-center gap-4">
+          <a href="tel:083000000" className="flex items-center gap-4">
             <span className="p-2 rounded-lg bg-primary text-white">
               <IoCall size={24} />
             </span>
             <p className="flex flex-col gap-1">
               <span className="text-[14px] text-black/70 ">Ring</span>
-              <span className=" ">08-30 22 41</span>
+              <span className=" ">08000000</span>
             </p>
           </a>
           <a
@@ -125,7 +125,7 @@ export default function Welcome() {
             </span>
             <p className="flex flex-col gap-1">
               <span className="text-[14px] text-black/70 ">Email Us</span>
-              <span className=" ">order@jour365.se</span>
+              <span className=" ">order@needz.se</span>
             </p>
           </a>
         </div>
