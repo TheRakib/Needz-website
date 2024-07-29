@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://jour365.se
+Host: https://needz.se
 
 # Sitemaps
-Sitemap: https://jour365.se/sitemap.xml
+Sitemap: https://needz.se/sitemap.xml
