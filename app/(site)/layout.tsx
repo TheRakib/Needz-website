@@ -78,7 +78,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
 
-        <MainAction />
+        {/* <MainAction /> */}
 
         <Footer />
         <ToastContainer />

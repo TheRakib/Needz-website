@@ -31,9 +31,9 @@ export default function page() {
   return (
     <div>
       <ServicesBanner
-        title="Elektriker i Stockholm."
-        breadcrumb="Elektriker sida"
-        img="/services/banner.png"
+        title="Snickeriarbeten i Stockholm."
+        breadcrumb="Snickare sida"
+        img="/services/carpenter.jpg"
       />
       <Details {...detailsProps} />
       <CertificateDetails />
@@ -48,11 +48,11 @@ export default function page() {
 const detailsProps = {
   description: {
     para1:
-      "Behöver du en elektriker i stockholmsområdet? Vi finns här för att hjälpa dig! Vi erbjuder skickliga tekniker för alla olika typer av ärenden.",
-    para2: ` Vår jour har öppet dygnet runt, 365 dagar om året! Kontakta oss för hjälp omgående!`,
+      "Behöver du en snickare i Stockholmsområdet? Vi är här för att assistera dig! Vi tillhandahåller skickliga snickare för alla typer av projekt, stora som små.",
+    para2: `Vår service är tillgänglig dygnet runt, året runt! Kontakta oss för omedelbar hjälp med dina snickeribehov!`,
   },
-  title2: "Pålitliga elektriker i Stockholm",
+  title2: "Pålitliga snickare i Stockholm",
   description2Limit: 52,
   description2:
-    "Har din jordfelsbrytare löst ut och maten i kylen riskerar att bli dålig? Eller har eluttaget till tv:n slutat fungera mitt i filmkvällen? Oavsett vad för problem du står inför så kan du lita på att vi har elektriker som är välkvalificerade för jobbet. Vi finns tillgängliga alla timmar på dygnet, oavsett när olyckan slår till så är vi redo att hjälpa dig.",
+    "Behöver du hjälp med att installera nya köksskåp, eller kanske bygga en terrass? Oavsett dina snickeribehov kan du lita på att våra välutbildade snickare står redo att leverera arbete av högsta kvalitet. Vi är tillgängliga när som helst – redo att hjälpa dig med ditt projekt.",
 };

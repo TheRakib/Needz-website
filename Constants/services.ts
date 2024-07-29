@@ -2,7 +2,8 @@ export const services = [
   {
     id: 1,
     title: "Snickare",
-    link: "/services/electrician",
+    title_en: "Carpentry",
+    link: "/services/snickare",
     img: "/appImage/carpenter.jpg",
     description:
       "Våra skickliga snickare levererar precision och hantverksskicklighet till varje projekt, vare sig det handlar om specialtillverkade möbler, skåp eller intrikata träarbeten. Med ett skarpt öga för detaljer och ett åtagande att leverera kvalitet, säkerställer våra proffs att varje stycke är perfekt. Lita på oss för att förvandla ditt utrymme med skräddarsytt träarbete som kombinerar estetik och funktionalitet.",
@@ -10,7 +11,8 @@ export const services = [
   {
     id: 2,
     title: "VVS",
-    link: "/services/drains",
+    title_en: "Plumbing",
+    link: "/services/plumbing",
     img: "/appImage/plumbing.jpg",
     description:
       "Våra certifierade rörmokare är rustade för att hantera alla dina VVS-behov, från läckagereparationer till nya installationer. Med snabba svarstider och fokus på kvalitet garanterar vi effektiva lösningar på alla VVS-utmaningar, och ser till att dina system fungerar smidigt och tillförlitligt.",
@@ -18,7 +20,8 @@ export const services = [
   {
     id: 3,
     title: "Elektriska arbeten",
-    link: "/services/plumber",
+    title_en: "Electrical work",
+    link: "/services/electrical",
     img: "/appImage/electrical_work.jpg",
     description:
       "Expertelektriker finns till hands med våra licensierade elektriker. Från mindre reparationer till större installationer, vi tillhandahåller säkra, tillförlitliga och effektiva elektriska lösningar, som säkerställer att ditt utrymme är korrekt och säkert försörjt, enligt de högsta branschstandarderna.",
@@ -26,7 +29,8 @@ export const services = [
   {
     id: 4,
     title: "Flytta & Leverera",
-    link: "/services/electrical-installations",
+    title_en: "Move & Deliver",
+    link: "/services/move-delivery",
     img: "/appImage/move_&_delivery.jpg",
     description:
       "Vår flytt- och leveranstjänst förenklar dina logistikbehov, erbjuder pålitlig, punktlig och varsam hantering av dina föremål. Oavsett om det handlar om att flytta ditt hem, leverera ett paket eller transportera stora föremål, garanterar vårt team en smidig, stressfri upplevelse.",
@@ -34,7 +38,8 @@ export const services = [
   {
     id: 5,
     title: "Köp åt mig",
-    link: "/services/buy_for_me",
+    title_en: "Buy For Me",
+    link: "/services/buy-for-me",
     img: "/appImage/buy_for_me.jpg",
     description:
       "Vår 'Köp åt mig'-tjänst erbjuder ultimat bekvämlighet i personlig shopping och ärenden. Berätta vad du behöver, och vårt pålitliga team köper och levererar det direkt till din dörr. Det är den perfekta lösningen för upptagna personer som söker ett problemfritt sätt att handla.",
@@ -42,6 +47,7 @@ export const services = [
   {
     id: 6,
     title: "Återvinning",
+    title_en: "Recycle",
     link: "/services/recycle",
     img: "/appImage/recycle.jpg",
     description:

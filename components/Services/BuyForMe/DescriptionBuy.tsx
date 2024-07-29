@@ -2,7 +2,7 @@ import TextTitle from "@/components/Shared/TextTitle";
 import React from "react";
 import UserCard from "../UserCard";
 
-export default function DescriptionPlumber() {
+export default function DescriptionBuy() {
   return (
     <div className="max-w-layout mx-auto mt-10 px-3 md:px-2">
       <div className=" flex flex-col md:flex-row justify-between gap-4 md:gap-0">
@@ -10,14 +10,14 @@ export default function DescriptionPlumber() {
           <TextTitle title="Beskrivning" />
           <div className="flex flex-col gap-6 mt-5 text-black/70">
             <p className="">
-              Vårt team består av kvalificerade elektriker i Stockholm, alla med
-              gedigen erfarenhet och expertis inom en mängd olika elektriska
-              ärenden. På needz är vi engagerade i att leverera exceptionell
-              service och kvalitet, från standardreparationer till komplexa
-              installationer.
+              Vår &quot;Handla Åt Mig&quot;-service är den ultimata lösningen
+              för dem som värdesätter tid och bekvämlighet. Vi erbjuder
+              personlig shoppingassistans för alla typer av ärenden och inköp.
             </p>
             <p className="">
-              Vi är här för dig dygnet runt, alltid med kundens behov i fokus.
+              Oavsett om du behöver dagligvaror, specialartiklar eller gåvor,
+              garanterar vi en skräddarsydd service som uppfyller dina specifika
+              behov med precision och omsorg.
             </p>
           </div>
         </div>

@@ -16,14 +16,16 @@ export default function Footer() {
               Om oss
             </h3>
             <p className="max-w-[284px] ml-auto md:ml-0 mr-auto text-black/80 text-[14px] leading-6  ">
-              <Link href={"/"}>needz</Link> erbjuder VVS- och elektrikerjour i
-              Stockholm dygnet runt, men vi utför även planerade arbeten för
-              privatpersoner och företag. Vi använder erfarna och certifierade
-              rörmokare och elektriker.
+              <Link href={"/"}>Needz</Link> erbjuder en omfattande service
+              dygnet runt i Stockholm, inklusive VVS, elektriker, snickeri,
+              flytt- och leveranstjänster, samt personliga shopping- och
+              återvinningstjänster. Vi hanterar både akuta situationer och
+              planerade uppdrag för privatpersoner och företag, alltid med ett
+              team av erfarna och certifierade proffs.
             </p>
           </div>
-          <div className="col-span-4 flex justify-center mr-4">
-            <div className="flex flex-col gap-2">
+          <div className="col-span-4 flex flex-col items-center mr-4">
+            {/* <div className="flex flex-col gap-2">
               <p className="text-black/70 text-center mt-1 ">Försäkrad med</p>
               <Image
                 src={"/about/icon.png"}
@@ -39,6 +41,30 @@ export default function Footer() {
                 </Link>{" "}
                 Sverige AB
               </p>
+            </div> */}
+            <h3 className="text-[18px] font-semibold mb-4 text-left ">
+              Download Now
+            </h3>
+            <div className="flex flex-col justify-center gap-4">
+              <Link href={"#"}>
+                <Image
+                  src={"/social/playStore.png"}
+                  alt="get app on play store"
+                  className="lg:h-16 lg:w-52 h-12 w-34 hover:opacity-90 transform hover:scale-105 ease-in duration-200"
+                  width={250}
+                  height={80}
+                />
+              </Link>
+
+              <Link href={"#"}>
+                <Image
+                  src={"/social/appleStore2.png"}
+                  alt="get app on play store"
+                  className="lg:h-16 lg:w-52 h-12 w-34 hover:opacity-90 transform hover:scale-105 ease-in duration-200"
+                  width={250}
+                  height={80}
+                />
+              </Link>
             </div>
           </div>
           <div className="col-span-4 grid grid-cols-2 gap-1 overflow-x-scroll no-scrollbar">
@@ -98,6 +124,7 @@ const contactInfo: ContactInfo[] = [
   {
     id: 3,
     title: "Kontakt Info",
-    items: ["needz", "Ring: 08-30 22 41", "Email: order@jour365.se"],
+    items: ["needz", "Email: order@needz.se"],
+    // items: ["needz", "Ring: 08-30 22 41", "Email: order@jour365.se"],
   },
 ];
