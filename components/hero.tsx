@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -36,11 +36,15 @@ export default function Hero() {
             Tjänster när du behöver dem
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-lg">
-            Needz kopplar ihop dig med kvalificerade hantverkare i Stockholm, dygnet runt.
+            Needz kopplar ihop dig med kvalificerade hantverkare i Stockholm,
+            dygnet runt.
           </p>
           <div className="flex flex-wrap gap-4">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button size="lg" className="rounded-full px-8 bg-emerald-600 hover:bg-emerald-700 text-white">
+              <Button
+                size="lg"
+                className="rounded-full px-8 bg-emerald-600 hover:bg-emerald-700 text-white"
+              >
                 Ladda ner appen
               </Button>
             </motion.div>
@@ -70,7 +74,7 @@ export default function Hero() {
             rel="noopener noreferrer"
           >
             <Image
-              src="https://needz.se/wp-content/uploads/2023/03/google-play-badge.png"
+              src="/social/playStore.png"
               alt="Get it on Google Play"
               width={160}
               height={48}
@@ -83,9 +87,13 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          <Link href="https://apps.apple.com/se/app/needz/id1446307369" target="_blank" rel="noopener noreferrer">
+          <Link
+            href="https://apps.apple.com/se/app/needz/id1446307369"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
-              src="https://needz.se/wp-content/uploads/2023/03/app-store-badge.png"
+              src="/social/appleStore2.png"
               alt="Download on the App Store"
               width={160}
               height={48}
@@ -106,5 +114,5 @@ export default function Hero() {
         </div>
       </motion.div>
     </section>
-  )
+  );
 }

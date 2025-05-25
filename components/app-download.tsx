@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { motion, useInView } from "framer-motion"
-import Image from "next/image"
-import Link from "next/link"
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function AppDownload() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
     <section className="py-24 bg-emerald-600">
@@ -19,10 +19,13 @@ export default function AppDownload() {
             transition={{ duration: 0.8 }}
             className="text-white"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ladda ner Needz-appen idag</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Ladda ner Needz-appen idag
+            </h2>
             <p className="text-lg text-white/90 mb-8">
-              Få tillgång till pålitliga hantverkstjänster dygnet runt med bara några klick. Vår app gör det enkelt att
-              hitta och boka certifierade proffs för alla dina behov.
+              Få tillgång till pålitliga hantverkstjänster dygnet runt med bara
+              några klick. Vår app gör det enkelt att hitta och boka
+              certifierade proffs för alla dina behov.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -31,16 +34,20 @@ export default function AppDownload() {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="https://needz.se/wp-content/uploads/2023/03/google-play-badge.png"
+                  src="/social/playStore.png"
                   alt="Get it on Google Play"
                   width={160}
                   height={48}
                   className="h-14 w-auto"
                 />
               </Link>
-              <Link href="https://apps.apple.com/se/app/needz/id1446307369" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://apps.apple.com/se/app/needz/id1446307369"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
-                  src="https://needz.se/wp-content/uploads/2023/03/app-store-badge.png"
+                  src="/social/appleStore2.png"
                   alt="Download on the App Store"
                   width={160}
                   height={48}
@@ -74,5 +81,5 @@ export default function AppDownload() {
         </div>
       </div>
     </section>
-  )
+  );
 }

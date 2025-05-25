@@ -32,7 +32,7 @@ export default function Header() {
     {
       id: 2,
       title: "Jour Tjänster",
-      link: "/services",
+      link: "/#services",
       hasDropdown: true,
     },
     {

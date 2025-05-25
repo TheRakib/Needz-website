@@ -10,6 +10,37 @@
   --secondary-color: "#fc0016";
 }
 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: "#7d7373";
