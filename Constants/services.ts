@@ -6,7 +6,9 @@ export const services = [
     link: "/services/snickare",
     img: "/appImage/carpenter.jpg",
     description:
-      "Våra skickliga snickare levererar precision och hantverksskicklighet till varje projekt, vare sig det handlar om specialtillverkade möbler, skåp eller intrikata träarbeten. Med ett skarpt öga för detaljer och ett åtagande att leverera kvalitet, säkerställer våra proffs att varje stycke är perfekt. Lita på oss för att förvandla ditt utrymme med skräddarsytt träarbete som kombinerar estetik och funktionalitet.",
+      "Professionell hjälp med flyttning och leverans av möbler, varor och andra föremål.",
+    image:
+      "https://images.unsplash.com/photo-1600125693229-a4c43bf9e124?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
   },
   {
     id: 2,
@@ -15,7 +17,9 @@ export const services = [
     link: "/services/plumbing",
     img: "/appImage/plumbing.jpg",
     description:
-      "Våra certifierade rörmokare är rustade för att hantera alla dina VVS-behov, från läckagereparationer till nya installationer. Med snabba svarstider och fokus på kvalitet garanterar vi effektiva lösningar på alla VVS-utmaningar, och ser till att dina system fungerar smidigt och tillförlitligt.",
+      "Låt någon handla och leverera det du behöver, när du inte har tid eller möjlighet.",
+    image:
+      "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
   },
   {
     id: 3,
@@ -24,7 +28,9 @@ export const services = [
     link: "/services/electrical",
     img: "/appImage/electrical_work.jpg",
     description:
-      "Expertelektriker finns till hands med våra licensierade elektriker. Från mindre reparationer till större installationer, vi tillhandahåller säkra, tillförlitliga och effektiva elektriska lösningar, som säkerställer att ditt utrymme är korrekt och säkert försörjt, enligt de högsta branschstandarderna.",
+      "Hitta eller ge bort saker du inte längre behöver till någon som kan använda dem.",
+    image:
+      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
   },
   {
     id: 4,
@@ -33,7 +39,9 @@ export const services = [
     link: "/services/move-delivery",
     img: "/appImage/move_&_delivery.jpg",
     description:
-      "Vår flytt- och leveranstjänst förenklar dina logistikbehov, erbjuder pålitlig, punktlig och varsam hantering av dina föremål. Oavsett om det handlar om att flytta ditt hem, leverera ett paket eller transportera stora föremål, garanterar vårt team en smidig, stressfri upplevelse.",
+      "Hjälp med att transportera och återvinna möbler, elektronik och andra föremål.",
+    image:
+      "https://images.unsplash.com/photo-1600125693229-a4c43bf9e124?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
   },
   {
     id: 5,
@@ -42,7 +50,9 @@ export const services = [
     link: "/services/buy-for-me",
     img: "/appImage/buy_for_me.jpg",
     description:
-      "Vår 'Köp åt mig'-tjänst erbjuder ultimat bekvämlighet i personlig shopping och ärenden. Berätta vad du behöver, och vårt pålitliga team köper och levererar det direkt till din dörr. Det är den perfekta lösningen för upptagna personer som söker ett problemfritt sätt att handla.",
+      "Akut hjälp med rörläggning, läckage, avlopp och andra VVS-problem dygnet runt.",
+    image:
+      "https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
   },
   {
     id: 6,
@@ -51,6 +61,8 @@ export const services = [
     link: "/services/recycle",
     img: "/appImage/recycle.jpg",
     description:
-      "Anta hållbarhet med vår återvinningservice, designad för att göra det enkelt för dig att bidra till en grönare planet. Vi samlar in, sorterar och ser till att dina återvinningsbara material bearbetas ansvarsfullt, hjälper dig att minska avfall och stödja miljöbevarande.",
+      "Certifierade elektriker för säkra och professionella elektriska installationer och reparationer.",
+    image:
+      "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
   },
 ];

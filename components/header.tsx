@@ -31,18 +31,23 @@ export default function Header() {
     },
     {
       id: 2,
-      title: "Jour Tjänster",
+      title: "Tjänster",
       link: "/#services",
       hasDropdown: true,
     },
     {
       id: 3,
+      title: "Jourtjänster",
+      link: "/services",
+    },
+    {
+      id: 4,
       title: "Blogg",
       link: "/blog",
     },
     {
       id: 5,
-      title: "Om oss",
+      title: "Om Needz",
       link: "/about-us",
     },
   ];
