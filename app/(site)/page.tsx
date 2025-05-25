@@ -10,33 +10,51 @@ import OurServices from "@/components/Home/OurServices";
 import FAQ from "@/components/Shared/FAQ";
 import ContactUs from "@/components/Shared/ContactUs";
 import { Metadata } from "next";
+import Header from "@/components/header";
+import Hero from "@/components/hero";
+import Services from "@/components/services";
+import HowItWorks from "@/components/how-it-works";
+import Testimonials from "@/components/testimonials";
+import AppDownload from "@/components/app-download";
+import { Footer } from "react-day-picker";
 
 const Home = () => {
   return (
-    <main className="font-inter min-h-screen">
-      <div id="back-to-top-anchor" />
-      <Banner />
-      <CallIn />
-      <Emergencies />
-      {/* <Feedback /> */}
-      <div className="mb-[120px]"></div>
-      {/* <Join /> */}
-      <Features />
-      <FAQ faqItems={faqItems} />
-      <OurServices />
-      <ContactUs disabledHelperText />
+    <div className="min-h-screen bg-white">
+      {/* <Header /> */}
+      <main>
+        <Hero />
+        <Services />
+        <HowItWorks />
+        <Testimonials />
+        <AppDownload />
+      </main>
+      {/* <Footer />  */}
+    </div>
+    // <main className="font-inter min-h-screen">
+    //   <div id="back-to-top-anchor" />
+    //   <Banner />
+    //   <CallIn />
+    //   <Emergencies />
+    //   {/* <Feedback /> */}
+    //   <div className="mb-[120px]"></div>
+    //   {/* <Join /> */}
+    //   <Features />
+    //   <FAQ faqItems={faqItems} />
+    //   <OurServices />
+    //   <ContactUs disabledHelperText />
 
-      {/* ----------back to top button---- */}
-      <ScrollTop>
-        <Fab
-          size="small"
-          aria-label="scroll back to top"
-          className="bg-black text-white"
-        >
-          <KeyboardArrowUpIcon />
-        </Fab>
-      </ScrollTop>
-    </main>
+    //   {/* ----------back to top button---- */}
+    //   <ScrollTop>
+    //     <Fab
+    //       size="small"
+    //       aria-label="scroll back to top"
+    //       className="bg-black text-white"
+    //     >
+    //       <KeyboardArrowUpIcon />
+    //     </Fab>
+    //   </ScrollTop>
+    // </main>
   );
 };
 
