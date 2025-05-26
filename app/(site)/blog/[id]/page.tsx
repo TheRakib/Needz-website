@@ -36,6 +36,7 @@ export default function Page() {
             title={blog.title}
             breadcrumb={blog.title}
             img={blog.bannerImg}
+            varient="BLOG"
             firstItem="Blogg"
             extraInfo={
               <div className="mt-8 flex items-center gap-3">

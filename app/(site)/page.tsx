@@ -1,27 +1,12 @@
-import Banner from "@/components/Home/Banner";
-import CallIn from "@/components/Home/CallIn";
-import Emergencies from "@/components/Home/Emergencies";
-import Features from "@/components/Home/Features";
-import Join from "@/components/Home/Join";
-import { Fab } from "@mui/material";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import ScrollTop from "@/components/Shared/ScrollTop";
-import OurServices from "@/components/Home/OurServices";
-import FAQ from "@/components/Shared/FAQ";
-import ContactUs from "@/components/Shared/ContactUs";
-import { Metadata } from "next";
-import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Services from "@/components/services";
 import HowItWorks from "@/components/how-it-works";
 import Testimonials from "@/components/testimonials";
 import AppDownload from "@/components/app-download";
-import { Footer } from "react-day-picker";
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* <Header /> */}
       <main>
         <Hero />
         <Services />
@@ -29,32 +14,7 @@ const Home = () => {
         <Testimonials />
         <AppDownload />
       </main>
-      {/* <Footer />  */}
     </div>
-    // <main className="font-inter min-h-screen">
-    //   <div id="back-to-top-anchor" />
-    //   <Banner />
-    //   <CallIn />
-    //   <Emergencies />
-    //   {/* <Feedback /> */}
-    //   <div className="mb-[120px]"></div>
-    //   {/* <Join /> */}
-    //   <Features />
-    //   <FAQ faqItems={faqItems} />
-    //   <OurServices />
-    //   <ContactUs disabledHelperText />
-
-    //   {/* ----------back to top button---- */}
-    //   <ScrollTop>
-    //     <Fab
-    //       size="small"
-    //       aria-label="scroll back to top"
-    //       className="bg-black text-white"
-    //     >
-    //       <KeyboardArrowUpIcon />
-    //     </Fab>
-    //   </ScrollTop>
-    // </main>
   );
 };
 

@@ -7,8 +7,6 @@ import AboutTestimonials from "@/components/about-testimonials";
 import AboutContact from "@/components/about-contact";
 import { Metadata } from "next";
 import React from "react";
-import OnCall from "@/components/About/OnCall";
-import ContactUs from "@/components/Shared/ContactUs";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -47,15 +45,5 @@ export default function page() {
       <AboutTestimonials />
       <AboutContact />
     </main>
-    // <div>
-    //   <ServicesBanner
-    //     title="JOUR I HELA STOCKHOLM, DYGNET RUNT!"
-    //     breadcrumb="om oss sida"
-    //     img="/about-us.jpg"
-    //   />
-    //   <OnCall />
-    //   <Features />
-    //   <ContactUs />
-    // </div>
   );
 }

@@ -82,7 +82,7 @@ export default function BlogPosts({ blogs }: { blogs?: Blogs }) {
                       <span>{post.author.name}</span>
                     </div>
                     <h2 className="text-2xl font-bold mb-3 hover:text-emerald-600 transition-colors">
-                      <Link href={`/blogg/${post.slug}`}>
+                      <Link href={`/blog/${post.slug}`}>
                         {post.title.length > 50
                           ? `${post.title.slice(0, 50)}...`
                           : post.title}

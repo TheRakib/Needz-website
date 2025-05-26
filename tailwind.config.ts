@@ -88,10 +88,10 @@ const config: Config = {
         },
       },
       backgroundColor: {
-        primary: "#606C38",
-        secondary: "#283618",
+        primary: "#10b981",
+        secondary: "hsl(var(--secondary))",
         black: "#181818",
-        accent: "#7d7373",
+        accent: "hsl(var(--accent))",
         white: "#fff",
         yellow: "#ffc000",
       },

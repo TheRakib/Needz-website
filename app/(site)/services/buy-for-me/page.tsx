@@ -1,8 +1,8 @@
+import AboutContact from "@/components/about-contact";
 import DescriptionBuy from "@/components/Services/BuyForMe/DescriptionBuy";
 import FAQBuy from "@/components/Services/BuyForMe/FAQBuy";
 import Local from "@/components/Services/BuyForMe/Local";
 import ServicesBanner from "@/components/Services/ServicesBanner";
-import ContactUs from "@/components/Shared/ContactUs";
 import React from "react";
 
 export default function page() {
@@ -17,7 +17,7 @@ export default function page() {
       <DescriptionBuy />
       <Local />
       <FAQBuy />
-      <ContactUs />
+      <AboutContact />
     </div>
   );
 }
