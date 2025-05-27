@@ -8,6 +8,7 @@ import Image from "next/image";
 import BlogPosts from "@/components/blog-posts";
 import BlogCategories from "@/components/blog-categories";
 import BlogNewsletter from "@/components/blog-newsletter";
+import Featured from "@/components/Blog/Featured";
 
 export default function Page() {
   const [blogs, setBlogs] = useState<Blogs>();
@@ -99,7 +100,8 @@ export default function Page() {
             </div>
             <div className="space-y-8">
               <BlogCategories setTopic={setTopic} topic={topic} />
-              <BlogNewsletter />
+              {/* <BlogNewsletter /> */}
+              <Featured />
             </div>
           </div>
         </div>
