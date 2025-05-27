@@ -1,8 +1,7 @@
 "use client";
 
-import { SetStateAction, Dispatch, useEffect, useRef, useState } from "react";
+import { Dispatch, useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Topic } from "@/Types";
 import { getTopics } from "@/sanity/sanity-utils";
@@ -12,7 +11,7 @@ export default function BlogCategories({
   setTopic,
   topic,
 }: {
-  setTopic: Dispatch<SetStateAction<string | undefined>>;
+  setTopic: Dispatch<string | undefined>;
   topic: string | undefined;
 }) {
   const ref = useRef(null);

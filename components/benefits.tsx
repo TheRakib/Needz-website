@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { motion, useInView } from "framer-motion"
-import Image from "next/image"
-import { CheckCircle } from "lucide-react"
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import Image from "next/image";
+import { CheckCircle } from "lucide-react";
 
 export default function Benefits() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const benefits = [
     "Increase conversion rates by up to 30%",
@@ -16,7 +16,7 @@ export default function Benefits() {
     "Streamline internal workflows",
     "Access real-time analytics and insights",
     "Scale your business with confidence",
-  ]
+  ];
 
   return (
     <section className="py-24 bg-white">
@@ -30,10 +30,12 @@ export default function Benefits() {
             <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
               Benefits
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose Our Platform?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Why Choose Our Platform?
+            </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Our solution is designed to help you achieve your business goals faster and more efficiently. Here's what
-              sets us apart:
+              Our solution is designed to help you achieve your business goals
+              faster and more efficiently. Here&apos;s what sets us apart:
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -74,5 +76,5 @@ export default function Benefits() {
         </div>
       </div>
     </section>
-  )
+  );
 }

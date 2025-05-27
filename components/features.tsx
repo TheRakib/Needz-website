@@ -1,13 +1,19 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { motion, useInView } from "framer-motion"
-import { ArrowRight, Zap, Shield, BarChart3, Users } from "lucide-react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { ArrowRight, Zap, Shield, BarChart3, Users } from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function Features() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const features = [
     {
@@ -18,19 +24,22 @@ export default function Features() {
     {
       icon: Shield,
       title: "Secure by Design",
-      description: "Your data is protected with enterprise-grade security measures.",
+      description:
+        "Your data is protected with enterprise-grade security measures.",
     },
     {
       icon: BarChart3,
       title: "Actionable Analytics",
-      description: "Gain valuable insights with our comprehensive analytics tools.",
+      description:
+        "Gain valuable insights with our comprehensive analytics tools.",
     },
     {
       icon: Users,
       title: "Team Collaboration",
-      description: "Work seamlessly with your team in real-time across all devices.",
+      description:
+        "Work seamlessly with your team in real-time across all devices.",
     },
-  ]
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -40,7 +49,7 @@ export default function Features() {
         staggerChildren: 0.2,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -49,7 +58,7 @@ export default function Features() {
       y: 0,
       transition: { duration: 0.6 },
     },
-  }
+  };
 
   return (
     <section id="features" className="py-24 bg-gray-50">
@@ -77,7 +86,8 @@ export default function Features() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-lg text-gray-600 max-w-2xl mx-auto"
           >
-            Our platform provides all the tools you need to succeed in today's digital landscape.
+            Our platform provides all the tools you need to succeed in
+            today&apos;s digital landscape.
           </motion.p>
         </div>
 
@@ -98,7 +108,9 @@ export default function Features() {
                   <CardTitle>{feature.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base">{feature.description}</CardDescription>
+                  <CardDescription className="text-base">
+                    {feature.description}
+                  </CardDescription>
                   <div className="mt-4 flex items-center text-primary font-medium group cursor-pointer">
                     <span>Learn more</span>
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -110,5 +122,5 @@ export default function Features() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

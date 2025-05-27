@@ -1,25 +1,27 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { motion, useInView } from "framer-motion"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 export default function CaseStudies() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.2 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const caseStudies = [
     {
       title: "Transforming E-commerce Experience",
-      description: "How we helped an online retailer increase conversions by 35% through UX improvements.",
+      description:
+        "How we helped an online retailer increase conversions by 35% through UX improvements.",
       image: "/placeholder.svg?height=400&width=600",
       category: "E-commerce",
     },
     {
       title: "Streamlining Financial Services",
-      description: "Modernizing legacy systems for a financial institution, resulting in 50% faster processing times.",
+      description:
+        "Modernizing legacy systems for a financial institution, resulting in 50% faster processing times.",
       image: "/placeholder.svg?height=400&width=600",
       category: "Finance",
     },
@@ -30,7 +32,7 @@ export default function CaseStudies() {
       image: "/placeholder.svg?height=400&width=600",
       category: "Healthcare",
     },
-  ]
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -40,7 +42,7 @@ export default function CaseStudies() {
         staggerChildren: 0.3,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -49,7 +51,7 @@ export default function CaseStudies() {
       y: 0,
       transition: { duration: 0.6 },
     },
-  }
+  };
 
   return (
     <section id="case-studies" className="py-24 bg-gray-50">
@@ -77,7 +79,8 @@ export default function CaseStudies() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-lg text-gray-600 max-w-2xl mx-auto"
           >
-            Explore how we've helped businesses across industries achieve their goals.
+            Explore how we&apos;ve helped businesses across industries achieve
+            their goals.
           </motion.p>
         </div>
 
@@ -89,7 +92,11 @@ export default function CaseStudies() {
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
         >
           {caseStudies.map((study, index) => (
-            <motion.div key={index} variants={itemVariants} className="group cursor-pointer">
+            <motion.div
+              key={index}
+              variants={itemVariants}
+              className="group cursor-pointer"
+            >
               <div className="relative overflow-hidden rounded-lg mb-4">
                 <div className="aspect-[3/2] relative">
                   <Image
@@ -99,7 +106,9 @@ export default function CaseStudies() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                    <span className="text-white font-medium">{study.category}</span>
+                    <span className="text-white font-medium">
+                      {study.category}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -122,5 +131,5 @@ export default function CaseStudies() {
         </div>
       </div>
     </section>
-  )
+  );
 }
