@@ -11,6 +11,7 @@ type Props = {
   titleClass?: string;
   extraInfo?: React.ReactNode;
   firstItem?: string;
+  varient?: "BLOG";
 };
 
 export default function ServicesBanner({
@@ -20,22 +21,31 @@ export default function ServicesBanner({
   titleClass,
   extraInfo,
   firstItem = "våra tjänster",
+  varient,
 }: Props) {
   return (
-    <div className="flex-col blur-[0.5px] overflow-hidden relative flex min-h-[362px] items-center justify-center px-5 max-w-maxLayout mx-auto">
-      <div className="w-full h-full">
+    <div
+      className={`flex-col overflow-hidden relative flex min-h-[362px] items-center justify-center px-5 max-w-maxLayout mx-auto ${
+        varient === "BLOG" && "pt-28 pb-14"
+      }`}
+    >
+      {/* Background Image */}
+      <div className="absolute inset-0">
         <Image
           alt="bg"
           loading="lazy"
           fill
           src={img}
-          className="absolute z-[-1] h-full w-full object-cover object-center inset-0"
+          className="object-cover"
         />
-        <div className="absolute bg-black/40 w-full h-full  object-cover object-center inset-0 z-0"></div>
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/80 to-emerald-600/50"></div>
       </div>
-      <div className="max-w-layout mx-auto text-white flex flex-col items-center justify-center h-full z-10">
+
+      {/* Content */}
+      <div className="max-w-layout mx-auto text-white flex flex-col items-center justify-center h-full relative z-10">
         <SectionTitle title={title} className={titleClass ? titleClass : ""} />
-        <Breadcrumbs aria-label="breadcrumb" className=" text-white">
+        <Breadcrumbs aria-label="breadcrumb" className="text-white">
           <Link
             color="inherit"
             href="/blog"

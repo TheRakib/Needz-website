@@ -25,7 +25,8 @@ export async function getPosts(
         "instagram": author->instagram,
       },
       "slug": slug.current,
-      "bannerImg": bannerImg.asset->url
+      "bannerImg": bannerImg.asset->url,
+      mainText
     }`
   );
   const totalCount = await getPostsCount(search, topic);

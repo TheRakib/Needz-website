@@ -1,10 +1,10 @@
 import React from "react";
-import ContactUs from "../Shared/ContactUs";
+import AboutContact from "../about-contact";
 
 export default function ServicesContactUs() {
   return (
     <div className=" mt-20">
-      <ContactUs />
+      <AboutContact />
     </div>
   );
 }

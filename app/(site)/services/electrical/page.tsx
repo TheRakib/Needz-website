@@ -1,8 +1,8 @@
+import AboutContact from "@/components/about-contact";
 import DescriptionPlumber from "@/components/Services/Plumber/DescriptionPlumber";
 import FAQPlumber from "@/components/Services/Plumber/FAQPlumber";
 import LocalPlumber from "@/components/Services/Plumber/LocalPlumber";
 import ServicesBanner from "@/components/Services/ServicesBanner";
-import ContactUs from "@/components/Shared/ContactUs";
 import React from "react";
 
 export default function page() {
@@ -15,10 +15,9 @@ export default function page() {
       />
 
       <DescriptionPlumber />
-      {/* <PlumberServices /> */}
       <LocalPlumber />
       <FAQPlumber />
-      <ContactUs />
+      <AboutContact />
     </div>
   );
 }

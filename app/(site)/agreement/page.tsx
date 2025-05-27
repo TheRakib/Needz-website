@@ -1,6 +1,6 @@
+import AboutContact from "@/components/about-contact";
 import AgreementDescription from "@/components/Services/Agreement/AgreementDescription";
 import ServicesBanner from "@/components/Services/ServicesBanner";
-import ContactUs from "@/components/Shared/ContactUs";
 import { Metadata } from "next";
 import React from "react";
 
@@ -18,7 +18,7 @@ export default function page() {
         img="/services/agreement/banner.png"
       />
       <AgreementDescription />
-      <ContactUs />
+      <AboutContact />
     </div>
   );
 }

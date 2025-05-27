@@ -8,6 +8,7 @@ import Script from "next/script";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import MainAction from "@/components/MainAction";
+import Header from "@/components/header";
 
 const inter = Inter({
   weight: ["200", "300", "400", "500", "500", "600", "700"],
@@ -75,14 +76,20 @@ export default function RootLayout({
         {/* <!-- End Google Tag Manager (noscript) --> */}
 
         {/* ------------------------------------- */}
-        <Navbar />
-        <main>{children}</main>
 
-        {/* <MainAction /> */}
+        <div className="min-h-screen bg-white">
+          <Header />
+          {/* <Navbar /> */}
+          <main>{children}</main>
 
-        <Footer />
-        <ToastContainer />
-        {/* ------------------------------------- */}
+          {/* <MainAction /> */}
+
+          {/* <Footer /> */}
+          <ToastContainer />
+          {/* ------------------------------------- */}
+
+          <Footer />
+        </div>
       </body>
 
       {/* <!-- Google Tag Manager --> */}
