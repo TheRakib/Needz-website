@@ -33,7 +33,7 @@ export default function page() {
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Vi kopplar ihop kvalificerade hantverkare med kunder som behöver
-            hjälp, dygnet runt i Stockholm.
+            hjälp, dygnet runt i Sverige.
           </p>
         </div>
       </section>
