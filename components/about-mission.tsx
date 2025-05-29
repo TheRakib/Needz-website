@@ -25,7 +25,7 @@ export default function AboutMission() {
             <div className="mb-8">
               <h3 className="text-xl font-bold mb-3 text-gray-800">Vision</h3>
               <p className="text-lg text-gray-600 mb-4">
-                Att bli den första samt ledande självförsörjande och hållbar tjänster förmedlingsplattform. Med det
+                Att bli den ledande självförsörjande och hållbar tjänster förmedlingsplattform. Med det
                 menar jag att vi tränar efter att låta klivet samt freelancer självständigt genomföra implementationen
                 av behovet som efterfrågas.
               </p>
