@@ -54,15 +54,15 @@ export const services = [
     image:
       "https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
   },
-  {
-    id: 6,
-    title: "Återvinning",
-    title_en: "Recycle",
-    link: "/services/recycle",
-    img: "/appImage/recycle.jpg",
-    description:
-      "Certifierade elektriker för säkra och professionella elektriska installationer och reparationer.",
-    image:
-      "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-  },
+  // {
+  //   id: 6,
+  //   title: "Återvinning",
+  //   title_en: "Recycle",
+  //   link: "/services/recycle",
+  //   img: "/appImage/recycle.jpg",
+  //   description:
+  //     "Certifierade elektriker för säkra och professionella elektriska installationer och reparationer.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+  // },
 ];
