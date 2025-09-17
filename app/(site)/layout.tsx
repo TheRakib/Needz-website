@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
 // import Script from "next/script";
-import Footer from "@/components/Layout/Footer";
+// import Footer from "@/components/Layout/Footer";
 // adding comments to push build to the prod
 import Script from "next/script";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import MainAction from "@/components/MainAction";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 const inter = Inter({
   weight: ["200", "300", "400", "500", "500", "600", "700"],
