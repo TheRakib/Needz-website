@@ -40,7 +40,7 @@ export default function page() {
       <ServicesDetails />
       <BannerFAQ />
       <LocalElectrician />
-      <ServicesContactUs />
+      {/* <ServicesContactUs /> */}
     </div>
   );
 }

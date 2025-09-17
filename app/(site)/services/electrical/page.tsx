@@ -17,7 +17,7 @@ export default function page() {
       <DescriptionPlumber />
       <LocalPlumber />
       <FAQPlumber />
-      <AboutContact />
+      {/* <AboutContact /> */}
     </div>
   );
 }

@@ -43,7 +43,7 @@ export default function page() {
       <AboutTeam />
       <AboutStats />
       <AboutTestimonials />
-      <AboutContact />
+      {/* <AboutContact /> */}
     </main>
   );
 }

@@ -12,7 +12,7 @@ export default function page() {
         img="/services/move-delivery.jpg"
       />
       <Description />
-      <AboutContact />
+      {/* <AboutContact /> */}
     </div>
   );
 }
