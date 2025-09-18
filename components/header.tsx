@@ -42,7 +42,7 @@ export default function Header() {
     {
       id: 3,
       title: "Jourtjänster",
-      link: "/services",
+      link: "/on-call-services",
       hasDropdown: true,
       dropdownItems: jourServices
     },

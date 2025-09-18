@@ -3,7 +3,7 @@ export const services = [
     id: 1,
     title: "Snickare",
     title_en: "Carpentry",
-    link: "/services/snickare",
+    link: "/on-call-services/snickare",
     img: "/appImage/carpenter.jpg",
     description:
       "Professionell hjälp med flyttning och leverans av möbler, varor och andra föremål.",
@@ -14,7 +14,7 @@ export const services = [
     id: 2,
     title: "VVS",
     title_en: "Plumbing",
-    link: "/services/plumbing",
+    link: "/on-call-services/plumbing",
     img: "/appImage/plumbing.jpg",
     description:
       "Låt någon handla och leverera det du behöver, när du inte har tid eller möjlighet.",
@@ -25,7 +25,7 @@ export const services = [
     id: 3,
     title: "Elektriska arbeten",
     title_en: "Electrical work",
-    link: "/services/electrical",
+    link: "/on-call-services/electrical",
     img: "/appImage/electrical_work.jpg",
     description:
       "Hitta eller ge bort saker du inte längre behöver till någon som kan använda dem.",
