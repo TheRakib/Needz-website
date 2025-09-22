@@ -26,7 +26,7 @@ export default function EmergencyServices() {
         "Akut hjälp med vattenläckor, stopp i avlopp, trasiga rör och andra VVS-problem som inte kan vänta.",
       image:
         "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-      link: "/services/plumbing",
+      link: "/on-call-services/plumbing",
     },
     {
       icon: Zap,
@@ -35,7 +35,7 @@ export default function EmergencyServices() {
         "Snabb hjälp vid strömavbrott, elfel, kortslutningar och andra elektriska problem som kräver omedelbar åtgärd.",
       image:
         "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-      link: "/services/electrical",
+      link: "/on-call-services/electrical",
     },
     {
       icon: Key,
