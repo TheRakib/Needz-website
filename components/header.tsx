@@ -63,7 +63,7 @@ export default function Header() {
     },
     {
       id: 6,
-      title: "Politik",
+      title: "Policy",
       link: "/policy",
     },
   ];

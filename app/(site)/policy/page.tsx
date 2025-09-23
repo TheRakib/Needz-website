@@ -23,7 +23,7 @@ export default function Policy() {
                 </div>
                 <div className="container relative mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                        Politik
+                        Policy
                     </h1>
                     <p className="text-xl text-white/90 max-w-2xl mx-auto">
                         GDPR-anpassad Integritetspolicy för appen Needz, skriven enligt svenska och europeiska dataskyddsregler.
@@ -38,7 +38,7 @@ export default function Policy() {
                     transition={{ duration: 0.6 }}
                     className="inline-block px-3 py-1 bg-emerald-100 text-emerald-600 text-sm font-medium rounded-full mb-4"
                 >
-                    Politik
+                    Policy
                 </motion.span>
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
