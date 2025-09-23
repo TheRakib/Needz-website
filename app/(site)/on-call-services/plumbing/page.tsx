@@ -14,7 +14,7 @@ export default function drains() {
       />
       <Description />
       <Pressure />
-      <AboutContact />
+      {/* <AboutContact /> */}
     </div>
   );
 }

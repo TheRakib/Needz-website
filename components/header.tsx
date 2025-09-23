@@ -23,6 +23,9 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const jourServices = services.slice(0, 3); // First 3 services (Carpentry, Plumbing, Electrical work)
+  const regularServices = services.slice(3); // Remaining services
+
   const pages = [
     {
       id: 1,
@@ -34,21 +37,34 @@ export default function Header() {
       title: "Tjänster",
       link: "/#services",
       hasDropdown: true,
+      dropdownItems: regularServices
     },
     {
       id: 3,
       title: "Jourtjänster",
-      link: "/services",
+      link: "/on-call-services",
+      hasDropdown: true,
+      dropdownItems: jourServices
     },
-    {
-      id: 4,
-      title: "Blogg",
-      link: "/blog",
-    },
+    // {
+    //   id: 4,
+    //   title: "Blogg",
+    //   link: "/blog",
+    // },
     {
       id: 5,
       title: "Om Needz",
       link: "/about-us",
+    },
+    {
+      id: 6,
+      title: "Kontakta Oss",
+      link: "/contact-us",
+    },
+    {
+      id: 6,
+      title: "Policy",
+      link: "/policy",
     },
   ];
 
@@ -82,8 +98,9 @@ export default function Header() {
                 <Link
                   href={item.link}
                   className={cn(
-                    "text-sm font-medium transition-all duration-200 hover:text-emerald-600 relative group flex items-center",
-                    scrolled ? "text-gray-800" : "text-white"
+                    "text-sm font-medium transition-all duration-200 relative group flex items-center",
+                    scrolled ? "text-gray-800" : "text-white",
+                    !scrolled ? "hover:text-white transform hover:scale-105 ease-in duration-200" : "hover:text-emerald-600"
                   )}
                 >
                   {item.title}
@@ -92,7 +109,7 @@ export default function Header() {
                 </Link>
                 {item.hasDropdown && (
                   <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                    {services.map((service) => (
+                    {item.dropdownItems.map((service) => (
                       <Link
                         key={service.id}
                         href={service.link}
@@ -166,7 +183,7 @@ export default function Header() {
                       {item.title}
                     </div>
                     <div className="pl-4 space-y-2">
-                      {services.map((service) => (
+                      {item.dropdownItems.map((service) => (
                         <Link
                           key={service.id}
                           href={service.link}

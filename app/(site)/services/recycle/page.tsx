@@ -14,7 +14,7 @@ export default function page() {
       />
       <RecycleDescription />
       <FAQRecycle />
-      <AboutContact />
+      {/* <AboutContact /> */}
     </div>
   );
 }

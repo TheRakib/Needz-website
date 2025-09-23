@@ -24,6 +24,7 @@ interface FormState {
   email: string;
   subject: string;
   message: string;
+  department?: string;
 }
 
 const initialState = () => ({
@@ -31,9 +32,11 @@ const initialState = () => ({
   email: "",
   subject: "",
   message: "",
+  department: ""
 });
 
 export default function AboutContact() {
+  const [activeTab, setActiveTab] = useState<"general" | "specific">("general");
   const [formData, setFormData] = useState<FormState>(initialState());
   const [successMessage, setSuccessMessage] = useState<string>("");
   const [errors, setErrors] = useState<Partial<FormState>>({});
@@ -63,8 +66,14 @@ export default function AboutContact() {
     },
   ];
 
+  const departmentOptions = [
+    "Admin",
+    "Finance",
+    "Sales"
+  ];
+
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     setSuccessMessage("");
     const { name, value } = e.target;
@@ -110,6 +119,12 @@ export default function AboutContact() {
 
     if (!formData.message.trim()) {
       newErrors.message = "Meddelande krävs";
+      isValid = false;
+    }
+
+    // Department is only required for the specific tab
+    if (activeTab === "specific" && !formData.department) {
+      newErrors.department = "Avdelning krävs";
       isValid = false;
     }
 
@@ -175,8 +190,32 @@ export default function AboutContact() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-2"
           >
-            <Card className="border-0 shadow-md">
+            <Card className="border shadow-md">
               <CardContent className="p-6">
+                {/* Tab Navigation */}
+                <div className="flex border-b border-gray-200 mb-6">
+                  <button
+                    type="button"
+                    className={`py-2 w-1/2 font-medium text-sm border-b-2 transition-colors ${activeTab === "general"
+                      ? "bg-emerald-600 text-white"
+                      : "border-transparent text-gray-500 hover:text-gray-700"
+                      }`}
+                    onClick={() => setActiveTab("general")}
+                  >
+                    Allmän Förfrågan
+                  </button>
+                  <button
+                    type="button"
+                    className={`py-2 w-1/2 font-medium text-sm border-b-2 transition-colors ${activeTab === "specific"
+                      ? "bg-emerald-600 text-white"
+                      : "border-transparent text-gray-500 hover:text-gray-700"
+                      }`}
+                    onClick={() => setActiveTab("specific")}
+                  >
+                    Specifik Avdelning
+                  </button>
+                </div>
+
                 <form
                   className="space-y-6"
                   onSubmit={(e) => handleSubscribe(e)}
@@ -226,6 +265,38 @@ export default function AboutContact() {
                       )}
                     </div>
                   </div>
+
+                  {/* Department Field - Only shown in Specific tab */}
+                  {activeTab === "specific" && (
+                    <div>
+                      <label
+                        htmlFor="department"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
+                        Avdelning
+                      </label>
+                      <select
+                        id="department"
+                        name="department"
+                        value={formData.department}
+                        onChange={handleChange}
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                      >
+                        <option value="">Välj avdelning</option>
+                        {departmentOptions.map((option) => (
+                          <option key={option} value={option}>
+                            {option}
+                          </option>
+                        ))}
+                      </select>
+                      {errors.department && (
+                        <p className="text-red-500 text-sm mt-1">
+                          {errors.department}
+                        </p>
+                      )}
+                    </div>
+                  )}
+
                   <div>
                     <label
                       htmlFor="subject"

@@ -3,7 +3,7 @@ export const services = [
     id: 1,
     title: "Snickare",
     title_en: "Carpentry",
-    link: "/services/snickare",
+    link: "/on-call-services/snickare",
     img: "/appImage/carpenter.jpg",
     description:
       "Professionell hjälp med flyttning och leverans av möbler, varor och andra föremål.",
@@ -14,7 +14,7 @@ export const services = [
     id: 2,
     title: "VVS",
     title_en: "Plumbing",
-    link: "/services/plumbing",
+    link: "/on-call-services/plumbing",
     img: "/appImage/plumbing.jpg",
     description:
       "Låt någon handla och leverera det du behöver, när du inte har tid eller möjlighet.",
@@ -25,7 +25,7 @@ export const services = [
     id: 3,
     title: "Elektriska arbeten",
     title_en: "Electrical work",
-    link: "/services/electrical",
+    link: "/on-call-services/electrical",
     img: "/appImage/electrical_work.jpg",
     description:
       "Hitta eller ge bort saker du inte längre behöver till någon som kan använda dem.",
@@ -54,15 +54,15 @@ export const services = [
     image:
       "https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
   },
-  {
-    id: 6,
-    title: "Återvinning",
-    title_en: "Recycle",
-    link: "/services/recycle",
-    img: "/appImage/recycle.jpg",
-    description:
-      "Certifierade elektriker för säkra och professionella elektriska installationer och reparationer.",
-    image:
-      "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-  },
+  // {
+  //   id: 6,
+  //   title: "Återvinning",
+  //   title_en: "Recycle",
+  //   link: "/services/recycle",
+  //   img: "/appImage/recycle.jpg",
+  //   description:
+  //     "Certifierade elektriker för säkra och professionella elektriska installationer och reparationer.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+  // },
 ];

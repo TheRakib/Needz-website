@@ -17,7 +17,7 @@ export default function page() {
       <DescriptionBuy />
       <Local />
       <FAQBuy />
-      <AboutContact />
+      {/* <AboutContact /> */}
     </div>
   );
 }
