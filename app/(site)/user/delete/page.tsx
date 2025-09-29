@@ -1,7 +1,13 @@
-import Link from 'next/link';
+"use client"
 import React from 'react';
 
 const DeleteUser = () => {
+    const handleOpenApp = () => {
+        // handle redirection to app
+        const deepLink = "deeplinkurl";
+        window.location.href = deepLink;
+    };
+
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gray-50">
             <div className="bg-white shadow-md rounded-2xl p-6 max-w-md w-full text-center">
@@ -12,12 +18,12 @@ const DeleteUser = () => {
                 </p>
 
                 {/* Link to user profile */}
-                <Link
-                    href="/user/profile"
+                <button
                     className="block w-full text-center bg-gray-200 text-red-600 border border-red-600 font-medium py-2 px-4 rounded-xl hover:text-white hover:bg-red-700 transition"
+                    onClick={handleOpenApp}
                 >
-                    Go to My Profile
-                </Link>
+                    Delete from App
+                </button>
             </div>
         </div>
     );
