@@ -86,9 +86,24 @@ export default function Header() {
             />
           </div>
         </Link> */}
-        <AppLogo className="hidden md:block" />
-
-        <AppLogo className="flex md:hidden w-[120px] h-[40px]" />
+        {/* Different logo based on scroll state */}
+        {scrolled ? (
+          <>
+            <AppLogo className="hidden md:block" />
+            <AppLogo className="flex md:hidden h-10 w-[120px]" />
+          </>
+        ) : (
+          <Link href="/">
+            <div className="relative h-20 w-36">
+              <Image
+                src="/new-logo-white.png"
+                alt="Needz Logo"
+                fill
+                priority
+              />
+            </div>
+          </Link>
+        )}
 
         {/* Desktop Navigation */}
         {!isMobile && (
