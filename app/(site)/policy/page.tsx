@@ -58,44 +58,47 @@ export default function Policy() {
                 </motion.p>
             </section>
 
-            <section className="container px-4">
+            <section className="container px-4 mb-20">
                 <p className="text-lg mb-8 text-gray-600">
                     Gäller från och med 16 september 2025.
                 </p>
                 <p className="text-lg mb-8 text-gray-600">
-                    På Needz värnar vi om din integritet och tar skyddet av dina personuppgifter på största allvar. När du använder vår app och våra tjänster vill vi att du ska känna dig trygg med hur vi hanterar din information. Denna integritetspolicy förklarar på ett tydligt sätt vilka uppgifter vi samlar in, varför vi samlar in dem, hur vi använder dem och vilka rättigheter du har. Policyn är anpassad efter den europeiska dataskyddsförordningen (GDPR) och gällande svensk lagstiftning.
+                    På Needz AB värnar vi om din integritet. Vi samlar endast in och behandlar de personuppgifter som är nödvändiga för att kunna leverera våra tjänster, förbättra användarupplevelsen och uppfylla lagkrav. Denna integritetspolicy beskriver vilka uppgifter vi behandlar, för vilka syften och rättsliga grunder, hur länge vi sparar dem samt vilka rättigheter du som användare har. Needz AB är personuppgiftsansvarig för den behandling som sker i samband med användningen av våra tjänster och vår app Needz. Du kan kontakta oss via e-post på info@needz.se eller per post till vår bolagsadress.
                 </p>
                 <p className="text-lg mb-8 text-gray-600">
-                    När du registrerar ett konto i Needz samlar vi in grundläggande information om dig, som namn, e-postadress och telefonnummer. Om du är frilansare (handyman/handywoman) kan du också lägga till en profilbild och en beskrivning av dina tjänster. För att klienter ska kunna boka dig behöver du dessutom registrera dig via Stripe, som hanterar dina utbetalningar. Om du är klient samlar vi in de betalningsuppgifter som krävs för att kunna genomföra köp via Klarna. Själva betalningarna hanteras alltid direkt av Klarna och Stripe - vi på Needz lagrar aldrig några kortuppgifter.
+                    När du använder Needz samlar vi in viss information om dig. Det gäller registreringsuppgifter som namn, e-postadress och telefonnummer. I vissa fall kan även personnummer eller födelsedatum behandlas, till exempel för betalningsverifiering. Frilansare kan dessutom lägga till profilbild och beskrivning av sina tjänster. Vi använder Google Firebase för autentisering, kontohantering och drift av appen. Firebase lagrar bland annat användar-ID, visningsnamn, e-postadress, profilbilds-URL om sådan finns, provider-ID (till exempel google.com) samt status för e-postverifiering.
                 </p>
                 <p className="text-lg mb-8 text-gray-600">
-                    Utöver registreringsuppgifter samlar vi också in information som skapas när du använder appen. Det kan till exempel vara chattmeddelanden mellan klienter och frilansare, bilder och videor som laddas upp för att beskriva ett jobb, samt uppdrags- och betalningshistorik. Vi kan även samla in viss teknisk information, som enhetstyp, operativsystem och IP-adress, för att säkerställa driften av appen och för att kunna förebygga missbruk.
+                    Appen kan samla in platsdata i form av latitud och longitud när du använder platsbaserade funktioner. Informationen används enbart för att visa relevanta uppdrag eller användare i närheten och sparas i vår databas i detta syfte. Platsdata samlas endast in om du aktivt samtycker till det via appen. Vi samlar också in användningsdata, såsom kommunikation i appen (till exempel chattmeddelanden), bilder, videor och annat jobbrelaterat innehåll som du laddar upp, liksom uppdrags- och betalningshistorik. Viss teknisk information som appversion, enhetstyp och operativsystem kan behandlas för att säkerställa drift, prestanda och säkerhet, men dessa uppgifter kan inte användas för att identifiera enskilda användare.
                 </p>
                 <p className="text-lg mb-8 text-gray-600">
-                    Vi använder dessa uppgifter för att kunna leverera våra tjänster till dig, det vill säga för att klienter och frilansare ska kunna hitta varandra, kommunicera och genomföra trygga betalningar. Uppgifterna används också för att skicka notifikationer, påminnelser och serviceinformation, samt för att förbättra användarupplevelsen och utveckla vår plattform. I vissa fall behandlar vi personuppgifter för att uppfylla rättsliga skyldigheter, exempelvis i samband med bokföring.
+                    Betalningar hanteras av Klarna och Stripe. Needz AB lagrar inga kortuppgifter, men vi får tillgång till transaktionsinformation som krävs för att bekräfta och hantera betalningar. Vi samlar inte in, lagrar eller använder några så kallade ”Device or Other IDs”, såsom Advertising ID, Android ID, IMEI, BSSID eller MAC-adress.
                 </p>
                 <p className="text-lg mb-8 text-gray-600">
-                    Vi delar aldrig dina personuppgifter med tredje parter för kommersiella syften. De enda aktörer som kan ta del av dina uppgifter är våra betaltjänstleverantörer Klarna och Stripe, samt de tekniska leverantörer som behövs för drift, hosting och support av appen. Vid behov kan vi även lämna ut uppgifter till myndigheter om vi är skyldiga enligt lag.
+                    Personuppgifter behandlas för att leverera, administrera och förbättra våra tjänster, för att hantera betalningar och utbetalningar, förebygga och upptäcka bedrägerier, uppfylla bokförings- och rättsliga krav, kommunicera med användare och analysera användningen av plattformen. Behandlingen grundas på avtal, rättslig förpliktelse, berättigat intresse eller ditt samtycke, beroende på ändamål.
                 </p>
                 <p className="text-lg mb-8 text-gray-600">
-                    Vi sparar inte dina personuppgifter längre än nödvändigt. Dina uppgifter finns kvar så länge du har ett aktivt konto hos oss. Om du väljer att avsluta ditt konto raderas eller anonymiseras dina personuppgifter enligt våra rutiner, förutom i de fall där vi måste spara viss information för att följa lagkrav, exempelvis bokföringslagen.
+                    Uppgifter delas endast med de aktörer som behövs för att kunna driva och utveckla våra tjänster, vilket inkluderar Google Firebase för autentisering och drift, Klarna och Stripe för betalningar samt tekniska leverantörer för hosting, analys och support. Vi kan även behöva dela uppgifter med myndigheter när vi är skyldiga enligt lag. I vissa fall kan uppgifter delas med affärspartners vid specifika funktioner eller kampanjer, men då endast med ditt uttryckliga samtycke. Needz AB säljer aldrig personuppgifter till tredje part.
                 </p>
                 <p className="text-lg mb-8 text-gray-600">
-                    Säkerhet är viktigt för oss. Vi arbetar med både tekniska och organisatoriska skyddsåtgärder för att förhindra obehörig åtkomst, förlust eller missbruk av personuppgifter. Det inkluderar bland annat kryptering, åtkomstkontroller och regelbundna säkerhetsgranskningar.
+                    Vi sparar dina personuppgifter så länge ditt konto är aktivt. Om kontot har varit inaktivt i mer än 24 månader raderas eller anonymiseras uppgifterna. Vissa uppgifter kan sparas längre om det krävs enligt lag, exempelvis enligt bokföringslagen som föreskriver en lagringstid på upp till sju år. Om personuppgifter överförs till länder utanför EU/EES, till exempel via Google Firebase, säkerställer vi att överföringen sker i enlighet med gällande dataskyddslagstiftning och med adekvata skyddsåtgärder såsom EU:s standardavtalsklausuler.
                 </p>
                 <p className="text-lg mb-8 text-gray-600">
-                    Som användare har du flera rättigheter enligt GDPR. Du kan begära att få ta del av de personuppgifter vi behandlar om dig, få felaktiga uppgifter rättade eller få dina uppgifter raderade. Du har även rätt att begränsa behandlingen, invända mot viss behandling eller begära att dina uppgifter överförs till en annan aktör (dataportabilitet). Om du har lämnat samtycke till viss behandling, exempelvis för marknadsföring, kan du när som helst återkalla detta samtycke. Om du anser att vi har behandlat dina personuppgifter på ett felaktigt sätt har du rätt att lämna in klagomål till Integritetsskyddsmyndigheten (IMY).
+                    Vi skyddar dina personuppgifter genom tekniska och organisatoriska säkerhetsåtgärder, bland annat kryptering, åtkomstkontroller, säkerhetsgranskningar och utbildning av personal. Som användare har du flera rättigheter enligt GDPR. Du kan begära tillgång till de uppgifter vi behandlar om dig, begära rättelse av felaktiga uppgifter, radering av uppgifter (rätten att bli bortglömd), begränsning av behandling, invända mot behandling som grundas på berättigat intresse, begära dataportabilitet samt återkalla samtycke när som helst utan att det påverkar lagligheten av tidigare behandling. Om du anser att vi behandlat dina uppgifter felaktigt kan du kontakta Integritetsskyddsmyndigheten (IMY).
                 </p>
                 <p className="text-lg mb-8 text-gray-600">
-                    Vi kan ibland behöva uppdatera denna policy, till exempel om vi utvecklar nya funktioner eller ändrar hur vi hanterar data. Vid större förändringar kommer vi att informera dig via appen, vår webbplats <b className="text-black">needz.se</b> eller e-post. Den senaste versionen av policyn finns alltid tillgänglig på vår webbplats.
+                    Vi använder cookies och liknande tekniker för att förbättra användarupplevelsen och analysera trafik. Policyn kan komma att uppdateras, och den senaste versionen finns alltid tillgänglig på vår webbplats och i appen. Vid större förändringar informerar vi dig i förväg via appen, e-post eller på vår webbplats.
                 </p>
-                <p className="text-lg mb-8 text-gray-600">
-                    Om du har frågor om hur vi behandlar dina personuppgifter är du alltid välkommen att kontakta oss:
+                <p className="text-lg mb-2 text-gray-600">
+                    Om du har frågor om hur vi hanterar dina personuppgifter eller vill utöva dina rättigheter kan du kontakta oss på:
                 </p>
-                <p className="text-lg mb-8 text-gray-600">
+                <p className="text-lg">
                     <b className="text-black">Needz AB</b>
                     <br />
                     E-post: info@needz.se
+                </p>
+                <p className="text-lg mb-8">
+                    Adress: Taggsvampsvägen 20, 141 60, Huddinge, Stockholm.
                 </p>
             </section>
 
